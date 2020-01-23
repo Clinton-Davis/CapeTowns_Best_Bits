@@ -41,7 +41,8 @@ section {
 	height: 100vh;
 }
 
-.mainTabs {
+.mainList {
+	background-color: royalblue;
 }
 .main-heading {
 	text-align: center;
