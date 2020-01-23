@@ -16,11 +16,13 @@
 	<body>
 		<header>
 			<nav>
+				<!--Live Weather Div-->
 				<div class="row justify-content-between">
 					<div class="col-4">
-						<h6 class="live-weather">Cape Town</h6>
-						<p id="weather" class="live-weather">H / L</p>
+						<h6 class="liveWeather">Cape Town</h6>
+						<p id="weather" class="liveWeather">H / L</p>
 					</div>
+					<!--Nav Div-->
 					<div class="col-4 nav-element">
 						<ul>
 							<li>
@@ -34,20 +36,25 @@
 				</div>
 			</nav>
 		</header>
+		<main>
+			<section class="mainPage">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm text-center">
+							<button class="mainTabs" id="sights">Sight Seeing</button>
+						</div>
+						<div class="col-sm text-center">
+							<button class="mainTabs" id="adventure">Adventure</button>
+						</div>
+						<div class="col-sm text-center">
+							<button class="mainTabs" id="foodies">Foodies</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer></footer>
 		<script src="./JS/main.js"></script>
 		<script src="./JS/weather_API.js"></script>
 	</body>
 </html>
-
-<!--<ul class="nav justify-content-end">
-    <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-    </li>
-</ul>-->

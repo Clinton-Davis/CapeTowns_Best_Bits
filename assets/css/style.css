@@ -11,10 +11,11 @@ html {
 header {
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
-.live-weather {
+.liveWeather {
 	display: flex;
 	justify-content: center;
 	margin: 0;
+	font-size: small;
 }
 .api-input {
 	display: flex;
@@ -40,7 +41,7 @@ section {
 	height: 100vh;
 }
 
-.main-tab {
+.mainTabs {
 }
 .main-heading {
 	text-align: center;
