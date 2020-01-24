@@ -5,9 +5,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-html {
-	height: 100%;
+body {
+	background: url("../images/capetownsouthafrica.jpg") no-repeat top center
+		fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+}
+.mainPage {
+	background-color: transparent;
 }
 .row {
 	margin: 0;
@@ -49,7 +57,7 @@ section {
 }
 
 .mainList {
-	background-color: rgba(134, 162, 247, 0.397);
+	background-color: rgba(134, 162, 247, 0);
 	margin: 2rem auto;
 	height: auto;
 	width: 30rem;
@@ -65,4 +73,6 @@ section {
 td {
 	border: 1px black solid;
 	padding: 0.2rem;
+}
+.main-pic {
 }
