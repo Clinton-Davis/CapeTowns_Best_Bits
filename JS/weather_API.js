@@ -11,13 +11,15 @@ xhr.onreadystatechange = function() {
 
 		var city = obj.name;
 		var temps =
-			"H " + obj.main.temp_max + " / " + " L" + " " + obj.main.temp_min;
-		console.log(city);
-		console.log(temps);
+			obj.main.temp_max + " / "  + " " + obj.main.temp_min + " ˚C";
+		var wind = obj.wind.speed + " " + obj.wind.deg;	
+		console.log(city , temps , wind);
+		;
+		
 		writeToDoc();
 	}
 	function writeToDoc() {
-		document.getElementById("weather").innerHTML = temps;
+		document.getElementById("weather").innerHTML = temps + " Wind" + " " + wind;
 	}
 };
 xhr.open("GET", url + my_id + unit);
