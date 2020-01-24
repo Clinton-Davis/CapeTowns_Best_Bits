@@ -12,10 +12,13 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100vh;
+	height: auto;
 }
-.mainPage {
+a {
+	color: black;
+	text-decoration: none;
 	background-color: transparent;
+	list-style: none;
 }
 .row {
 	margin: 0;
@@ -37,16 +40,17 @@ header {
 .nav-element {
 	min-width: 10vh;
 	width: 90%;
-
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
+
 .nav-element ul {
 	margin: 0;
 	display: flex;
 	flex: 1;
 	justify-content: space-around;
+	color: black;
 }
 
 .fontsBangers {
@@ -57,7 +61,7 @@ section {
 }
 
 .mainList {
-	background-color: rgba(134, 162, 247, 0);
+	background-color: rgba(69, 109, 219, 0.562);
 	margin: 2rem auto;
 	height: auto;
 	width: 30rem;
