@@ -60,12 +60,12 @@ section {
 	height: 100vh;
 }
 
-.mainList {
+/*.mainList {
 	background-color: rgba(69, 109, 219, 0.562);
 	margin: 2rem auto;
 	height: auto;
 	width: 30rem;
-}
+}*/
 
 .mainList-headings {
 	background-color: salmon;
@@ -79,4 +79,15 @@ td {
 	padding: 0.2rem;
 }
 .main-pic {
+}
+.test {
+	background-color: blue;
+	border: 1px black solid;
+	min-height: 3rem;
+}
+.options {
+	width: 25rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	height: auto;
 }
