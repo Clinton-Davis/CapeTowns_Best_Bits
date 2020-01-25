@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
 
+:root {
+	--text-color: rgba(0, 0, 0, 1);
+	--h-ff: "Bangers", sans-serif;   /*h-ff = heading font-family */
+	--s-ff: "Montserrat", sans-serif; /* s-ff = secondary font-family */
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,7 +22,7 @@ body {
 	height: auto;
 }
 a {
-	color: black;
+	color: var(--text-color);
 	text-decoration: none;
 	background-color: transparent;
 	list-style: none;
@@ -23,6 +30,9 @@ a {
 .row {
 	margin: 0;
 }
+
+/* _____________________________Nav -- */
+
 header {
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
@@ -50,11 +60,11 @@ header {
 	display: flex;
 	flex: 1;
 	justify-content: space-around;
-	color: black;
+	color: var(--text-color);
 }
 
 .fontsBangers {
-	font-family: "Bangers", sans-serif;
+	font-family: var(--h-ff);
 }
 section {
 	height: 100vh;
