@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
 
 html {
-	height: 100vh;
+	height: 100%;
+}
+body {
+	background-image: url("../images/capetownsouthafrica.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 
 * {
