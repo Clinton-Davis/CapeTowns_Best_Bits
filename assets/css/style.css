@@ -1,63 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
-
+html {
+	height: 100vh;
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body {
-	background: url("../images/capetownsouthafrica.jpg") no-repeat top center
-		fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: auto;
 }
 a {
-	color: black;
-	text-decoration: none;
-	background-color: transparent;
-	list-style: none;
-}
-.row {
-	margin: 0;
 }
 header {
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
-.liveWeather {
-	display: flex;
-	justify-content: center;
-	margin: 0;
-}
-.api-input {
-	display: flex;
-	justify-content: center;
-	font-size: 0.7rem;
-	margin: 0;
-}
-.nav-element {
-	min-width: 10vh;
-	width: 90%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.nav-element ul {
-	margin: 0;
-	display: flex;
-	flex: 1;
-	justify-content: space-around;
-	color: black;
-}
 
 .fontsBangers {
 	font-family: "Bangers", sans-serif;
-}
-section {
-	height: 100vh;
 }
 
 /*.mainList {
@@ -66,28 +25,3 @@ section {
 	height: auto;
 	width: 30rem;
 }*/
-
-.mainList-headings {
-	background-color: salmon;
-}
-
-.small-image {
-	background-color: sienna;
-}
-td {
-	border: 1px black solid;
-	padding: 0.2rem;
-}
-.main-pic {
-}
-.test {
-	background-color: blue;
-	border: 1px black solid;
-	min-height: 3rem;
-}
-.options {
-	width: 25rem;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-	height: auto;
-}
