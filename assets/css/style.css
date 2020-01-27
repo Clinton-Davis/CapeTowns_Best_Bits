@@ -1,25 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
+
 html {
 	height: 100vh;
 }
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 img {
 	height: 10vh;
 	width: 10vw;
 }
-.fontsBangers {
-	font-family: var(--h-ff);
+.head-ff {
+	font-family: "Bangers", sans-serif;
 }
+
 .navContainer {
 	background-color: rgba(0, 0, 255, 0.144);
 	display: flex;
 	justify-content: space-between;
 }
-
+.navList {
+	display: flex;
+	margin: 0.5em;
+}
+.about {
+	margin-right: 1em;
+}
 .mainContainer {
 	background-color: rgba(250, 125, 146, 0.322);
 	display: flex;
@@ -49,9 +59,4 @@ img {
 	background-color: rgba(250, 128, 114, 0.26);
 	display: flex;
 	justify-content: space-around;
-}
-
-.navList {
-	background-color: rgba(0, 128, 0, 0.253);
-	display: flex;
 }
