@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
+<<<<<<< HEAD
 html {
 	height: 100vh;
 }
+=======
+
+:root {
+	--text-color: rgba(0, 0, 0, 1);
+	--h-ff: "Bangers", sans-serif;   /*h-ff = heading font-family */
+	--s-ff: "Montserrat", sans-serif; /* s-ff = secondary font-family */
+}
+
+
+>>>>>>> 49e65f440e4b32d1cb724b5db347db0c3639ce32
 * {
 	margin: 0;
 	padding: 0;
@@ -10,13 +21,55 @@ html {
 body {
 }
 a {
+<<<<<<< HEAD
+=======
+	color: var(--text-color);
+	text-decoration: none;
+	background-color: transparent;
+	list-style: none;
 }
+.row {
+	margin: 0;
+>>>>>>> 49e65f440e4b32d1cb724b5db347db0c3639ce32
+}
+
+/* _____________________________Nav -- */
+
 header {
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
+<<<<<<< HEAD
+=======
+.liveWeather {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+.api-input {
+	display: flex;
+	justify-content: center;
+	font-size: 0.7rem;
+	margin: 0;
+}
+.nav-element {
+	min-width: 10vh;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav-element ul {
+	margin: 0;
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	color: var(--text-color);
+}
+>>>>>>> 49e65f440e4b32d1cb724b5db347db0c3639ce32
 
 .fontsBangers {
-	font-family: "Bangers", sans-serif;
+	font-family: var(--h-ff);
 }
 
 /*.mainList {
