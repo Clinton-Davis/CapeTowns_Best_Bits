@@ -54,7 +54,8 @@ xhr.onreadystatechange = function() {
 		writeToDoc();
 	}
 	function writeToDoc() {
-		document.getElementById("weather-api").innerHTML = temps + " Wind" + " " + wind + " " + dir; 
+		document.getElementById("temp-api").innerHTML = temps ; 
+		document.getElementById("wind-api").innerHTML = "Wind" + " " + wind + " " + dir;
 	}
 	
 		
