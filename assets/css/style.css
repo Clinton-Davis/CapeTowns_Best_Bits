@@ -10,6 +10,9 @@ html {
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
 }
+.mar {
+	margin: 0.5em;
+}
 img {
 	height: 10vh;
 	width: 10vw;
@@ -19,16 +22,18 @@ img {
 }
 
 .navContainer {
-	background-color: rgba(0, 0, 255, 0.144);
 	display: flex;
 	justify-content: space-between;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.liveWeather {
 }
 .navList {
 	display: flex;
 	margin: 0.5em;
 }
 .about {
-	margin-right: 1em;
+	margin: 0.5em;
 }
 .mainContainer {
 	background-color: rgba(250, 125, 146, 0.322);

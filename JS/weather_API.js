@@ -10,16 +10,14 @@ xhr.onreadystatechange = function() {
 		console.log(obj);
 
 		var city = obj.name;
-		var temps =
-			obj.main.temp_max + " / "  + " " + obj.main.temp_min + " ˚C";
-		var wind = obj.wind.speed + " " + obj.wind.deg;	
-		console.log(city , temps , wind);
-		;
-		
+		var temps = obj.main.temp_max + " / " + " " + obj.main.temp_min + " ˚C";
+		var wind = obj.wind.speed + " " + obj.wind.deg;
+		console.log(city, temps, wind);
 		writeToDoc();
 	}
 	function writeToDoc() {
-		document.getElementById("weather").innerHTML = temps + " Wind" + " " + wind;
+		document.getElementById("weather-api").innerHTML =
+			temps + " Wind" + " " + wind;
 	}
 };
 xhr.open("GET", url + my_id + unit);
