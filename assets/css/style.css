@@ -82,12 +82,19 @@ body {
 	}
 }
 
-.subHeading {
+#goodBits {
 	margin-top: 2rem;
 	font-size: 3.5rem;
+	text-align: center;
+	background-image: url("../images/brent-ninaber-L6EP96_w1Fc-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 @media (max-width: 690px) {
-	.subHeading {
+	#goodBits {
 		font-size: 2rem;
 	}
 }
