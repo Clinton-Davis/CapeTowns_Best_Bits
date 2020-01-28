@@ -89,7 +89,7 @@ body {
 }
 @media (max-width: 690px) {
 	#capeTown {
-		font-size: 3.5rem;
+		font-size: 4.4rem;
 	}
 }
 
@@ -114,6 +114,12 @@ body {
 	margin: 2em 5em;
 	color: rgba(245, 242, 236, 0.5);
 }
+
+/*-----------------------------ITEMS______*/
+.hideItems {
+	display: none;
+}
+
 .itemContainer {
 	display: flex;
 	justify-content: center;
