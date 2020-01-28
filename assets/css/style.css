@@ -74,6 +74,7 @@ body {
 	font-size: 13rem;
 	background-color: rgba(64, 224, 208, 0.425);
 	justify-content: center;
+	
 	letter-spacing: 0.2rem;
 	background-image: url("../images/longshotTM1080x143.jpg");
 	background-size: cover;
@@ -81,6 +82,7 @@ body {
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
+	
 }
 @media (max-width: 825px) {
 	#capeTown {
