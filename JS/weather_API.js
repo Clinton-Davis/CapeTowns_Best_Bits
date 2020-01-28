@@ -53,9 +53,9 @@ xhr.onreadystatechange = function() {
 		writeToDoc();
 	}
 	function writeToDoc() {
-		document.getElementById("temp-api").innerHTML = temps;
+		document.getElementById("temp-api").innerHTML = "Temps:" + " " + temps;
 		document.getElementById("wind-api").innerHTML =
-			"Wind" + " " + wind + " " + dir;
+			"Wind:" + " " + wind + " " + dir;
 	}
 };
 xhr.open("GET", url + my_id + unit);

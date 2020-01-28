@@ -31,12 +31,20 @@ body {
 .liveWeather {
 	color: white;
 }
+
+#weatherLoc {
+	letter-spacing: 0.1rem;
+	font-size: 1.3rem;
+}
 .navList {
 	display: flex;
 	margin: 0.5em;
 }
 .liveWeather {
 	margin: 1em;
+}
+.weatherData {
+	font-size: 0.7rem;
 }
 .about {
 	margin: 1em;
@@ -67,9 +75,9 @@ body {
 	background-color: rgba(64, 224, 208, 0.425);
 	justify-content: center;
 	letter-spacing: 0.2rem;
-	background-image: url("../images/brent-ninaber-L6EP96_w1Fc-unsplash.jpg");
+	background-image: url("../images/longshotTM1080x143.jpg");
 	background-size: cover;
-	background-position: center center;
+	background-position: top;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
