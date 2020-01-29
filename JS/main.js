@@ -4,7 +4,7 @@ $(function() {
 		
 	});
 	$("#sights").click(function() {
-		$("#h-con").toggle(1000);
+		$("#h-con").toggle(2000);
 		
 	});
 });
