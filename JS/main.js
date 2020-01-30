@@ -1,9 +1,8 @@
 $(function() {
 	$("#sights").click(function() {
 		$("#selections").toggle(1000);
-	});
-	$("#sights").click(function() {
-		$("#h-con").toggle(1000);
+		$("#h-con").toggle(1000).delay(2000);
+		return;
 	});
 	// Shows - Map Div / information div. Removes thumb img / adds flex-direction class
 	$("#tableMountain").click(function() {
