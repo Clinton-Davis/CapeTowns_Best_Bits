@@ -7,7 +7,7 @@ $(function() {
 	});
 	// Shows - Map Div / information div. Removes thumb img / adds flex-direction class
 	$("#tableMountain").click(function() {
-		$("#data1").show();
+		$("#data1").show(2000);
 		$("#thumbImg").remove();
 		$("#innerBlock").toggleClass("itemContainer", "itemContainer-colum");
 	});
