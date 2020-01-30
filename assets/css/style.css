@@ -101,7 +101,7 @@ body {
 }
 @media (max-width: 690px) {
 	#capeTown {
-		font-size: 4.4rem;
+		font-size: 4.3rem;
 	}
 }
 
@@ -173,14 +173,25 @@ body {
 	height: 50px;
 	/*background-image: url("../images/TM50px50px.jpg");*/
 }
+.p-info {
+	text-align: center;
+}
+.info {
+}
 #tableMountain:hover {
 	color: yellowgreen;
 	cursor: pointer;
 }
 .mapDiv {
-	min-width: 400px;
-	min-height: 400px;
+	min-width: 17rem;
+	min-height: 15rem;
 	border: 1px whitesmoke solid;
+}
+@media (min-width: 690px) {
+	.mapDiv {
+		width: 40rem;
+		height: 20rem;
+	}
 }
 .mainOptions {
 	display: flex;
