@@ -3,16 +3,12 @@ $(function() {
 		$("#selections").toggle(1000);
 	});
 	$("#sights").click(function() {
-		$("#h-con").toggle(2000);
+		$("#h-con").toggle(1000);
 	});
-
+	// Shows - Map Div / information div. Removes thumb img / adds flex-direction class
 	$("#tableMountain").click(function() {
 		$("#data1").show();
-	});
-	$("#tableMountain").click(function() {
 		$("#thumbImg").remove();
-	});
-	$("#tableMountain").click(function() {
 		$("#innerBlock").toggleClass("itemContainer", "itemContainer-colum");
 	});
 });
