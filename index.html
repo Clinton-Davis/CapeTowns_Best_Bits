@@ -22,8 +22,8 @@
 					<p id="wind-api" class="weatherData">Wind</p>
 				</div>
 				<div class="navList">
-					<div class="about mar">About</div>
-					<div class="contact mar">Contact</div>
+					<div class="about mar pointer">About</div>
+					<div class="contact mar pointer">Contact</div>
 				</div>
 			</nav>
 		</header>
@@ -37,21 +37,30 @@
 					</div>
 					<div class="lead">
 						<p class="leadp">
-							Cape Town is a land of so many wonders.
-							This website has lists of some of the best things to see, eat and do as choicen by the locals past explores.
-							At the bottom of the page where are three buttons.
-							Sights: is for all the best sightseeing places see
-							Adventure: is for some the heart pumping adventures the Cape has to offer. 
-							Foodies: Is to let you moths fall in love with the tastiest foods we offer.
+							Cape Town is a land of so many wonders. This website has lists of
+							some of the best things to see, eat and do as choicen by the
+							locals past explores. At the bottom of the page where are three
+							buttons. Sights: is for all the best sightseeing places see
+							Adventure: is for some the heart pumping adventures the Cape has
+							to offer. Foodies: Is to let you moths fall in love with the
+							tastiest foods we offer.
 						</p>
 					</div>
 				</div>
-				<div hidden class="continer" id="hh">
-					<div class="itemContainer items">
-						<div class="items thumb">
+				<div hidden class="continer" id="selections">
+					<div class="itemContainer items" id="innerBlock">
+						<div class="thumb" id="thumbImg">
 							<img src="./assets/images/TM50px50px.jpg" alt="Cable Car" />
 						</div>
-						<div class="items heading"><h3>Table Mountain Cable Car</h3></div>
+						<div class="heading">
+							<h3 id="tableMountain" class="pointer">
+								Table Mountain Cable Car
+							</h3>
+						</div>
+						<div hidden class="itemData" id="data1">
+							<div class="mapDiv" id="tm">MAP</div>
+							<div class="infoDiv" id="tmInfo">Information</div>
+						</div>
 					</div>
 					<div class="itemContainer items">
 						<div class="items thumb"><img src="" alt="" /></div>
@@ -89,13 +98,13 @@
 
 				<div class="mainOptions">
 					<div class="option">
-						<button class="opt-btn" id="sights">Sights</button>
+						<button class="opt-btn pointer" id="sights">Sights</button>
 					</div>
 					<div class="option">
-						<button class="opt-btn" id="adventure">Adventure</button>
+						<button class="opt-btn pointer" id="adventure">Adventure</button>
 					</div>
 					<div class="option">
-						<button class="opt-btn" id="foodie">Foodies</button>
+						<button class="opt-btn pointer" id="foodie">Foodies</button>
 					</div>
 				</div>
 			</div>
