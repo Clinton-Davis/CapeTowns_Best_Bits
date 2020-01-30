@@ -31,7 +31,7 @@ body {
 }
 .liveWeather {
 	color: white;
-	margin:1em;
+	margin: 1em;
 }
 .weatherData {
 	font-size: 0.7rem;
@@ -44,19 +44,16 @@ body {
 	display: flex;
 	margin: 1em;
 	justify-content: center;
-	padding:1em;
+	padding: 1em;
 }
-@media (max-width: 690px){
+@media (max-width: 690px) {
 	.navList {
 		flex-direction: column;
 	}
 }
 
-
-
-.about{
+.about {
 	margin: 0 1em;
-	
 }
 .contact {
 	margin: 0 1em;
@@ -68,7 +65,9 @@ body {
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
-	margin: 1em 1em;
+
+	margin: 1em auto;
+	max-width: fit-content;
 }
 
 .headingContainer {
@@ -85,7 +84,7 @@ body {
 	justify-content: center;
 
 	letter-spacing: 0.2rem;
-	
+
 	background-image: url("../images/marika-vinkmann-Km3pLqPeEpc-unsplash4.jpg");
 	background-size: cover;
 	background-position: center;
@@ -109,16 +108,15 @@ body {
 	font-size: 6rem;
 	text-align: center;
 	letter-spacing: 0.1em;
-	
+
 	background-image: url("../images/marika-vinkmann-Km3pLqPeEpc-unsplash4.jpg");
 	background-size: cover;
 	background-position: center;
-	
+
 	background-clip: text;
 	-webkit-background-clip: text;
-	
-	color:transparent;
-	
+
+	color: transparent;
 }
 @media (max-width: 690px) {
 	#goodBits {
@@ -140,7 +138,9 @@ body {
 .hideItems {
 	display: none;
 }
-
+.container {
+	max-width: 80%;
+}
 .itemContainer {
 	display: flex;
 	justify-content: center;
