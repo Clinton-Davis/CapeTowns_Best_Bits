@@ -1,4 +1,4 @@
-const url =
+/*const url =
 	"https://api.openweathermap.org/data/2.5/weather?id=1085599&APPID=93fc6b46edd4b57ed1e18af04d5ead0c&units=metric";
 
 const my_id = "&APPID=93fc6b46edd4b57ed1e18af04d5ead0c";
@@ -59,4 +59,4 @@ xhr.onreadystatechange = function() {
 	}
 };
 xhr.open("GET", url + my_id + unit);
-xhr.send();
+xhr.send();*/
