@@ -142,8 +142,22 @@ body {
 	justify-content: space-around;
 }
 /*-=-=-=-=-=-=-=-=-=-=LIST-STYLE-IMAGES-=-=-=-*/
+ul {
+	display: flex;
+	flex-direction: column;
+}
+
+li {
+	margin: 0.2em;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
 #tm {
-	list-style-image: url("../images/L-S-Img/cape_point-50x50.jpg");
+	list-style-image: url("../images/L-S-Img/TM50x50.jpg");
 }
 #cp {
 	list-style-image: url("../images/L-S-Img/cape_point-50x50.jpg");
