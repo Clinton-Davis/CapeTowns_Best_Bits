@@ -63,7 +63,7 @@ body {
 
 /* ------------------------------MAIN CONTAINER---- */
 
-.mainContainer {
+.heroContainer {
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
@@ -243,5 +243,4 @@ body {
 }
 .opt-btn:hover {
 	color: rgb(103, 148, 13);
-	
 }
