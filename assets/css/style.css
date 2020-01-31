@@ -244,3 +244,8 @@ body {
 .opt-btn:hover {
 	color: rgb(103, 148, 13);
 }
+.shoes {
+	display: flex;
+	background-color: black;
+	max-height: 5%;
+}
