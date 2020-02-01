@@ -74,9 +74,13 @@ section {
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
-
 	margin: 1em auto;
 	max-width: fit-content;
+}
+@media (min-width: 550px) {
+	.heroContainer {
+		margin-top: 5rem;
+	}
 }
 
 .headingContainer {
@@ -168,15 +172,29 @@ ul {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 0px 10px 10px 0px;
+	-moz-border-radius: 0px 10px 10px 0px;
+	-webkit-border-radius: 0px 10px 10px 0px;
+}
+@media (max-width: 550px) {
+	ul {
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+	}
 }
 
 li {
+	background-color: rgba(0, 0, 0, 0.5);
 	margin: 0.2em;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
 }
 /*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps section-==-=-=*/
 .mapContainer {
