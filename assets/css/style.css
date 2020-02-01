@@ -9,7 +9,9 @@ body {
 	background-position: center center;
 	background-attachment: fixed;
 
-	height: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 * {
@@ -155,44 +157,7 @@ li {
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 }
-/*
-#tm {
-	list-style-image: url("../images/L-S-Img/TM50x50.jpg");
-}
-#cp {
-	list-style-image: url("../images/L-S-Img/cape_point-50x50.jpg");
-}
-#bk {
-	list-style-image: url("../images/L-S-Img/bo-kaap50x50.jpg");
-}
-#con {
-	list-style-image: url("../images/L-S-Img/constania50x50.jpg");
-}
-#kb {
-	list-style-image: url("../images/L-S-Img/kalk_Bay50x50.jpg");
-}
-#bl {
-	list-style-image: url("../images/L-S-Img/penguins-boulders50x50.jpg");
-}
-#chp {
-	list-style-image: url("../images/L-S-Img/chapmans-peak-drive50x50.jpg");
-}
-#dsm {
-	list-style-image: url("../images/L-S-Img/district-six-museum\ 50x50.jpg");
-}
-#lh {
-	list-style-image: url("../images/L-S-Img/lionsHead\ 50x50.jpg");
-}
-#ri {
-	list-style-image: url("../images/L-S-Img/robin-Island50x50.jpg");
-}
-.sel-pic {
-	border: 1px whitesmoke solid;
-}
-.selection {
-	background-color: rgba(0, 0, 0, 0.2);
-	justify-content: center;
-}
+
 /*-------The 3 Bottons --------*/
 .mainOptions {
 	display: flex;
@@ -252,4 +217,5 @@ li {
 	background-color: black;
 	max-height: 7%;
 	justify-content: space-around;
+	margin-top: auto;
 }
