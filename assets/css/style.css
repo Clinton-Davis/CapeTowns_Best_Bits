@@ -21,6 +21,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	color: rgba(255, 255, 255, 1);
 }
+
 .head-ff {
 	font-family: "Bangers", sans-serif;
 }
@@ -64,7 +65,11 @@ body {
 }
 
 /* ------------------------------MAIN CONTAINER---- */
-
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 .heroContainer {
 	background-color: transparent;
 	display: flex;
@@ -141,12 +146,17 @@ body {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 .list-selectionContainer {
 	display: flex;
+	min-height: 300px;
 	justify-content: space-around;
+	flex-direction: row;
 }
 /*-=-=-=-=-=-=-=-=-=-=LIST-STYLE-IMAGES-=-=-=-*/
 ul {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
 }
 
 li {
