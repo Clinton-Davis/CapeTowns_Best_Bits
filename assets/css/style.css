@@ -105,7 +105,7 @@ section {
 	-webkit-background-clip: text;
 	color: transparent;
 }
-@media (max-width: 825px) {
+@media (max-width: 898px) {
 	#capeTown {
 		font-size: 10rem;
 	}
