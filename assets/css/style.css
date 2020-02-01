@@ -106,7 +106,7 @@ section {
 		font-size: 10rem;
 	}
 }
-@media (max-width: 690px) {
+@media (max-width: 700px) {
 	#capeTown {
 		font-size: 4.3rem;
 	}
@@ -117,17 +117,14 @@ section {
 	font-size: 6rem;
 	text-align: center;
 	letter-spacing: 0.1em;
-
 	background-image: url("../images/marika-vinkmann-Km3pLqPeEpc-unsplash4.jpg");
 	background-size: cover;
 	background-position: center;
-
 	background-clip: text;
 	-webkit-background-clip: text;
-
 	color: transparent;
 }
-@media (max-width: 690px) {
+@media (max-width: 700px) {
 	#goodBits {
 		font-size: 3rem;
 	}
@@ -143,14 +140,28 @@ section {
 		margin-right: 1em;
 	}
 }
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 .list-selectionContainer {
 	display: flex;
-	min-height: 300px;
 	justify-content: space-around;
 	flex-direction: row;
 }
-/*-=-=-=-=-=-=-=-=-=-=LIST-STYLE-IMAGES-=-=-=-*/
+@media (max-width: 550px) {
+	.list-selectionContainer {
+		flex-direction: column;
+	}
+}
+#picDiv {
+	width: 300px;
+	height: 300px;
+}
+@media (max-width: 550px) {
+	#picDiv {
+		width: 250px;
+		height: 150px;
+	}
+}
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=LIST-STYLE-IMAGES-=-=-=-*/
 ul {
 	display: flex;
 	flex-direction: column;
@@ -167,11 +178,44 @@ li {
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 }
+/*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps section-==-=-=*/
+.mapContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5em;
+}
+#map {
+	min-height: 30rem;
+	min-width: 40rem;
+	margin: 0.2em;
+	border: 2px whitesmoke solid;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.information {
+	min-width: 40rem;
+	margin: 0.2em;
+	border: 2px whitesmoke solid;
+}
 
+.info-heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 3px;
+}
+.info {
+	min-width: 40rem;
+	min-height: 10rem;
+	border: 2px whitesmoke solid;
+	background-color: rgba(0, 0, 0, 0.9);
+}
 /*-------The 3 Bottons --------*/
 .mainOptions {
 	display: flex;
 	justify-content: space-around;
+	margin: 0.5em;
 }
 
 .opt-btn {
