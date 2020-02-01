@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
-
-html {
+*/ html {
 	height: 100%;
 }
 body {
@@ -9,6 +8,7 @@ body {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+
 	height: 100vh;
 }
 
@@ -63,7 +63,7 @@ body {
 
 /* ------------------------------MAIN CONTAINER---- */
 
-.mainContainer {
+.heroContainer {
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
@@ -136,63 +136,64 @@ body {
 		margin-right: 1em;
 	}
 }
-/*-----------------------------ITEMS______*/
-.hideItems {
-	display: none;
-}
-.container {
-	max-width: 80%;
-}
-.itemContainer {
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
+.list-selectionContainer {
 	display: flex;
-	justify-content: center;
-	border: 2px black solid;
-	border-radius: 10px;
+	justify-content: space-around;
 }
-.itemContainer-colum {
+/*-=-=-=-=-=-=-=-=-=-=LIST-STYLE-IMAGES-=-=-=-*/
+ul {
 	display: flex;
-	justify-content: center;
-	border: 2px black solid;
-	border-radius: 10px;
 	flex-direction: column;
 }
 
-.items {
-	margin: 0.5em;
-	background: rgba(46, 49, 51, 1);
+li {
+	margin: 0.2em;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
-.heading {
-	flex-grow: 1;
-	max-width: 500px;
-	align-self: center;
-	text-align: center;
+/*
+#tm {
+	list-style-image: url("../images/L-S-Img/TM50x50.jpg");
 }
-
-.thumb {
-	flex-basis: 50px;
-	height: 50px;
-	/*background-image: url("../images/TM50px50px.jpg");*/
+#cp {
+	list-style-image: url("../images/L-S-Img/cape_point-50x50.jpg");
 }
-.p-info {
-	text-align: center;
+#bk {
+	list-style-image: url("../images/L-S-Img/bo-kaap50x50.jpg");
 }
-.info {
+#con {
+	list-style-image: url("../images/L-S-Img/constania50x50.jpg");
 }
-#tableMountain:hover {
-	color: yellowgreen;
-	cursor: pointer;
+#kb {
+	list-style-image: url("../images/L-S-Img/kalk_Bay50x50.jpg");
 }
-.mapsize {
-	min-width: 17rem;
-	min-height: 15rem;
+#bl {
+	list-style-image: url("../images/L-S-Img/penguins-boulders50x50.jpg");
+}
+#chp {
+	list-style-image: url("../images/L-S-Img/chapmans-peak-drive50x50.jpg");
+}
+#dsm {
+	list-style-image: url("../images/L-S-Img/district-six-museum\ 50x50.jpg");
+}
+#lh {
+	list-style-image: url("../images/L-S-Img/lionsHead\ 50x50.jpg");
+}
+#ri {
+	list-style-image: url("../images/L-S-Img/robin-Island50x50.jpg");
+}
+.sel-pic {
 	border: 1px whitesmoke solid;
 }
-@media (min-width: 690px) {
-	.mapDiv {
-		width: 40rem;
-		height: 20rem;
-	}
+.selection {
+	background-color: rgba(0, 0, 0, 0.2);
+	justify-content: center;
 }
+/*-------The 3 Bottons --------*/
 .mainOptions {
 	display: flex;
 	justify-content: space-around;
@@ -243,5 +244,12 @@ body {
 }
 .opt-btn:hover {
 	color: rgb(103, 148, 13);
-	
+}
+
+/*-----------------Footer----------*/
+.shoes {
+	display: flex;
+	background-color: black;
+	max-height: 7%;
+	justify-content: space-around;
 }
