@@ -9,6 +9,11 @@
 			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 			crossorigin="anonymous"
 		></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaqAp28P-jkpfTyo9EZ6pP6VcGKEunTTk&callback=initMap"
+			async
+			defer
+		></script>
 
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>Cape Towns Best Bits</title>
@@ -30,7 +35,7 @@
 		<section>
 			<!--Hero -->
 			<div class="heroContainer">
-				<div class="headingContainer" id="h-con">
+				<div hidden class="headingContainer" id="h-con">
 					<div class="mainheading">
 						<h1 id="capeTown" class="head-ff">CAPE TOWNS</h1>
 
@@ -57,25 +62,25 @@
 						/>
 					</div>
 					<ul class="outLine">
-						<li hidden class=".sightSelectors pointer" id="tm">Table Mountain / Cable Car</li>
-						<li hidden class=".sightSelectors pointer" id="cp">Cape Point</li>
-						<li hidden class=".sightSelectors pointer" id="bk">Bo-Koop</li>
-						<li hidden class=".sightSelectors pointer" id="con">Constainta</li>
-						<li hidden class=".sightSelectors pointer" id="kb">Kalk Bay</li>
-						<li hidden class=".sightSelectors pointer" id="bl">Boulders</li>
-						<li hidden class=".sightSelectors pointer" id="chp">Chapmens Peak</li>
-						<li hidden class=".sightSelectors pointer" id="dsm">District Six Meusiem</li>
-						<li hidden class=".sightSelectors pointer" id="lh">Lions Head</li>
-						<li hidden class=".sightSelectors pointer" id="ri">Robin Island</li hidden>
+						<li class=".sightSelectors pointer" id="tm">Table Mountain / Cable Car</li>
+						<li class=".sightSelectors pointer" id="cp">Cape Point</li>
+						<li class=".sightSelectors pointer" id="bk">Bo-Koop</li>
+						<li class=".sightSelectors pointer" id="con">Constainta</li>
+						<li class=".sightSelectors pointer" id="kb">Kalk Bay</li>
+						<li class=".sightSelectors pointer" id="bl">Boulders</li>
+						<li class=".sightSelectors pointer" id="chp">Chapmens Peak</li>
+						<li class=".sightSelectors pointer" id="dsm">District Six Meusiem</li>
+						<li class=".sightSelectors pointer" id="lh">Lions Head</li>
+						<li class=".sightSelectors pointer" id="ri">Robin Island</li hidden>
 					</ul>
 				</div>
 				<!-- Google Maps and Information Section-->
 				<div  class="mapContainer">
-					<div hidden  id="map">map</div>
-					<div hidden class="information">
-						<h4 hidden class="info-heading">Some information</h4>
+					<div id="map">map</div>
+					<div  class="information">
+						<h4  class="info-heading">Some information</h4>
 					</div>
-					<div hidden class="info">
+					<div class="info">
 						information:information
 					</div>
 				</div>
@@ -101,13 +106,9 @@
 			<div class="feet">part 3</div>
 		</footer>
 
-		<!--<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaqAp28P-jkpfTyo9EZ6pP6VcGKEunTTk&callback=initMap"
-			async
-			defer
-		></script>-->
+	
 
-		<!--<script src="./JS/googleMaps.js"></script>-->
+		<script src="./JS/googleMaps.js"></script>
 		<script src="./JS/image-selector.js"></script>
 		<script src="./JS/locSeletor.js"></script>
 		<script src="./JS/main.js"></script>
