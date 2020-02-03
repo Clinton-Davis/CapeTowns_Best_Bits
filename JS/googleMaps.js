@@ -1,7 +1,39 @@
-document.getElementById("tm").addEventListener("click", initMap);
-var map,
-	locSelection = { lat: -33.9477229, lng: 18.4002639 },
-	marker;
+document.getElementById("tm").addEventListener("click", function() {
+	(locSelection = { lat: -33.9477229, lng: 18.4002639 }), initMap();
+});
+
+document.getElementById("cp").addEventListener("click", function() {
+	(locSelection = { lat: -34.3476358, lng: 18.4751317 }), initMap();
+});
+document.getElementById("bk").addEventListener("click", function() {
+	(locSelection = { lat: -33.9210519, lng: 18.3964133 }), initMap();
+});
+
+document.getElementById("con").addEventListener("click", function() {
+	(locSelection = { lat: -34.0275608, lng: 18.3964169 }), initMap();
+});
+document.getElementById("kb").addEventListener("click", function() {
+	(locSelection = { lat: -34.1284835, lng: 18.4126414 }), initMap();
+});
+document.getElementById("bl").addEventListener("click", function() {
+	(locSelection = { lat: -34.1972039, lng: 18.4162426 }), initMap();
+});
+document.getElementById("chp").addEventListener("click", function() {
+	(locSelection = { lat: -34.08604, lng: 18.3232238 }), initMap();
+});
+
+document.getElementById("dsm").addEventListener("click", function() {
+	(locSelection = { lat: -33.9270086, lng: 18.3894798 }), initMap();
+});
+document.getElementById("lh").addEventListener("click", function() {
+	(locSelection = { lat: -33.9350189, lng: 18.3539519 }), initMap();
+});
+document.getElementById("ri").addEventListener("click", function() {
+	(locSelection = { lat: -33.805019, lng: 18.369591 }), initMap();
+});
+var map, locSelection;
+marker;
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: locSelection,
