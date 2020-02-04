@@ -1,5 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
 document.getElementById("tm").addEventListener("click", function() {
-	(locSelection = { lat: -33.9477229, lng: 18.4002639 }), initMap();
+	(locSelection = { lat: -33.9477226, lng: 18.4002639 }), initMap();
 });
 
 document.getElementById("cp").addEventListener("click", function() {
