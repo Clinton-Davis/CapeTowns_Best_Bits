@@ -1,14 +1,25 @@
 
 
+function ocfinder(lnglat) {
+	eventDetails = "Event Name " + event.type + "ID " + event.id;
+	console.log(eventDetails);
+
+}
 
 
+/* document.addEventListener('click', handleClickEvents, false);
 
+function handleClickEvents(evt) {
+    myEventTarget = event.target;
 
+    if (myEventTarget.id === 'id1') {
 
+    } else if (myEventTarget.id === 'id2) {
 
+    }
+}*/
 
-
-
+/*
 document.getElementById("tm").addEventListener("click", function() {
 	(locSelection = { lat: -33.9477226, lng: 18.4002639 }), initMap();
 });
@@ -88,4 +99,4 @@ function initMap() {
 			: "Sorry to say, but your browser doesn't support geolocation."
 	);
 	infoWindow.open(map);
-}*/
+} */
