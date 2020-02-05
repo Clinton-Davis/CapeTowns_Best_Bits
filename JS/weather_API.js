@@ -7,13 +7,13 @@ const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 	if (this.readyState === 4 && this.status === 200) {
 		var obj = JSON.parse(this.responseText);
-		console.log(obj);
+		//console.log(obj);
 
 		var city = obj.name;
 		var temps = obj.main.temp_max + " / " + " " + obj.main.temp_min + " ˚C";
 		var wind = obj.wind.speed;
 		var direction = obj.wind.deg;
-		console.log(city, temps, wind);
+		//console.log(city, temps, wind);
 		if (direction > 349 || direction <= 12) {
 			var dir = "N";
 		} else if (direction > 12 && direction <= 34) {
