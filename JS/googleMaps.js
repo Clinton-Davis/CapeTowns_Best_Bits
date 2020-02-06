@@ -2,9 +2,7 @@
 //Table Mountain Cable Car
 let TM = {
 	Id: "ChIJdeCOYqJnzB0Rm5YhSFRUI2w",
-	info: `The Table Mountain Aerial Cableway Company has been providing visitors
-			with a world-class experience since October 4, 1929. The company 
-			operates in a National Park and World Heritage Site.`
+	info: `The Table Mountain Aerial Cableway Company has been providing visitors with a world-class experience since October 4, 1929. The company operates in a National Park and World Heritage Site.`
 };
 //Cape Point
 let CP = {
@@ -123,11 +121,17 @@ function locfinder(locfinder_id) {
 					position: place.geometry.location,
 					title: place.name
 				});
+
 				var name = place.name;
 				var rating = place.rating;
 				var icon = place.icon;
 
 				console.log(name, rating, icon);
+				if (rating == undefined) {
+					var rating = " ";
+				} else {
+					var rating = place.rating;
+				}
 				var markerData =
 					'<div class="infowindowContiner">' +
 					'<div class="infowidHeading">' +
@@ -144,11 +148,9 @@ function locfinder(locfinder_id) {
 					"</div>" +
 					'<div class="rating">' +
 					'<p class="rating">' +
-					"Ratings" +
 					" " +
 					`${rating}` +
 					" " +
-					"/5" +
 					"Make Stars";
 				("</p>");
 				"</div>" + "</div>" + "</div>";
@@ -158,6 +160,8 @@ function locfinder(locfinder_id) {
 				});
 				map.setCenter(marker.getPosition());
 				infowindow.open(Map, marker);
+			} else {
+				console.log("states error");
 			}
 		}
 	}
