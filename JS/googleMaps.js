@@ -1,26 +1,95 @@
+/*=-=-=-=-=-=-SIGHT SEEING INFORMAION OBJECTS-=-=-*/
+//Table Mountain Cable Car
 let TM = {
 	Id: "ChIJdeCOYqJnzB0Rm5YhSFRUI2w",
-	about: `The Table Mountain Aerial Cableway Company has been providing visitors
+	info: `The Table Mountain Aerial Cableway Company has been providing visitors
 			with a world-class experience since October 4, 1929. The company 
 			operates in a National Park and World Heritage Site.`
 };
+//Cape Point
 let CP = {
 	Id: "ChIJAf2PqQkjzB0RTEFJZ9rJSSM",
-	about: ""
+	info: ""
 };
+//Boo-Kaap
 let BK = {
 	Id: "ChIJLSz2VWhnzB0Rpm9vazg9yw4",
-	about: ""
+	info: ""
+};
+// Constainta
+let CON = {
+	Id: "ChIJ29Ra-NNpzB0R03JXGGkr6Bo",
+	info: ""
+};
+// Kalk Bay
+let KB = {
+	Id: "ChIJu2x0EhZAzB0RCyIwnb_NXFY",
+	info: ""
+};
+// Boulders Beach/Penguins
+let BL = {
+	Id: "ChIJvxVitEk-zB0RVJetXFk0qww",
+	info: ""
+};
+// Chapmens Peak Drive
+let CHP = {
+	Id: "ChIJVagz7BNpzB0Rv9p0tMDvZsg",
+	info: ""
+};
+// Distrct Six Mus
+let DSM = {
+	Id: "ChIJXdpUhHtnzB0RI8TYhHL5028",
+	info: ""
+};
+// Lions Head
+let LH = {
+	Id: "ChIJ7Tf0rQVnzB0REQJgaykzKEg",
+	info: ""
+};
+// Robin Island
+let RI = {
+	Id: "ChIJy3XfS2WKzB0RYZDeLkVkb30",
+	info: ""
 };
 
+// locfinder is the onClick function to initMap on clicked Location
 function locfinder(locfinder_id) {
 	console.log(locfinder_id);
-	if (locfinder_id === "tm") {
-		(iD = "ChIJdeCOYqJnzB0Rm5YhSFRUI2w"),
-			(about = `The Table Mountain Aerial Cableway Company has been providing visitors with a world-class experience since October 4, 1929. The company operates in a National Park and World Heritage Site.`),
-			initMap();
+	switch (locfinder_id) {
+		case "tm":
+			(iD = TM.Id), (info = TM.info), initMap();
+			break;
+		case "cp":
+			(iD = CP.Id), (info = CP.info), initMap();
+			break;
+		case "bk":
+			(iD = BK.Id), (info = BK.info), initMap();
+			break;
+		case "con":
+			(iD = CON.Id), (info = CON.info), initMap();
+			break;
+		case "kb":
+			(iD = KB.Id), (info = KB.info), initMap();
+			break;
+		case "bl":
+			(iD = BL.Id), (info = BL.info), initMap();
+			break;
+		case "chp":
+			(iD = CHP.Id), (info = CHP.info), initMap();
+			break;
+
+		case "dsm":
+			(iD = DSM.Id), (info = DSM.info), initMap();
+			break;
+		case "lh":
+			(iD = LH.Id), (info = LH.info), initMap();
+			break;
+		case "ri":
+			(iD = RI.Id), (info = RI.info), initMap();
+			break;
+		default:
+			console.log("ERROR");
 	}
-	//initMap();
 
 	function initMap() {
 		map = new google.maps.Map(document.getElementById("map"), {
@@ -68,7 +137,7 @@ function locfinder(locfinder_id) {
 					"</div>" +
 					'<div class="infowindoBody">' +
 					'<p class="infobody">' +
-					`${about}` +
+					`${info}` +
 					"</p>" +
 					'<div class="scocial">' +
 					"facebook webpage" +
