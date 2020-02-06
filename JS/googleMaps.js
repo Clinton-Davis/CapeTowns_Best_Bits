@@ -28,9 +28,46 @@ function initMap() {
 		if (status == google.maps.places.PlacesServiceStatus.OK) {
 			var marker = new google.maps.Marker({
 				map: map,
-				position: place.geometry.location
+				position: place.geometry.location,
+				title: place.name
+			});
+			var name = place.name;
+			var rating = place.rating;
+			var icon = place.icon;
+
+			console.log(name, rating, icon);
+			var markerData =
+				'<div class="infowindowContiner">' +
+				'<div class="infowidHeading">' +
+				'<h2 class="infoHeading">' +
+				`${name}` +
+				"</h2>" +
+				"</div>" +
+				'<div class="infowindoBody">' +
+				'<p class="infobody">' +
+				"</p>" +
+				'<div class="scocial">' +
+				"facebook webpage" +
+				"</div>" +
+				'<div class="rating">' +
+				'<p class="rating">' +
+				"Ratings" +
+				" " +
+				`${rating}` +
+				" " +
+				"/5" +
+				"Make Stars";
+			("</p>");
+			"</div>" + "</div>" + "</div>";
+
+			var infowindow = new google.maps.InfoWindow({
+				content: markerData
 			});
 			map.setCenter(marker.getPosition());
+			infowindow.open(Map, marker);
 		}
 	}
 }
+//'<h1 id="firstHeading" class="firstHeading">' +
+//				`${name}` +
+//				"</h1>";

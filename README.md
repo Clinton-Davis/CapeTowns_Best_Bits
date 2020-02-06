@@ -9,6 +9,10 @@ Google Maps Help: https://developers.google.com/maps/documentation/javascript/ge
 
 map locations:
 Table mountain = -33.9477229,18.4002639 / places id = ChIJdeCOYqJnzB0Rm5YhSFRUI2w
+var TMinfo = "The Table Mountain Aerial Cableway Company has been providing visitors" +
+"with a world-class experience since October 4, 1929. The company" +
+"operates in a National Park and World Heritage Site." +
+
 Cape point = -34.3476358,18.4751317 / places id = ChIJAf2PqQkjzB0RTEFJZ9rJSSM get price
 bo-koop = -33.9210519,18.3964133 / places id = ChIJLSz2VWhnzB0Rpm9vazg9yw4
 Constainta = -34.0275608,18.3964169 / places id = ChIJ29Ra-NNpzB0R03JXGGkr6Bo
