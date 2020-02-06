@@ -63,37 +63,37 @@ let BT = {
 //Abseil Table Mountain abseilafrica.co.za
 let ABT = {
 	Id: "ChIJ846ZPb5nzB0RCXS_Tom7p9w",
-	info: `EXPLORE CAPE TOWN AND SURROUNDS WITH US
-	Abseil Africa is OPEN 7 days a week between 08:30 – 16:00.
-	Bad weather may affect our operation status.
-	Book your trips with us – we want to take you on an adventure of a lifetime!`
+	info: `EXPLORE CAPE TOWN AND SURROUNDS WITH US Abseil Africa is OPEN 7 days a week between 08:30 – 16:00. Bad weather may affect our operation status. Book your trips with us – we want to take you on an adventure of a lifetime!`
 };
-//Wineland Ballooning Cape Town
+//Wineland Ballooning Cape Town kapinfo.com
 let BAL = {
 	Id: "ChIJgfmZnllnzB0RPihXS4A96ZA",
-	info: ""
+	info: `Wineland Ballooning offers daily scenic Hot Air Balloon flights over the naturally beautiful Berg River Valley,  one of South Africas famous wine regions.
+	On nearly every flight,  while gently floating away,  can we see majestic Table Mountain in the distance and on particularly spectacular days you may even see the Atlantic Ocean with the  “Cape of Good Hope”  100 km away.
+	Each flight is totally unique and no two flights are exactly the same.`
 };
-//Shark Bookings
+//Shark Bookings sharkbookings.com
 let SD = {
 	Id: "ChIJY3iy6x0Rzh0RKtT-ViOf004",
-	info: ""
+	info: `Shark Bookings has been in operation since 2003 as a central bookings office for the most reputable shark diving operators in South Africa. We have by far the most competitive prices for shark cage diving in Cape Town & Gansbaai, and we offer trips to Mossel Bay and Durban. We work with only the best operators, all of whom are fully licensed and registered. And best of all, bookings are in real time, with instant confirmation, there is no waiting around, just book, pay and go shark diving. `
 };
-//Zipline - Cape Canopy Tour
+//Zipline - Cape Canopy Tour capecanopytour.co.za
 let ZP = {
 	Id: "ChIJfWMCP3THzR0R_8QVpSATqYM",
-	info: ""
+	info: `A zipline canopy tour in the company of soaring eagles, surrounded by breath-taking Cape fynbos panoramas and mountainscapes only an hour’s drive from Cape Town by car could well be exactly what you are looking for. Thrilled zipliners who have completed the course have described it as super safe. One commented that the quality of the structure and equipment was reassuringly high and had made her fear of heights irrelevant.`
 };
-//Scootours Cape Town
+//Scootours Cape Town scootours.co.za
 let SC = {
 	Id: "ChIJAxwYC6dnzB0RihwwcBrKwYE",
-	info: ""
+	info: `Enjoy an exhilarating downhill descent on the Monster Mountain® Scooters. Scootours® is not an extreme activity but a unique and family friendly way to experience nature and the surroundings of your holiday destination. Scootours make use of non motorised Monster Mountain® Scooters, making this an eco friendly adventure. These Swiss designed scooters are used in the Alps during their summer season on the ski slopes when the snow has melted.`
 };
-//Lions Head - Hike Addicts
+//Lions Head - Hike Addicts hikeaddicts.com
 let HH = {
 	Id: "ChIJ1_u4UbNnzB0RH1tMJWyQWrI",
-	info: ""
+	info: `Cape Town is an adventure hotspot featuring an endless variety of exciting activities. At Hike Addicts we are pleased to offer a diverse selection of Cape Town’s most exhilarating tours on one platform.
+			Table Mountain shows off its exceptional beauty all year round and for the more adventurous souls, hiking Table Mountain is possibly the most rewarding and amazing experience you will have in Cape Town.`
 };
-//Cape Toewn Helicotpers
+//Cape Toewn Helicotpers helicopterscapetown.co.za
 let HT = {
 	Id: "ChIJN4QZT1ZnzB0Rq1OQmhhKoFc",
 	info: ""
@@ -173,7 +173,6 @@ function locationFinder(locationFinder_id) {
 				"rating",
 				"formatted_phone_number",
 				"geometry",
-				"icon",
 				"plus_code",
 				"website",
 				"opening_hours",
@@ -195,8 +194,9 @@ function locationFinder(locationFinder_id) {
 				var name = place.name;
 				var rating = place.rating;
 				var icon = place.icon;
+				var website = place.website;
 
-				console.log(name, rating, icon);
+				console.log(name, rating, icon, website);
 				if (rating == undefined) {
 					var rating = " ";
 				} else {
@@ -214,7 +214,8 @@ function locationFinder(locationFinder_id) {
 					`${info}` +
 					"</p>" +
 					'<div class="scocial">' +
-					"facebook webpage" +
+					"facebook" +
+					`${website}` +
 					"</div>" +
 					'<div class="rating">' +
 					'<p class="rating">' +
@@ -236,6 +237,3 @@ function locationFinder(locationFinder_id) {
 		}
 	}
 }
-//'<h1 id="firstHeading" class="firstHeading">' +
-//				`${name}` +
-//				"</h1>";}
