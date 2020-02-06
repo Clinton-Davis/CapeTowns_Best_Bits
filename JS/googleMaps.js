@@ -1,13 +1,23 @@
-initMap();
+function locfinder(locfinder_id) {
+	console.log(locfinder_id);
+	if (locfinder_id === "cp") {
+		var clickedId = "ChIJAf2PqQkjzB0RTEFJZ9rJSSM";
+	} else if (locfinder_id === "bk") {
+		var clickedId = "ChIJLSz2VWhnzB0Rpm9vazg9yw4";
+	}
+	console.log(clickedId);
+}
+//initMap();
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
-		center: { lat: -33.8666, lng: 151.1958 },
+		center: { lat: -33.9142686, lng: 18.0955572 },
 		zoom: 14,
 		mapTypeId: "terrain"
 	});
 
 	var request = {
-		placeId: "ChIJdeCOYqJnzB0Rm5YhSFRUI2w",
+		placeId: ,
 		fields: [
 			"name",
 			"rating",
