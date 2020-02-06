@@ -49,7 +49,55 @@ let RI = {
 	Id: "ChIJy3XfS2WKzB0RYZDeLkVkb30",
 	info: `Historical landmark known for housing political prisoners such as Nelson Mandela, now with a museum.`
 };
-
+//-=-=-=-=-=--=-=-=-ADVENTURE=-=-=--=-=-=--=-=
+//Kayak Cape Town
+let KAY = {
+	Id: "ChIJG31DwhJnzB0RC9C77ufuck0",
+	info: `Kayaking is vastly becoming one of the top Adventure Activities that Cape Town has to offer. With our guided Kayak Tour in Hout Bay and state of the art equipment - let Kayak Adventures take you on a scenic excursion that you won't forget!`
+};
+//Waterfront Charters - Daily Boat Trips & Private Tours https://waterfrontcharters.co.za/
+let BT = {
+	Id: "ChIJAQAAwFlnzB0RJAucQXCvvXk",
+	info: ""
+};
+//Abseil Table Mountain abseilafrica.co.za
+let ABT = {
+	Id: "ChIJ846ZPb5nzB0RCXS_Tom7p9w",
+	info: `EXPLORE CAPE TOWN AND SURROUNDS WITH US
+	Abseil Africa is OPEN 7 days a week between 08:30 – 16:00.
+	Bad weather may affect our operation status.
+	Book your trips with us – we want to take you on an adventure of a lifetime!`
+};
+//Wineland Ballooning Cape Town
+let BAL = {
+	Id: "ChIJgfmZnllnzB0RPihXS4A96ZA",
+	info: ""
+};
+//Shark Bookings
+let SD = {
+	Id: "ChIJY3iy6x0Rzh0RKtT-ViOf004",
+	info: ""
+};
+//Zipline - Cape Canopy Tour
+let ZP = {
+	Id: "ChIJfWMCP3THzR0R_8QVpSATqYM",
+	info: ""
+};
+//Scootours Cape Town
+let SC = {
+	Id: "ChIJAxwYC6dnzB0RihwwcBrKwYE",
+	info: ""
+};
+//Lions Head - Hike Addicts
+let HH = {
+	Id: "ChIJ1_u4UbNnzB0RH1tMJWyQWrI",
+	info: ""
+};
+//Cape Toewn Helicotpers
+let HT = {
+	Id: "ChIJN4QZT1ZnzB0Rq1OQmhhKoFc",
+	info: ""
+};
 // locationFinder is the onClick function to initMap on clicked Location
 function locationFinder(locationFinder_id) {
 	console.log(locationFinder_id);
@@ -84,9 +132,31 @@ function locationFinder(locationFinder_id) {
 			break;
 		case "ri":
 			(iD = RI.Id), (info = RI.info), initMap();
+			break; //addventure starts
+		case "bt":
+			(iD = BT.Id), (info = BT.info), initMap();
 			break;
-		default:
-			console.log("ERROR");
+		case "abt":
+			(iD = ABT.Id), (info = ABT.info), initMap();
+			break;
+		case "bal":
+			(iD = BAL.Id), (info = BAL.info), initMap();
+			break;
+		case "sd":
+			(iD = SD.Id), (info = SD.info), initMap();
+			break;
+		case "zp":
+			(iD = ZP.Id), (info = ZP.info), initMap();
+			break;
+		case "sc":
+			(iD = SC.Id), (info = SC.info), initMap();
+			break;
+		case "hh":
+			(iD = HH.Id), (info = HH.info), initMap();
+			break;
+		case "ht":
+			(iD = HT.Id), (info = HT.info), initMap();
+			break;
 	}
 
 	function initMap() {
