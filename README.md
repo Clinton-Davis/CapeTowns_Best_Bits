@@ -8,12 +8,10 @@ Had a issue with footer jumping up and down when my divs where shoing and hiding
 Google Maps Help: https://developers.google.com/maps/documentation/javascript/geolocation
 
 map locations:
-Table mountain = -33.9477229,18.4002639 / places id = ChIJdeCOYqJnzB0Rm5YhSFRUI2w
-var TMinfo = "The Table Mountain Aerial Cableway Company has been providing visitors" +
-"with a world-class experience since October 4, 1929. The company" +
-"operates in a National Park and World Heritage Site." +
+Table mountain = / places id = ChIJdeCOYqJnzB0Rm5YhSFRUI2w
+var about = `The Table Mountain Aerial Cableway Company has been providing visitors with a world-class experience since October 4, 1929. The company operates in a National Park and World Heritage Site.`
 
-Cape point = -34.3476358,18.4751317 / places id = ChIJAf2PqQkjzB0RTEFJZ9rJSSM get price
+Cape point = places id = ChIJAf2PqQkjzB0RTEFJZ9rJSSM
 bo-koop = -33.9210519,18.3964133 / places id = ChIJLSz2VWhnzB0Rpm9vazg9yw4
 Constainta = -34.0275608,18.3964169 / places id = ChIJ29Ra-NNpzB0R03JXGGkr6Bo
 Kalk Bay = -34.1284835,18.4126414 / places id = ChIJu2x0EhZAzB0RCyIwnb_NXFY
