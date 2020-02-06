@@ -30,6 +30,12 @@ info = `Boasting panoramic views of the city, this landmark mountain offers hiki
 robin Island = places id = ChIJy3XfS2WKzB0RYZDeLkVkb30
 info = `Historical landmark known for housing political prisoners such as Nelson Mandela, now with a museum.`
 
+ADVENTURE SECTION:
+
+Kayak Adventures - Kayak Tours Cape Town = id="kay"
+webpage = https://www.kayakadventures.capetown/
+info = `Kayaking is vastly becoming one of the top Adventure Activities that Cape Town has to offer. With our guided Kayak Tour in Hout Bay and state of the art equipment - let Kayak Adventures take you on a scenic excursion that you won't forget!`
+
     			infoWindow.setPosition(pos);
     			infoWindow.setContent("Location found.");
     			infoWindow.open(map);

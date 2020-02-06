@@ -50,10 +50,10 @@ let RI = {
 	info: `Historical landmark known for housing political prisoners such as Nelson Mandela, now with a museum.`
 };
 
-// locfinder is the onClick function to initMap on clicked Location
-function locfinder(locfinder_id) {
-	console.log(locfinder_id);
-	switch (locfinder_id) {
+// locationFinder is the onClick function to initMap on clicked Location
+function locationFinder(locationFinder_id) {
+	console.log(locationFinder_id);
+	switch (locationFinder_id) {
 		case "tm":
 			(iD = TM.Id), (info = TM.info), initMap();
 			break;
