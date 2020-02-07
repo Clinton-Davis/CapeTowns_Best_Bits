@@ -103,6 +103,65 @@ let adventureJSON = {
 		info: `""`
 	}
 };
+//-=-=-=-=-=--=-=-=-FOODIES JSON=-=-=--=-=-=--=-=
+let foodiesJSON = {
+	//Jonkershuis Restaurant
+	JH: {
+		Id: "ChIJe6PtQ9FpzB0R4YORfViLQ5s",
+		info: `Jonkershuis Constantia is nestled in the historic core of the Groot Constantia Wine Estate
+		next to the historic Manor House and surrounded by ancient oak trees.
+		Your first impression is dominated by sweeping views across the oldest wine producing vineyards in South Africa,
+		down the valley to the enveloping coastline of False Bay.
+		Jonkershuis eatery is very conscious of the provenance, sustainability and the ethical content of all the food prepared, as well as reflecting the rich Cape Malay heritage of our ‘home’.
+		Jonkershuis boasts a diversity of locations from private dining grandeur, to intimate interior fire side dining;
+		typical Italian village gatherings in the covered courtyard to family style lunches on their front lawns,
+		were children can safely play amongst the old oak trees.`
+	},
+	//Snoekies
+	SHB: {
+		Id: " ChIJgcBEXzhpzB0R2_0Gu9eDcIA",
+		info: `Hans’s purchased an old bus, which he converted into a takeaway cafe and positioned it at the end of Harbour Road, Hout Bay. They named the take-away cafe, Snoekies from where they served fish & chips to the local fishermen. Hans’s wife ran the Snoekies take-away cafe whilst he experimented with smoking fish and they found that his smoked snoek sold well at the café. Before long they found it difficult to keep up with the demand from their garage at home and in 1956 he built a factory in the Hout Bay Harbour.`
+	},
+	//Harbour House Kalk Bay
+	HHKB: {
+		Id: "ChIJHWikDhRAzB0RyOvryzibbV8",
+		info: `Sitting on the harbour wall it's self is an elegant yet relaxed seafood restaurant with a deck overlooking fishing boats, ocean and mountains.`
+	},
+	//Mamma Afirca
+	MA: {
+		Id: "ChIJ-f-De2VnzB0RwYNmkT4nR1A",
+		info: `Mama Africa Cape Town enjoys the distinction as a Long Street institution. It is the most unique experience you will have during your visit in Africa. Nowhere else exists where you can be Africa. You can view awesome African sunsets from the top of Table Mountain. But, if you want to immerse yourself in African history and culture, you must visit Mama Africa restaurant and be Africa.`
+	},
+	//The Shortmarket Club
+	TSC: {
+		Id: "ChIJ6cobfmZnzB0Rj3KoGeEf7d8",
+		info: `Open for lunch and dinner and, in keeping with its luxe old-world feel, many of the dishes are modern interpretations of classics as only chef Randles can do. Where most chefs use ‘seasonal’ and ‘sustainable’ as meaningless selling points, Randles fully embraces it. The restaurant works closely with local suppliers for all of their ingredients, which in turn inspire the menus. As a result, Randles’ food is instantly identifiable. Inventive, playful and refreshed, the dishes he puts on the Shortmarket menus are ever-changing.`
+	},
+	//Stardust Theatrical Dining
+	STD: {
+		Id: "ChIJc6IAMYRdzB0R9yLw41HjQtM",
+		info: `This is no ordinary restaurant. This is the home of the singing waiter! Tonight, not only will you enjoy the wholesome, sumptuous taste of our designer tagine menu and the buzz of our wine bar’s best and brightest, but you’ll also be served and entertained by the shining stars of Cape Town’s immense pool of talented young performers. Make sure you get your waiter’s`
+	},
+	//Chefs Warehouse & Canteen
+	CWC: {
+		Id: "ChIJc6IAMYRdzB0R9yLw41HjQtM",
+		info: `Liam Tomlin opened Banc restaurant in Sydney in 1997 where he garnered many accolades including 3 Chef Hats.
+		Relocating to South Africa in 2003 he consulted to various projects within the hospitality industry and in 2010 opened Chefs Warehouse and Cookery School, Cape Town.
+		In 2014 the concept was changed, and Chefs Warehouse and Canteen began serving fine-dining quality global tapas.`
+	},
+	//Cape Point Vineyards Restaurant
+	CPVR: {
+		Id: "ChIJ4RIv5klqzB0RK47qApYWst8",
+		info: `Cape Point Vineyards, a unique farm in Noordhoek where vines are lazily nestled between mountains and ocean. Cool breezes from the sea make for a slow growing season, with a late harvest that results in a truly unique Sauvignon Blanc that is recognised across the globe for it’s rich minerality, structure and tone.`
+	},
+	//Monkey Valley Resort
+	MVR: {
+		Id: "ChIJ7xQ8UL9rzB0R0T8uHTXAJvU",
+		info: `Nestled within the Milkwood forest at the foot of Chapman’s Peak Noordhoek is Monkey Valley Resort.
+		The resort has an unrivaled view of the Noordhoek beach and nature reserve.
+		Monkey Valley was built with a sustainable environmentally friendly ethos in order to preserve the natural beauty of the area.`
+	}
+};
 // locationFinder is the onClick function to initMap on clicked Location
 function locationFinder(locationFinder_id) {
 	console.log(locationFinder_id);
@@ -161,6 +220,33 @@ function locationFinder(locationFinder_id) {
 		case "ht":
 			(iD = adventureJSON.HT.Id), (info = adventureJSON.HT.info), initMap();
 			break; // Foodies Strars
+		case "jh":
+			(iD = foodiesJSON.JH.Id), (info = foodiesJSON.JH.info), initMap();
+			break;
+		case "shb":
+			(iD = foodiesJSON.SHB.Id), (info = foodiesJSON.SHB.info), initMap();
+			break;
+		case "hhkb":
+			(iD = foodiesJSON.HHKB.Id), (info = foodiesJSON.HHKB.info), initMap();
+			break;
+		case "ma":
+			(iD = foodiesJSON.MA.Id), (info = foodiesJSON.MA.info), initMap();
+			break;
+		case "tsc":
+			(iD = foodiesJSON.TSC.Id), (info = foodiesJSON.TSC.info), initMap();
+			break;
+		case "std":
+			(iD = foodiesJSON.STD.Id), (info = foodiesJSON.STD.info), initMap();
+			break;
+		case "cwc":
+			(iD = foodiesJSON.CWC.Id), (info = foodiesJSON.CWC.info), initMap();
+			break;
+		case "cpvr":
+			(iD = foodiesJSON.CPVR.Id), (info = foodiesJSON.CPVR.info), initMap();
+			break;
+		case "mvr":
+			(iD = foodiesJSON.MVR.Id), (info = foodiesJSON.MVR.info), initMap();
+			break;
 	}
 
 	function initMap() {

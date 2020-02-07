@@ -38,7 +38,7 @@ info = `Kayaking is vastly becoming one of the top Adventure Activities that Cap
 
 foodies:
 
-Jonkershuis Restaurant id=jh placeId = ChIJe6PtQ9FpzB0R4YORfViLQ5s // menu: jonkershuisconstantia.co.za
+Jonkershuis Restaurant id="jh" placeId = ChIJe6PtQ9FpzB0R4YORfViLQ5s // menu: jonkershuisconstantia.co.za
 info:
 Jonkershuis Constantia is nestled in the historic core of the Groot Constantia Wine Estate
 next to the historic Manor House and surrounded by ancient oak trees.
@@ -72,10 +72,18 @@ This is no ordinary restaurant. This is the home of the singing waiter! Tonight,
 Chefs Warehouse & Canteen id=cwc placeId = ChIJc6IAMYRdzB0R9yLw41HjQtM // chefswarehouse.co.za
 info:
 Liam Tomlin opened Banc restaurant in Sydney in 1997 where he garnered many accolades including 3 Chef Hats.
-
 Relocating to South Africa in 2003 he consulted to various projects within the hospitality industry and in 2010 opened Chefs Warehouse and Cookery School, Cape Town.
-
 In 2014 the concept was changed, and Chefs Warehouse and Canteen began serving fine-dining quality global tapas.
+
+Cape Point Vineyards Restaurant id="cpv" placeId = ChIJ4RIv5klqzB0RK47qApYWst8 menue: cpv.co.za
+info:
+Cape Point Vineyards, a unique farm in Noordhoek where vines are lazily nestled between mountains and ocean. Cool breezes from the sea make for a slow growing season, with a late harvest that results in a truly unique Sauvignon Blanc that is recognised across the globe for it’s rich minerality, structure and tone.
+
+Monkey Valley Resort id="mvr" placeId = ChIJ7xQ8UL9rzB0R0T8uHTXAJvU menu: https://www.monkeyvalleyresort.com/menu/
+info:
+Nestled within the Milkwood forest at the foot of Chapman’s Peak Noordhoek is Monkey Valley Resort.
+The resort has an unrivaled view of the Noordhoek beach and nature reserve.
+Monkey Valley was built with a sustainable environmentally friendly ethos in order to preserve the natural beauty of the area.
 
     			infoWindow.setPosition(pos);
     			infoWindow.setContent("Location found.");
