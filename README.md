@@ -36,6 +36,47 @@ Kayak Adventures - Kayak Tours Cape Town = id="kay"
 webpage = https://www.kayakadventures.capetown/
 info = `Kayaking is vastly becoming one of the top Adventure Activities that Cape Town has to offer. With our guided Kayak Tour in Hout Bay and state of the art equipment - let Kayak Adventures take you on a scenic excursion that you won't forget!`
 
+foodies:
+
+Jonkershuis Restaurant id=jh placeId = ChIJe6PtQ9FpzB0R4YORfViLQ5s // menu: jonkershuisconstantia.co.za
+info:
+Jonkershuis Constantia is nestled in the historic core of the Groot Constantia Wine Estate
+next to the historic Manor House and surrounded by ancient oak trees.
+Your first impression is dominated by sweeping views across the oldest wine producing vineyards in South Africa,
+down the valley to the enveloping coastline of False Bay.
+Jonkershuis eatery is very conscious of the provenance, sustainability and the ethical content of all the food prepared, as well as reflecting the rich Cape Malay heritage of our ‘home’.
+Jonkershuis boasts a diversity of locations from private dining grandeur, to intimate interior fire side dining;
+typical Italian village gatherings in the covered courtyard to family style lunches on their front lawns,
+were children can safely play amongst the old oak trees.
+
+Snoekies Hout Bay id=sk placeId = ChIJgcBEXzhpzB0R2_0Gu9eDcIA // menu: https://www.snoekies.co.za/wp-2017/menu-2/
+info:
+Hans’s purchased an old bus, which he converted into a takeaway cafe and positioned it at the end of Harbour Road, Hout Bay. They named the take-away cafe, Snoekies from where they served fish & chips to the local fishermen. Hans’s wife ran the Snoekies take-away cafe whilst he experimented with smoking fish and they found that his smoked snoek sold well at the café. Before long they found it difficult to keep up with the demand from their garage at home and in 1956 he built a factory in the Hout Bay Harbour.
+
+Harbour House Kalk Bay id=hhkb placeId = ChIJHWikDhRAzB0RyOvryzibbV8 //http://www.harbourhouse.co.za/menus/
+info:
+Elegant yet relaxed seafood restaurant with a deck overlooking fishing boats, ocean and mountains.
+
+Mamma Afirca id=ma placeId = ChIJ-f-De2VnzB0RwYNmkT4nR1A // menu //http://mamaafricarestaurant.co.za/menu
+info:
+Mama Africa Cape Town enjoys the distinction as a Long Street institution. It is the most unique experience you will have during your visit in Africa. Nowhere else exists where you can be Africa. You can view awesome African sunsets from the top of Table Mountain. But, if you want to immerse yourself in African history and culture, you must visit Mama Africa restaurant and be Africa.
+
+The Shortmarket Club id=sc placeId = ChIJ6cobfmZnzB0Rj3KoGeEf7d8 // menu :theshortmarketclub.co.za
+info:
+Open for lunch and dinner and, in keeping with its luxe old-world feel, many of the dishes are modern interpretations of classics as only chef Randles can do. Where most chefs use ‘seasonal’ and ‘sustainable’ as meaningless selling points, Randles fully embraces it. The restaurant works closely with local suppliers for all of their ingredients, which in turn inspire the menus. As a result, Randles’ food is instantly identifiable. Inventive, playful and refreshed, the dishes he puts on the Shortmarket menus are ever-changing,
+
+Stardust Theatrical Dining id=std placeId = ChIJc6IAMYRdzB0R9yLw41HjQtM // menu: http://stardustcapetown.com/wordpress/mixed-menu-setup/
+info:
+This is no ordinary restaurant. This is the home of the singing waiter! Tonight, not only will you enjoy the wholesome, sumptuous taste of our designer tagine menu and the buzz of our wine bar’s best and brightest, but you’ll also be served and entertained by the shining stars of Cape Town’s immense pool of talented young performers. Make sure you get your waiter’s
+
+Chefs Warehouse & Canteen id=cwc placeId = ChIJc6IAMYRdzB0R9yLw41HjQtM // chefswarehouse.co.za
+info:
+Liam Tomlin opened Banc restaurant in Sydney in 1997 where he garnered many accolades including 3 Chef Hats.
+
+Relocating to South Africa in 2003 he consulted to various projects within the hospitality industry and in 2010 opened Chefs Warehouse and Cookery School, Cape Town.
+
+In 2014 the concept was changed, and Chefs Warehouse and Canteen began serving fine-dining quality global tapas.
+
     			infoWindow.setPosition(pos);
     			infoWindow.setContent("Location found.");
     			infoWindow.open(map);
