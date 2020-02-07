@@ -1,4 +1,4 @@
-/*=-=-=-=-=-=-SIGHT SEEING INFORMAION OBJECTS-=-=-*/
+/*=-=-=-=-=-=-SIGHT SEEING JSON-=-=-*/
 let sightsJSON = {
 	TM: {
 		Id: "ChIJdeCOYqJnzB0Rm5YhSFRUI2w",
@@ -52,7 +52,7 @@ let sightsJSON = {
 	}
 };
 
-//-=-=-=-=-=--=-=-=-ADVENTURE=-=-=--=-=-=--=-=
+//-=-=-=-=-=--=-=-=-ADVENTURE JSON=-=-=--=-=-=--=-=
 let adventureJSON = {
 	//Kayak Cape Town
 	KAY: {
@@ -73,8 +73,8 @@ let adventureJSON = {
 	BAL: {
 		Id: "ChIJgfmZnllnzB0RPihXS4A96ZA",
 		info: `Wineland Ballooning offers daily scenic Hot Air Balloon flights over the naturally beautiful Berg River Valley, one of South Africas famous wine regions.
-			On nearly every flight, while gently floating away, can we see majestic Table Mountain in the distance and on particularly spectacular days you may even see the Atlantic Ocean with the  'Cape of Good Hope'  100 km away.
-			Each flight is totally unique and no two flights are exactly the same.`
+			   On nearly every flight, while gently floating away, can we see majestic Table Mountain in the distance and on particularly spectacular days you may even see the Atlantic Ocean with the  'Cape of Good Hope'  100 km away.
+			   Each flight is totally unique and no two flights are exactly the same.`
 	},
 	//Shark Bookings sharkbookings.com
 	SD: {
@@ -128,7 +128,6 @@ function locationFinder(locationFinder_id) {
 		case "chp":
 			(iD = sightsJSON.CHP.Id), (info = sightsJSON.CHP.info), initMap();
 			break;
-
 		case "dsm":
 			(iD = sightsJSON.DSM.Id), (info = sightsJSON.DSM.info), initMap();
 			break;
@@ -139,28 +138,28 @@ function locationFinder(locationFinder_id) {
 			(iD = sightsJSON.RI.Id), (info = sightsJSON.RI.info), initMap();
 			break; //addventure starts
 		case "bt":
-			(iD = BT.Id), (info = BT.info), initMap();
+			(iD = adventureJSON.BT.Id), (info = adventureJSON.BT.info), initMap();
 			break;
 		case "abt":
-			(iD = ABT.Id), (info = ABT.info), initMap();
+			(iD = adventureJSON.ABT.Id), (info = adventureJSON.ABT.info), initMap();
 			break;
 		case "bal":
-			(iD = BAL.Id), (info = BAL.info), initMap();
+			(iD = adventureJSON.BAL.Id), (info = adventureJSON.BAL.info), initMap();
 			break;
 		case "sd":
-			(iD = SD.Id), (info = SD.info), initMap();
+			(iD = adventureJSON.SD.Id), (info = adventureJSON.SD.info), initMap();
 			break;
 		case "zp":
-			(iD = ZP.Id), (info = ZP.info), initMap();
+			(iD = adventureJSON.ZP.Id), (info = adventureJSON.ZP.info), initMap();
 			break;
 		case "sc":
-			(iD = SC.Id), (info = SC.info), initMap();
+			(iD = adventureJSON.SC.Id), (info = adventureJSON.SC.info), initMap();
 			break;
 		case "hh":
-			(iD = HH.Id), (info = HH.info), initMap();
+			(iD = adventureJSON.HH.Id), (info = adventureJSON.HH.info), initMap();
 			break;
 		case "ht":
-			(iD = HT.Id), (info = HT.info), initMap();
+			(iD = adventureJSON.HT.Id), (info = adventureJSON.HT.info), initMap();
 			break; // Foodies Strars
 	}
 
@@ -224,11 +223,10 @@ function locationFinder(locationFinder_id) {
 					"</div>" +
 					'<div class="rating">' +
 					'<p class="rating">' +
+					`<img src="./assets/images/icons/starx24px.ico" alt="star rating">` +
 					" " +
 					`${rating}` +
-					" " +
-					"Make Stars";
-				("</p>");
+					"</p>";
 				"</div>" + "</div>" + "</div>";
 
 				var infowindow = new google.maps.InfoWindow({
