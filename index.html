@@ -20,16 +20,16 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navContainer">
-				<div class="liveWeather mar">
-					<h4 class="head-ff" id="weatherLoc">Cape Town</h4>
-					<p id="temp-api" class="weatherData">H/L</p>
-					<p id="wind-api" class="weatherData">Wind</p>
-				</div>
-				<div class="navList">
-					<div class="about mar pointer">About</div>
-					<div class="contact mar pointer">Contact</div>
-				</div>
+			<nav>
+				<ul>
+					<h3 class="head-ff">Cape Town</h3>
+					<li id="temp-api">H/L></li>
+					<li id="wind-api">Wind</li>
+				</ul>
+				<ul class="navList">
+					<li class="pointer">About</li>
+					<li class="pointer">Contact</li>
+				</ul>
 			</nav>
 		</header>
 		<section>
@@ -38,7 +38,6 @@
 				<div hidden class="headingContainer" id="h-con">
 					<div class="mainheading">
 						<h1 id="capeTown" class="head-ff">CAPE TOWNS</h1>
-
 						<h3 id="goodBits" class="head-ff">Best Bits</h3>
 					</div>
 					<div class="lead">
@@ -55,16 +54,15 @@
 				</div>
 				<div class="list-selectionContainer" id="selectionSection">
 					<div class="sel-pic selection" id="selectionPicture">
-						<img
-							hidden
+						<!--<img
 							id="picDiv"
 							src="./assets/images/300x300/capetownsouthafrica300x300.jpg"
 							alt=""
-						/>
+						/>-->
 					</div>
 					<!--Sight Seeing Container-->
 					<div class="sightSeeing">
-						<ul hidden class="outLine">
+						<ul class="outLine">
 							<li
 								class="sightSelectors pointer"
 								id="tm"
@@ -278,13 +276,7 @@
 				</div>
 				<!-- Google Maps and Information Section-->
 				<div class="mapContainer">
-					<div id="map">map</div>
-					<div class="information">
-						<h4 class="info-heading">Some information</h4>
-					</div>
-					<div class="info">
-						information:information
-					</div>
+					<div hidden id="map">map</div>
 				</div>
 				<!--Main Option Tags-->
 				<div class="mainOptions">
