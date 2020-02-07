@@ -33,63 +33,66 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 }
+
+.weather ul,
+.navInfo ul {
+	list-style: none;
+}
+
 /* ------------------------------MAIN CONTAINER---- */
 
 #capeTown {
-	font-size: 13rem;
-	background-color: rgba(64, 224, 208, 0.425);
-	justify-content: center;
-
-	letter-spacing: 0.2rem;
-
-	background-image: url("../images/marika-vinkmann-Km3pLqPeEpc-unsplash4.jpg");
-	background-size: cover;
-	background-position: center;
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-}
-@media (max-width: 898px) {
-	#capeTown {
-		font-size: 10rem;
-	}
-}
-@media (max-width: 700px) {
-	#capeTown {
-		font-size: 4.3rem;
-	}
+	color: black;
 }
 
 #goodBits {
-	margin-top: 2rem;
-	font-size: 6rem;
-	text-align: center;
-	letter-spacing: 0.1em;
-	background-image: url("../images/marika-vinkmann-Km3pLqPeEpc-unsplash4.jpg");
-	background-size: cover;
-	background-position: center;
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-}
-@media (max-width: 700px) {
-	#goodBits {
-		font-size: 3rem;
-	}
+	color: black;
 }
 .leadp {
-	text-align: center;
-	margin: 2em 5em;
-	color: rgb(250, 250, 250);
+	color: black;
 }
-@media (max-width: 690px) {
-	.leadp {
-		margin-left: 1em;
-		margin-right: 1em;
-	}
-}
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
+section {
+	display: flex;
+	flex-direction: column;
+}
+.heroContainer {
+	display: flex;
+	flex-direction: column;
+	max-height: 8ovh;
+	background-color: rgba(0, 255, 255, 0.473);
+}
+.mainheading,
+h1,
+h2,
+h3,
+p {
+	text-align: center;
+}
+.list-selectionContainer {
+	display: flex;
+
+	justify-content: space-evenly;
+}
+.sightSeeing {
+	background-color: rgba(0, 0, 255, 0.534);
+}
+.adventure {
+	background-color: rgba(222, 184, 135, 0.527);
+}
+.foodies {
+	background-color: rgba(220, 20, 60, 0.486);
+}
+.sightSeeing ul,
+.adventure ul,
+.foodies ul {
+	list-style: none;
+	text-align: center;
+}
+.mainOptions {
+	margin-top: auto;
+}
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=LIST-STYLE-IMAGES-=-=-=-*/
 
 /*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps Div-==-=-=*/
