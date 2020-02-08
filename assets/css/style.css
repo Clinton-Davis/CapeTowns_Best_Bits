@@ -75,6 +75,15 @@ p {
 
 	justify-content: space-evenly;
 }
+.selectorGrid {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: repeat(12, 50px);
+}
+.grid {
+	grid-column: 2/3;
+	align-self: center;
+}
 .sightSeeing {
 	background-color: rgba(0, 0, 255, 0.534);
 }
