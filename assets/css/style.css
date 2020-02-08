@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
-*/ html {
+
+html {
 	height: 100%;
 }
 body {
@@ -19,6 +20,9 @@ body {
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
 	color: black;
+}
+.banger {
+	font-family: "Bangers", sans-serif;
 }
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header Nav Bar=-=-=-=-=-=--=-*/
 header {
