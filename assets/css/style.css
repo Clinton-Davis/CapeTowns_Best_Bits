@@ -4,7 +4,7 @@ html {
 	height: 100%;
 }
 body {
-	/*background-image: url("../images/shutterstock_635476499.jpg");*/
+	background-image: url("../images/shutterstock_635476499.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -12,6 +12,8 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	filter: grayscale(20%);
+	-webkit-filter: grayscale(20%);
 }
 
 * {
@@ -50,10 +52,15 @@ nav {
 	grid-template-columns: 0.5em auto 0.5em;
 }
 #capeTown {
-	color: black;
+	color: transparent;
 	grid-row: 1/2;
 	grid-column: 2/3;
 	font-size: 5rem;
+	background-image: url(../images/SAFlAG200x860jpg.jpg);
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-position: center;
 }
 
 #goodBits {
@@ -82,7 +89,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	max-height: 8ovh;
-	background-color: rgba(0, 255, 255, 0.473);
+	/*background-color: rgba(0, 255, 255, 0.473);*/
 }
 
 .mainheading,
@@ -189,6 +196,51 @@ p {
 }
 .opt-btn:hover {
 	color: rgb(103, 148, 13);
+	knobbackground: rgba(252, 234, 187, 1);
+	background: -moz-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: -webkit-gradient(
+		left top,
+		right bottom,
+		color-stop(0%, rgba(252, 234, 187, 1)),
+		color-stop(50%, rgba(252, 205, 77, 1)),
+		color-stop(51%, rgba(248, 181, 0, 1)),
+		color-stop(100%, rgba(251, 223, 147, 1))
+	);
+	background: -webkit-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: -o-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: -ms-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: linear-gradient(
+		135deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
 }
 
 /*-----------------Footer----------*/
