@@ -56,11 +56,11 @@ nav {
 	grid-template-columns: 0.5em auto 0.5em;
 }
 #capeTown {
-	color: transparent;
+	color: black;
 	grid-row: 1/2;
 	grid-column: 2/3;
 	font-size: 4.6rem; /* Small screans 320x568*/
-	background-image: url(../images/SAFlAG200x860jpg.jpg);
+	/*background-image: url(../images/SAFlAG200x860jpg.jpg); */
 	background-size: cover;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -111,19 +111,35 @@ p {
 }
 .selectorGrid {
 	display: grid;
-	grid-template-columns: 30% 70%;
-	grid-template-rows: repeat(12, 50px);
+	grid-template-columns: 51px 70%;
+	grid-template-rows: repeat(12, 51px);
 }
 .grid {
 	grid-column: 2/3;
 	align-self: center;
 }
+/*-=-=-=--==-=-=-=-=-=--=-=-Sight Img Alinment=-=-=--=-=*/
 .sightSeeing {
 	background-color: rgba(0, 0, 255, 0.534);
 }
+.grid-img-col {
+	grid-column: 1/2;
+}
+#tmi {
+	/* Table Mountain */
+	grid-row: 1/2;
+}
+#toai {
+	/* Two Oceans */
+	grid-row: 2/3;
+}
+/*-=-=-=-=--=-=-=---=---=-=--=-adventure Img Alinment-=-=-*/
 .adventure {
 	background-color: rgba(222, 184, 135, 0.527);
 }
+
+/*=-=-=-=-=-=-=-=-=-=-=--=-=Foodie img aliment-=-=--=-=-*/
+
 .foodies {
 	background-color: rgba(220, 20, 60, 0.486);
 }
@@ -200,7 +216,7 @@ p {
 }
 .opt-btn:hover {
 	color: rgb(103, 148, 13);
-	knobbackground: rgba(252, 234, 187, 1);
+	background: rgba(252, 234, 187, 1);
 	background: -moz-linear-gradient(
 		-45deg,
 		rgba(252, 234, 187, 1) 0%,
