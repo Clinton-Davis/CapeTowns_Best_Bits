@@ -46,6 +46,9 @@ nav {
 }
 
 /* ------------------------------MAIN CONTAINER---- */
+.hide {
+	display: none;
+}
 .mainheading {
 	display: grid;
 	grid-template-rows: repeat(4, auto);

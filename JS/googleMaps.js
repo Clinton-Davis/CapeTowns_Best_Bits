@@ -49,6 +49,11 @@ let sightsJSON = {
 	RI: {
 		Id: "ChIJy3XfS2WKzB0RYZDeLkVkb30",
 		info: `Historical landmark known for housing political prisoners such as Nelson Mandela, now with a museum.`
+	},
+	TOA: {
+		Id: "ChIJfeaqwlpnzB0Rl2i0iRvp6SI",
+		info:
+			"Modern indoor aquarium & conservation center offering close encounters with sharks & penguins."
 	}
 };
 
@@ -171,6 +176,9 @@ function locationFinder(locationFinder_id) {
 			break;
 		case "cp":
 			(iD = sightsJSON.CP.Id), (info = sightsJSON.CP.info), initMap();
+			break;
+		case "toa":
+			(iD = sightsJSON.TOA.Id), (info = sightsJSON.TOA.info), initMap();
 			break;
 		case "bk":
 			(iD = sightsJSON.BK.Id), (info = sightsJSON.BK.info), initMap();
