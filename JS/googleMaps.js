@@ -56,7 +56,6 @@ let sightsJSON = {
 			"Modern indoor aquarium & conservation center offering close encounters with sharks & penguins."
 	}
 };
-
 //-=-=-=-=-=--=-=-=-ADVENTURE JSON=-=-=--=-=-=--=-=
 let adventureJSON = {
 	//Kayak Cape Town
@@ -167,7 +166,7 @@ let foodiesJSON = {
 		Monkey Valley was built with a sustainable environmentally friendly ethos in order to preserve the natural beauty of the area.`
 	}
 };
-// locationFinder is the onClick function to initMap on clicked Location
+// locationFinder is the onClick function that calles InitMap function on "clicked" Location.
 function locationFinder(locationFinder_id) {
 	console.log(locationFinder_id);
 	switch (locationFinder_id) {
