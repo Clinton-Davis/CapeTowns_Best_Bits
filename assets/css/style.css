@@ -115,7 +115,7 @@ p {
 .selectorGrid {
 	display: grid;
 	grid-template-columns: 51px 70%;
-	grid-template-rows: repeat(12, 51px);
+	grid-template-rows: repeat(10, 51px);
 }
 .grid {
 	grid-column: 2/3;
@@ -258,6 +258,7 @@ p {
 	/*The lightHouse*/
 	grid-row: 10/11;
 }
+
 .sightSeeing ul,
 .adventure ul,
 .foodies ul {
