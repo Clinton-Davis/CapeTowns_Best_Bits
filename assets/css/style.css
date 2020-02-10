@@ -121,13 +121,14 @@ p {
 	grid-column: 2/3;
 	align-self: center;
 }
+.grid-img-col {
+	grid-column: 1/2;
+}
 /*-=-=-=--==-=-=-=-=-=--=-=-Sight Img Alinment=-=-=--=-=*/
 .sightSeeing {
 	background-color: rgba(0, 0, 255, 0.534);
 }
-.grid-img-col {
-	grid-column: 1/2;
-}
+
 #tmi {
 	/* Table Mountain */
 	grid-row: 1/2;
@@ -171,6 +172,42 @@ p {
 /*-=-=-=-=--=-=-=---=---=-=--=-adventure Img Alinment-=-=-*/
 .adventure {
 	background-color: rgba(222, 184, 135, 0.527);
+}
+#kcti {
+	/* Kayak Cape Town*/
+	grid-row: 1/2;
+}
+#cthi {
+	/*Cape Town Helicopters*/
+	grid-row: 2/3;
+}
+#bti {
+	/*Boat Trips*/
+	grid-row: 3/4;
+}
+#abt {
+	/*aseil Table Mountain*/
+	grid-row: 4/5;
+}
+#wbcti {
+	/*Wineland Ballooing */
+	grid-row: 5/6;
+}
+#sdi {
+	/*shark Bookings */
+	grid-row: 6/7;
+}
+#zli {
+	/* Zipline  */
+	grid-row: 7/8;
+}
+#scti {
+	/*scooter Cape Town */
+	grid-row: 8/9;
+}
+#hhi {
+	/*Lion head hikes */
+	grid-row: 9/10;
 }
 
 /*=-=-=-=-=-=-=-=-=-=-=--=-=Foodie img aliment-=-=--=-=-*/
