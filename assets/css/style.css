@@ -12,8 +12,6 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	filter: grayscale(20%);
-	-webkit-filter: grayscale(20%);
 }
 .gray-fliter {
 	background-color: rgba(0, 0, 0, 0.3);
@@ -51,6 +49,7 @@ nav {
 .hide {
 	display: none;
 }
+
 .mainheading {
 	display: grid;
 	grid-template-rows: repeat(4, auto);
@@ -83,18 +82,18 @@ nav {
 	color: whitesmoke;
 	grid-row: 4/5;
 	grid-column: 2/3;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 section {
 	display: flex;
 	flex-direction: column;
-}
-.heroContainer {
-	display: flex;
-	flex-direction: column;
-	max-height: 8ovh;
-	/*background-color: rgba(0, 255, 255, 0.473);*/
 }
 
 .mainheading,
