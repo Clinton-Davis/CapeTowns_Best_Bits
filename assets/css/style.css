@@ -26,6 +26,9 @@ body {
 .banger {
 	font-family: "Bangers", sans-serif;
 }
+.pointer {
+	cursor: pointer;
+}
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header Nav Bar=-=-=-=-=-=--=-*/
 header {
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
@@ -132,6 +135,38 @@ p {
 #toai {
 	/* Two Oceans */
 	grid-row: 2/3;
+}
+#bki {
+	/* Bo-Koop */
+	grid-row: 3/4;
+}
+#coni {
+	/*constaina*/
+	grid-row: 4/5;
+}
+#kbi {
+	/*Kalk Bay */
+	grid-row: 5/6;
+}
+#bi {
+	/*bouliders*/
+	grid-row: 6/7;
+}
+#cpi {
+	/*Chapmens Peak*/
+	grid-row: 7/8;
+}
+#dsmi {
+	/*Dis Six Mus*/
+	grid-row: 8/9;
+}
+#lhi {
+	/*Lions Head*/
+	grid-row: 9/10;
+}
+#rii {
+	/*Robin Island*/
+	grid-row: 10/11;
 }
 /*-=-=-=-=--=-=-=---=---=-=--=-adventure Img Alinment-=-=-*/
 .adventure {
