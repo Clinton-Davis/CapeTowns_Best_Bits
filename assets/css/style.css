@@ -185,7 +185,7 @@ p {
 	/*Boat Trips*/
 	grid-row: 3/4;
 }
-#abt {
+#abti {
 	/*aseil Table Mountain*/
 	grid-row: 4/5;
 }
@@ -193,7 +193,7 @@ p {
 	/*Wineland Ballooing */
 	grid-row: 5/6;
 }
-#sdi {
+#sbi {
 	/*shark Bookings */
 	grid-row: 6/7;
 }
@@ -209,11 +209,54 @@ p {
 	/*Lion head hikes */
 	grid-row: 9/10;
 }
+#wbi {
+	/*waterBykes*/
+	grid-row: 10/11;
+}
 
 /*=-=-=-=-=-=-=-=-=-=-=--=-=Foodie img aliment-=-=--=-=-*/
-
 .foodies {
 	background-color: rgba(220, 20, 60, 0.486);
+}
+#jhi {
+	/*JonkersHuis*/
+	grid-row: 1/2;
+}
+#shbi {
+	/*snookies */
+	grid-row: 2/3;
+}
+#hhkbi {
+	/*harbou House*/
+	grid-row: 3/4;
+}
+#mai {
+	/*Mamma Africa */
+	grid-row: 4/5;
+}
+#smi {
+	/*Shourt markert Club*/
+	grid-row: 5/6;
+}
+#stdi {
+	/*start dust*/
+	grid-row: 6/7;
+}
+#cwci {
+	/*chefs WareHouse*/
+	grid-row: 7/8;
+}
+#cpvri {
+	/*Cape Point Vineyard*/
+	grid-row: 8/9;
+}
+#mvri {
+	/*Monkey Valley*/
+	grid-row: 9/10;
+}
+#tlhi {
+	/*The lightHouse*/
+	grid-row: 10/11;
 }
 .sightSeeing ul,
 .adventure ul,

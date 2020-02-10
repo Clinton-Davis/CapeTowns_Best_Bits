@@ -105,6 +105,11 @@ let adventureJSON = {
 	HT: {
 		Id: "ChIJN4QZT1ZnzB0Rq1OQmhhKoFc",
 		info: `""`
+	},
+	WB: {
+		Id: "ChIJ5_CYMno_zB0Rb3CrFJuM0vI",
+		info:
+			"Cape Town Water Bikes is a new way to experience the Simon’s Town coast. Hop on one of the world’s most advanced water bikes and get pedalling for a different perspective."
 	}
 };
 //-=-=-=-=-=--=-=-=-FOODIES JSON=-=-=--=-=-=--=-=
@@ -164,6 +169,10 @@ let foodiesJSON = {
 		info: `Nestled within the Milkwood forest at the foot of Chapman’s Peak Noordhoek is Monkey Valley Resort.
 		The resort has an unrivaled view of the Noordhoek beach and nature reserve.
 		Monkey Valley was built with a sustainable environmentally friendly ethos in order to preserve the natural beauty of the area.`
+	},
+	TLH: {
+		Id: "ChIJ8aBJ0NQ_zB0REMuSYqHp6k8",
+		info: `The Café has a beautiful ambience; it is an inviting space, light & airy with a French Provençal and Coastal feel which makes one feel right at home, it is a space where customers love to spend time with a book or with friends and a frothy cappuccino coffee for breakfast, lingering and often taking their shoes off.`
 	}
 };
 // locationFinder is the onClick function that calles InitMap function on "clicked" Location.
@@ -226,7 +235,10 @@ function locationFinder(locationFinder_id) {
 			break;
 		case "ht":
 			(iD = adventureJSON.HT.Id), (info = adventureJSON.HT.info), initMap();
-			break; // Foodies Strars
+			break;
+		case "wb":
+			(iD = adventureJSON.WB.Id), (info = adventureJSON.WB.info), initMap();
+		// Foodies Strars
 		case "jh":
 			(iD = foodiesJSON.JH.Id), (info = foodiesJSON.JH.info), initMap();
 			break;
@@ -253,6 +265,9 @@ function locationFinder(locationFinder_id) {
 			break;
 		case "mvr":
 			(iD = foodiesJSON.MVR.Id), (info = foodiesJSON.MVR.info), initMap();
+			break;
+		case "tlh":
+			(iD = foodiesJSON.TLH.Id), (info = foodiesJSON.TLH.info), initMap();
 			break;
 	}
 
