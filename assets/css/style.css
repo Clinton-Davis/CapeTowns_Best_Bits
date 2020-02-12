@@ -94,6 +94,9 @@ nav {
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
+.backGround {
+	background-color: rgba(0, 0, 0, 0.5);
+}
 section {
 	display: flex;
 	flex-direction: column;
@@ -109,8 +112,7 @@ p {
 }
 .list-selectionContainer {
 	display: flex;
-
-	justify-content: space-evenly;
+	justify-content: center;
 }
 .selectorGrid {
 	display: grid;
@@ -120,9 +122,11 @@ p {
 .grid {
 	grid-column: 2/3;
 	align-self: center;
+	text-align: center;
 }
 .grid-img-col {
 	grid-column: 1/2;
+	border: 1px white solid;
 }
 /*-=-=-=--==-=-=-=-=-=--=-=-Sight Img Alinment=-=-=--=-=*/
 .sightSeeing {
