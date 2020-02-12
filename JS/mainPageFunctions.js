@@ -1,4 +1,5 @@
 $(function() {
+	// Removing main heading and adding colums in
 	$("#sights").click(function() {
 		$("h1,h2,h3,p").addClass("hide");
 		$("#sightsCol").removeClass("hide");

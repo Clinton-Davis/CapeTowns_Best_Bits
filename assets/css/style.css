@@ -132,7 +132,14 @@ p {
 .sightSeeing {
 	background-color: rgba(0, 0, 255, 0.534);
 }
-
+.imgMaxSmall {
+	max-width: 50px;
+	max-height: 50px;
+}
+.imgMaxBig {
+	max-width: 150px;
+	max-height: 150px;
+}
 #tmi {
 	/* Table Mountain */
 	grid-row: 1/2;
