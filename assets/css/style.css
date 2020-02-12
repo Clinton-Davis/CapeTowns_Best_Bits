@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
-*/ html {
+
+html {
 	height: 100%;
 }
 body {
@@ -8,202 +9,269 @@ body {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
-
+.gray-fliter {
+	background-color: rgba(0, 0, 0, 0.3);
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
-	color: rgba(255, 255, 255, 1);
+	color: whitesmoke;
 }
-
-.head-ff {
+.banger {
 	font-family: "Bangers", sans-serif;
 }
 .pointer {
 	cursor: pointer;
 }
-.navContainer {
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header Nav Bar=-=-=-=-=-=--=-*/
+header {
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+	background-color: transparent;
+}
+nav {
+	min-height: 10vh;
+	margin: auto;
+	width: 90%;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
-	max-height: 12vh;
-}
-.liveWeather {
-	color: white;
-	margin: 1em;
-}
-.weatherData {
-	font-size: 0.7rem;
-}
-#weatherLoc {
-	letter-spacing: 0.1rem;
-	font-size: 1.3rem;
-}
-.navList {
-	display: flex;
-	margin: 1em;
-	justify-content: center;
-	padding: 1em;
-}
-@media (max-width: 690px) {
-	.navList {
-		flex-direction: column;
-	}
 }
 
-.about {
-	margin: 0 1em;
-}
-.contact {
-	margin: 0 1em;
+.weather ul,
+.navInfo ul {
+	list-style: none;
 }
 
 /* ------------------------------MAIN CONTAINER---- */
-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.heroContainer {
-	background-color: transparent;
-	display: flex;
-	flex-direction: column;
-	margin: 1em auto;
-	max-width: fit-content;
-}
-@media (min-width: 550px) {
-	.heroContainer {
-		margin-top: 5rem;
-	}
+.hide {
+	display: none;
 }
 
-.headingContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.mainHeading {
-	padding: 1em;
+.mainheading {
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-template-columns: 0.5em auto 0.5em;
 }
 #capeTown {
-	font-size: 13rem;
-	background-color: rgba(64, 224, 208, 0.425);
-	justify-content: center;
-
-	letter-spacing: 0.2rem;
-
-	background-image: url("../images/marika-vinkmann-Km3pLqPeEpc-unsplash4.jpg");
+	color: black;
+	grid-row: 1/2;
+	grid-column: 2/3;
+	font-size: 4.6rem; /* Small screans 320x568*/
+	/*background-image: url(../images/SAFlAG200x860jpg.jpg); */
 	background-size: cover;
-	background-position: center;
 	background-clip: text;
 	-webkit-background-clip: text;
-	color: transparent;
-}
-@media (max-width: 898px) {
-	#capeTown {
-		font-size: 10rem;
-	}
-}
-@media (max-width: 700px) {
-	#capeTown {
-		font-size: 4.3rem;
-	}
+	background-position: center;
 }
 
 #goodBits {
-	margin-top: 2rem;
-	font-size: 6rem;
-	text-align: center;
-	letter-spacing: 0.1em;
-	background-image: url("../images/marika-vinkmann-Km3pLqPeEpc-unsplash4.jpg");
-	background-size: cover;
-	background-position: center;
-	background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
+	color: black;
+	grid-row: 2/3;
+	grid-column: 2/3;
+	font-size: 3.5rem; /* Small screens 320x568 */
 }
-@media (max-width: 700px) {
-	#goodBits {
-		font-size: 3rem;
-	}
+#diy {
+	grid-row: 3/4;
+	grid-column: 2/3;
+	font-size: 3rem; /* Small Creens 320x568 */
 }
-.leadp {
-	text-align: center;
-	margin: 2em 5em;
-	color: rgb(250, 250, 250);
-}
-@media (max-width: 690px) {
-	.leadp {
-		margin-left: 1em;
-		margin-right: 1em;
-	}
-}
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
-.list-selectionContainer {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
-}
-@media (max-width: 550px) {
-	.list-selectionContainer {
-		flex-direction: column;
-	}
-}
-#picDiv {
-	width: 300px;
-	height: 300px;
-}
-@media (max-width: 550px) {
-	#picDiv {
-		width: 250px;
-		height: 150px;
-	}
-}
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=LIST-STYLE-IMAGES-=-=-=-*/
-ul {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
+#lead {
+	color: whitesmoke;
+	grid-row: 4/5;
+	grid-column: 2/3;
 	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 0px 10px 10px 0px;
-	-moz-border-radius: 0px 10px 10px 0px;
-	-webkit-border-radius: 0px 10px 10px 0px;
-}
-@media (max-width: 550px) {
-	ul {
-		border-radius: 10px;
-		-webkit-border-radius: 10px;
-		-moz-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
-	}
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
 }
 
-li {
-	background-color: rgba(0, 0, 0, 0.5);
-	margin: 0.2em;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	-o-border-radius: 2px;
-}
-/*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps section-==-=-=*/
-.mapContainer {
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
+section {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0.5em;
 }
+
+.mainheading,
+h1,
+h2,
+h3,
+p {
+	text-align: center;
+	margin: 0.1em 0;
+}
+.list-selectionContainer {
+	display: flex;
+
+	justify-content: space-evenly;
+}
+.selectorGrid {
+	display: grid;
+	grid-template-columns: 51px 70%;
+	grid-template-rows: repeat(10, 51px);
+}
+.grid {
+	grid-column: 2/3;
+	align-self: center;
+}
+.grid-img-col {
+	grid-column: 1/2;
+}
+/*-=-=-=--==-=-=-=-=-=--=-=-Sight Img Alinment=-=-=--=-=*/
+.sightSeeing {
+	background-color: rgba(0, 0, 255, 0.534);
+}
+
+#tmi {
+	/* Table Mountain */
+	grid-row: 1/2;
+}
+#toai {
+	/* Two Oceans */
+	grid-row: 2/3;
+}
+#bki {
+	/* Bo-Koop */
+	grid-row: 3/4;
+}
+#coni {
+	/*constaina*/
+	grid-row: 4/5;
+}
+#kbi {
+	/*Kalk Bay */
+	grid-row: 5/6;
+}
+#bi {
+	/*bouliders*/
+	grid-row: 6/7;
+}
+#cpi {
+	/*Chapmens Peak*/
+	grid-row: 7/8;
+}
+#dsmi {
+	/*Dis Six Mus*/
+	grid-row: 8/9;
+}
+#lhi {
+	/*Lions Head*/
+	grid-row: 9/10;
+}
+#rii {
+	/*Robin Island*/
+	grid-row: 10/11;
+}
+/*-=-=-=-=--=-=-=---=---=-=--=-adventure Img Alinment-=-=-*/
+.adventure {
+	background-color: rgba(222, 184, 135, 0.527);
+}
+#kcti {
+	/* Kayak Cape Town*/
+	grid-row: 1/2;
+}
+#cthi {
+	/*Cape Town Helicopters*/
+	grid-row: 2/3;
+}
+#bti {
+	/*Boat Trips*/
+	grid-row: 3/4;
+}
+#abti {
+	/*aseil Table Mountain*/
+	grid-row: 4/5;
+}
+#wbcti {
+	/*Wineland Ballooing */
+	grid-row: 5/6;
+}
+#sbi {
+	/*shark Bookings */
+	grid-row: 6/7;
+}
+#zli {
+	/* Zipline  */
+	grid-row: 7/8;
+}
+#scti {
+	/*scooter Cape Town */
+	grid-row: 8/9;
+}
+#hhi {
+	/*Lion head hikes */
+	grid-row: 9/10;
+}
+#wbi {
+	/*waterBykes*/
+	grid-row: 10/11;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=--=-=Foodie img aliment-=-=--=-=-*/
+.foodies {
+	background-color: rgba(220, 20, 60, 0.486);
+}
+#jhi {
+	/*JonkersHuis*/
+	grid-row: 1/2;
+}
+#shbi {
+	/*snookies */
+	grid-row: 2/3;
+}
+#hhkbi {
+	/*harbou House*/
+	grid-row: 3/4;
+}
+#mai {
+	/*Mamma Africa */
+	grid-row: 4/5;
+}
+#smi {
+	/*Shourt markert Club*/
+	grid-row: 5/6;
+}
+#stdi {
+	/*start dust*/
+	grid-row: 6/7;
+}
+#cwci {
+	/*chefs WareHouse*/
+	grid-row: 7/8;
+}
+#cpvri {
+	/*Cape Point Vineyard*/
+	grid-row: 8/9;
+}
+#mvri {
+	/*Monkey Valley*/
+	grid-row: 9/10;
+}
+#tlhi {
+	/*The lightHouse*/
+	grid-row: 10/11;
+}
+
+.sightSeeing ul,
+.adventure ul,
+.foodies ul {
+	list-style: none;
+	text-align: center;
+}
+.mainOptions {
+	margin-top: auto;
+}
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=LIST-STYLE-IMAGES-=-=-=-*/
+
+/*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps Div-==-=-=*/
+
 #map {
 	min-height: 30rem;
 	min-width: 40rem;
@@ -211,25 +279,8 @@ li {
 	border: 2px whitesmoke solid;
 	background-color: rgba(0, 0, 0, 0.5);
 }
-.information {
-	min-width: 40rem;
-	margin: 0.2em;
-	border: 2px whitesmoke solid;
-}
 
-.info-heading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	letter-spacing: 3px;
-}
-.info {
-	min-width: 40rem;
-	min-height: 10rem;
-	border: 2px whitesmoke solid;
-	background-color: rgba(0, 0, 0, 0.9);
-}
-/*-------The 3 Bottons --------*/
+/*-------The 3 Selection Bottons --------*/
 .mainOptions {
 	display: flex;
 	justify-content: space-around;
@@ -281,17 +332,62 @@ li {
 }
 .opt-btn:hover {
 	color: rgb(103, 148, 13);
+	background: rgba(252, 234, 187, 1);
+	background: -moz-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: -webkit-gradient(
+		left top,
+		right bottom,
+		color-stop(0%, rgba(252, 234, 187, 1)),
+		color-stop(50%, rgba(252, 205, 77, 1)),
+		color-stop(51%, rgba(248, 181, 0, 1)),
+		color-stop(100%, rgba(251, 223, 147, 1))
+	);
+	background: -webkit-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: -o-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: -ms-linear-gradient(
+		-45deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	background: linear-gradient(
+		135deg,
+		rgba(252, 234, 187, 1) 0%,
+		rgba(252, 205, 77, 1) 50%,
+		rgba(248, 181, 0, 1) 51%,
+		rgba(251, 223, 147, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
 }
 
 /*-----------------Footer----------*/
 .shoes {
 	display: flex;
-	background-color: black;
-	max-height: 7%;
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 5em;
 	justify-content: space-around;
 	margin-top: auto;
 }
-/*=--=-=-=-=-=-=-=-=-=-=-=-mapIndoWindo-==-=-====*/
+/*=--=-=-=-=-=-=-=-=-=-=-=-Google Map Info Window-==-=-====*/
 .infoHeading {
 	display: flex;
 	justify-content: center;
