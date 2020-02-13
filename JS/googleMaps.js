@@ -333,6 +333,7 @@ function locationFinder(locationFinder_id) {
 					"</p>" +
 					'<div class="scocial">' +
 					"facebook" +
+					`<img src="./assets/images/icons/pageIcons/website_icon-53u_icon.ico" alt="webPage"><a` +
 					`${website}` +
 					"</div>" +
 					"</div>" +
