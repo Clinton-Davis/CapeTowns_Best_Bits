@@ -331,7 +331,7 @@ function locationFinder(locationFinder_id) {
 					"</div>" +
 					'<div class="rating">' +
 					'<p class="rating">' +
-					`<img src="./assets/images/icons/starx24px.ico" alt="star rating">` +
+					`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
 					" " +
 					`${rating}` +
 					"</p>";

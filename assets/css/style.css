@@ -33,7 +33,7 @@ body {
 .backBnt {
 	width: 2rem;
 	float: right;
-	background-image: url("../images/icons/flagX.jpg");
+	background-image: url("../images/icons/pageIcons/flagX.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -99,6 +99,9 @@ nav {
 	color: whitesmoke;
 	grid-row: 4/5;
 	grid-column: 2/3;
+	max-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
@@ -151,9 +154,7 @@ p {
 }
 
 /*-=-=-=--==-=-=-=-=-=--=-=-Sight Img Alinment=-=-=--=-=*/
-.sightSeeing {
-	background-color: rgba(0, 0, 255, 0.534);
-}
+
 #sightsCol {
 	position: relative;
 	min-width: 312px;
@@ -205,9 +206,6 @@ p {
 	grid-row: 10/11;
 }
 /*-=-=-=-=--=-=-=---=---=-=--=-adventure Img Alinment-=-=-*/
-.adventure {
-	background-color: rgba(222, 184, 135, 0.527);
-}
 #kcti {
 	/* Kayak Cape Town*/
 	grid-row: 1/2;
@@ -250,9 +248,7 @@ p {
 }
 
 /*=-=-=-=-=-=-=-=-=-=-=--=-=Foodie img aliment-=-=--=-=-*/
-.foodies {
-	background-color: rgba(220, 20, 60, 0.486);
-}
+
 #jhi {
 	/*JonkersHuis*/
 	grid-row: 1/2;
@@ -437,26 +433,17 @@ p {
 	color: black;
 	font-size: 1rem;
 }
-/* -=-=-=-=-=--=-=-=-=-=-=-=-=-=-The Modal (background)=-=-=-=--=-= */
+/* -=-=-=-=-=--=-=-=-=-=-=-=-=-=-Modal=-=-=-=--=-= */
 .modal {
 	display: none;
-	/*Hiddenbydefault*/
 	position: fixed;
-	/*Stayinplace*/
 	z-index: 1;
-	/*Sitontop*/
 	left: 0;
 	top: 0;
 	width: 100%;
-	/*Fullwidth*/
 	height: 100%;
-	/*Fullheight*/
 	overflow: auto;
-	/*Enablescrollifneeded*/
 	background-color: rgba(253, 252, 252, 0.3);
-	/*Fallbackcolor*/
-	background-color: rgba(245, 245, 245, 0.3);
-	/*Blackw/opacity*/
 }
 
 /* Modal Content/Box */
