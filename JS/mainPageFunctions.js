@@ -18,4 +18,17 @@ $(function() {
 		$("#adventureCol").addClass("hide");
 		$("#foodieCol").removeClass("hide");
 	});
+	// Back Botton fuctions for colums
+	$("#sback").click(function() {
+		$("#sightsCol").addClass("hide");
+		$("h1,h2,h3,p").removeClass("hide");
+	});
+	$("#aback").click(function() {
+		$("#adventureCol").addClass("hide");
+		$("h1,h2,h3,p").removeClass("hide");
+	});
+	$("#fback").click(function() {
+		$("#foodieCol").addClass("hide");
+		$("h1,h2,h3,p").removeClass("hide");
+	});
 });
