@@ -304,8 +304,8 @@ p {
 /*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps Div-==-=-=*/
 
 #map {
-	min-height: 30rem;
-	min-width: 40rem;
+	min-height: 80vh;
+
 	margin: 0.2em;
 	border: 2px whitesmoke solid;
 	background-color: rgba(0, 0, 0, 0.5);

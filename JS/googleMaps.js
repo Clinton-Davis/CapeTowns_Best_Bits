@@ -319,6 +319,12 @@ function locationFinder(locationFinder_id) {
 					'<div class="infowidHeading">' +
 					'<h2 class="infoHeading">' +
 					`${name}` +
+					"<br>" +
+					'<p class="rating">' +
+					`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
+					" " +
+					`${rating}` +
+					"</p>" +
 					"</h2>" +
 					"</div>" +
 					'<div class="infowindoBody">' +
@@ -329,13 +335,9 @@ function locationFinder(locationFinder_id) {
 					"facebook" +
 					`${website}` +
 					"</div>" +
-					'<div class="rating">' +
-					'<p class="rating">' +
-					`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
-					" " +
-					`${rating}` +
-					"</p>";
-				"</div>" + "</div>" + "</div>";
+					"</div>" +
+					"</div>" +
+					"</div>";
 
 				var infowindow = new google.maps.InfoWindow({
 					content: markerData
