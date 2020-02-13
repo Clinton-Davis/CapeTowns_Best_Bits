@@ -31,4 +31,18 @@ $(function() {
 		$("#foodieCol").addClass("hide");
 		$("h1,h2,h3,p").removeClass("hide");
 	});
+
+	// Click on selection to show maps
+	$("li").click(function() {
+		$("#sightsCol").addClass("hide");
+		$("#map").removeClass("hide");
+	});
+	$("li").click(function() {
+		$("#adventureCol").addClass("hide");
+		$("#map").removeClass("hide");
+	});
+	$("li").click(function() {
+		$("#foodieCol").addClass("hide");
+		$("#map").removeClass("hide");
+	});
 });
