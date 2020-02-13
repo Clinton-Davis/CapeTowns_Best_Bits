@@ -307,13 +307,24 @@ function locationFinder(locationFinder_id) {
 				var rating = place.rating;
 				var icon = place.icon;
 				var website = place.website;
+				var phone = place.formatted_phone_number;
+				var opening_hours = place.opening_hours;
 
-				console.log(name, rating, icon, website);
+				console.log(name, rating, icon, website, phone, place.opening_hours);
 				if (rating == undefined) {
 					var rating = " ";
 				} else {
 					var rating = place.rating;
 				}
+				if (phone == undefined) {
+					var phone = " ";
+				} else {
+					var phone =
+						`<img src="./assets/images/icons/pageIcons/call20x20.png"</>` +
+						" " +
+						place.formatted_phone_number;
+				}
+
 				var markerData =
 					'<div class="infowindowContiner">' +
 					'<div class="infowidHeading">' +
@@ -332,7 +343,12 @@ function locationFinder(locationFinder_id) {
 					`${info}` +
 					"</p>" +
 					'<div class="scocial">' +
-					`<img src="./assets/images/icons/pageIcons/website_icon_53U_icon.ico" alt="webPage"><a href="${website}" target="_blank"></a></>.`;
+					`<img src="./assets/images/icons/pageIcons/website_icon_53U_icon.ico" alt="webPage"><a href="${website}" target="_blank"></a></>.` +
+					`<button class="bot-btn banger hide" id="directions">Take Us There</button>` +
+					`<p class="rating">` +
+					" " +
+					`${phone}`;
+				("</p>");
 
 				"</div>" + "</div>" + "</div>" + "</div>";
 
@@ -347,4 +363,3 @@ function locationFinder(locationFinder_id) {
 		}
 	}
 }
-assets / images / icons / pageIcons / website_icon_53U_icon.ico;
