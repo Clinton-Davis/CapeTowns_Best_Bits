@@ -39,13 +39,26 @@ $(function() {
 	$("li").click(function() {
 		$("#sightsCol").addClass("hide");
 		$("#map").removeClass("hide");
+		$("#directions").removeClass("hide");
+		$("#back").removeClass("hide");
 	});
 	$("li").click(function() {
 		$("#adventureCol").addClass("hide");
 		$("#map").removeClass("hide");
+		$("#directions").removeClass("hide");
+		$("#back").removeClass("hide");
 	});
 	$("li").click(function() {
 		$("#foodieCol").addClass("hide");
 		$("#map").removeClass("hide");
+		$("#directions").removeClass("hide");
+		$("#back").removeClass("hide");
+	});
+	//Back botton in maps
+	$("#back").click(function() {
+		$("h1,h2,h3,p").removeClass("hide");
+		$("#map").addClass("hide");
+		$("#back").addClass("hide");
+		$("#directions").addClass("hide");
 	});
 });

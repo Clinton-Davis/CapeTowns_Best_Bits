@@ -7,7 +7,10 @@ let sightsJSON = {
 	//Cape Point
 	CP: {
 		Id: "ChIJAf2PqQkjzB0RTEFJZ9rJSSM",
-		info: `Mistakenly cited as the point where the Atlantic and Indian Oceans meet, Cape Point is, nonetheless, a place like no other. (Incidentally, the two oceans’ meeting point is at Cape Agulhas). At Cape Point Nature Reserve, the mountain and ocean meet in a thunderous clash of water against rock, producing a dramatic landscape inhabited by an incredible diversity of life. As the tip of land juts out like on outstretched arm, the ocean swells around it, and multitudes of birds flock to its pristine beaches and rugged cliffs.`
+		info: `Cape Point is like no other. 
+		At Cape Point Nature Reserve, the mountain and ocean meet in a thunderous clash of water 
+		against rock, producing a dramatic landscape inhabited by an incredible diversity of life. 
+		`
 	},
 	//Boo-Kaap
 	BK: {
@@ -119,12 +122,9 @@ let foodiesJSON = {
 		Id: "ChIJe6PtQ9FpzB0R4YORfViLQ5s",
 		info: `Jonkershuis Constantia is nestled in the historic core of the Groot Constantia Wine Estate
 		next to the historic Manor House and surrounded by ancient oak trees.
-		Your first impression is dominated by sweeping views across the oldest wine producing vineyards in South Africa,
-		down the valley to the enveloping coastline of False Bay.
-		Jonkershuis eatery is very conscious of the provenance, sustainability and the ethical content of all the food prepared, as well as reflecting the rich Cape Malay heritage of our ‘home’.
-		Jonkershuis boasts a diversity of locations from private dining grandeur, to intimate interior fire side dining;
-		typical Italian village gatherings in the covered courtyard to family style lunches on their front lawns,
-		were children can safely play amongst the old oak trees.`
+		Sweeping views across the oldest wine producing vineyards in South Africa,
+		Sustainability and the ethical content of all the food prepared, Reflecting the rich Cape Malay heritage of our ‘home’.
+		`
 	},
 	//Snoekies
 	SHB: {
@@ -332,13 +332,9 @@ function locationFinder(locationFinder_id) {
 					`${info}` +
 					"</p>" +
 					'<div class="scocial">' +
-					"facebook" +
-					`<img src="./assets/images/icons/pageIcons/website_icon-53u_icon.ico" alt="webPage"><a` +
-					`${website}` +
-					"</div>" +
-					"</div>" +
-					"</div>" +
-					"</div>";
+					`<img src="./assets/images/icons/pageIcons/website_icon_53U_icon.ico" alt="webPage"><a href="${website}" target="_blank"></a></>.`;
+
+				"</div>" + "</div>" + "</div>" + "</div>";
 
 				var infowindow = new google.maps.InfoWindow({
 					content: markerData
@@ -351,3 +347,4 @@ function locationFinder(locationFinder_id) {
 		}
 	}
 }
+assets / images / icons / pageIcons / website_icon_53U_icon.ico;
