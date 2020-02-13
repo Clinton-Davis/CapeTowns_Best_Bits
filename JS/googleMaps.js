@@ -314,7 +314,9 @@ function locationFinder(locationFinder_id) {
 				if (rating == undefined) {
 					var rating = " ";
 				} else {
-					var rating = place.rating;
+					var rating =
+						`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
+						place.rating;
 				}
 				if (phone == undefined) {
 					var phone = " ";
@@ -331,9 +333,8 @@ function locationFinder(locationFinder_id) {
 					'<h2 class="infoHeading">' +
 					`${name}` +
 					"<br>" +
-					'<p class="rating">' +
-					`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
 					" " +
+					'<p class="rating">' +
 					`${rating}` +
 					"</p>" +
 					"</h2>" +
@@ -343,12 +344,10 @@ function locationFinder(locationFinder_id) {
 					`${info}` +
 					"</p>" +
 					'<div class="scocial">' +
-					`<img src="./assets/images/icons/pageIcons/website_icon_53U_icon.ico" alt="webPage"><a href="${website}" target="_blank"></a></>.` +
-					`<button class="bot-btn banger hide" id="directions">Take Us There</button>` +
 					`<p class="rating">` +
 					" " +
-					`${phone}`;
-				("</p>");
+					`${phone}` +
+					"</p>";
 
 				"</div>" + "</div>" + "</div>" + "</div>";
 
