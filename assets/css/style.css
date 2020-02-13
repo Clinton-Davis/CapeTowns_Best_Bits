@@ -4,7 +4,7 @@ html {
 	height: 100%;
 }
 body {
-	/*background-image: url("../images/shutterstock_635476499.jpg");*/
+	background-image: url("../images/shutterstock_635476499.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -436,4 +436,61 @@ p {
 .rating {
 	color: black;
 	font-size: 1rem;
+}
+/* -=-=-=-=-=--=-=-=-=-=-=-=-=-=-The Modal (background)=-=-=-=--=-= */
+.modal {
+	display: none;
+	/*Hiddenbydefault*/
+	position: fixed;
+	/*Stayinplace*/
+	z-index: 1;
+	/*Sitontop*/
+	left: 0;
+	top: 0;
+	width: 100%;
+	/*Fullwidth*/
+	height: 100%;
+	/*Fullheight*/
+	overflow: auto;
+	/*Enablescrollifneeded*/
+	background-color: rgba(253, 252, 252, 0.3);
+	/*Fallbackcolor*/
+	background-color: rgba(245, 245, 245, 0.3);
+	/*Blackw/opacity*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: black;
+	margin: 15% auto;
+	/*15%fromthetopandcentered*/
+	padding: 20px;
+	border: 1px solid black;
+	width: 80%;
+	/*Couldbemoreorless,dependingonscreensize*/
+	position: relative;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
