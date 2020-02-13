@@ -287,7 +287,7 @@ function locationFinder(locationFinder_id) {
 				"geometry",
 				"plus_code",
 				"website",
-				"opening_hours",
+				//	"opening_hours",
 				"user_ratings_total"
 			]
 		};
@@ -310,7 +310,15 @@ function locationFinder(locationFinder_id) {
 				var phone = place.formatted_phone_number;
 				var opening_hours = place.opening_hours;
 
-				console.log(name, rating, icon, website, phone, place.opening_hours);
+				console.log(
+					name,
+					rating,
+					icon,
+					website,
+					phone,
+					//place.opening_hours,
+					place.geometry
+				);
 				if (rating == undefined) {
 					var rating = " ";
 				} else {
@@ -347,7 +355,9 @@ function locationFinder(locationFinder_id) {
 					`<p class="rating">` +
 					" " +
 					`${phone}` +
-					"</p>";
+					"</p>" +
+					`<p class="rating">` +
+					`<img id="directionsImg" class="dirImg" onclick="getDirections()" src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg" alt="Directions"</>`;
 
 				"</div>" + "</div>" + "</div>" + "</div>";
 
@@ -360,5 +370,34 @@ function locationFinder(locationFinder_id) {
 				console.log("states error");
 			}
 		}
+	}
+}
+function getDirections(locationFinder) {
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(
+			function(position) {
+				var pos = {
+					lat: position.coords.latitude,
+					lng: position.coords.longitude
+				};
+				console.log(pos, iD);
+			},
+			function() {
+				handleLocationError(true, infoWindow, map.getCenter());
+			}
+		);
+	} else {
+		// Browser doesn't support Geolocation
+		handleLocationError(false, infoWindow, map.getCenter());
+	}
+
+	function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+		infoWindow.setPosition(pos);
+		infoWindow.setContent(
+			browserHasGeolocation
+				? "Error: The Geolocation service failed."
+				: "Error: Your browser doesn't support geolocation."
+		);
+		infoWindow.open(map);
 	}
 }
