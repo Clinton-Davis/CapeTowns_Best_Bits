@@ -303,7 +303,9 @@ p {
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=LIST-STYLE-IMAGES-=-=-=-*/
 
 /*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps Div-==-=-=*/
-
+.user {
+	color: black;
+}
 #map {
 	min-height: 80vh;
 	margin: 0.2em;
