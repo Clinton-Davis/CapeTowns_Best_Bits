@@ -176,6 +176,7 @@ let foodiesJSON = {
 	}
 };
 // locationFinder is the onClick function that calles InitMap function on "clicked" Location.
+var marker, iD;
 function locationFinder(locationFinder_id) {
 	console.log(locationFinder_id);
 	switch (locationFinder_id) {
@@ -287,7 +288,6 @@ function locationFinder(locationFinder_id) {
 				"geometry",
 				"plus_code",
 				"website",
-				//	"opening_hours",
 				"user_ratings_total"
 			]
 		};
@@ -297,12 +297,11 @@ function locationFinder(locationFinder_id) {
 
 		function callback(place, status) {
 			if (status == google.maps.places.PlacesServiceStatus.OK) {
-				var marker = new google.maps.Marker({
+				marker = new google.maps.Marker({
 					map: map,
 					position: place.geometry.location,
 					title: place.name
 				});
-
 				var name = place.name;
 				var rating = place.rating;
 				var icon = place.icon;
@@ -347,8 +346,11 @@ function locationFinder(locationFinder_id) {
 					`${phone}` +
 					"</p>" +
 					`<p class="rating">` +
-					`<img id="directionsImg" class="dirImg" onclick="getDirections()" src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg" alt="Directions"</>`;
-
+					`<img id="directionsImg" 
+						class="dirImg" 
+						onclick="getDirections()" 
+						src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
+						alt="Directions"</>`;
 				"</div>" + "</div>" + "</div>" + "</div>";
 
 				var infowindow = new google.maps.InfoWindow({
@@ -365,6 +367,7 @@ function locationFinder(locationFinder_id) {
 
 var map, infoWindow, userMarker;
 function getDirections() {
+	console.log(marker, iD);
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -34.397, lng: 150.644 },
 		zoom: 6
@@ -379,10 +382,12 @@ function getDirections() {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
-				console.log(pos, iD);
+
 				infoWindow.setPosition(pos);
+				userMarker.setPosition(pos);
 				infoWindow.setContent(`<p class="user">Location Fond</p>`);
 				infoWindow.open(map);
+
 				map.setCenter(pos);
 			},
 			function() {
@@ -393,6 +398,7 @@ function getDirections() {
 		// Browser doesn't support Geolocation
 		handleLocationError(false, infoWindow, map.getCenter());
 	}
+	console.log(marker.position, iD);
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
