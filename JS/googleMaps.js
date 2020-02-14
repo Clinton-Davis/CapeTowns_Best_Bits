@@ -348,7 +348,7 @@ function locationFinder(locationFinder_id) {
 					`<p class="rating">` +
 					`<img id="directionsImg" 
 						class="dirImg" 
-						onclick="getDirections()" 
+						onclick="getDirectionsAndLocations()" 
 						src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
 						alt="Directions"</>`;
 				"</div>" + "</div>" + "</div>" + "</div>";
@@ -366,7 +366,7 @@ function locationFinder(locationFinder_id) {
 }
 
 var map, infoWindow, userMarker;
-function getDirections() {
+function getDirectionsAndLocations() {
 	console.log(marker, iD);
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -34.397, lng: 150.644 },
@@ -387,7 +387,6 @@ function getDirections() {
 				userMarker.setPosition(pos);
 				infoWindow.setContent(`<p class="user">Location Fond</p>`);
 				infoWindow.open(map);
-
 				map.setCenter(pos);
 			},
 			function() {
@@ -398,7 +397,37 @@ function getDirections() {
 		// Browser doesn't support Geolocation
 		handleLocationError(false, infoWindow, map.getCenter());
 	}
-	console.log(marker.position, iD);
+	console.log(marker.position, iD); // is working: _.L {lat: ƒ, lng: ƒ} "ChIJgfmZnllnzB0RPihXS4A96ZA"
+	getDirections();
+	var pos = marker.position;
+	var directionsService = new google.maps.DirectionsService();
+	function getDirections() {
+		var directionsRenderer = new google.maps.DirectionsRenderer();
+		var directionsMap;
+		var mapOptions = {
+			zoom: 7,
+			center: marker.position
+		};
+		directionsMap = new google.maps.Map(
+			document.getElementById("map"),
+			mapOptions
+		);
+		directionsRenderer.setMap(directionsMap);
+	}
+	calcRoute();
+
+	function calcRoute() {
+		var request = {
+			origin: pos,
+			destination: (placeId = iD),
+			travelMode: "DRIVING"
+		};
+		directionsService.route(request, function(result, status) {
+			if (status == "OK") {
+				directionsRenderer.setDirections(result);
+			}
+		});
+	}
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
