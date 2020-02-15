@@ -18,7 +18,7 @@
 				padding: 0;
 			}
 			.controls {
-				background-color: #fff;
+				background-color: rgb(5, 5, 5);
 				border-radius: 2px;
 				border: 1px solid transparent;
 				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -126,6 +126,7 @@
 					marker.setVisible(true);
 
 					infowindowContent.children["place-name"].textContent = place.name;
+					infowindowContent.children["place-geometry"].textContent = place.geometry;
 					infowindowContent.children["place-id"].textContent = place.place_id;
 					infowindowContent.children["place-address"].textContent =
 						place.formatted_address;

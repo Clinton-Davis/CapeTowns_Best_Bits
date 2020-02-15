@@ -271,7 +271,7 @@ function locationFinder(locationFinder_id) {
 			(iD = foodiesJSON.TLH.Id), (info = foodiesJSON.TLH.info), initMap();
 			break;
 	}
-
+}
 	function initMap() {
 		map = new google.maps.Map(document.getElementById("map"), {
 			center: { lat: -33.9142686, lng: 18.0955572 },
@@ -279,9 +279,7 @@ function locationFinder(locationFinder_id) {
 			mapTypeId: "terrain"
 		});
 
-		var request = {
-			placeId: iD,
-			fields: [
+		var request = {placeId: iD, fields: [
 				"name",
 				"rating",
 				"formatted_phone_number",
@@ -302,12 +300,13 @@ function locationFinder(locationFinder_id) {
 					position: place.geometry.location,
 					title: place.name
 				});
+				var latlng = place.geometry;
 				var name = place.name;
 				var rating = place.rating;
 				var icon = place.icon;
 				var website = place.website;
 				var phone = place.formatted_phone_number;
-				console.log(name, rating, icon, website, phone, place.geometry);
+				console.log(name, rating, icon, website, phone, latlng);
 				if (rating == undefined) {
 					var rating = " ";
 				} else {
@@ -326,34 +325,24 @@ function locationFinder(locationFinder_id) {
 
 				var markerData =
 					'<div class="infowindowContiner">' +
-					'<div class="infowidHeading">' +
-					'<h2 class="infoHeading">' +
-					`${name}` +
-					"<br>" +
-					" " +
-					'<p class="rating">' +
-					`${rating}` +
-					"</p>" +
-					"</h2>" +
-					"</div>" +
-					'<div class="infowindoBody">' +
-					'<p class="infobody">' +
-					`${info}` +
-					"</p>" +
-					'<div class="scocial">' +
-					`<p class="rating">` +
-					" " +
-					`${phone}` +
-					"</p>" +
-					`<p class="rating">` +
-					`<img id="directionsImg" 
-						class="dirImg" 
-						onclick="getDirectionsAndLocations()" 
-						src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
-						alt="Directions"</>`;
-				"</div>" + "</div>" + "</div>" + "</div>";
+						'<div class="infowidHeading">' +
+							'<h2 class="infoHeading">' + `${name}` + "<br>" + " " +
+							'<p class="rating">' + `${rating}` + "</p>" + "</h2>" +
+						"</div>" +
+						'<div class="infowindoBody">' + '<p class="infobody">' +
+						`${info}` + "</p>" + '<div class="scocial">' +
+					`<p class="rating">` + " " + `${phone}` + "</p>" +
+					`<p class="rating">` + `<img id="directionsImg" 
+											class="dirImg" 
+											onclick="getDirectionsAndLocations()" 
+											src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
+											alt="Directions"</>`;
+						"</div>" + 
+						"</div>" + 
+						"</div>" + 
+					"</div>";
 
-				var infowindow = new google.maps.InfoWindow({
+					var infowindow = new google.maps.InfoWindow({
 					content: markerData
 				});
 				map.setCenter(marker.getPosition());
@@ -363,7 +352,7 @@ function locationFinder(locationFinder_id) {
 			}
 		}
 	}
-}
+
 
 var map, infoWindow, userMarker;
 function getDirectionsAndLocations() {
@@ -374,7 +363,7 @@ function getDirectionsAndLocations() {
 	});
 	infoWindow = new google.maps.InfoWindow();
 	userMarker = new google.maps.Marker();
-	// Try HTML5 geolocation.
+	// HTML5 geolocation.
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
 			function(position) {
@@ -408,26 +397,29 @@ function getDirectionsAndLocations() {
 			zoom: 7,
 			center: marker.position
 		};
-		directionsMap = new google.maps.Map(
-			document.getElementById("map"),
+		directionsMap = new google.maps.Map(document.getElementById("map"),
 			mapOptions
 		);
 		directionsRenderer.setMap(directionsMap);
 	}
 	calcRoute();
-
+	console.log(pos)
 	function calcRoute() {
+		
 		var request = {
 			origin: pos,
-			destination: (placeId = iD),
+			destination: marker.position,
 			travelMode: "DRIVING"
 		};
 		directionsService.route(request, function(result, status) {
+			console.log(result)
 			if (status == "OK") {
 				directionsRenderer.setDirections(result);
 			}
+			
 		});
 	}
+	
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
