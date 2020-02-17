@@ -359,9 +359,9 @@ function initMap() {
 		}
 	}
 }
-var map, infoWindow, userMarker;
+var map, infoWindow, userLocation;
+console.log(userLocation);
 function getDirectionsAndLocations() {
-	console.log(marker, iD);
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -34.397, lng: 150.644 },
 		zoom: 6
@@ -372,15 +372,40 @@ function getDirectionsAndLocations() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
 			function(position) {
-				var pos = {
+				userLocation = {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
-				infoWindow.setPosition(pos);
-				userMarker.setPosition(pos);
+				var directionsService = new google.maps.DirectionsService();
+				var directionsRenderer = new google.maps.DirectionsRenderer();
+
+				var directionsMap;
+				var mapOptions = {
+					zoom: 10,
+					center: marker.position
+				};
+				directionsMap = new google.maps.Map(
+					document.getElementById("map"),
+					mapOptions
+				);
+				directionsRenderer.setMap(directionsMap);
+
+				var request = {
+					origin: userLocation,
+					destination: marker.position,
+					travelMode: "DRIVING"
+				};
+				directionsService.route(request, function(result, status) {
+					console.log(result);
+					if (status == "OK") {
+						directionsRenderer.setDirections(result);
+					}
+				});
+
+				infoWindow.setPosition(userLocation);
 				infoWindow.setContent(`<p class="user">Location Fond</p>`);
 				infoWindow.open(map);
-				map.setCenter(pos);
+				map.setCenter(userLocation);
 			},
 			function() {
 				handleLocationError(true, infoWindow, map.getCenter());
@@ -390,39 +415,8 @@ function getDirectionsAndLocations() {
 		// Browser doesn't support Geolocation
 		handleLocationError(false, infoWindow, map.getCenter());
 	}
-	console.log(marker.position, iD); // is working: _.L {lat: ƒ, lng: ƒ} "ChIJgfmZnllnzB0RPihXS4A96ZA"
-	getDirections();
-	var pos = marker.position;
-	var directionsService = new google.maps.DirectionsService();
-	function getDirections() {
-		var directionsRenderer = new google.maps.DirectionsRenderer();
-		var directionsMap;
-		var mapOptions = {
-			zoom: 7,
-			center: marker.position
-		};
-		directionsMap = new google.maps.Map(
-			document.getElementById("map"),
-			mapOptions
-		);
-		directionsRenderer.setMap(directionsMap);
-	}
-	calcRoute();
-	console.log(pos);
-	function calcRoute() {
-		var request = {
-			origin: pos,
-			destination: marker.position,
-			travelMode: "DRIVING"
-		};
-		directionsService.route(request, function(result, status) {
-			console.log(result);
-			if (status == "OK") {
-				directionsRenderer.setDirections(result);
-			}
-		});
-	}
 }
+
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 	infoWindow.setPosition(pos);
 	infoWindow.setContent(
