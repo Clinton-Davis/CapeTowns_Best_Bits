@@ -61,14 +61,8 @@ $(function() {
 		$("#back").addClass("hide");
 		$("#directions").addClass("hide");
 	});
-
 	$("#about").click(function() {
-		$("h1,h2,h3,p").addClass("hide");
 		$("#map").addClass("hide");
-		$("#sights").addClass("hide");
-		$("#adventure").addClass("hide");
-		$("#foodie").addClass("hide");
 		$("#back").addClass("hide");
-		$("#modal-heading").removeClass("hide");
 	});
 });
