@@ -272,87 +272,98 @@ function locationFinder(locationFinder_id) {
 			break;
 	}
 }
-	function initMap() {
-		map = new google.maps.Map(document.getElementById("map"), {
-			center: { lat: -33.9142686, lng: 18.0955572 },
-			zoom: 14,
-			mapTypeId: "terrain"
-		});
+function initMap() {
+	map = new google.maps.Map(document.getElementById("map"), {
+		center: { lat: -33.9142686, lng: 18.0955572 },
+		zoom: 14,
+		mapTypeId: "terrain"
+	});
 
-		var request = {placeId: iD, fields: [
-				"name",
-				"rating",
-				"formatted_phone_number",
-				"geometry",
-				"plus_code",
-				"website",
-				"user_ratings_total"
-			]
-		};
+	var request = {
+		placeId: iD,
+		fields: [
+			"name",
+			"rating",
+			"formatted_phone_number",
+			"geometry",
+			"plus_code",
+			"website",
+			"user_ratings_total"
+		]
+	};
 
-		service = new google.maps.places.PlacesService(map);
-		service.getDetails(request, callback);
+	service = new google.maps.places.PlacesService(map);
+	service.getDetails(request, callback);
 
-		function callback(place, status) {
-			if (status == google.maps.places.PlacesServiceStatus.OK) {
-				marker = new google.maps.Marker({
-					map: map,
-					position: place.geometry.location,
-					title: place.name
-				});
-				var latlng = place.geometry;
-				var name = place.name;
-				var rating = place.rating;
-				var icon = place.icon;
-				var website = place.website;
-				var phone = place.formatted_phone_number;
-				console.log(name, rating, icon, website, phone, latlng);
-				if (rating == undefined) {
-					var rating = " ";
-				} else {
-					var rating =
-						`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
-						place.rating;
-				}
-				if (phone == undefined) {
-					var phone = " ";
-				} else {
-					var phone =
-						`<img src="./assets/images/icons/pageIcons/call20x20.png"</>` +
-						" " +
-						place.formatted_phone_number;
-				}
+	function callback(place, status) {
+		if (status == google.maps.places.PlacesServiceStatus.OK) {
+			marker = new google.maps.Marker({
+				map: map,
+				position: place.geometry.location,
+				title: place.name
+			});
+			var latlng = place.geometry;
+			var name = place.name;
+			var rating = place.rating;
+			var icon = place.icon;
+			var website = place.website;
+			var phone = place.formatted_phone_number;
+			console.log(name, rating, icon, website, phone, latlng);
+			if (rating == undefined) {
+				var rating = " ";
+			} else {
+				var rating =
+					`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
+					place.rating;
+			}
+			if (phone == undefined) {
+				var phone = " ";
+			} else {
+				var phone =
+					`<img src="./assets/images/icons/pageIcons/call20x20.png"</>` +
+					" " +
+					place.formatted_phone_number;
+			}
 
-				var markerData =
-					'<div class="infowindowContiner">' +
-						'<div class="infowidHeading">' +
-							'<h2 class="infoHeading">' + `${name}` + "<br>" + " " +
-							'<p class="rating">' + `${rating}` + "</p>" + "</h2>" +
-						"</div>" +
-						'<div class="infowindoBody">' + '<p class="infobody">' +
-						`${info}` + "</p>" + '<div class="scocial">' +
-					`<p class="rating">` + " " + `${phone}` + "</p>" +
-					`<p class="rating">` + `<img id="directionsImg" 
+			var markerData =
+				'<div class="infowindowContiner">' +
+				'<div class="infowidHeading">' +
+				'<h2 class="infoHeading">' +
+				`${name}` +
+				"<br>" +
+				" " +
+				'<p class="rating">' +
+				`${rating}` +
+				"</p>" +
+				"</h2>" +
+				"</div>" +
+				'<div class="infowindoBody">' +
+				'<p class="infobody">' +
+				`${info}` +
+				"</p>" +
+				'<div class="scocial">' +
+				`<p class="rating">` +
+				" " +
+				`${phone}` +
+				"</p>" +
+				`<p class="rating">` +
+				`<img id="directionsImg" 
 											class="dirImg" 
 											onclick="getDirectionsAndLocations()" 
 											src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
 											alt="Directions"</>`;
-						"</div>" + 
-						"</div>" + 
-						"</div>" + 
-					"</div>";
+			"</div>" + "</div>" + "</div>" + "</div>";
 
-					var infowindow = new google.maps.InfoWindow({
-					content: markerData
-				});
-				map.setCenter(marker.getPosition());
-				infowindow.open(Map, marker);
-			} else {
-				console.log("states error");
-			}
+			var infowindow = new google.maps.InfoWindow({
+				content: markerData
+			});
+			map.setCenter(marker.getPosition());
+			infowindow.open(Map, marker);
+		} else {
+			console.log("states error");
 		}
 	}
-
+}
 
 var map, infoWindow, userMarker;
 function getDirectionsAndLocations() {
@@ -390,36 +401,36 @@ function getDirectionsAndLocations() {
 	getDirections();
 	var pos = marker.position;
 	var directionsService = new google.maps.DirectionsService();
+	var directionsRenderer = new google.maps.DirectionsRenderer();
+
 	function getDirections() {
-		var directionsRenderer = new google.maps.DirectionsRenderer();
 		var directionsMap;
 		var mapOptions = {
 			zoom: 7,
 			center: marker.position
 		};
-		directionsMap = new google.maps.Map(document.getElementById("map"),
+		directionsMap = new google.maps.Map(
+			document.getElementById("map"),
 			mapOptions
 		);
 		directionsRenderer.setMap(directionsMap);
 	}
 	calcRoute();
-	console.log(pos)
+	console.log(pos);
 	function calcRoute() {
-		
 		var request = {
 			origin: pos,
 			destination: marker.position,
 			travelMode: "DRIVING"
 		};
 		directionsService.route(request, function(result, status) {
-			console.log(result)
+			console.log(result);
 			if (status == "OK") {
+				getDirections();
 				directionsRenderer.setDirections(result);
 			}
-			
 		});
 	}
-	
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
