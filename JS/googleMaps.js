@@ -278,7 +278,6 @@ function initMap() {
 		zoom: 14,
 		mapTypeId: "terrain"
 	});
-
 	var request = {
 		placeId: iD,
 		fields: [
@@ -291,10 +290,8 @@ function initMap() {
 			"user_ratings_total"
 		]
 	};
-
 	service = new google.maps.places.PlacesService(map);
 	service.getDetails(request, callback);
-
 	function callback(place, status) {
 		if (status == google.maps.places.PlacesServiceStatus.OK) {
 			marker = new google.maps.Marker({
@@ -324,7 +321,6 @@ function initMap() {
 					" " +
 					place.formatted_phone_number;
 			}
-
 			var markerData =
 				'<div class="infowindowContiner">' +
 				'<div class="infowidHeading">' +
@@ -348,12 +344,11 @@ function initMap() {
 				"</p>" +
 				`<p class="rating">` +
 				`<img id="directionsImg" 
-											class="dirImg" 
-											onclick="getDirectionsAndLocations()" 
-											src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
-											alt="Directions"</>`;
+										class="dirImg" 
+										onclick="getDirectionsAndLocations()" 
+										src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
+										alt="Directions"</>`;
 			"</div>" + "</div>" + "</div>" + "</div>";
-
 			var infowindow = new google.maps.InfoWindow({
 				content: markerData
 			});
@@ -364,7 +359,6 @@ function initMap() {
 		}
 	}
 }
-
 var map, infoWindow, userMarker;
 function getDirectionsAndLocations() {
 	console.log(marker, iD);
@@ -382,7 +376,6 @@ function getDirectionsAndLocations() {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
-
 				infoWindow.setPosition(pos);
 				userMarker.setPosition(pos);
 				infoWindow.setContent(`<p class="user">Location Fond</p>`);
@@ -397,13 +390,12 @@ function getDirectionsAndLocations() {
 		// Browser doesn't support Geolocation
 		handleLocationError(false, infoWindow, map.getCenter());
 	}
-	console.log(marker.position, iD); // is working: _.L {lat: ƒ, lng: ƒ} "ChIJgfmZnllnzB0RPihXS4A96ZA"
+	console.log(marker.position, iD); // is working: _.L {lat: ƒ, lng: ƒ} "ChIJgfmZnllnzB0RPihXS4A96ZA"
 	getDirections();
 	var pos = marker.position;
 	var directionsService = new google.maps.DirectionsService();
-	var directionsRenderer = new google.maps.DirectionsRenderer();
-
 	function getDirections() {
+		var directionsRenderer = new google.maps.DirectionsRenderer();
 		var directionsMap;
 		var mapOptions = {
 			zoom: 7,
@@ -426,13 +418,11 @@ function getDirectionsAndLocations() {
 		directionsService.route(request, function(result, status) {
 			console.log(result);
 			if (status == "OK") {
-				getDirections();
 				directionsRenderer.setDirections(result);
 			}
 		});
 	}
 }
-
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 	infoWindow.setPosition(pos);
 	infoWindow.setContent(
