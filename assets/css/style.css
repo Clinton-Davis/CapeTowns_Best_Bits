@@ -12,7 +12,6 @@ body {
 	min-height: 70vh;
 	display: flex;
 	flex-direction: column;
-	
 }
 .gray-fliter {
 	background-color: rgba(0, 0, 0, 0.3);
