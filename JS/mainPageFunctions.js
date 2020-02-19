@@ -48,11 +48,11 @@ $(function() {
 		});
 	});
 
-		// Removing main heading and adding Sights col
+		// Removing main heading and adding Foodie col
 		$("#foodie").click(function() {
 			$("h1,h2,h3,p").fadeOut(200, function() {
 				$("h1,h2,h3,p").addClass("hide");
-				$("#sights").addClass("hide");
+				$("#sights").addClass("hide");           
 				$("#adventure").addClass("hide");
 				$("#foodie").addClass("hide");
 				$("#foodieCol").fadeIn(200, function() {
@@ -60,7 +60,7 @@ $(function() {
 				});
 			});
 		});
-		// Flag Close button sights col
+		// Flag Close button for Foodie col
 		$("#fback").click(function() {
 			$("#foodieCol").fadeOut(200, function() {
 				$("#foodieCol").addClass("hide");
@@ -73,26 +73,54 @@ $(function() {
 			});
 		});
 
-	
+	/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-GOOGLE MAPS SECTION-=-=-=-=-=-=-=-*/
 
 	// Click on selection to show maps
 	$("li").click(function() {
-		$("#sightsCol").addClass("hide");
-		$("#map").removeClass("hide");
-		$("#directions").removeClass("hide");
-		$("#back").removeClass("hide");
+		$("#sightCol").fadeOut(200, function(){
+			$("#sightCol").addClass("hide");
+		})
+		$("#back").fadeIn(2000, function(){
+			$("#back").removeClass("hide");
+			$("#map").removeClass("hide");
+		})
+		
 	});
 	$("li").click(function() {
-		$("#adventureCol").addClass("hide");
-		$("#map").removeClass("hide");
-		$("#directions").removeClass("hide");
-		$("#back").removeClass("hide");
+		$("#adventureCol").fadeOut(200, function(){
+			$("#adventureCol").addClass("hide");
+		})
+		$("#back").fadeIn(2000, function(){
+			$("#back").removeClass("hide");
+			$("#map").removeClass("hide");
+		})
+		
 	});
 	$("li").click(function() {
-		$("#foodieCol").addClass("hide");
-		$("#map").removeClass("hide");
-		$("#directions").removeClass("hide");
-		$("#back").removeClass("hide");
+		$("#foodieCol").fadeOut(200, function(){
+			$("#foodieCol").addClass("hide");
+		})
+		$("#back").fadeIn(2000, function(){
+			$("#back").removeClass("hide");
+			$("#map").removeClass("hide");
+		})
+		
+	});
+	/*
+	$("li").click(function() {
+		$("#foodieCol").fadeOut(200, function(){
+			$("#foodiesCol").addClass("hide");
+		})
+		$("#map").fadeIn(200, function(){
+			$("#map").removeClass("hide");
+		})
+		$("#directions").fadeIn(200, function(){
+			$("#directions").removeClass("hide");
+		})
+		$("#back").fadeIn(200, function(){
+			$("#map").removeClass("hide");
+		})
+		
 	});
 	//Back botton in maps
 	$("#back").click(function() {
@@ -106,5 +134,6 @@ $(function() {
 		$("#map").addClass("hide");
 		$("#back").addClass("hide");
 	});
+	*/
 });
 

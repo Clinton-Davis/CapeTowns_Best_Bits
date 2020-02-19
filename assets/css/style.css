@@ -322,11 +322,13 @@ p {
 	border: 2px whitesmoke solid;
 	background-color: rgba(0, 0, 0, 0.5);
 }
-.bottomBut {
-	display: flex;
-	justify-content: space-evenly;
+.mapBackBtn {
+	position: absolute;
+    right: 9%;
+    top: 14%;
+    z-index: 10;
 }
-.bot-btn {
+.mB-btn {
 	color: black;
 	padding: 0.2rem;
 	background: -moz-linear-gradient(

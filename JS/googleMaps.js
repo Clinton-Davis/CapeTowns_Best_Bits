@@ -399,6 +399,7 @@ function getDirectionsAndLocations() {
 					console.log(result);
 					if (status == "OK") {
 						directionsRenderer.setDirections(result);
+						
 					}
 				});
 
