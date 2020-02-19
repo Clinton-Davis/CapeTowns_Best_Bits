@@ -1,5 +1,5 @@
 $(function() {
-	// Removing main heading and adding colums in
+	// Removing main heading and adding Sights col
 	$("#sights").click(function() {
 		$("h1,h2,h3,p").fadeOut(200, function() {
 			$("h1,h2,h3,p").addClass("hide");
@@ -11,28 +11,7 @@ $(function() {
 			});
 		});
 	});
-	/*	$("#adventure").click(function() {
-		$("#mainHeading").fadeOut(200, function() {
-			/*$("#adventureCol").fadeIn(200, function() {
-				$("#mainHeading")
-					.children()
-					.addClass("hide");
-				$(
-		});
-		$("#sightsCol").addClass("hide");
-		$("#foodieCol").addClass("hide");
-		$("#map").addClass("hide");
-	});
-	$("#foodie").click(function() {
-		$("#foodieCol").removeClass("hide");
-		$("#mainHeading")
-			.children()
-			.addClass("hide");
-		$("#sightsCol").addClass("hide");
-		$("#adventureCol").addClass("hide");
-		$("#map").addClass("hide");
-	}); */
-	// Flag Colse button fuctions for colums
+	// Flag Close button sights col
 	$("#sback").click(function() {
 		$("#sightsCol").fadeOut(200, function() {
 			$("#sightsCol").addClass("hide");
@@ -44,19 +23,57 @@ $(function() {
 			});
 		});
 	});
-	/*
+	// Removing main heading and adding Adventure col
+	$("#adventure").click(function() {
+		$("h1,h2,h3,p").fadeOut(200, function() {
+			$("h1,h2,h3,p").addClass("hide");
+			$("#sights").addClass("hide");
+			$("#adventure").addClass("hide");
+			$("#foodie").addClass("hide");
+			$("#adventureCol").fadeIn(200, function() {
+				$("#adventureCol").removeClass("hide");
+			});
+		});
+	});
+	// Flag Close button Adventure col
 	$("#aback").click(function() {
-		$("#mainHeading")
-			.children()
-			.removeClass("hide");
-		$("#adventureCol").addClass("hide");
+		$("#adventureCol").fadeOut(200, function() {
+			$("#adventureCol").addClass("hide");
+			$("h1,h2,h3,p").fadeIn(200, function() {
+				$("h1,h2,h3,p").removeClass("hide");
+				$("#sights").removeClass("hide");
+				$("#adventure").removeClass("hide");
+				$("#foodie").removeClass("hide");
+			});
+		});
 	});
-	$("#fback").click(function() {
-		$("#foodieCol").addClass("hide");
-		$("#mainHeading")
-			.children()
-			.removeClass("hide");
-	});
+
+		// Removing main heading and adding Sights col
+		$("#foodie").click(function() {
+			$("h1,h2,h3,p").fadeOut(200, function() {
+				$("h1,h2,h3,p").addClass("hide");
+				$("#sights").addClass("hide");
+				$("#adventure").addClass("hide");
+				$("#foodie").addClass("hide");
+				$("#foodieCol").fadeIn(200, function() {
+					$("#foodieCol").removeClass("hide");
+				});
+			});
+		});
+		// Flag Close button sights col
+		$("#fback").click(function() {
+			$("#foodieCol").fadeOut(200, function() {
+				$("#foodieCol").addClass("hide");
+				$("h1,h2,h3,p").fadeIn(200, function() {
+					$("h1,h2,h3,p").removeClass("hide");
+					$("#sights").removeClass("hide");
+					$("#adventure").removeClass("hide");
+					$("#foodie").removeClass("hide");
+				});
+			});
+		});
+
+	
 
 	// Click on selection to show maps
 	$("li").click(function() {
@@ -79,8 +96,7 @@ $(function() {
 	});
 	//Back botton in maps
 	$("#back").click(function() {
-		$("#mainHeading")
-			.children()
+		$("h1,h2,h3,p")
 			.removeClass("hide");
 		$("#map").addClass("hide");
 		$("#back").addClass("hide");
@@ -89,5 +105,6 @@ $(function() {
 	$("#about").click(function() {
 		$("#map").addClass("hide");
 		$("#back").addClass("hide");
-	});*/
+	});
 });
+
