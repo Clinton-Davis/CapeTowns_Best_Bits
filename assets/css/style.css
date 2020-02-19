@@ -42,7 +42,14 @@ body {
 	-moz-box-shadow: 0px 0px 5px 1px rgba(252, 249, 252, 0.5);
 	box-shadow: 0px 0px 5px 1px rgba(252, 249, 252, 0.5);
 }
-
+@keyframes fader {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header Nav Bar=-=-=-=-=-=--=-*/
 header {
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
@@ -129,6 +136,7 @@ h3,
 p {
 	text-align: center;
 	margin: 0.1em 0;
+	animation-name: fader;
 }
 .list-selectionContainer {
 	display: flex;
