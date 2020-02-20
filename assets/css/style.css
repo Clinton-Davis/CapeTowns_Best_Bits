@@ -129,7 +129,6 @@ h3,
 p {
 	text-align: center;
 	margin: 0.1em 0;
-	
 }
 .list-selectionContainer {
 	display: flex;
@@ -503,7 +502,7 @@ p {
 
 /* Modal Content/Box */
 .modal-content {
-	margin: 15% auto;
+	margin: 10% auto;
 	background-image: url("../images/sunsetreddull.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;

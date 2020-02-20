@@ -41,20 +41,20 @@
 
 
 <!-- The Modal -->
-<div id="aboutModal" class="modal">
+<div id="aboutModal" class="modal hide">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <div class="modal-content" id="modalContent">
 	  
-    <span class="close">&times;</span>
-	<p><h1 class="banger" id="modal-heading">Cape Town</h1><br> 
-		This Website has lists of some of the Best Bits to see, do and eat in Cape Town.<br> 
+    <span class="close" id="modal-close">&times;</span>
+	<h1 class="banger" id="modal-heading">Cape Town</h1><br> 
+	<p class="modal-p">	This Website has lists of some of the Best Bits to see, do and eat in Cape Town.<br> 
 		Chosen by locals and past explores,	it's known for its natural beauty and fantastic foods.<br>
 		Because of the way the land lies, It gives plenty of opportunities for some heart-stopping activities and breathtaking views.<br>
 		This Website is made for People that like to adventure on their own, in their time and personal way.<br>
-		Sure, Tours are great, but DIYers have the most fun.<br>
+		Sure, Tours are great, but DIYers have the most fun.<br><br>
 		At the bottom of the page where are three buttons.<br>Sights, Adventure and Foodies.<br>
-		Click on them to get a list of the best bits in the different category.
+		Click on them to get a list of the best bits in the different category.<br> Click on the Map Icon to get directions from your localion to the selected one.<br><br>
 
 		Sight: is a list of some stunning views and places of intrest.<br>
 		Adventure: is for the more adventurous travels how like some heart-stopping fun.<br>
@@ -333,9 +333,8 @@
 					</div>
 				</div>
 				<!-- Google Maps and Information Section-->
-				<div class="mapContainer">
+				<div class="mapContainer" id="mapCon">
 					<div class="mapBackBtn">
-						
 						<button class="mB-btn banger hide" id="back">Go Back</button>
 					</div>
 					<div id="map" class="hide">map</div>
