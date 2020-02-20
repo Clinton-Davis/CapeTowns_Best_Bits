@@ -570,6 +570,16 @@ p {
 form {
 	display: grid;
 	grid-template-columns: 5% 22% 22% 22% 22% 5%;
+
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.con-gray-fliter {
+	grid-column: 2/3;
+	grid-row: 3/6;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -610,4 +620,5 @@ form {
 	grid-row: 4/5;
 	grid-column: 2/3;
 	text-align: center;
+	font-size: 1em;
 }
