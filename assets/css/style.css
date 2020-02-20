@@ -74,6 +74,7 @@ nav {
 }
 #capeTown {
 	color: black;
+	letter-spacing: 0.03em;
 	grid-row: 1/2;
 	grid-column: 2/3;
 	font-size: 4.6rem; /* Small screans 320x568*/
@@ -86,11 +87,13 @@ nav {
 
 #goodBits {
 	color: black;
+	letter-spacing: 0.03em;
 	grid-row: 2/3;
 	grid-column: 2/3;
 	font-size: 3.5rem; /* Small screens 320x568 */
 }
 #diy {
+	letter-spacing: 0.03em;
 	grid-row: 3/4;
 	grid-column: 2/3;
 	font-size: 3rem; /* Small Creens 320x568 */
@@ -373,10 +376,10 @@ p {
 }
 
 .opt-btn {
+	letter-spacing: 0.03em;
 	color: rgba(0, 0, 0, 1);
 	font-size: 1.2rem;
 	width: 5rem;
-	height: 2rem;
 
 	background: -moz-linear-gradient(
 		-45deg,
@@ -577,6 +580,22 @@ form {
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 }
+#con-modal-close {
+	color: rgba(255, 255, 255, 0.7.5);
+	padding: 0.1em;
+	border: 1px solid black;
+	border-radius: 20%;
+	float: right;
+	font-size: 1em;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+	-webkit-border-radius: 20%;
+	-moz-border-radius: 20%;
+	-ms-border-radius: 20%;
+	-o-border-radius: 20%;
+}
 .con-gray-fliter {
 	grid-column: 2/3;
 	grid-row: 3/6;
@@ -613,6 +632,7 @@ form {
 }
 #con-Heading {
 	font-size: 3rem;
+	letter-spacing: 2px;
 	grid-column: 2/3;
 	grid-row: 3/4;
 }
@@ -621,4 +641,5 @@ form {
 	grid-column: 2/3;
 	text-align: center;
 	font-size: 1em;
+	padding: 1em;
 }

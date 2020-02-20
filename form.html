@@ -19,45 +19,49 @@
 	</head>
 
 	<body id="contactBody">
-		<div class="con-gray-fliter"></div>
-		<h3 class="banger" id="con-Heading">
-			We would Love to here from you.
-		</h3>
-		<h5 class="conLead">
-			If you have any comments or what your biness to get featured, leave your
-			email and message and we will get back to you asap
-		</h5>
+		<div class="con-gray-fliter">
+			<button class=" backBnt pointer banger" id="conback">
+				<strong>X</strong>
+			</button>
+			<h3 class="banger" id="con-Heading">
+				We would Love to here from you.
+			</h3>
+			<h5 class="conLead">
+				If you have any comments or what your biness to get featured, leave your
+				email and message and we will get back to you asap
+			</h5>
 
-		<div class="formContainer">
-			<form onsubmit="return sendMail(this);">
-				<input
-					type="text"
-					name="name"
-					class="form-control formHeight"
-					id="fullname"
-					placeholder="Name"
-					required
-				/>
-				<input
-					type="text"
-					name="emailaddress"
-					class="form-control formHeight"
-					id="emailaddress"
-					placeholder="Email"
-					required
-				/>
-				<textarea
-					rows="5"
-					name="Message"
-					class="form-control formHeight"
-					id="form-message"
-					placeholder="Message Here"
-					required
-				></textarea>
-				<button type="submit" class="opt-btn formHeight" id="contact-send">
-					Send
-				</button>
-			</form>
+			<div class="formContainer">
+				<form onsubmit="return sendMail(this);">
+					<input
+						type="text"
+						name="name"
+						class="form-control formHeight"
+						id="fullname"
+						placeholder="Name"
+						required
+					/>
+					<input
+						type="text"
+						name="emailaddress"
+						class="form-control formHeight"
+						id="emailaddress"
+						placeholder="Email"
+						required
+					/>
+					<textarea
+						rows="5"
+						name="Message"
+						class="form-control formHeight"
+						id="form-message"
+						placeholder="Message Here"
+						required
+					></textarea>
+					<button type="submit" class="opt-btn formHeight" id="contact-send">
+						Send
+					</button>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
