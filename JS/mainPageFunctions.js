@@ -79,6 +79,8 @@ $(function() {
 	$("li").click(function() {
 		$("#sightsCol").fadeOut(200, function() {
 			$("#sightsCol").addClass("hide");
+			$("#about").addClass("hide");
+			$("#contact").addClass("hide");
 		});
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
@@ -121,8 +123,10 @@ $(function() {
 		$("#aboutModal").fadeIn(1000);
 		$("#mapCon").css("display", "none");
 		$("#back").css("display", "none");
-	});
+	}); // Close span on about mondal
 	$("#modal-close").click(function() {
 		$("#aboutModal").fadeOut(1000);
+		$("#about").removeClass("hide");
+		$("#contact").removeClass("hide");
 	});
 });
