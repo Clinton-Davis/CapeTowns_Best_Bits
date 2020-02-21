@@ -55,7 +55,13 @@ xhr.onreadystatechange = function() {
 	function writeToDoc() {
 		document.getElementById("temp-api").innerHTML = temps;
 		document.getElementById("wind-api").innerHTML =
-			"Wind:" + " " + wind + " " + dir;
+			`<img id="windsock" src="./assets/images/icons/pageIcons/icons8-wind-indicator-arrows-20.png" alt="windIcon">` +
+			" " +
+			" " +
+			wind +
+			" " +
+			`<p class="kph">Kph</p>` +
+			dir;
 	}
 };
 xhr.open("GET", url + my_id + unit);

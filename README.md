@@ -69,6 +69,7 @@ This is the first thing they would see. In this page, I wanted to give a general
 - [YouTube](https://www.youtube.com/)
 - [GitHub](https://github.com/)
 - [Slack](https://slack.com/intl/en-ie/)
+  https://openweathermap.org/api
 
 ---
 
