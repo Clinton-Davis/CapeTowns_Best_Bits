@@ -1,3 +1,4 @@
+//Code copied buy Dev Ed and make to fit
 const navslide = () => {
 	const burger = document.querySelector(".burger");
 	const nav = document.querySelector(".nav");
