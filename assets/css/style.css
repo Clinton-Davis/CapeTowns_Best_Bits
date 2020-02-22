@@ -125,7 +125,8 @@ nav {
 	}
 }
 .nav-active {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url("../images/saflagimg.jpeg");
+	background-size: cover;
 	border-radius: 10px;
 	transform: translateX(0%);
 	-webkit-transform: translateX(0%);
@@ -769,4 +770,7 @@ form {
 	text-align: center;
 	font-size: 1em;
 	padding: 1em;
+}
+#windsock{
+	padding-bottom: 10px;
 }
