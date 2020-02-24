@@ -8,6 +8,14 @@ function sendMail(contactForm) {
 		.then(
 			function(responce) {
 				console.log("SUCCESS", responce);
+				if (responce.status == 200) {
+					document.getElementById(
+						"con-Heading"
+					).innerHTML = `<h3 class="banger" id="con-Heading">
+					Thank You Will be in Touch.
+				</h3>`;
+					location.href = "index.html";
+				}
 			},
 			function(error) {
 				console.log("FAILED", error);

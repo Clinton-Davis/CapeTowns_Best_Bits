@@ -129,4 +129,6 @@ $(function() {
 		$("#about").removeClass("hide");
 		$("#contact").removeClass("hide");
 	});
+
+	//Contact page Send Button
 });

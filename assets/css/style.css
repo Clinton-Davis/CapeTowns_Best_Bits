@@ -770,11 +770,21 @@ p {
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
 }
+.gray-fliter2 {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+#emailComplete {
+	display: flex;
+}
 #contactBody {
 	font-family: "Montserrat", sans-serif;
 	display: grid;
 	grid-template-rows: 5% 10% 10% auto 20%;
 	grid-template-columns: 5% auto 5%;
+}
+#emailEnd {
+	font-size: 6rem;
 }
 .formHeight {
 	min-height: 2rem;
@@ -814,10 +824,7 @@ form {
 	grid-column: 5/6;
 	grid-row: 4/5;
 }
-.conHeading {
-	grid-row: 2/3;
-	grid-column: 2/3;
-}
+
 #con-Heading {
 	font-size: 3rem;
 	letter-spacing: 2px;
