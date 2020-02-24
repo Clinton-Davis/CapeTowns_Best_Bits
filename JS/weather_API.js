@@ -10,7 +10,8 @@ xhr.onreadystatechange = function() {
 		//console.log(obj);
 
 		var city = obj.name;
-		var temps = obj.main.temp_max + " / " + " " + obj.main.temp_min + " ˚C";
+		var tempsMax = Math.ceil(obj.main.temp_max);
+		var tempMin = Math.floor(obj.main.temp_min);
 		var wind = obj.wind.speed;
 		var direction = obj.wind.deg;
 		//console.log(city, temps, wind);
@@ -49,19 +50,15 @@ xhr.onreadystatechange = function() {
 		} else {
 			var dir = "N";
 		}
-
 		writeToDoc();
 	}
 	function writeToDoc() {
-		document.getElementById("temp-api").innerHTML = temps;
-		document.getElementById("wind-api").innerHTML =
-			`<img id="windsock" src="./assets/images/icons/pageIcons/icons8-wind-indicator-arrows-20.png" alt="windIcon">` +
-			" " +
-			" " +
-			wind +
-			" " +
-			`<p class="kph">Kph</p>` +
-			dir;
+		document.getElementById(
+			"temp-api"
+		).innerHTML = `H ${tempsMax} / ${tempMin} L ˚C`;
+		document.getElementById("wind-api").innerHTML = `<img id="windsock" 
+			src="./assets/images/icons/pageIcons/icons8-wind-indicator-arrows-20.png" 
+			alt="windIcon"> ${wind} <p class="kph">Kph</p> ${dir}`;
 	}
 };
 xhr.open("GET", url + my_id + unit);
