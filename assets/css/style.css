@@ -269,6 +269,7 @@ nav {
 	background-clip: text;
 	-webkit-background-clip: text;
 	background-image: url(../images/BigBlueOceanLiter.jpg);
+	background-position: center;
 	animation: bg-animation 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
