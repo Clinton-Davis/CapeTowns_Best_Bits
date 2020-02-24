@@ -13,6 +13,7 @@ xhr.onreadystatechange = function() {
 		var tempsMax = Math.ceil(obj.main.temp_max);
 		var tempMin = Math.floor(obj.main.temp_min);
 		var wind = obj.wind.speed;
+		console.log(tempsMax, tempMin);
 		var direction = obj.wind.deg;
 		//console.log(city, temps, wind);
 		if (direction > 349 || direction <= 12) {
