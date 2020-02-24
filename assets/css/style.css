@@ -14,7 +14,7 @@ html {
 	height: 100%;
 }
 body {
-	background-image: url("../images/shutterstock_635476499.jpg");
+	background-image: url("../images/capeTownCityBoll.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -214,7 +214,8 @@ nav {
 	grid-row: 1/2;
 	grid-column: 2/3;
 	font-size: 9rem;
-	/*4.6remSmallscreans320x568*/background-size: 200%;
+	/*4.6remSmallscreans320x568*/
+	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	background-image: url(../images/sunnyBackgroundCrop.jpg);
@@ -244,13 +245,13 @@ nav {
 	grid-row: 2/3;
 	grid-column: 2/3;
 	font-size: 3.5rem;
-	/*Smallscreens320x568*/:;
+	/*Smallscreens320x568*/
 }
 @keyframes bg-animationTB {
 	0% {
 		background-position: bottom;
 	}
-	
+
 	100% {
 		background-position: top;
 	}
@@ -260,7 +261,7 @@ nav {
 	background-size: 150%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-image: url(../images/BligBlueOcean.jpg);
+	background-image: url(../images/BigBlueOceanLiter.jpg);
 	animation: bg-animation 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
