@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
 
 :root {
-	--gradient: linear-gradient(90deg, #ead446, #C63B3B, #288761, #3571B2, #000000);
-  }
+	--gradient: linear-gradient(
+		90deg,
+		#ead446,
+		#c63b3b,
+		#288761,
+		#3571b2,
+		#000000
+	);
+}
 html {
 	height: 100%;
 }
@@ -207,26 +214,55 @@ nav {
 	grid-row: 1/2;
 	grid-column: 2/3;
 	font-size: 9rem;
-	/*4.6remSmallscreans320x568*/background-size: 150%;
+	/*4.6remSmallscreans320x568*/background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-image: url(../images/sky.jpeg);
-	animation: bg-animation 45s ease-in-out infinite alternate;
-	-webkit-animation: bg-animation 45s ease-in-out infinite alternate;
+	background-image: url(../images/sunnyBackgroundCrop.jpg);
+	animation: bg-animation 120s ease-in-out infinite alternate;
+	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 }
 @keyframes bg-animation {
-	0% {background-position: left}
-	50% {background-position: right}
-	100% {background-position: left}
-  }
+	0% {
+		background-position: left;
+	}
+	50% {
+		background-position: right;
+	}
+	100% {
+		background-position: left;
+	}
+}
 #goodBits {
-	color: black;
+	color: transparent;
+	background-size: 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-image: url(../images/orangeYelloSunSet.jpg);
+	animation: bg-animationTB 120s ease-in-out infinite alternate;
+	-webkit-animation: bg-animationTB 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
 	grid-row: 2/3;
 	grid-column: 2/3;
-	font-size: 3.5rem; /* Small screens 320x568 */
+	font-size: 3.5rem;
+	/*Smallscreens320x568*/:;
+}
+@keyframes bg-animationTB {
+	0% {
+		background-position: bottom;
+	}
+	
+	100% {
+		background-position: top;
+	}
 }
 #diy {
+	color: transparent;
+	background-size: 150%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-image: url(../images/BligBlueOcean.jpg);
+	animation: bg-animation 120s ease-in-out infinite alternate;
+	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
 	grid-row: 3/4;
 	grid-column: 2/3;
@@ -779,6 +815,6 @@ form {
 	font-size: 1em;
 	padding: 1em;
 }
-#windsock{
+#windsock {
 	padding-bottom: 10px;
 }
