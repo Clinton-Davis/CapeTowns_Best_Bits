@@ -324,9 +324,9 @@ function initMap() {
 			if (website == undefined) {
 				var website = " ";
 			} else {
-				var website = `<img src="./assets/images/icons/pageIcons/webIcon50x50.png" id="webIcon"</></img>
-				<a href="${place.website}" target="_blank"></a>`;
+				var website = `${place.website}`;
 			}
+
 			var markerData =
 				'<div class="infowindowContiner">' +
 				'<div class="infowidHeading">' +
@@ -345,7 +345,9 @@ function initMap() {
 				'<div class="scocial">' +
 				`<p class="rating">` +
 				`${phone}` +
-				`${website}` +
+				`<div class="website rating">` +
+				`<a href="${website}" target="_blank">${website}</a>` +
+				"</div>" +
 				`<img id="directionsImg" 
 										class="dirImg" 
 										onclick="getDirectionsAndLocations()" 
@@ -367,7 +369,7 @@ function initMap() {
 	}
 }
 var map, infoWindow, userLocation;
-console.log(userLocation);
+
 function getDirectionsAndLocations() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -34.397, lng: 150.644 },
