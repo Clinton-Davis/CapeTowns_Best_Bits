@@ -113,9 +113,9 @@ The side scroll on burger deployment needs to be sorted out.
 when you click on the wind icon the map opens up.
 Links to be fixed on google:
 
-/ boat trip is info is ""
+
 -Abseil Table Mountain make lowe case
--WaterBykes is coming up JonkerHoiuse
+
 -Snookies is no working
 -chef wherehouse is coming up stardust -
 

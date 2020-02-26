@@ -243,6 +243,7 @@ function locationFinder(locationFinder_id) {
 			break;
 		case "wb":
 			(iD = adventureJSON.WB.Id), (info = adventureJSON.WB.info), initMap();
+			break;
 		// Foodies Strars
 		case "jh":
 			(iD = foodiesJSON.JH.Id), (info = foodiesJSON.JH.info), initMap();
@@ -346,14 +347,14 @@ function initMap() {
 				`<p class="rating">` +
 				`${phone}` +
 				`<div class="website rating">` +
-				`<a href="${website}" target="_blank">${website}</a>` +
-				"</div>" +
+				`<a href="${website}" class="rating" target="_blank">${website}</a>` +
+				"</div>" + `<div class="imgRap">` +
 				`<img id="directionsImg" 
 										class="dirImg" 
 										onclick="getDirectionsAndLocations()" 
 										src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
-										alt="Directions"</>` +
-				"</p>" +
+										alt="Directions"</>` + `</div>` +
+				
 				"</div>" +
 				"</div>" +
 				"</div>" +

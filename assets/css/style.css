@@ -546,7 +546,10 @@ p {
 	-moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
-
+.imgRap {
+	display: flex;
+	justify-content: center;
+}
 /*-------The 3 Selection Bottons --------*/
 .mainOptions {
 	display: flex;
