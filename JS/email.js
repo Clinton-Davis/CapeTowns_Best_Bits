@@ -12,7 +12,7 @@ function sendMail(contactForm) {
 					document.getElementById(
 						"con-Heading"
 					).innerHTML = `<h3 class="banger" id="con-Heading">
-					Thank You Will be in Touch.
+					Thank You we Will be in Touch.
 				</h3>`;
 					location.href = "index.html";
 				}

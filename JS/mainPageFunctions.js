@@ -129,6 +129,9 @@ $(function() {
 		$("#about").removeClass("hide");
 		$("#contact").removeClass("hide");
 	});
-
-	//Contact page Send Button
+	//Closing Form
+	$("#contact-send").click(function() {
+		$("#mainform").css("display", "none");
+		$(".conLead").addClass("hide");
+	});
 });
