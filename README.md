@@ -108,17 +108,16 @@ I also viewed it on different mobile phone types to see how it worked.
 The next stage of testing was external testing. I sent the code and the webpage into peer-to-peer code testing in Code Institute section on Slack.
 
 ### Bugs
+
 The side scroll on burger deployment needs to be sorted out.
 when you click on the wind icon the map opens up.
 Links to be fixed on google:
--Two Oceans is coming up Cape Point, Need to swop Lions head for Two Oceans
--Kayak is coming up Robin Island
--Hellekopters / boat trip is info is ""
+
+/ boat trip is info is ""
 -Abseil Table Mountain make lowe case
 -WaterBykes is coming up JonkerHoiuse
 -Snookies is no working
--chef wherehouse is coming up stardust
--
+-chef wherehouse is coming up stardust -
 
 ## Deployment
 

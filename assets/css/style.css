@@ -371,7 +371,7 @@ p {
 	/*bouliders*/
 	grid-row: 6/7;
 }
-#cpi {
+#chpi {
 	/*Chapmens Peak*/
 	grid-row: 7/8;
 }
@@ -379,10 +379,11 @@ p {
 	/*Dis Six Mus*/
 	grid-row: 8/9;
 }
-#lhi {
-	/*Lions Head*/
+#cpi {
+	/*cape point*/
 	grid-row: 9/10;
 }
+
 #rii {
 	/*Robin Island*/
 	grid-row: 10/11;
@@ -396,8 +397,8 @@ p {
 	/*Cape Town Helicopters*/
 	grid-row: 2/3;
 }
-#bti {
-	/*Boat Trips*/
+#safai {
+	/*Big Five Game Reserve*/
 	grid-row: 3/4;
 }
 #abti {
@@ -545,6 +546,7 @@ p {
 	-moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
+
 /*-------The 3 Selection Bottons --------*/
 .mainOptions {
 	display: flex;
@@ -668,6 +670,9 @@ p {
 .rating {
 	color: black;
 	font-size: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 /* -=-=-=-=-=--=-=-=-=-=-=-=-=-=-Modal=-=-=-=--=-= */
 .modal {

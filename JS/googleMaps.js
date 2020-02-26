@@ -66,10 +66,10 @@ let adventureJSON = {
 		Id: "ChIJG31DwhJnzB0RC9C77ufuck0",
 		info: `Kayaking is vastly becoming one of the top Adventure Activities that Cape Town has to offer. With our guided Kayak Tour in Hout Bay and state of the art equipment - let Kayak Adventures take you on a scenic excursion that you won't forget!`
 	},
-	//Waterfront Charters - Daily Boat Trips & Private Tours https://waterfrontcharters.co.za/
-	BT: {
-		Id: "ChIJAQAAwFlnzB0RJAucQXCvvXk",
-		info: `""`
+	// Big Five Game Reserve https://inverdoorn.com/
+	SAFA: {
+		Id: "ChIJm-ZKiSFnzB0R4NBaoM1UpgM",
+		info: `Inverdoorn game reserve is filled with various natural life, within the Klein Karoo. The reserve has made a significant contribution to sustaining the biodiversity of the region. Inverdoorn’s 10 000 hectares are also home to the successful cheetah conservation centre.`
 	},
 	//Abseil Table Mountain abseilafrica.co.za
 	ABT: {
@@ -107,7 +107,8 @@ let adventureJSON = {
 	//Cape Toewn Helicotpers helicopterscapetown.co.za
 	HT: {
 		Id: "ChIJN4QZT1ZnzB0Rq1OQmhhKoFc",
-		info: `""`
+		info: `The helicopter you fly in has a huge impact on the quality of your air-tour experience. Compare Cape Town
+		Helicopters’ state-of-the-art helicopters with some other tour helicopters used in Cape Town.`
 	},
 	WB: {
 		Id: "ChIJ5_CYMno_zB0Rb3CrFJuM0vI",
@@ -213,8 +214,11 @@ function locationFinder(locationFinder_id) {
 		case "ri":
 			(iD = sightsJSON.RI.Id), (info = sightsJSON.RI.info), initMap();
 			break; //addventure starts
-		case "bt":
-			(iD = adventureJSON.BT.Id), (info = adventureJSON.BT.info), initMap();
+		case "kay":
+			(iD = adventureJSON.KAY.Id), (info = adventureJSON.KAY.info), initMap();
+			break;
+		case "safa":
+			(iD = adventureJSON.SAFA.Id), (info = adventureJSON.SAFA.info), initMap();
 			break;
 		case "abt":
 			(iD = adventureJSON.ABT.Id), (info = adventureJSON.ABT.info), initMap();
@@ -302,24 +306,26 @@ function initMap() {
 			var latlng = place.geometry;
 			var name = place.name;
 			var rating = place.rating;
-			var icon = place.icon;
 			var website = place.website;
 			var phone = place.formatted_phone_number;
-			console.log(name, rating, icon, website, phone, latlng);
+			console.log(name, rating, website, phone, latlng);
 			if (rating == undefined) {
 				var rating = " ";
 			} else {
-				var rating =
-					`<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating">` +
-					place.rating;
+				var rating = `<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating"> ${place.rating}`;
 			}
 			if (phone == undefined) {
 				var phone = " ";
 			} else {
 				var phone =
-					`<img src="./assets/images/icons/pageIcons/call20x20.png"</>` +
-					" " +
-					place.formatted_phone_number;
+					/*`<img src="./assets/images/icons/pageIcons/call20x20.png"</> use ::before*/
+					`${place.formatted_phone_number}`;
+			}
+			if (website == undefined) {
+				var website = " ";
+			} else {
+				var website = `<img src="./assets/images/icons/pageIcons/webIcon50x50.png" id="webIcon"</></img>
+				<a href="${place.website}" target="_blank"></a>`;
 			}
 			var markerData =
 				'<div class="infowindowContiner">' +
@@ -327,7 +333,6 @@ function initMap() {
 				'<h2 class="infoHeading">' +
 				`${name}` +
 				"<br>" +
-				" " +
 				'<p class="rating">' +
 				`${rating}` +
 				"</p>" +
@@ -339,16 +344,18 @@ function initMap() {
 				"</p>" +
 				'<div class="scocial">' +
 				`<p class="rating">` +
-				" " +
 				`${phone}` +
-				"</p>" +
-				`<p class="rating">` +
+				`${website}` +
 				`<img id="directionsImg" 
 										class="dirImg" 
 										onclick="getDirectionsAndLocations()" 
 										src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
-										alt="Directions"</>`;
-			"</div>" + "</div>" + "</div>" + "</div>";
+										alt="Directions"</>` +
+				"</p>" +
+				"</div>" +
+				"</div>" +
+				"</div>" +
+				"</div>";
 			var infowindow = new google.maps.InfoWindow({
 				content: markerData
 			});
