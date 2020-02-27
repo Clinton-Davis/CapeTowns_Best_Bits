@@ -6,6 +6,8 @@ $(function() {
 			$("#sights").addClass("hide");
 			$("#adventure").addClass("hide");
 			$("#foodie").addClass("hide");
+			$("#about").addClass("hide");
+			$("#contact").addClass("hide");
 			$("#sightsCol").fadeIn(200, function() {
 				$("#sightsCol").removeClass("hide");
 			});
@@ -20,6 +22,8 @@ $(function() {
 				$("#sights").removeClass("hide");
 				$("#adventure").removeClass("hide");
 				$("#foodie").removeClass("hide");
+				$("#about").removeClass("hide");
+				$("#contact").removeClass("hide");
 			});
 		});
 	});
@@ -30,6 +34,8 @@ $(function() {
 			$("#sights").addClass("hide");
 			$("#adventure").addClass("hide");
 			$("#foodie").addClass("hide");
+			$("#about").addClass("hide");
+			$("#contact").addClass("hide");
 			$("#adventureCol").fadeIn(200, function() {
 				$("#adventureCol").removeClass("hide");
 			});
@@ -44,6 +50,8 @@ $(function() {
 				$("#sights").removeClass("hide");
 				$("#adventure").removeClass("hide");
 				$("#foodie").removeClass("hide");
+				$("#about").removeClass("hide");
+				$("#contact").removeClass("hide");
 			});
 		});
 	});
@@ -55,6 +63,8 @@ $(function() {
 			$("#sights").addClass("hide");
 			$("#adventure").addClass("hide");
 			$("#foodie").addClass("hide");
+			$("#about").addClass("hide");
+			$("#contact").addClass("hide");
 			$("#foodieCol").fadeIn(200, function() {
 				$("#foodieCol").removeClass("hide");
 			});
@@ -69,6 +79,8 @@ $(function() {
 				$("#sights").removeClass("hide");
 				$("#adventure").removeClass("hide");
 				$("#foodie").removeClass("hide");
+				$("#about").removeClass("hide");
+				$("#contact").removeClass("hide");
 			});
 		});
 	});
@@ -76,7 +88,7 @@ $(function() {
 	/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-GOOGLE MAPS SECTION-=-=-=-=-=-=-=-*/
 
 	// Click on selection to show maps
-	$("li").click(function() {
+	$(".item").click(function() {
 		$("#sightsCol").fadeOut(200, function() {
 			$("#sightsCol").addClass("hide");
 			$("#about").addClass("hide");
@@ -87,7 +99,7 @@ $(function() {
 			$("#map").removeClass("hide");
 		});
 	});
-	$("li").click(function() {
+	$(".item").click(function() {
 		$("#adventureCol").fadeOut(200, function() {
 			$("#adventureCol").addClass("hide");
 		});
@@ -96,7 +108,7 @@ $(function() {
 			$("#map").removeClass("hide");
 		});
 	});
-	$("li").click(function() {
+	$(".item").click(function() {
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
 		});
