@@ -135,6 +135,7 @@ $(function() {
 		$("#aboutModal").fadeIn(1000);
 		$("#mapCon").css("display", "none");
 		$("#back").css("display", "none");
+		$("#about").addClass("hide");
 	}); // Close span on about mondal
 	$("#modal-close").click(function() {
 		$("#aboutModal").fadeOut(1000);

@@ -205,7 +205,20 @@ nav {
 	font-size: 1.3em;
 	letter-spacing: 0.09em;
 }
-
+#contact {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 1.5rem;
+}
+#about {
+	text-decoration: none;
+	color: whitesmoke;
+	font-family: "Bangers";
+	font-size: 1.5rem;
+}
+#about:hover {
+	color: black;
+}
 /* ------------------------------MAIN CONTAINER---- */
 .hide {
 	display: none;
@@ -655,11 +668,18 @@ p {
 /*-----------------Footer----------*/
 .shoes {
 	display: flex;
-	background-color: rgba(0, 0, 0, 1);
-	min-height: 2em;
+	background-color: rgba(0, 0, 0, 0.9);
+	min-height: 10vh;
 	justify-content: space-around;
 	margin-top: auto;
 }
+.feet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
 /*=--=-=-=-=-=-=-=-=-=-=-=-INFOWINDOW GOOGLEMAPS-==-=-====*/
 .infoHeading {
 	display: flex;
@@ -688,7 +708,6 @@ p {
 	top: 0;
 	width: 100%;
 	height: 100%;
-
 	overflow: auto;
 }
 
@@ -716,7 +735,7 @@ p {
 	box-shadow: 0px 54px 101px -20px rgba(0, 0, 0, 0.75);
 }
 #modal-heading {
-	font-size: 3rem;
+	font-size: 4rem;
 	color: rgba(255, 255, 255, 0.7.5);
 	text-shadow: 0 -1px 4px rgba(255, 255, 255, 0.5),
 		0 -2px 10px rgba(255, 255, 0, 0.5), 0 -10px 20px rgba(255, 128, 0, 0.5),
@@ -744,17 +763,6 @@ p {
 	cursor: pointer;
 }
 /*-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-CONTACT PAGE =-=-=-=--=-=-=-=-=-=-*/
-#contact {
-	text-decoration: none;
-	color: black;
-	font-size: 2rem;
-}
-#about {
-	text-decoration: none;
-	color: black;
-	font-family: "Bangers";
-	font-size: 2rem;
-}
 #con-modal-close {
 	color: rgba(255, 255, 255, 0.7.5);
 	padding: 0.1em;
