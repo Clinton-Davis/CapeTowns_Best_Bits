@@ -112,12 +112,9 @@ The next stage of testing was external testing. I sent the code and the webpage 
 The side scroll on burger deployment needs to be sorted out.
 when you click on the wind icon the map opens up.
 Links to be fixed on google:
-
-
--Abseil Table Mountain make lowe case
-
--Snookies is no working
--chef wherehouse is coming up stardust -
+-chef wherehouse
+-water bykes
+-jaonker hiuse
 
 ## Deployment
 

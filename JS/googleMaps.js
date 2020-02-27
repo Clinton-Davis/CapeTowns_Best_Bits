@@ -74,7 +74,7 @@ let adventureJSON = {
 	//Abseil Table Mountain abseilafrica.co.za
 	ABT: {
 		Id: "ChIJ846ZPb5nzB0RCXS_Tom7p9w",
-		info: `EXPLORE CAPE TOWN AND SURROUNDS WITH US Abseil Africa is OPEN 7 days a week between 08:30 – 16:00. Bad weather may affect our operation status. Book your trips with us – we want to take you on an adventure of a lifetime!`
+		info: `Explore Cape Town and surrounds with us Abseil Africa is OPEN 7 days a week between 08:30 – 16:00. Bad weather may affect our operation status. Book your trips with us – we want to take you on an adventure of a lifetime!`
 	},
 	//Wineland Ballooning Cape Town kapinfo.com
 	BAL: {
@@ -129,7 +129,7 @@ let foodiesJSON = {
 	},
 	//Snoekies
 	SHB: {
-		Id: " ChIJgcBEXzhpzB0R2_0Gu9eDcIA",
+		Id: "ChIJgcBEXzhpzB0R2_0Gu9eDcIA",
 		info: `Hans’s purchased an old bus, which he converted into a takeaway cafe and positioned it at the end of Harbour Road, Hout Bay. They named the take-away cafe, Snoekies from where they served fish & chips to the local fishermen. Hans’s wife ran the Snoekies take-away cafe whilst he experimented with smoking fish and they found that his smoked snoek sold well at the café. Before long they found it difficult to keep up with the demand from their garage at home and in 1956 he built a factory in the Hout Bay Harbour.`
 	},
 	//Harbour House Kalk Bay
@@ -154,7 +154,7 @@ let foodiesJSON = {
 	},
 	//Chefs Warehouse & Canteen
 	CWC: {
-		Id: "ChIJc6IAMYRdzB0R9yLw41HjQtM",
+		Id: "ChIJR-hGZGZnzB0R0DeLE_fCN3o",
 		info: `Liam Tomlin opened Banc restaurant in Sydney in 1997 where he garnered many accolades including 3 Chef Hats.
 		Relocating to South Africa in 2003 he consulted to various projects within the hospitality industry and in 2010 opened Chefs Warehouse and Cookery School, Cape Town.
 		In 2014 the concept was changed, and Chefs Warehouse and Canteen began serving fine-dining quality global tapas.`
@@ -348,13 +348,14 @@ function initMap() {
 				`${phone}` +
 				`<div class="website rating">` +
 				`<a href="${website}" class="rating" target="_blank">${website}</a>` +
-				"</div>" + `<div class="imgRap">` +
+				"</div>" +
+				`<div class="imgRap">` +
 				`<img id="directionsImg" 
 										class="dirImg" 
 										onclick="getDirectionsAndLocations()" 
 										src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
-										alt="Directions"</>` + `</div>` +
-				
+										alt="Directions"</>` +
+				`</div>` +
 				"</div>" +
 				"</div>" +
 				"</div>" +
