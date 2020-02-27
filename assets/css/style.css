@@ -81,32 +81,32 @@ nav {
 }
 .toggle .line1 {
 	background-color: black;
-	transition: 0.5s;
-	transform: rotate(-45deg) translate(-2px, 4px);
-	-webkit-transform: rotate(-45deg) translate(-2px, 4px);
-	-moz-transform: rotate(-45deg) translate(-2px, 4px);
-	-ms-transform: rotate(-45deg) translate(-2px, 4px);
-	-o-transform: rotate(-45deg) translate(-2px, 4px);
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
+	transition: transform 0.5s ease-in;
+	transform: rotate(-770deg) translate(-2px, 4px);
+	-webkit-transform: rotate(-770deg) translate(-2px, 4px);
+	-moz-transform: rotate(-770deg) translate(-2px, 4px);
+	-ms-transform: rotate(-770deg) translate(-2px, 4px);
+	-o-transform: rotate(-770deg) translate(-2px, 4px);
+	-webkit-transition: transform 0.5s ease-in;
+	-moz-transition: transform 0.5s ease-in;
+	-ms-transition: transform 0.5s ease-in;
+	-o-transition: transform 0.5s ease-in;
 }
 .toggle .line2 {
 	opacity: 0;
 }
 .toggle .line3 {
 	background-color: black;
-	transition: 0.5s;
-	transform: rotate(45deg) translate(-5px, -7px);
-	-webkit-transform: rotate(45deg) translate(-5px, -7px);
-	-moz-transform: rotate(45deg) translate(-5px, -7px);
-	-ms-transform: rotate(45deg) translate(-5px, -7px);
-	-o-transform: rotate(45deg) translate(-5px, -7px);
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-o-transition: 0.5s;
+	transition: transform 0.5s ease-in;
+	transform: rotate(770deg) translate(-5px, -7px);
+	-webkit-transform: rotate(770deg) translate(-5px, -7px);
+	-moz-transform: rotate(770deg) translate(-5px, -7px);
+	-ms-transform: rotate(770deg) translate(-5px, -7px);
+	-o-transform: rotate(770deg) translate(-5px, -7px);
+	-webkit-transition: transform 0.5s ease-in;
+	-moz-transition: transform 0.5s ease-in;
+	-ms-transition: transform 0.5s ease-in;
+	-o-transition: transform 0.5s ease-in;
 }
 @media screen and (max-width: 768px) {
 	body {
@@ -144,14 +144,15 @@ nav {
 	background-size: cover;
 	border-radius: 5px;
 	transform: translateX(0%);
+	transition: transform 0.5s ease-in-out;
 	-webkit-transform: translateX(0%);
 	-moz-transform: translateX(0%);
 	-ms-transform: translateX(0%);
 	-o-transform: translateX(0%);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+	-webkit-transition: transform 0.5s ease-in-out;
+	-moz-transition: transform 0.5s ease-in-out;
+	-ms-transition: transform 0.5s ease-in-out;
+	-o-transition: transform 0.5s ease-in-out;
 }
 @keyframes navLinkFade {
 	from {
