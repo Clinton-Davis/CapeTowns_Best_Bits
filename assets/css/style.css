@@ -126,11 +126,11 @@ nav {
 		-moz-transform: translateX(100%);
 		-ms-transform: translateX(100%);
 		-o-transform: translateX(100%);
-		transition: transform 0.5s ease-in-out;
-		-webkit-transition: transform 0.5s ease-in-out;
-		-moz-transition: transform 0.5s ease-in-out;
-		-ms-transition: transform 0.5s ease-in-out;
-		-o-transition: transform 0.5s ease-in-out;
+		transition: transform 0.2s ease-in-out;
+		-webkit-transition: transform 0.2s ease-in-out;
+		-moz-transition: transform 0.2s ease-in-out;
+		-ms-transition: transform 0.2s ease-in-out;
+		-o-transition: transform 0.2s ease-in-out;
 	}
 	.nav li {
 		opacity: 0;
@@ -144,15 +144,15 @@ nav {
 	background-size: cover;
 	border-radius: 5px;
 	transform: translateX(0%);
-	transition: transform 0.5s ease-in-out;
+	transition: transform 0.3s ease-in-out;
 	-webkit-transform: translateX(0%);
 	-moz-transform: translateX(0%);
 	-ms-transform: translateX(0%);
 	-o-transform: translateX(0%);
-	-webkit-transition: transform 0.5s ease-in-out;
-	-moz-transition: transform 0.5s ease-in-out;
-	-ms-transition: transform 0.5s ease-in-out;
-	-o-transition: transform 0.5s ease-in-out;
+	-webkit-transition: transform 0.3s ease-in-out;
+	-moz-transition: transform 0.3s ease-in-out;
+	-ms-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
 }
 @keyframes navLinkFade {
 	from {
@@ -266,14 +266,14 @@ nav {
 }
 #diy {
 	color: transparent;
-	background-size: 150%;
+	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-image: url(../images/BigBlueOceanLiter.jpg);
-	background-position: center;
+	background-image: url(../images/icons/BigBlueOceanLiter.jpg);
 	animation: bg-animation 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
+
 	grid-row: 3/4;
 	grid-column: 2/3;
 	font-size: 3rem; /* Small Creens 320x568 */
