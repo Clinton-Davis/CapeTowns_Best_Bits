@@ -153,7 +153,7 @@ nav {
 	animation: bg-animation 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 }
-/*@keyframes bg-animation {
+@keyframes bg-animation {
 	0% {
 		background-position: left;
 	}
@@ -163,7 +163,7 @@ nav {
 	100% {
 		background-position: left;
 	}
-}*/
+}
 
 #bestBits {
 	color: transparent;
@@ -217,7 +217,7 @@ nav {
 	-o-border-radius: 15px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 370px) {
 	#capeTown {
 		font-size: 4.6rem;
 	}
@@ -264,6 +264,50 @@ nav {
 	#diy {
 		font-size: 4rem;
 		margin-top: 5%;
+	}
+}
+@media (min-width: 800px) {
+	#capeTown {
+		font-size: 10rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 7rem;
+	}
+	#diy {
+		font-size: 4.5rem;
+		margin-top: 5%;
+	}
+}
+@media (min-width: 1000px) {
+	#capeTown {
+		font-size: 11rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 9rem;
+	}
+	#diy {
+		font-size: 6rem;
+		margin-top: 5%;
+	}
+	#lead {
+		font-size: 3rem;
+	}
+	#about {
+		font-size: 3rem;
+	}
+	#contact {
+		font-size: 3rem;
+	}
+	.links {
+		font-size: 1.75rem;
+	}
+}
+
+@media (min-height: 600px) {
+	#diy {
+		margin-top: 17%;
 	}
 }
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
