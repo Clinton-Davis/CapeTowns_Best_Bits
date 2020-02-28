@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat:400,700,800&display=swap");
 
 :root {
 	--secFont: font-family("Montserrat", sans-serif);
@@ -12,17 +12,17 @@ body {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-	min-height: 70vh;
+	min-height: 80vh;
 	display: flex;
 	flex-direction: column;
 }
 .gray-fliter {
-	background-color: rgba(0, 0, 0, 0.3);
-	height: 90vh;
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 80vh;
 }
 .wrapper {
 	height: auto;
-	min-height: 80vh;
+	min-height: 70vh;
 }
 
 * {
@@ -51,6 +51,9 @@ body {
 	-moz-box-shadow: 0px 0px 5px 1px rgba(252, 249, 252, 0.5);
 	box-shadow: 0px 0px 5px 1px rgba(252, 249, 252, 0.5);
 }
+.hide {
+	display: none;
+}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Header Nav Bar=-=-=-=-=-=--=-*/
 header {
@@ -65,7 +68,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 }
-@media (max-width: 540px) {
+@media (max-width: 570px) {
 	nav {
 		flex-direction: column;
 	}
@@ -113,6 +116,7 @@ nav {
 	text-decoration: none;
 	color: whitesmoke;
 	font-size: 1.5rem;
+	margin-left: 1em;
 }
 #contact:hover {
 	color: black;
@@ -127,9 +131,6 @@ nav {
 	color: black;
 }
 /* ------------------------------MAIN CONTAINER---- */
-.hide {
-	display: none;
-}
 
 .mainheading {
 	display: grid;
@@ -143,6 +144,7 @@ nav {
 	grid-column: 2/3;
 	font-size: 4rem;
 	margin-top: 10%;
+	margin-bottom: 0;
 	/*4.6remSmallscreans320x568*/
 	background-size: 200%;
 	background-clip: text;
@@ -151,7 +153,7 @@ nav {
 	animation: bg-animation 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 }
-@keyframes bg-animation {
+/*@keyframes bg-animation {
 	0% {
 		background-position: left;
 	}
@@ -160,6 +162,29 @@ nav {
 	}
 	100% {
 		background-position: left;
+	}
+}*/
+
+@media (min-width: 400px) {
+	#capeTown {
+		font-size: 4.6rem;
+	}
+}
+@media (min-width: 500px) {
+	#capeTown {
+		font-size: 6rem;
+	}
+}
+@media (min-width: 600px) {
+	#capeTown {
+		font-size: 7.5rem;
+		margin-top: 5%;
+	}
+}
+@media (min-width: 700px) {
+	#capeTown {
+		font-size: 9rem;
+		margin-top: 2%;
 	}
 }
 #goodBits {
@@ -203,9 +228,9 @@ nav {
 	color: whitesmoke;
 	grid-row: 4/5;
 	grid-column: 2/3;
-	max-width: 60%;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 80%; /*small screens */
+	margin: 1.125em auto 0 auto;
+	font-weight: 700;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
@@ -485,7 +510,7 @@ p {
 	letter-spacing: 0.03em;
 	color: rgba(0, 0, 0, 1);
 	font-size: 1.2rem;
-	width: 5rem;
+	padding: 0.5em;
 
 	background: -moz-linear-gradient(
 		-45deg,
@@ -587,7 +612,32 @@ p {
 	align-items: center;
 	text-align: center;
 }
-
+.feet-bg {
+	background-image: linear-gradient(
+		-45deg,
+		rgb(27, 240, 8),
+		rgb(250, 95, 95),
+		rgb(94, 102, 241)
+	);
+	color: transparent;
+	font-weight: 800;
+	background-size: 400%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	animation: foot-animation 6s ease-in-out infinite alternate;
+	-webkit-animation: foot-animation 6s ease-in-out infinite alternate;
+}
+@keyframes foot-animation {
+	0% {
+		background-position: left;
+	}
+	50% {
+		background-position: right;
+	}
+	100% {
+		background-position: left;
+	}
+}
 /*=--=-=-=-=-=-=-=-=-=-=-=-INFOWINDOW GOOGLEMAPS-==-=-====*/
 .infoHeading {
 	display: flex;
