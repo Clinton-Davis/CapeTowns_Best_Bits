@@ -165,29 +165,7 @@ nav {
 	}
 }*/
 
-@media (min-width: 400px) {
-	#capeTown {
-		font-size: 4.6rem;
-	}
-}
-@media (min-width: 500px) {
-	#capeTown {
-		font-size: 6rem;
-	}
-}
-@media (min-width: 600px) {
-	#capeTown {
-		font-size: 7.5rem;
-		margin-top: 5%;
-	}
-}
-@media (min-width: 700px) {
-	#capeTown {
-		font-size: 9rem;
-		margin-top: 2%;
-	}
-}
-#goodBits {
+#bestBits {
 	color: transparent;
 	background-size: 100%;
 	background-clip: text;
@@ -239,6 +217,55 @@ nav {
 	-o-border-radius: 15px;
 }
 
+@media (min-width: 400px) {
+	#capeTown {
+		font-size: 4.6rem;
+	}
+	#bestBits {
+		font-size: 3.5rem;
+	}
+	#diy {
+		background-position: center;
+	}
+}
+@media (min-width: 500px) {
+	#capeTown {
+		font-size: 6rem;
+	}
+	#bestBits {
+		font-size: 5rem;
+	}
+	#diy {
+		font-size: 4rem;
+		margin-top: 7%;
+	}
+}
+@media (min-width: 600px) {
+	#capeTown {
+		font-size: 7.5rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 5rem;
+	}
+	#diy {
+		font-size: 4rem;
+		margin-top: 7%;
+	}
+}
+@media (min-width: 700px) {
+	#capeTown {
+		font-size: 9rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 6.5rem;
+	}
+	#diy {
+		font-size: 4rem;
+		margin-top: 5%;
+	}
+}
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 .backGround {
 	background-color: rgba(0, 0, 0, 0.5);
