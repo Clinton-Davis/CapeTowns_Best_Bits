@@ -65,15 +65,15 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 }
+@media (max-width: 540px) {
+	nav {
+		flex-direction: column;
+	}
+}
 .nav {
 	display: flex;
 	justify-content: space-around;
 }
-
-
-
-
-
 
 .links {
 	padding-right: 10px;
@@ -88,14 +88,18 @@ nav {
 	padding-right: 3px;
 }
 
-@media screen and (max-width: 445px) {
+/*@media screen and (max-width: 590px) {
 	#tableIcon {
 		display: none;
 	}
-}
+}*/
 
-.weather ul,
-.navInfo ul {
+.navWeather ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.navInfo {
 	list-style: none;
 	display: flex;
 	align-items: center;
@@ -576,7 +580,6 @@ p {
 	min-height: 10vh;
 	justify-content: space-around;
 	margin-top: auto;
-	
 }
 .feet {
 	display: flex;
