@@ -582,6 +582,12 @@ p {
 		rgba(224, 239, 249, 1) 100%
 	);
 }
+#directionsPanel {
+	width: 300px;
+	height: auto;
+	background-color: rgba(183, 222, 237, 1);
+	color: black;
+}
 .scocial {
 	color: black;
 }
