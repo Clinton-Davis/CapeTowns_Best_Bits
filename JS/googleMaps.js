@@ -400,6 +400,7 @@ function getDirectionsAndLocations() {
 					mapOptions
 				);
 				directionsRenderer.setMap(directionsMap);
+				directionsRenderer.setPanel(document.getElementById("directionsPanel"));
 
 				var request = {
 					origin: userLocation,

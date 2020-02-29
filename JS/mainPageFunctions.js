@@ -37,15 +37,6 @@ $(function() {
 			$("#foodie").addClass("hide");
 			$("#about").addClass("hide");
 			$("#contact").addClass("hide");
-			$(window).resize(function() {
-				console.log($(window).height());
-				var windowhight = $(window).height();
-				if (windowhight < 700) {
-					$("footer").css("display", "none");
-				} else {
-					$("footer").css("display", "flex");
-				}
-			});
 			$("#adventureCol").fadeIn(200, function() {
 				$("#adventureCol").removeClass("hide");
 			});
@@ -62,7 +53,6 @@ $(function() {
 				$("#foodie").removeClass("hide");
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
-				$("footer").css("display", "flex");
 			});
 		});
 	});
@@ -76,15 +66,7 @@ $(function() {
 			$("#foodie").addClass("hide");
 			$("#about").addClass("hide");
 			$("#contact").addClass("hide");
-			$(window).resize(function() {
-				console.log($(window).height());
-				var windowhight = $(window).height();
-				if (windowhight < 700) {
-					$("footer").css("display", "none");
-				} else {
-					$("footer").css("display", "flex");
-				}
-			});
+
 			$("#foodieCol").fadeIn(200, function() {
 				$("#foodieCol").removeClass("hide");
 			});
@@ -101,7 +83,6 @@ $(function() {
 				$("#foodie").removeClass("hide");
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
-				$("footer").css("display", "flex");
 			});
 		});
 	});

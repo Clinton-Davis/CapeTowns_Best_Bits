@@ -534,6 +534,7 @@ p {
 
 #map {
 	min-height: 80vh;
+	min-width: 60vh;
 	margin: 0.2em;
 	border: 2px whitesmoke solid;
 	background-color: rgba(0, 0, 0, 0.5);
