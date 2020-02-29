@@ -91,12 +91,6 @@ nav {
 	padding-right: 3px;
 }
 
-/*@media screen and (max-width: 590px) {
-	#tableIcon {
-		display: none;
-	}
-}*/
-
 .navWeather ul {
 	list-style: none;
 	display: flex;
@@ -266,16 +260,16 @@ nav {
 		margin-top: 5%;
 	}
 }
-/*@media (min-width: 800px) {
+@media (min-width: 800px) {
 	#capeTown {
-		font-size: 10rem;
+		font-size: 9rem;
 		margin-top: 2%;
 	}
 	#bestBits {
-		font-size: 7rem;
+		font-size: 6rem;
 	}
 	#diy {
-		font-size: 4.5rem;
+		font-size: 4rem;
 		margin-top: 5%;
 	}
 }
@@ -288,11 +282,11 @@ nav {
 		font-size: 9rem;
 	}
 	#diy {
-		font-size: 6rem;
+		font-size: 5rem;
 		margin-top: 5%;
 	}
 	#lead {
-		font-size: 3rem;
+		font-size: 1rem;
 	}
 	#about {
 		font-size: 3rem;
@@ -303,7 +297,7 @@ nav {
 	.links {
 		font-size: 1.75rem;
 	}
-}*/
+}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 .backGround {
