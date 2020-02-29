@@ -216,7 +216,7 @@ nav {
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
 }
-
+/*-=-=-Media quarys for main headings-=-=-*/
 @media (min-width: 370px) {
 	#capeTown {
 		font-size: 4.6rem;
@@ -266,7 +266,7 @@ nav {
 		margin-top: 5%;
 	}
 }
-@media (min-width: 800px) {
+/*@media (min-width: 800px) {
 	#capeTown {
 		font-size: 10rem;
 		margin-top: 2%;
@@ -279,7 +279,7 @@ nav {
 		margin-top: 5%;
 	}
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 	#capeTown {
 		font-size: 11rem;
 		margin-top: 2%;
@@ -303,13 +303,8 @@ nav {
 	.links {
 		font-size: 1.75rem;
 	}
-}
+}*/
 
-@media (min-height: 600px) {
-	#diy {
-		margin-top: 17%;
-	}
-}
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 .backGround {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -571,10 +566,12 @@ p {
 /*-------The 3 Selection Bottons --------*/
 .mainOptions {
 	display: flex;
-
 	bottom: 0;
 	justify-content: space-around;
 	margin: 0.5em;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .opt-btn {
