@@ -18,7 +18,7 @@ body {
 }
 .gray-fliter {
 	background-color: rgba(0, 0, 0, 0.2);
-	height: 80vh;
+	min-height: 80vh;
 }
 .wrapper {
 	height: auto;
@@ -37,6 +37,9 @@ body {
 }
 .pointer {
 	cursor: pointer;
+}
+ul {
+	list-style: none;
 }
 /* -=-=Flag Close Btn-=-=*/
 .backBnt {
@@ -211,6 +214,11 @@ nav {
 	-o-border-radius: 15px;
 }
 /*-=-=-Media quarys for main headings-=-=-*/
+@media (min-height: 500) {
+	body {
+		display: none;
+	}
+}
 @media (min-width: 370px) {
 	#capeTown {
 		font-size: 4.6rem;
@@ -227,10 +235,10 @@ nav {
 		font-size: 6rem;
 	}
 	#bestBits {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 	#diy {
-		font-size: 4rem;
+		font-size: 3.5rem;
 		margin-top: 7%;
 	}
 }
@@ -240,7 +248,7 @@ nav {
 		margin-top: 2%;
 	}
 	#bestBits {
-		font-size: 5rem;
+		font-size: 4.5rem;
 	}
 	#diy {
 		font-size: 4rem;
@@ -253,7 +261,7 @@ nav {
 		margin-top: 2%;
 	}
 	#bestBits {
-		font-size: 6.5rem;
+		font-size: 5rem;
 	}
 	#diy {
 		font-size: 4rem;
@@ -266,39 +274,67 @@ nav {
 		margin-top: 2%;
 	}
 	#bestBits {
-		font-size: 6rem;
+		font-size: 5rem;
 	}
 	#diy {
 		font-size: 4rem;
 		margin-top: 5%;
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 	#capeTown {
-		font-size: 11rem;
+		font-size: 10rem;
 		margin-top: 2%;
 	}
 	#bestBits {
-		font-size: 9rem;
+		font-size: 6rem;
 	}
 	#diy {
-		font-size: 5rem;
-		margin-top: 5%;
+		font-size: 3.5rem;
+		margin-top: 0;
 	}
 	#lead {
 		font-size: 1rem;
 	}
 	#about {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 	#contact {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 	.links {
-		font-size: 1.75rem;
+		font-size: 1.25rem;
 	}
 }
-
+@media (min-height: 1025px) {
+	#capeTown {
+		margin-top: 20%;
+	}
+	#beatBits {
+		margin-top: 10%;
+	}
+	.links {
+		font-size: 1.25rem;
+	}
+	#about {
+		font-size: 2rem;
+	}
+	#contact {
+		font-size: 2rem;
+	}
+	#sightsCol {
+		margin-top: 20%;
+	}
+	#adventureCol {
+		margin-top: 20%;
+	}
+	#foodieCol {
+		margin-top: 20%;
+	}
+	.selectors {
+		font-size: 1.3rem;
+	}
+}
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 .backGround {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -325,7 +361,7 @@ p {
 }
 .selectorGrid {
 	display: grid;
-	grid-template-columns: 51px 70%;
+	grid-template-columns: 51px 93%;
 	grid-template-rows: repeat(10, 51px);
 }
 .grid {
