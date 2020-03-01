@@ -1,11 +1,9 @@
-const myList = document.querySelector('#directionsPanel');
- 
-
 /*
 1. making a new MO object
 2. tell it what to observe
 3. what to do with the observed changes/mutatutions
 */
+const myList = document.querySelector('#directionsPanel');
 /*1*/
 const observer = new MutationObserver(mutations => {
     mutations.forEach(record => {
@@ -13,15 +11,17 @@ const observer = new MutationObserver(mutations => {
 
         if (record.type === 'attributes') {
             changepic();
-        }else {console.log('No');
+        }else {console.log('MutatuinObserver has Failed');
     }
     })
-    console.log(mutations);
+    
     
 /*try to get it to do somethnog*/
 });
+/*function that removes the loadeer image when Google Api loads directions*/
 function changepic() {
-    document.getElementById('#back'),innerHTM = 'happy times'
+    $("#loader").css("display", "none");
+    
 }
 /*2*/
 observer.observe(myList, {
