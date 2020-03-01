@@ -582,6 +582,10 @@ p {
 		rgba(224, 239, 249, 1) 100%
 	);
 }
+#loader {
+	width: 100px;
+	height: 100px;
+}
 #directionsPanel {
 	width: 300px;
 	height: auto;
