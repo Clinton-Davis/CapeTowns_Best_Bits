@@ -341,9 +341,14 @@
 				<!-- Google Maps and Information Section-->
 				<div class="mapBtn">
 				<button class="mB-btn banger hide" id="back">Go Back</button>			
-				<button class="mB-btn banger hide" id="getDirectionsBtn" onclick="getDirectionsAndLocations()">Get Directions</button>			
+				<button class="mB-btn banger hide" id="getDirectionsBtn" onclick="getDirectionsAndLocations(), addSpinner()">Get Directions</button>			
+			</div>
+					<div class="spinnerDiv">
+						<img src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png" 
+						onclick="addSpinner()" id="googleIcon" class="" alt="mapIcon">
+					</div>
 				
-				</div>
+				
 				<div class="mapContainer" id="mapCon">
 					<div class="mapBackBtn">
 					</div>

@@ -535,6 +535,25 @@ p {
 	display: flex;
 	justify-content: center;
 }
+.spinnerDiv {
+	display: flex;
+	justify-content: center;
+}
+#googleIcon {
+	animation: spin 2s linear infinite;
+	position: absolute;
+	top: 30vh;
+	z-index: 4;
+	display: none;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 #map {
 	min-height: 80vh;
 	min-width: 60vh;
