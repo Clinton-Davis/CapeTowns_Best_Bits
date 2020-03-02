@@ -98,11 +98,13 @@ $(function() {
 			$("#sightsCol").addClass("hide");
 			$("#about").addClass("hide");
 			$("#contact").addClass("hide");
-		});
+		});//maps section Back btn
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
+			$("#loadingText").css("display", "none");
+			
 		});
 	});
 	$(".item").click(function() {
@@ -111,16 +113,20 @@ $(function() {
 		});
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
+			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
+			
 		});
 	});
 	$(".item").click(function() {
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
-		});
+		});//maps section Back btn
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
+			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
+			
 		});
 	});
 

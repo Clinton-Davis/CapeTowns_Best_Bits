@@ -564,7 +564,8 @@ p {
 	}
 }
 #map {
-	min-height: 80vh;
+	min-height: 75vh;
+	max-height: 80vh;
 	min-width: 60vh;
 	margin: 0.2em;
 	border: 2px whitesmoke solid;
@@ -572,7 +573,7 @@ p {
 }
 
 .mapBackBtn {
-	display: flex;
+	display: block;
 }
 .mB-btn {
 	color: black;
@@ -628,8 +629,9 @@ p {
 	background-color: rgba(252, 249, 249, 0.8);
 	color: black;
 }
-table {
-	color: black;
+.adp-substep {
+    border-top: 1px solid #060606 !important;
+    
 }
 .adp-placemark {
 	background: #eee;
@@ -640,29 +642,23 @@ table {
 	vertical-align: middle;
 	text-align: center;
 }
-.adp-step,
-.adp-substep {
-	border-top: 1px solid rgb(15, 15, 15);
-	margin: 0;
-	padding: 0.3em 3px 0.3em 3px;
-	vertical-align: top;
-}
+
+
 .adp-text {
 	color: black;
 	background-image: url(../images/sunnyBackgroundCrop.jpg);
+	background-position: center;
 }
 .adp-summary {
 	font-size: 1.5em;
 	text-align: center;
 	font-weight: 700;
 }
-.adp-details,
-.adp-legal {
+.adp
+{
 	color: black;
 }
-.scocial {
-	color: black;
-}
+
 .dirImg:hover {
 	-webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
