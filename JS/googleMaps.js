@@ -281,7 +281,8 @@ function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -33.9142686, lng: 18.0955572 },
 		zoom: 14,
-		mapTypeId: "terrain"
+		mapTypeId: "hybrid",
+		mapTypeControl: false
 	});
 	var request = {
 		placeId: iD,
@@ -375,7 +376,9 @@ var map, infoWindow, userLocation;
 function getDirectionsAndLocations() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -34.397, lng: 150.644 },
-		zoom: 10
+		zoom: 10,
+		mapTypeId: "hybrid",
+		mapTypeControl: false
 	});
 	infoWindow = new google.maps.InfoWindow();
 	userMarker = new google.maps.Marker();
@@ -393,7 +396,9 @@ function getDirectionsAndLocations() {
 				var directionsMap;
 				var mapOptions = {
 					zoom: 10,
-					center: marker.position
+					center: marker.position,
+					mapTypeId: "hybrid",
+					mapTypeControl: false
 				};
 				directionsMap = new google.maps.Map(
 					document.getElementById("map"),
