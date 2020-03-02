@@ -531,7 +531,10 @@ p {
 .mapContainer {
 	display: block;
 }
-
+.mapBtn {
+	display: flex;
+	justify-content: center;
+}
 #map {
 	min-height: 80vh;
 	min-width: 60vh;

@@ -98,6 +98,7 @@ $(function() {
 		});
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
+			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
 		});
 	});
@@ -128,7 +129,9 @@ $(function() {
 			$("#adventure").removeClass("hide");
 			$("#foodie").removeClass("hide");
 			$("#map").addClass("hide");
+			$("#getDirectionsBtn").addClass("hide");
 			$("#back").css("display", "none");
+			$("#directionsPanel").css("display", "none");
 		});
 	});
 

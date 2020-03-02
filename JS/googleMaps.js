@@ -25,7 +25,7 @@ let sightsJSON = {
 	// Kalk Bay
 	KB: {
 		Id: "ChIJu2x0EhZAzB0RCyIwnb_NXFY",
-		info: `Kalk Bay is a fishing village on the coast of False Bay, South Africa and is now a suburb of greater Cape Town. It lies between the ocean and sharply rising mountainous heights that are buttressed by crags of grey Table Mountain Sandstone. A literal translation from the Dutch/Afrikaans name "Kalkbaai" is "Lime Bay".`
+		info: `Kalk Bay is a fishing village on the coast of False Bay, It lies between the ocean and sharply rising mountainous heights that are buttressed by crags of grey Table Mountain Sandstone. Dutch/Afrikaans name "Kalkbaai" is "Lime Bay".`
 	},
 	// Boulders Beach/Penguins
 	BL: {
