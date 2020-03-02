@@ -545,9 +545,15 @@ p {
 #googleIcon {
 	animation: spin 2s linear infinite;
 	position: absolute;
-	top: 30vh;
+	top: 40vh;
 	z-index: 4;
 	display: none;
+	border-top: 5px solid blue;
+	border-right: 5px solid green;
+	border-bottom: 5px solid red;
+	border-left: 5px solid yellow;
+	padding: 0 8px 0 8px;
+	border-radius: 50%;
 }
 @keyframes spin {
 	0% {
