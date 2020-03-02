@@ -26,6 +26,7 @@ $(function() {
 				$("#foodie").removeClass("hide");
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
+				$("#loadingText").css("display", "none");
 			});
 		});
 	});
@@ -55,6 +56,7 @@ $(function() {
 				$("#foodie").removeClass("hide");
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
+				$("#loadingText").css("display", "none");
 			});
 		});
 	});
@@ -78,7 +80,7 @@ $(function() {
 	$("#fback").click(function() {
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
-
+			
 			$("h1,h2,h3,p").fadeIn(200, function() {
 				$("h1,h2,h3,p").removeClass("hide");
 				$("#sights").removeClass("hide");
@@ -86,6 +88,7 @@ $(function() {
 				$("#foodie").removeClass("hide");
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
+				$("#loadingText").css("display", "none");
 			});
 		});
 	});
@@ -98,30 +101,30 @@ $(function() {
 			$("#sightsCol").addClass("hide");
 			$("#about").addClass("hide");
 			$("#contact").addClass("hide");
-		});//maps section Back btn
+		});//adds maps back btn and map div and getDirection Btn form sightsCol
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
-			$("#loadingText").css("display", "none");
+			
 			
 		});
 	});
 	$(".item").click(function() {
 		$("#adventureCol").fadeOut(200, function() {
 			$("#adventureCol").addClass("hide");
-		});
+		});//adds maps back btn and map div and getDirection Btn form adventureCol
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
 			
 		});
-	});
-	$(".item").click(function() {
-		$("#foodieCol").fadeOut(200, function() {
-			$("#foodieCol").addClass("hide");
-		});//maps section Back btn
+		$(".item").click(function() {
+			$("#foodieCol").fadeOut(200, function() {
+				$("#foodieCol").addClass("hide");
+			});
+		});//adds maps back btn and map div and getDirection Btn form foodieCol
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
@@ -130,7 +133,7 @@ $(function() {
 		});
 	});
 
-	//Back botton in maps
+	//Back Btn in Map section to bring back to main page
 	$("#back").click(function() {
 		$("h1,h2,h3,p").fadeIn(200, function() {
 			$("h1,h2,h3,p").removeClass("hide");
@@ -139,8 +142,10 @@ $(function() {
 			$("#foodie").removeClass("hide");
 			$("#map").addClass("hide");
 			$("#getDirectionsBtn").addClass("hide");
-			$("#back").css("display", "none");
 			$("#directionsPanel").css("display", "none");
+			$("#back").css("display", "none");
+			$("#about").removeClass("hide");
+			$("#contact").removeClass("hide");
 		});
 	});
 
