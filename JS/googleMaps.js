@@ -352,7 +352,7 @@ function initMap() {
 				`<div class="imgRap">` +
 				`<img id="directionsImg" 
 										class="dirImg" 
-										onclick="getDirectionsAndLocations()" 
+										onclick="getDirectionsAndLocations(), addSpinner()" 
 										src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
 										alt="Directions"</>` +
 				`</div>` +

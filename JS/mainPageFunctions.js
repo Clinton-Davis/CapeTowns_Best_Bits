@@ -120,13 +120,7 @@ $(function() {
 			$("#map").removeClass("hide");
 		});
 	});
-	$("getDirectionsBtn").click(function() {
-		$("#googleIcon").removeClass("hide");
-	});
 
-	$("directionsImg").click(function() {
-		$("#googleIcon").css("display", "block");
-	});
 	//Back botton in maps
 	$("#back").click(function() {
 		$("h1,h2,h3,p").fadeIn(200, function() {

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Montserrat:400,700,800&display=swap");
 
 :root {
-	--secFont: font-family("Montserrat", sans-serif);
+	--headFont: "Bangers", sans-serif;
+	--secFont: "Montserrat", sans-serif;
+	--white: whitesmoke;
 }
 html {
 	height: 100%;
@@ -29,11 +31,10 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
-	color: whitesmoke;
+	font-family: var(--secFont);
 }
 .banger {
-	font-family: "Bangers", sans-serif;
+	font-family: var(--headFont);
 }
 .pointer {
 	cursor: pointer;
@@ -70,6 +71,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	color: var(--white);
 }
 @media (max-width: 570px) {
 	nav {
@@ -363,6 +365,7 @@ p {
 	display: grid;
 	grid-template-columns: 51px 93%;
 	grid-template-rows: repeat(10, 51px);
+	color: var(--white);
 }
 .grid {
 	grid-column: 2/3;
@@ -608,10 +611,47 @@ p {
 	width: 100px;
 	height: 100px;
 }
+#loadingText {
+	color: var(--white);
+	font-weight: 900;
+}
 #directionsPanel {
-	width: 300px;
+	margin: 0.2em;
+	width: auto;
 	height: auto;
-	background-color: rgba(183, 222, 237, 1);
+	background-color: rgba(252, 249, 249, 0.8);
+	color: black;
+}
+table {
+	color: black;
+}
+.adp-placemark {
+	background: #eee;
+	border: 1px solid black;
+	color: #000;
+	cursor: pointer;
+	margin: 10px 0px 10px 0px;
+	vertical-align: middle;
+	text-align: center;
+}
+.adp-step,
+.adp-substep {
+	border-top: 1px solid rgb(15, 15, 15);
+	margin: 0;
+	padding: 0.3em 3px 0.3em 3px;
+	vertical-align: top;
+}
+.adp-text {
+	color: black;
+	background-image: url(../images/sunnyBackgroundCrop.jpg);
+}
+.adp-summary {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 700;
+}
+.adp-details,
+.adp-legal {
 	color: black;
 }
 .scocial {
@@ -742,6 +782,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	color: var(--white);
 }
 .feet-bg {
 	background-image: linear-gradient(
