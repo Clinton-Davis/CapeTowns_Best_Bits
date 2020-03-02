@@ -18,6 +18,7 @@ $(function() {
 	$("#sback").click(function() {
 		$("#sightsCol").fadeOut(200, function() {
 			$("#sightsCol").addClass("hide");
+
 			$("h1,h2,h3,p").fadeIn(200, function() {
 				$("h1,h2,h3,p").removeClass("hide");
 				$("#sights").removeClass("hide");
@@ -46,6 +47,7 @@ $(function() {
 	$("#aback").click(function() {
 		$("#adventureCol").fadeOut(200, function() {
 			$("#adventureCol").addClass("hide");
+
 			$("h1,h2,h3,p").fadeIn(200, function() {
 				$("h1,h2,h3,p").removeClass("hide");
 				$("#sights").removeClass("hide");
@@ -76,6 +78,7 @@ $(function() {
 	$("#fback").click(function() {
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
+
 			$("h1,h2,h3,p").fadeIn(200, function() {
 				$("h1,h2,h3,p").removeClass("hide");
 				$("#sights").removeClass("hide");

@@ -1,6 +1,6 @@
 function addSpinner() {
 	$("#googleIcon").css("display", "block");
-	$("#loadingText").removeClass("hide");
+	$("#loadingText").css("display", "block");
 }
 
 /*
@@ -26,7 +26,7 @@ const observer = new MutationObserver(mutations => {
 /*function that removes the loadeer image when Google Api loads directions*/
 function changepic() {
 	$("#googleIcon").css("display", "none");
-	$("#loadingText").addClass("hide");
+	$("#loadingText").css("display", "none");
 	$("#getDirectionsBtn").addClass("hide");
 }
 /*2*/
