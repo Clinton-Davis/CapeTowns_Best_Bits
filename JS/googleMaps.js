@@ -1,3 +1,5 @@
+/*-=-=-=-=-=-=Here are the places Ids for google and the lost of the clients*/
+
 /*=-=-=-=-=-=-SIGHT SEEING JSON-=-=-*/
 let sightsJSON = {
 	TM: {
@@ -331,35 +333,28 @@ function initMap() {
 
 			var markerData =
 				'<div class="infowindowContiner">' +
-				'<div class="infowidHeading">' +
-				'<h2 class="infoHeading">' +
-				`${name}` +
-				"<br>" +
-				'<p class="rating">' +
-				`${rating}` +
-				"</p>" +
-				"</h2>" +
-				"</div>" +
-				'<div class="infowindoBody">' +
-				'<p class="infobody">' +
-				`${info}` +
-				"</p>" +
-				'<div class="scocial">' +
-				`<p class="rating">` +
-				`${phone}` +
-				`<div class="website rating">` +
-				`<a href="${website}" class="rating" target="_blank">${website}</a>` +
-				"</div>" +
-				`<div class="imgRap">` +
-				`<img id="directionsImg" 
+					'<div class="infowidHeading">' +
+						'<h2 class="infoHeading">' + `${name}` + "<br>" +
+							'<p class="rating">' + `${rating}` + "</p>" +
+						"</h2>" +
+					"</div>" +
+					'<div class="infowindoBody">' +
+						'<p class="infobody">' + `${info}` + "</p>" +
+								'<div class="scocial">' + `<p class="rating">` + `${phone}` +
+									`<div class="website rating">` +
+									`<a href="${website}" class="rating" 
+										target="_blank">${website}</a>` +
+									"</div>" +
+									`<div class="imgRap">` +
+									`<img id="directionsImg" 
 										class="dirImg" 
 										onclick="getDirectionsAndLocations(), addSpinner()" 
 										src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
 										alt="Directions"</>` +
-				`</div>` +
-				"</div>" +
-				"</div>" +
-				"</div>" +
+									`</div>` +
+							"</div>" +
+						"</div>" +
+					"</div>" +
 				"</div>";
 			var infowindow = new google.maps.InfoWindow({
 				content: markerData
