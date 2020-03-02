@@ -10,7 +10,7 @@ function sendMail(contactForm) {
 				console.log("SUCCESS", responce);
 				if (responce.status == 200) {
 					document.getElementById(
-						"con-Heading"
+						"contact-Heading"
 					).innerHTML = `<h3 class="banger" id="con-Heading">
 					Thank You We Will be in Touch.
 				</h3>`;

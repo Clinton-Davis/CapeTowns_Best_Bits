@@ -528,9 +528,9 @@ p {
 .mainOptions {
 	margin-top: auto;
 }
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=LIST-STYLE-IMAGES-=-=-=-*/
 
-/*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-Google Maps Div-==-=-=*/
+
+/*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-GOOGLE MAPS DIV-==-=-=*/
 .mapContainer {
 	display: block;
 }
@@ -629,6 +629,7 @@ p {
 	background-color: rgba(252, 249, 249, 0.8);
 	color: black;
 }
+/* Sub Classes that google maps usesß*/
 .adp-substep {
     border-top: 1px solid #060606 !important;
     
@@ -642,8 +643,6 @@ p {
 	vertical-align: middle;
 	text-align: center;
 }
-
-
 .adp-text {
 	color: black;
 	background-image: url(../images/sunnyBackgroundCrop.jpg);
@@ -668,8 +667,27 @@ p {
 	display: flex;
 	justify-content: center;
 }
-/*-------The 3 Selection Bottons --------*/
-.mainOptions {
+/*=--=-=-=-=-=-=-=-=-=-=-=-INFOWINDOW GOOGLEMAPS-==-=-====*/
+.infoHeading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+.infobody {
+	color: black;
+	text-align: center;
+}
+.rating {
+	color: black;
+	font-size: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+/*-------MAIN PAGE BTNS SIGHTS ADVENTURE FOODIE --------*/
+.mainOptions { /*Wrapper*/
 	display: flex;
 	bottom: 0;
 	justify-content: space-around;
@@ -812,25 +830,7 @@ p {
 		background-position: left;
 	}
 }
-/*=--=-=-=-=-=-=-=-=-=-=-=-INFOWINDOW GOOGLEMAPS-==-=-====*/
-.infoHeading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: black;
-}
-.infobody {
-	color: black;
-	text-align: center;
-}
-.rating {
-	color: black;
-	font-size: 1rem;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
-}
+
 /* -=-=-=-=-=--=-=-=-=-=-=-=-=-=-Modal=-=-=-=--=-= */
 .modal {
 	display: none;
@@ -843,8 +843,17 @@ p {
 	overflow: auto;
 }
 
-/* Modal Content/Box */
+/*-=-=-=-=-MODAL HEADING-=-=-=-*/
+#modal-heading {
+	color: var(--white);
+	font-size: 4rem;
+	color: rgba(255, 255, 255, 0.7.5);
+	text-shadow: 0 -1px 4px rgba(255, 255, 255, 0.5),
+		0 -2px 10px rgba(255, 255, 0, 0.5), 0 -10px 20px rgba(255, 128, 0, 0.5),
+		0 -18px 40px rgb(255, 0, 0);
+}
 .modal-content {
+	color: var(--white);
 	margin: 10% auto;
 	background-image: url("../images/sunsetreddull.jpg");
 	background-repeat: no-repeat;
@@ -866,14 +875,7 @@ p {
 	-moz-box-shadow: 0px 54px 101px -20px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 54px 101px -20px rgba(0, 0, 0, 0.75);
 }
-#modal-heading {
-	font-size: 4rem;
-	color: rgba(255, 255, 255, 0.7.5);
-	text-shadow: 0 -1px 4px rgba(255, 255, 255, 0.5),
-		0 -2px 10px rgba(255, 255, 0, 0.5), 0 -10px 20px rgba(255, 128, 0, 0.5),
-		0 -18px 40px rgb(255, 0, 0);
-}
-/* The Close Button */
+/* -=-=-=-=-=-=-=MODAL CLOSE BTN */
 .close {
 	color: rgba(255, 255, 255, 0.7.5);
 	text-shadow: 0 -1px 4px rgba(255, 255, 255, 0.5),
@@ -929,7 +931,8 @@ p {
 	display: flex;
 }
 #contactBody {
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--secFont);
+	color: var(--white);
 	display: grid;
 	grid-template-rows: 5% 10% 10% auto 20%;
 	grid-template-columns: 5% auto 5%;
@@ -976,13 +979,14 @@ form {
 	grid-row: 4/5;
 }
 
-#con-Heading {
+#contact-Heading {
+	text-align: center;
 	font-size: 3rem;
 	letter-spacing: 2px;
 	grid-column: 2/3;
 	grid-row: 3/4;
 }
-.conLead {
+.contact-Lead{
 	grid-row: 4/5;
 	grid-column: 2/3;
 	text-align: center;
