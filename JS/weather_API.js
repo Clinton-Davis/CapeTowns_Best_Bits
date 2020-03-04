@@ -7,15 +7,13 @@ const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
 	if (this.readyState === 4 && this.status === 200) {
 		var obj = JSON.parse(this.responseText);
-		//console.log(obj);
-
 		var city = obj.name;
 		var tempsMax = Math.ceil(obj.main.temp_max);
 		var tempMin = Math.floor(obj.main.temp_min);
 		var wind = obj.wind.speed;
 		console.log(tempsMax, tempMin);
 		var direction = obj.wind.deg;
-		//console.log(city, temps, wind);
+		//If statment to turn Wind degrees into String Direction
 		if (direction > 349 || direction <= 12) {
 			var dir = "N";
 		} else if (direction > 12 && direction <= 34) {
@@ -51,9 +49,10 @@ xhr.onreadystatechange = function() {
 		} else {
 			var dir = "N";
 		}
-		writeToDoc();
+		writeToPage();
 	}
-	function writeToDoc() {
+	//This function sets the Temps and wind to nav in index page
+	function writeToPage() {
 		document.getElementById(
 			"temp-api"
 		).innerHTML = `${tempsMax} / ${tempMin} ˚C`;

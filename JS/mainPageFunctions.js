@@ -80,7 +80,7 @@ $(function() {
 	$("#fback").click(function() {
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
-			
+
 			$("h1,h2,h3,p").fadeIn(200, function() {
 				$("h1,h2,h3,p").removeClass("hide");
 				$("#sights").removeClass("hide");
@@ -101,35 +101,31 @@ $(function() {
 			$("#sightsCol").addClass("hide");
 			$("#about").addClass("hide");
 			$("#contact").addClass("hide");
-		});//adds maps back btn and map div and getDirection Btn form sightsCol
+		}); //adds maps back btn and map div and getDirection Btn form sightsCol
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
-			
-			
 		});
 	});
 	$(".item").click(function() {
 		$("#adventureCol").fadeOut(200, function() {
 			$("#adventureCol").addClass("hide");
-		});//adds maps back btn and map div and getDirection Btn form adventureCol
+		}); //adds maps back btn and map div and getDirection Btn form adventureCol
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
-			
 		});
 		$(".item").click(function() {
 			$("#foodieCol").fadeOut(200, function() {
 				$("#foodieCol").addClass("hide");
 			});
-		});//adds maps back btn and map div and getDirection Btn form foodieCol
+		}); //adds maps back btn and map div and getDirection Btn form foodieCol
 		$("#back").fadeIn(200, function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
-			
 		});
 	});
 
@@ -148,7 +144,7 @@ $(function() {
 			$("#contact").removeClass("hide");
 		});
 	});
-
+	// MODAL SECTION
 	//Modal About Botton Open
 	$("#about").click(function() {
 		$("#aboutModal").fadeIn(1000);
