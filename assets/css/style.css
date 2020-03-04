@@ -967,7 +967,6 @@ p {
 	min-height: 2rem;
 }
 .formContainer {
-	display: flex;
 	margin: 1em;
 	grid-row: 5/6;
 	grid-column: 2/3;
