@@ -338,25 +338,27 @@
 						</ul>
 					</div>
 				</div>
-				<!-- Google Maps and Information Section-->
+				<!--Google Maps Back and Direction Btns-->
 				<div class="mapBtn">
-				<button class="mB-btn banger hide" id="back">Go Back</button>			
-				<button class="mB-btn banger hide" id="getDirectionsBtn" onclick="getDirectionsAndLocations(), addSpinner()">Get Directions</button>			
+					<button class="mB-btn banger hide" id="back">Go Back</button>			
+					<button class="mB-btn banger hide" id="getDirectionsBtn" onclick="getDirectionsAndLocations(), addSpinner()">Get Directions</button>			
 				</div>
-					<div class="spinnerDiv">
-						<img src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png" 
-						onclick="addSpinner()" id="googleIcon" class="" alt="mapIcon">
-						<h3 id="loadingText">Loading...</h3>
-					</div>
+				<!--Spinner Loading Section-->
+				<div class="spinnerDiv">
+					<img src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png" 
+					onclick="addSpinner()" id="googleIcon" class="" alt="mapIcon">
+					<h3 id="loadingText">Loading...</h3>
+				</div>
 				
 				
+				<!-- Google Maps and Information Section-->
 				<div class="mapContainer" id="mapCon">
 					<div class="mapBackBtn"></div>
 					<div id="map" class="hide">map</div>
 					<div id="directionsPanel"></div>
 					
 				</div>
-				<!--Main Option Tags-->
+				<!--Main Option Btns-->
 				</div>
 				<div  class="mainOptions">
 					<div class="option">
@@ -376,6 +378,12 @@
 		</section>
 		<footer class="shoes">
 			<div class="feet">CopyRight© 2020</div>
+			<div class="feet feet-tech">Technologys:
+				<ul class=" feet feet-list">
+					<li class="feet-items">Weather_API</li>
+					<li class="feet-items">GoogleMaps_API</li>
+				</ul>
+			</div>
 			<div class="feet"><a href="./form.html" class="footerLink">Get In Touch</a></div>
 			<div class="feet">
 				<div class="feet">Web Design:</div>

@@ -73,10 +73,18 @@ nav {
 	justify-content: space-between;
 	color: var(--white);
 }
+@media (max-width: 450px) {
+	#tableIcon {
+		display: none;
+	}
+}
 @media (max-width: 570px) {
 	nav {
 		flex-direction: column;
 	}
+}
+#tableIcon {
+	padding-right: 1em;
 }
 .nav {
 	display: flex;
@@ -84,7 +92,7 @@ nav {
 }
 
 .links {
-	padding-right: 10px;
+	padding-right: 1em;
 	display: flex;
 	align-items: center;
 }
@@ -117,7 +125,8 @@ nav {
 	font-size: 1.5rem;
 	margin-left: 1em;
 }
-#contact:hover {
+#contact:hover,
+#contact:focus {
 	color: black;
 }
 #about {
@@ -126,7 +135,8 @@ nav {
 	font-family: "Bangers";
 	font-size: 1.5rem;
 }
-#about:hover {
+#about:hover,
+#about:focus {
 	color: black;
 }
 /* ------------------------------MAIN CONTAINER---- */
@@ -376,11 +386,12 @@ p {
 	grid-column: 1/2;
 	border: 1px white solid;
 }
+
 .selectors:hover {
 	color: rgba(183, 222, 237, 1);
 	text-shadow: 1px 1px rgba(242, 246, 248, 0.3);
 }
-
+/*-=-=-=-=-=-=---=--=-=-=-=-=-Selection colum Grib section-=-=-*/
 /*-=-=-=--==-=-=-=-=-=--=-=-Sight Img Alinment=-=-=--=-=*/
 
 #sightsCol {
@@ -529,14 +540,26 @@ p {
 	margin-top: auto;
 }
 
-
 /*-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-GOOGLE MAPS DIV-==-=-=*/
 .mapContainer {
 	display: block;
 }
+#map {
+	min-height: 75vh;
+	max-height: 80vh;
+	margin: 0.2em;
+	border: 2px whitesmoke solid;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 .mapBtn {
 	display: flex;
 	justify-content: center;
+}
+/*-=-=-=-=-=-=-=LOADING SPINNER AND GOOGLE iCON-=-=-=*/
+#loadingText {
+	color: var(--white);
+	font-weight: 900;
+	display: none;
 }
 .spinnerDiv {
 	display: flex;
@@ -562,14 +585,6 @@ p {
 	100% {
 		transform: rotate(360deg);
 	}
-}
-#map {
-	min-height: 75vh;
-	max-height: 80vh;
-	min-width: 60vh;
-	margin: 0.2em;
-	border: 2px whitesmoke solid;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .mapBackBtn {
@@ -617,11 +632,6 @@ p {
 	);
 }
 
-#loadingText {
-	color: var(--white);
-	font-weight: 900;
-	display: none;
-}
 #directionsPanel {
 	margin: 0.2em;
 	width: auto;
@@ -629,10 +639,9 @@ p {
 	background-color: rgba(252, 249, 249, 0.8);
 	color: black;
 }
-/* Sub Classes that google maps usesß*/
+/* -=-=-Sub Classes that google maps uses-=-*/
 .adp-substep {
-    border-top: 1px solid #060606 !important;
-    
+	border-top: 1px solid #060606 !important;
 }
 .adp-placemark {
 	background: #eee;
@@ -653,8 +662,7 @@ p {
 	text-align: center;
 	font-weight: 700;
 }
-.adp
-{
+.adp {
 	color: black;
 }
 
@@ -687,7 +695,8 @@ p {
 	text-align: center;
 }
 /*-------MAIN PAGE BTNS SIGHTS ADVENTURE FOODIE --------*/
-.mainOptions { /*Wrapper*/
+.mainOptions {
+	/*Wrapper*/
 	display: flex;
 	bottom: 0;
 	justify-content: space-around;
@@ -796,14 +805,16 @@ p {
 	min-height: 10vh;
 	justify-content: space-around;
 	margin-top: auto;
+	color: var(--white);
 }
 .feet {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	color: var(--white);
 }
+/* BG on web page desinger*/
 .feet-bg {
 	background-image: linear-gradient(
 		-45deg,
@@ -831,7 +842,18 @@ p {
 	}
 }
 
-/* -=-=-=-=-=--=-=-=-=-=-=-=-=-=-Modal=-=-=-=--=-= */
+.feet-items {
+	font-size: 0.75em;
+}
+@media (max-width: 600px) {
+	.feet-items {
+		display: none;
+	}
+	.feet-tech {
+		display: none;
+	}
+}
+/* -=-=-=-=-=--=-=-=-=-=-=-=-=-=- MODAL SECTION =-=-=-=--=-= */
 .modal {
 	display: none;
 	position: fixed;
@@ -913,7 +935,7 @@ p {
 	-ms-border-radius: 20%;
 	-o-border-radius: 20%;
 }
-.con-gray-fliter {
+.contact-gray-fliter {
 	grid-column: 2/3;
 	grid-row: 3/6;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -944,6 +966,7 @@ p {
 	min-height: 2rem;
 }
 .formContainer {
+	display: flex;
 	margin: 1em;
 	grid-row: 5/6;
 	grid-column: 2/3;
@@ -957,6 +980,13 @@ form {
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
+}
+@media (max-width: 460px) {
+	form {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
 }
 #fullname {
 	color: black;
@@ -986,7 +1016,7 @@ form {
 	grid-column: 2/3;
 	grid-row: 3/4;
 }
-.contact-Lead{
+.contact-Lead {
 	grid-row: 4/5;
 	grid-column: 2/3;
 	text-align: center;
