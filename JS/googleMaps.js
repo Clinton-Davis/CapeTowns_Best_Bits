@@ -288,15 +288,7 @@ function initMap() {
 	});
 	var request = {
 		placeId: iD,
-		fields: [
-			"name",
-			"rating",
-			"formatted_phone_number",
-			"geometry",
-			"plus_code",
-			"website",
-			"user_ratings_total"
-		]
+		fields: ["name", "rating", "formatted_phone_number", "geometry", "website"]
 	};
 	service = new google.maps.places.PlacesService(map);
 	service.getDetails(request, callback);
@@ -386,7 +378,7 @@ function getDirectionsAndLocations() {
 	});
 	infoWindow = new google.maps.InfoWindow();
 	userMarker = new google.maps.Marker();
-	// HTML5 geolocation.
+	// geolocation form HTML.
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
 			function(position) {

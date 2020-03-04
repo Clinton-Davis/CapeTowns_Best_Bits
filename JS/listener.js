@@ -5,7 +5,7 @@ function addSpinner() {
 }
 /* This is a MutationObdrtver to see then the directions have been loaded by
 	the google-api */
-const myList = document.querySelector("#directionsPanel");
+const directionsList = document.querySelector("#directionsPanel");
 const observer = new MutationObserver(mutations => {
 	mutations.forEach(record => {
 		if (record.type === "attributes") {
@@ -23,6 +23,6 @@ function changepic() {
 	$("#getDirectionsBtn").addClass("hide");
 }
 
-observer.observe(myList, {
+observer.observe(directionsList, {
 	attributes: true
 });

@@ -139,6 +139,8 @@ $(function() {
 			$("#map").addClass("hide");
 			$("#getDirectionsBtn").addClass("hide");
 			$("#directionsPanel").css("display", "none");
+			$("#loadingText").css("display", "none");
+
 			$("#back").css("display", "none");
 			$("#about").removeClass("hide");
 			$("#contact").removeClass("hide");
