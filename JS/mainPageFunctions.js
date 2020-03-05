@@ -104,8 +104,8 @@ $(function() {
 			$("#about").addClass("hide");
 			$("#contact").addClass("hide");
 		}); //adds maps back btn and map div and getDirection Btn from sightsCol
-		$("#back").fadeIn(200, function() {
-			$("#back").removeClass("hide");
+		$("#mainPageBack").fadeIn(200, function() {
+			$("#mainPageBack").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
 			$("#pageBack").removeClass("hide");
@@ -114,8 +114,8 @@ $(function() {
 		$("#adventureCol").fadeOut(200, function() {
 			$("#adventureCol").addClass("hide");
 		}); //adds maps back btn and map div and getDirection Btn from adventureCol
-		$("#back").fadeIn(200, function() {
-			$("#back").removeClass("hide");
+		$("#mainPageBack").fadeIn(200, function() {
+			$("#mainPageBack").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
 		});
@@ -123,8 +123,8 @@ $(function() {
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
 		}); //adds maps back btn and map div and getDirection Btn from foodieCol
-		$("#back").fadeIn(200, function() {
-			$("#back").removeClass("hide");
+		$("#mainPageBack").fadeIn(200, function() {
+			$("#mainPageBack").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
 		});
@@ -142,13 +142,38 @@ $(function() {
 		}
 	});
 
-	//Back Btn in Map section to bring back to main page
-	$("#back").click(function() {
+	//PageBack Btns
+	//PageBack to Sights
+	$("#pageBackSights").click(function() {
+		$("#sightsCol").css("display", "block");
+		$("#getDirectionsBtn").addClass("hide");
+		$("#map").addClass("hide");
+		$(this).addClass("hide");
+	});
+	$("#pageBackAdventure").click(function() {
+		$("#adventureCol").css("display", "block");
+		$("#getDirectionsBtn").addClass("hide");
+		$("#map").addClass("hide");
+		$(this).addClass("hide");
+	});
+	$("#pageBackFoodie").click(function() {
+		$("#foodieCol").css("display", "block");
+		$("#getDirectionsBtn").addClass("hide");
+		$("#map").addClass("hide");
+		$(this).addClass("hide");
+	});
+
+	//Back to Main Page Btn in Map section to bring back to main page
+	$("#mainPageBack").click(function() {
 		$("h1,h2,h3,p").fadeIn(200, function() {
 			$("h1,h2,h3,p").removeClass("hide");
 			$("#sights").removeClass("hide");
+			$("#sightsCol").css("display", "none");
+
 			$("#adventure").removeClass("hide");
+			$("#adventureCol").css("display", "none");
 			$("#foodie").removeClass("hide");
+			$("#foodieCol").css("display", "none");
 			$("#map").addClass("hide");
 			$("#pageBackSights").addClass("hide");
 			$("#pageBackAdventures").addClass("hide");
@@ -156,7 +181,7 @@ $(function() {
 			$("#getDirectionsBtn").addClass("hide");
 			$("#directionsPanel").css("display", "none");
 			$("#loadingText").css("display", "none");
-			$("#back").css("display", "none");
+			$("#mainPageBack").css("display", "none");
 			$("#about").removeClass("hide");
 			$("#contact").removeClass("hide");
 		});
@@ -166,7 +191,7 @@ $(function() {
 	$("#about").click(function() {
 		$("#aboutModal").fadeIn(1000);
 		$("#mapCon").css("display", "none");
-		$("#back").css("display", "none");
+		$("#mainPageBack").css("display", "none");
 		$("#about").addClass("hide");
 	}); // Close span on about mondal
 	$("#modal-close").click(function() {
