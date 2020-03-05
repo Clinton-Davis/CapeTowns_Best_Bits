@@ -554,7 +554,7 @@ p {
 
 .mapBtn {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 /*-=-=-=-=-=-=-=LOADING SPINNER AND GOOGLE iCON-=-=-=*/
 #loadingText {

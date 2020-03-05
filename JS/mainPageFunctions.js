@@ -150,12 +150,14 @@ $(function() {
 		$("#map").addClass("hide");
 		$(this).addClass("hide");
 	});
+	//PageBack to Adventure
 	$("#pageBackAdventure").click(function() {
 		$("#adventureCol").css("display", "block");
 		$("#getDirectionsBtn").addClass("hide");
 		$("#map").addClass("hide");
 		$(this).addClass("hide");
 	});
+	//PageBack to Foodies
 	$("#pageBackFoodie").click(function() {
 		$("#foodieCol").css("display", "block");
 		$("#getDirectionsBtn").addClass("hide");
@@ -169,7 +171,6 @@ $(function() {
 			$("h1,h2,h3,p").removeClass("hide");
 			$("#sights").removeClass("hide");
 			$("#sightsCol").css("display", "none");
-
 			$("#adventure").removeClass("hide");
 			$("#adventureCol").css("display", "none");
 			$("#foodie").removeClass("hide");
