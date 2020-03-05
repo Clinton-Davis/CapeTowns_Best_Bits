@@ -219,3 +219,4 @@ $(function() {
 		console.log("top" + top, "height" + height);
 	});
 });
+/* make a if width is x and top is more than 0 move to 0*/
