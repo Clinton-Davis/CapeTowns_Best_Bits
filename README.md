@@ -109,6 +109,7 @@ The next stage of testing was external testing. I sent the code and the webpage 
 
 ### Bugs
 
+Talk about how to got the back to btn to foodie or sights or adv
 The side scroll on burger deployment needs to be sorted out.
 when you click on the wind icon the map opens up.
 Links to be fixed on google:

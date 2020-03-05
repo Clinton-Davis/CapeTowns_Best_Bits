@@ -95,8 +95,10 @@ $(function() {
 
 	/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-GOOGLE MAPS SECTION-=-=-=-=-=-=-=-*/
 
-	// Click on selection to show maps
+	// Click on Item Selection to show details and maps
+
 	$(".item").click(function() {
+		// Sights Selection
 		$("#sightsCol").fadeOut(200, function() {
 			$("#sightsCol").addClass("hide");
 			$("#about").addClass("hide");
@@ -106,9 +108,9 @@ $(function() {
 			$("#back").removeClass("hide");
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
+			$("#pageBack").removeClass("hide");
 		});
-	});
-	$(".item").click(function() {
+		// Adventure Selection
 		$("#adventureCol").fadeOut(200, function() {
 			$("#adventureCol").addClass("hide");
 		}); //adds maps back btn and map div and getDirection Btn from adventureCol
@@ -117,8 +119,7 @@ $(function() {
 			$("#getDirectionsBtn").removeClass("hide");
 			$("#map").removeClass("hide");
 		});
-	});
-	$(".item").click(function() {
+		//Foodie Selection
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
 		}); //adds maps back btn and map div and getDirection Btn from foodieCol
@@ -128,6 +129,19 @@ $(function() {
 			$("#map").removeClass("hide");
 		});
 	});
+
+	$(".item").click(function(event) {
+		if (event.target.classList[4] === "sights") {
+			$("#pageBackSights").removeClass("hide");
+		} else if (event.target.classList[4] === "adventure") {
+			$("#pageBackAdventure").removeClass("hide");
+		} else if (event.target.classList[4] === "foodie") {
+			$("#pageBackFoodie").removeClass("hide");
+		} else {
+			console.log("We have a Problem with eventFunction .item");
+		}
+	});
+
 	//Back Btn in Map section to bring back to main page
 	$("#back").click(function() {
 		$("h1,h2,h3,p").fadeIn(200, function() {
@@ -136,10 +150,12 @@ $(function() {
 			$("#adventure").removeClass("hide");
 			$("#foodie").removeClass("hide");
 			$("#map").addClass("hide");
+			$("#pageBackSights").addClass("hide");
+			$("#pageBackAdventures").addClass("hide");
+			$("#pageBackFoodie").addClass("hide");
 			$("#getDirectionsBtn").addClass("hide");
 			$("#directionsPanel").css("display", "none");
 			$("#loadingText").css("display", "none");
-
 			$("#back").css("display", "none");
 			$("#about").removeClass("hide");
 			$("#contact").removeClass("hide");
