@@ -95,6 +95,7 @@ nav {
 	padding-right: 1em;
 	display: flex;
 	align-items: center;
+	font-size: 1.325rem;
 }
 #windsock {
 	padding-bottom: 10px;
@@ -224,99 +225,6 @@ nav {
 	-moz-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
-}
-/*-=-=-Media quarys for main headings-=-=-*/
-@media (min-height: 500) {
-	body {
-		display: none;
-	}
-}
-@media (min-width: 370px) {
-	#capeTown {
-		font-size: 4.6rem;
-	}
-	#bestBits {
-		font-size: 3.5rem;
-	}
-	#diy {
-		background-position: center;
-	}
-}
-@media (min-width: 500px) {
-	#capeTown {
-		font-size: 6rem;
-	}
-	#bestBits {
-		font-size: 4rem;
-	}
-	#diy {
-		font-size: 3.5rem;
-		margin-top: 7%;
-	}
-}
-@media (min-width: 600px) {
-	#capeTown {
-		font-size: 7.5rem;
-		margin-top: 2%;
-	}
-	#bestBits {
-		font-size: 4.5rem;
-	}
-	#diy {
-		font-size: 4rem;
-		margin-top: 7%;
-	}
-}
-@media (min-width: 700px) {
-	#capeTown {
-		font-size: 9rem;
-		margin-top: 2%;
-	}
-	#bestBits {
-		font-size: 5rem;
-	}
-	#diy {
-		font-size: 4rem;
-		margin-top: 5%;
-	}
-}
-@media (min-width: 800px) {
-	#capeTown {
-		font-size: 9rem;
-		margin-top: 2%;
-	}
-	#bestBits {
-		font-size: 5rem;
-	}
-	#diy {
-		font-size: 4rem;
-		margin-top: 5%;
-	}
-}
-@media (min-width: 1000px) {
-	#capeTown {
-		font-size: 10rem;
-		margin-top: 2%;
-	}
-	#bestBits {
-		font-size: 6rem;
-	}
-	#diy {
-		font-size: 3.5rem;
-		margin-top: 0;
-	}
-	#lead {
-		font-size: 1rem;
-	}
-	#about {
-		font-size: 2rem;
-	}
-	#contact {
-		font-size: 2rem;
-	}
-	.links {
-		font-size: 1.25rem;
-	}
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
@@ -1000,13 +908,6 @@ form {
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
-} /*Medai quary to spot side scolling on small screens*/
-@media (max-width: 460px) {
-	form {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
 }
 #fullname {
 	color: black;
@@ -1046,7 +947,115 @@ form {
 	font-size: 1em;
 	padding: 1em;
 }
+/* -=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-   MEDIA QUARYS	*/
+/*-=-=-Media quarys for main headings-=-=-*/
 
+@media (min-width: 370px) {
+	#capeTown {
+		font-size: 4.6rem;
+	}
+	#bestBits {
+		font-size: 3.5rem;
+	}
+	#diy {
+		background-position: center;
+	}
+}
+@media (min-width: 370px) and (orientation: landscape) {
+	#capeTown {
+		font-size: 4.6rem;
+	}
+	#bestBits {
+		font-size: 3.5rem;
+	}
+	#diy {
+		background-position: center;
+	}
+}
+@media (min-width: 500px) {
+	#capeTown {
+		font-size: 6rem;
+	}
+	#bestBits {
+		font-size: 4rem;
+	}
+	#diy {
+		font-size: 3.5rem;
+		margin-top: 7%;
+	}
+}
+@media (min-width: 600px) {
+	#capeTown {
+		font-size: 7.5rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 4.5rem;
+	}
+	#diy {
+		font-size: 4rem;
+		margin-top: 7%;
+	}
+}
+@media (min-width: 700px) {
+	#capeTown {
+		font-size: 9rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 5rem;
+	}
+	#diy {
+		font-size: 4rem;
+		margin-top: 5%;
+	}
+}
+@media (min-width: 800px) {
+	#capeTown {
+		font-size: 9rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 5rem;
+	}
+	#diy {
+		font-size: 4rem;
+		margin-top: 5%;
+	}
+}
+@media (min-width: 1000px) {
+	#capeTown {
+		font-size: 10rem;
+		margin-top: 2%;
+	}
+	#bestBits {
+		font-size: 6rem;
+	}
+	#diy {
+		font-size: 3.5rem;
+		margin-top: 0;
+	}
+	#lead {
+		font-size: 1rem;
+	}
+	#about {
+		font-size: 2rem;
+	}
+	#contact {
+		font-size: 2rem;
+	}
+	.links {
+		font-size: 1.25rem;
+	}
+}
+/*Contact-Form-Page Medai quary to stop form side scolling on small screens*/
+@media (max-width: 460px) {
+	form {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+}
 /*-=-=-=--=-=-Ipad Media Quarys (I got this information on https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
 	.links {

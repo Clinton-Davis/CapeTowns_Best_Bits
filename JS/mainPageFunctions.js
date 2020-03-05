@@ -211,4 +211,11 @@ $(function() {
 		$("#mainform").css("display", "none");
 		$(".conLead").addClass("hide");
 	});
+
+	$(window).on("scroll", function() {
+		var self = $(this),
+			height = self.height(),
+			top = self.scrollTop();
+		console.log("top" + top, "height" + height);
+	});
 });
