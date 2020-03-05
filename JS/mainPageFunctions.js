@@ -27,6 +27,8 @@ $(function() {
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
 				$("#loadingText").css("display", "none");
+				$("#mainPageBack").css("display", "none");
+				$("#directionsPanel").css("display", "none");
 			});
 		});
 	});
@@ -57,6 +59,9 @@ $(function() {
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
 				$("#loadingText").css("display", "none");
+				$("#pageBackAdventure").css("display", "none");
+				$("#mainPageBack").css("display", "none");
+				$("#directionsPanel").css("display", "none");
 			});
 		});
 	});
@@ -70,7 +75,6 @@ $(function() {
 			$("#foodie").addClass("hide");
 			$("#about").addClass("hide");
 			$("#contact").addClass("hide");
-
 			$("#foodieCol").fadeIn(200, function() {
 				$("#foodieCol").removeClass("hide");
 			});
@@ -80,7 +84,6 @@ $(function() {
 	$("#fback").click(function() {
 		$("#foodieCol").fadeOut(200, function() {
 			$("#foodieCol").addClass("hide");
-
 			$("h1,h2,h3,p").fadeIn(200, function() {
 				$("h1,h2,h3,p").removeClass("hide");
 				$("#sights").removeClass("hide");
@@ -89,6 +92,9 @@ $(function() {
 				$("#about").removeClass("hide");
 				$("#contact").removeClass("hide");
 				$("#loadingText").css("display", "none");
+				$("#pageBackFoodie").css("display", "none");
+				$("#mainPageBack").css("display", "none");
+				$("#directionsPanel").css("display", "none");
 			});
 		});
 	});

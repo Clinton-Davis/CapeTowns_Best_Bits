@@ -749,6 +749,11 @@ p {
 	color: rgba(0, 0, 0, 1);
 	font-size: 1.2rem;
 	padding: 0.5em;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 
 	background: -moz-linear-gradient(
 		-45deg,
