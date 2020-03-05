@@ -115,6 +115,8 @@ Links to be fixed on google:
 -chef wherehouse
 -water bykes
 -jaonker hiuse
+Click on Jonkers Hiuse and the map apeared at the bottum of the page and not as the main part.
+same on Snookies to wil have to look at the mainPageFunction.js
 
 ## Deployment
 
