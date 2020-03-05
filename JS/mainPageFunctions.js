@@ -183,7 +183,7 @@ $(function() {
 			$("#foodieCol").css("display", "none");
 			$("#map").addClass("hide");
 			$("#pageBackSights").addClass("hide");
-			$("#pageBackAdventures").addClass("hide");
+			$("#pageBackAdventure").addClass("hide");
 			$("#pageBackFoodie").addClass("hide");
 			$("#getDirectionsBtn").addClass("hide");
 			$("#directionsPanel").css("display", "none");
