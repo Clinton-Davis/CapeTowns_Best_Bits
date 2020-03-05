@@ -1047,6 +1047,9 @@ form {
 	.links {
 		font-size: 1.25rem;
 	}
+	.selectors {
+		font-size: 1.5rem;
+	}
 }
 /*Contact-Form-Page Medai quary to stop form side scolling on small screens*/
 @media (max-width: 460px) {
