@@ -151,6 +151,7 @@ $(function() {
 	//PageBack Btns
 	//PageBack to Sights
 	$("#pageBackSights").click(function() {
+		$(".mapContainer").css("display", "block");
 		$("#sightsCol").css("display", "block");
 		$("#getDirectionsBtn").addClass("hide");
 		$("#map").addClass("hide");
@@ -158,6 +159,7 @@ $(function() {
 	});
 	//PageBack to Adventure
 	$("#pageBackAdventure").click(function() {
+		$(".mapContainer").css("display", "block");
 		$("#adventureCol").css("display", "block");
 		$("#getDirectionsBtn").addClass("hide");
 		$("#map").addClass("hide");
@@ -165,6 +167,7 @@ $(function() {
 	});
 	//PageBack to Foodies
 	$("#pageBackFoodie").click(function() {
+		$(".mapContainer").css("display", "block");
 		$("#foodieCol").css("display", "block");
 		$("#getDirectionsBtn").addClass("hide");
 		$("#map").addClass("hide");
@@ -191,6 +194,7 @@ $(function() {
 			$("#mainPageBack").css("display", "none");
 			$("#about").removeClass("hide");
 			$("#contact").removeClass("hide");
+			$(".mapContainer").css("display", "block");
 		});
 	});
 	// MODAL SECTION
@@ -210,13 +214,6 @@ $(function() {
 	$("#contact-send").click(function() {
 		$("#mainform").css("display", "none");
 		$(".conLead").addClass("hide");
-	});
-
-	$(window).on("scroll", function() {
-		var self = $(this),
-			height = self.height(),
-			top = self.scrollTop();
-		console.log("top" + top, "height" + height);
 	});
 });
 /* make a if width is x and top is more than 0 move to 0*/
