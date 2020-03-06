@@ -226,7 +226,20 @@ nav {
 	-ms-border-radius: 15px;
 	-o-border-radius: 15px;
 }
-
+#howto {
+	color: whitesmoke;
+	grid-row: 5/6;
+	grid-column: 2/3;
+	max-width: 80%;
+	margin: 0 auto 0 auto;
+	font-weight: 700;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=SELECTION=-=-=-=*/
 .backGround {
 	background-color: rgba(0, 0, 0, 0.5);
