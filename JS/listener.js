@@ -2,7 +2,11 @@
 function addSpinner() {
 	$("#googleIcon").css("display", "block");
 	$("#loadingText").css("display", "block");
+	observer.observe(directionsList, {
+		attributes: true
+	});
 }
+
 /* This is a MutationObdrtver to see then the directions have been loaded by
 	the google-api */
 const directionsList = document.querySelector("#directionsPanel");
@@ -15,6 +19,7 @@ const observer = new MutationObserver(mutations => {
 		}
 	});
 });
+
 /*This function removes the loader Div and spinner image when Google Api 
   has finished*/
 function changepic() {
@@ -37,6 +42,3 @@ function checkWidth() {
 		}
 	});
 }
-observer.observe(directionsList, {
-	attributes: true
-});
