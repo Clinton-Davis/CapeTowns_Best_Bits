@@ -458,8 +458,19 @@ p {
 	font-weight: 900;
 	display: none;
 	z-index: 0;
+	animation-name: flash ;
+	animation-duration: 1s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
 }
-
+@keyframes flash {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.7;
+	}
+}
 .dit-1 {
 	color: rgb(255, 0, 0);
 	font-size: 1.5em;
