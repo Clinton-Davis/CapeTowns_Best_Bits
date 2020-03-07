@@ -14,7 +14,7 @@ html {
   animation-play-state: paused !important;
 }
 body {
-	background-image: url("../images/capeTownCityBoll.jpg");
+	background-image: url("../images/capeTownCityBoll1000px.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -161,7 +161,7 @@ nav {
 	margin-top: 10%;
 	margin-bottom: 0;
 	/*4.6remSmallscreans320x568*/
-	background-size: 200%;
+	background-size: 150%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	background-image: url(../images/sunnyBackgroundCrop.jpg);
@@ -208,7 +208,7 @@ nav {
 	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-image: url(../images/BigBlueOceanLiter.jpg);
+	background-image: url(../images/BigBlueOceanLiternt.jpg);
 	animation: bg-animation 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
