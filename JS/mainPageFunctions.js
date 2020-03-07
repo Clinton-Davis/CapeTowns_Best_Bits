@@ -1,4 +1,5 @@
 $(function() {
+	
 	// Removing main heading and adding Sights col
 	$("#sights").click(function() {
 		$(".main-Heading").fadeOut(200, function() {
@@ -185,9 +186,6 @@ $(function() {
 			$("#foodie").removeClass("hide");
 			$("#foodieCol").css("display", "none");
 			$("#map").addClass("hide");
-			$("#pageBackSights").addClass("hide");
-			$("#pageBackAdventure").addClass("hide");
-			$("#pageBackFoodie").addClass("hide");
 			$("#getDirectionsBtn").addClass("hide");
 			$("#directionsPanel").css("display", "none");
 			$("#loadingText").css("display", "none");
@@ -215,16 +213,13 @@ $(function() {
 		$("#mainform").css("display", "none");
 		$(".conLead").addClass("hide");
 	});
-	getDirectionsBtn.addEventListener("click", function() {
-		setInterval(() => {
-			window.addEventListener(
-				"load",
-				function() {
-					const loader = document.querySelector("#directionsPanel");
-					console.log(loader);
-				},
-				100
-			);
-		});
-	});
+	
+	
+
+	$("#mainPageBack"). click(function(){
+		$("#map").addClass("hide");
+		$("#directionsPanel").css("display", "none");
+		location.reload();
+	})
+	
 });

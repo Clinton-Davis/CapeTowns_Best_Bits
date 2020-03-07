@@ -10,11 +10,7 @@
 			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 			crossorigin="anonymous"
 		></script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaqAp28P-jkpfTyo9EZ6pP6VcGKEunTTk&libraries=places&"
-			async
-			defer
-		></script>
+		
 	
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>Cape Towns Best Bits</title>
@@ -25,8 +21,8 @@
 				<div class="navWeather">
 					<ul class="tbicon">
 						<img src="./assets/images/icons/pageIcons/tableMountainIconsmalltranparnt.png" id="tableIcon" alt="table Mountain Icons">
-						<li id="temp-api" class="links">H/L></li><a href="top" id="topPage"></a>
-						<li id="wind-api" class="links">Wind</li>
+						<li id="temp-api" class="links"></li><a href="top" id="topPage"></a>
+						<li id="wind-api" class="links"></li>
 					</ul>
 				</div>
 				
@@ -342,10 +338,8 @@
 				</div>
 				<!--Google Maps Back and Direction Btns-->
 				<div class="mapBtn">
-					<button class="opt-btn banger hide" id="mainPageBack">Back To Main Page</button>			
-					<button class="opt-btn banger hide" id="pageBackSights">Back to Sights</button>			
-					<button class="opt-btn banger hide" id="pageBackAdventure">Back to Adventures</button>			
-					<button class="opt-btn banger hide" id="pageBackFoodie">Back to foodies</button>			
+					<button class="opt-btn banger hide" id="mainPageBack" onclick="goBack()" >Back To Main Page</button>			
+								
 					<button class="opt-btn banger hide" id="getDirectionsBtn" onclick="getDirectionsAndLocations(), addSpinner()">Get Directions</button>			
 				</div>
 				<!--Spinner Loading Section-->
@@ -406,10 +400,15 @@
 			</div>
 					
 		</footer>
-		
+		<script
+		async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaqAp28P-jkpfTyo9EZ6pP6VcGKEunTTk&libraries=places&"
+			
+		></script>
 		<script src="./JS/googleMaps.js"></script>
 		<script src="./JS/listener.js"></script>
-		<script src="./JS/test.js"></script>
+		
 		<script src="./JS/mainPageFunctions.js"></script>
 		<script src="./JS/weather_API.js"></script>
 		
