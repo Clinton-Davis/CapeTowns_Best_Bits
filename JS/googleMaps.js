@@ -280,7 +280,7 @@ function locationFinder(locationFinder_id) {
 	}
 }
 function placeInfo() {
-	document.getElementById("placeInfo").innerHTML = `${info}`;
+	document.getElementById("placeInfo").innerHTML = `<p> ${info}</p>`;
 }
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
@@ -307,7 +307,7 @@ function initMap() {
 			var rating = place.rating;
 			var website = place.website;
 			var phone = place.formatted_phone_number;
-
+			
 			console.log(name, rating, website, phone, latlng);
 			if (rating == undefined) {
 				var rating = " ";
@@ -328,34 +328,28 @@ function initMap() {
 			}
 
 			var markerData =
-				'<div class="infowindowContiner">' +
-				'<div class="infowidHeading">' +
-				'<h2 class="infoHeading">' +
-				`${name}` +
-				"<br>" +
-				'<p class="rating">' +
-				`${rating}` +
-				"</p>" +
-				"</h2>" +
+			'<div class="infowindowContiner">' +
+
+				 '<div class="infowidHeading">' +
+				   '<h2 class="infoHeading">'+`${name}`+"<br>" +
+				   
+				  "</h2>" +
+				  "</div>" +
+				
+				`<div class="infobody">` + 
+				'<p class="infobody">' +`${rating}`+ "</p>" +
+				`<p class="infobody">` + `${phone}` + `</p>` +
+				`<a href="${website}" class="infobodyWeb" target="_blank">${website}</a>` +
 				"</div>" +
 
-				'<div class="scocial">' +
-				`<p class="rating">` +
-				`${phone}` +
-				`<div class="website rating">` +
-				`<a href="${website}" class="rating" 
-										target="_blank">${website}</a>` +
-				"</div>" +
 				`<div class="imgRap">` +
 				`<img id="directionsImg" 
-										class="dirImg" 
-										onclick="getDirectionsAndLocations(), addSpinner()" 
-										src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
-										alt="Directions"</>` +
+					class="dirImg" 
+					onclick="getDirectionsAndLocations(), addSpinner()" 
+					src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
+					alt="Directions"</>` +
 				`</div>` +
-				"</div>" +
-				"</div>" +
-				"</div>";
+			"</div>";
 			var infowindow = new google.maps.InfoWindow({
 				content: markerData
 			});
