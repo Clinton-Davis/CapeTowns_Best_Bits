@@ -659,7 +659,10 @@ p {
 }
 .infobody {
 	color: black;
-	text-align: center;
+    text-align: center;
+    
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /*-------MAIN PAGE BTNS SIGHTS ADVENTURE FOODIE --------*/

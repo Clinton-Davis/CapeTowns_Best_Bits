@@ -312,7 +312,7 @@ function initMap() {
 			if (rating == undefined) {
 				var rating = " ";
 			} else {
-				var rating = `<img src="./assets/images/icons/pageIcons/star.ico" alt="star rating"> ${place.rating}`;
+				var rating = `${rating} Stars`;
 			}
 			if (phone == undefined) {
 				var phone = " ";
