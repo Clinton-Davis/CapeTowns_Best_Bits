@@ -186,6 +186,7 @@ $(function() {
 			$("#foodie").removeClass("hide");
 			$("#foodieCol").css("display", "none");
 			$("#map").addClass("hide");
+			$("placeInfo").css("display", "none");
 			$("#getDirectionsBtn").addClass("hide");
 			$("#directionsPanel").css("display", "none");
 			$("#loadingText").css("display", "none");
