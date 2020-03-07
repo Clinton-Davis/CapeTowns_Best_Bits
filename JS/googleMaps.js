@@ -350,7 +350,7 @@ function initMap() {
 				`<img id="directionsImg" 
 										class="dirImg" 
 										onclick="getDirectionsAndLocations(), addSpinner()" 
-										src="./assets/images/icons/pageIcons/googleMapsGo50x50.jpg"
+										src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
 										alt="Directions"</>` +
 				`</div>` +
 				"</div>" +
