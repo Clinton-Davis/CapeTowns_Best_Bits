@@ -8,6 +8,11 @@
 html {
 	height: 100%;
 }
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
 body {
 	background-image: url("../images/capeTownCityBoll.jpg");
 	background-repeat: no-repeat;
@@ -180,7 +185,7 @@ nav {
 	background-size: 100%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-image: url(../images/orangeYelloSunSet.jpg);
+	background-image: url(../images/icons/sunsetnarrow.jpg);
 	animation: bg-animationTB 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animationTB 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;

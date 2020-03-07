@@ -3,10 +3,8 @@ function addSpinner() {
 	$("#googleIcon").css("display", "block");
 	$("#loadingText").css("display", "block");
 	
-	observer.observe(directionsList, {
-			attributes: true
-});
 }
+	
 
 /* This is a MutationObdrtver to see then the directions have been loaded by
 	the google-api */
@@ -20,6 +18,9 @@ const observer = new MutationObserver(mutations => {
 			console.log("MutatuinObserver has Failed");
 		}
 	});
+});
+observer.observe(directionsList, {
+	attributes: true
 });
 /*This function removes the loader Div and spinner image when Google Api 
   has finished */

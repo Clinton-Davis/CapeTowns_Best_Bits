@@ -186,7 +186,7 @@ For the use of code and knowledge.
 
 - [YouTube - Kevin Powell](https://www.youtube.com/user/KepowOb) for code snippets and [Sticky footer](https://bit.ly/2NAFAgW) advice / [Kevin Powell - Responsice Desing (Scrimba)](https://scrimba.com/) /
 
-- [CSS-Tricks](https://css-tricks.com/) website for help with [BackGround Image, Ipad Resposive work arounds](https://css-tricks.com/perfect-full-page-background-image/) /
+- [CSS-Tricks](https://css-tricks.com/) website for help with [BackGround Image, Making-animations-wait, Ipad Resposive work arounds](https://css-tricks.com/perfect-full-page-background-image/) / (https://css-tricks.com/making-animations-wait/) 
 - [W3Schools](https://www.w3schools.com/) for code snippets and documentation with [Creating Modal,](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) / General research on HTML CSS and JavaScript.
 - [CSSMatric](https://cssmatic.com/) for [Box Shadow Generator ](https://cssmatic.com/box-shadow)
 - [GitHub](https://github.com/) for documentation on how to [Deploy GitPages](https://bit.ly/2Kc5u8N) and [How to Clone Repository](https://bit.ly/32Emdbc).
