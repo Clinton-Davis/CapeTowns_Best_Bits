@@ -185,7 +185,7 @@ nav {
 	background-size: 100%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-image: url(../images/icons/sunsetnarrow.jpg);
+	background-image: url(../images/orangeYelloSunSetNarrow.jpg);
 	animation: bg-animationTB 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animationTB 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
@@ -208,7 +208,7 @@ nav {
 	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	background-image: url(../images/icons/BigBlueOceanLiter.jpg);
+	background-image: url(../images/BigBlueOceanLiter.jpg);
 	animation: bg-animation 120s ease-in-out infinite alternate;
 	-webkit-animation: bg-animation 120s ease-in-out infinite alternate;
 	letter-spacing: 0.03em;
