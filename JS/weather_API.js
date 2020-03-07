@@ -11,7 +11,7 @@ xhr.onreadystatechange = function() {
 		var tempsMax = Math.ceil(obj.main.temp_max);
 		var tempMin = Math.floor(obj.main.temp_min);
 		var wind = obj.wind.speed;
-		//console.log(tempsMax, obj, tempMin);
+		console.log(tempsMax, obj, tempMin);
 
 		var direction = obj.wind.deg;
 		//If statment to turn Wind degrees into String Direction
@@ -52,6 +52,7 @@ xhr.onreadystatechange = function() {
 		}
 		writeToPage();
 	}
+	
 	//This function sets the Temps and wind to nav in index page
 	function writeToPage() {
 		document.getElementById(
