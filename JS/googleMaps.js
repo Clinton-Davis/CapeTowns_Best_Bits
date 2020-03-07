@@ -184,100 +184,103 @@ function locationFinder(locationFinder_id) {
 	console.log(locationFinder_id);
 	switch (locationFinder_id) {
 		case "tm": // Sights starts
-			(iD = sightsJSON.TM.Id), (info = sightsJSON.TM.info), initMap();
+			(iD = sightsJSON.TM.Id), (info = sightsJSON.TM.info), initMap(),placeInfo();
 			break;
 		case "cp":
-			(iD = sightsJSON.CP.Id), (info = sightsJSON.CP.info), initMap();
+			(iD = sightsJSON.CP.Id), (info = sightsJSON.CP.info), initMap(),placeInfo();
 			break;
 		case "toai":
-			(iD = sightsJSON.TOAI.Id), (info = sightsJSON.TOAI.info), initMap();
+			(iD = sightsJSON.TOAI.Id), (info = sightsJSON.TOAI.info), initMap(),placeInfo();
 			break;
 		case "bk":
-			(iD = sightsJSON.BK.Id), (info = sightsJSON.BK.info), initMap();
+			(iD = sightsJSON.BK.Id), (info = sightsJSON.BK.info), initMap(),placeInfo();
 			break;
 		case "con":
-			(iD = sightsJSON.CON.Id), (info = sightsJSON.CON.info), initMap();
+			(iD = sightsJSON.CON.Id), (info = sightsJSON.CON.info), initMap(),placeInfo();
 			break;
 		case "kb":
-			(iD = sightsJSON.KB.Id), (info = sightsJSON.KB.info), initMap();
+			(iD = sightsJSON.KB.Id), (info = sightsJSON.KB.info), initMap(),placeInfo();
 			break;
 		case "bl":
-			(iD = sightsJSON.BL.Id), (info = sightsJSON.BL.info), initMap();
+			(iD = sightsJSON.BL.Id), (info = sightsJSON.BL.info), initMap(),placeInfo();
 			break;
 		case "chp":
-			(iD = sightsJSON.CHP.Id), (info = sightsJSON.CHP.info), initMap();
+			(iD = sightsJSON.CHP.Id), (info = sightsJSON.CHP.info), initMap(),placeInfo();
 			break;
 		case "dsm":
-			(iD = sightsJSON.DSM.Id), (info = sightsJSON.DSM.info), initMap();
+			(iD = sightsJSON.DSM.Id), (info = sightsJSON.DSM.info), initMap(),placeInfo();
 			break;
 		case "lh":
-			(iD = sightsJSON.LH.Id), (info = sightsJSON.LH.info), initMap();
+			(iD = sightsJSON.LH.Id), (info = sightsJSON.LH.info), initMap(),placeInfo();
 			break;
 		case "ri":
-			(iD = sightsJSON.RI.Id), (info = sightsJSON.RI.info), initMap();
+			(iD = sightsJSON.RI.Id), (info = sightsJSON.RI.info), initMap(),placeInfo();
 			break; //addventure starts
 		case "kay":
-			(iD = adventureJSON.KAY.Id), (info = adventureJSON.KAY.info), initMap();
+			(iD = adventureJSON.KAY.Id), (info = adventureJSON.KAY.info), initMap(),placeInfo();
 			break;
 		case "safa":
-			(iD = adventureJSON.SAFA.Id), (info = adventureJSON.SAFA.info), initMap();
+			(iD = adventureJSON.SAFA.Id), (info = adventureJSON.SAFA.info), initMap(),placeInfo();
 			break;
 		case "abt":
-			(iD = adventureJSON.ABT.Id), (info = adventureJSON.ABT.info), initMap();
+			(iD = adventureJSON.ABT.Id), (info = adventureJSON.ABT.info), initMap(),placeInfo();
 			break;
 		case "bal":
-			(iD = adventureJSON.BAL.Id), (info = adventureJSON.BAL.info), initMap();
+			(iD = adventureJSON.BAL.Id), (info = adventureJSON.BAL.info), initMap(),placeInfo();
 			break;
 		case "sd":
-			(iD = adventureJSON.SD.Id), (info = adventureJSON.SD.info), initMap();
+			(iD = adventureJSON.SD.Id), (info = adventureJSON.SD.info), initMap(),placeInfo();
 			break;
 		case "zp":
-			(iD = adventureJSON.ZP.Id), (info = adventureJSON.ZP.info), initMap();
+			(iD = adventureJSON.ZP.Id), (info = adventureJSON.ZP.info), initMap(),placeInfo();
 			break;
 		case "sc":
-			(iD = adventureJSON.SC.Id), (info = adventureJSON.SC.info), initMap();
+			(iD = adventureJSON.SC.Id), (info = adventureJSON.SC.info), initMap(),placeInfo();
 			break;
 		case "hh":
-			(iD = adventureJSON.HH.Id), (info = adventureJSON.HH.info), initMap();
+			(iD = adventureJSON.HH.Id), (info = adventureJSON.HH.info), initMap(),placeInfo();
 			break;
 		case "ht":
-			(iD = adventureJSON.HT.Id), (info = adventureJSON.HT.info), initMap();
+			(iD = adventureJSON.HT.Id), (info = adventureJSON.HT.info), initMap(),placeInfo();
 			break;
 		case "wb":
-			(iD = adventureJSON.WB.Id), (info = adventureJSON.WB.info), initMap();
+			(iD = adventureJSON.WB.Id), (info = adventureJSON.WB.info), initMap(),placeInfo();
 			break;
 		// Foodies Strars
 		case "jh":
-			(iD = foodiesJSON.JH.Id), (info = foodiesJSON.JH.info), initMap();
+			(iD = foodiesJSON.JH.Id), (info = foodiesJSON.JH.info), initMap(),placeInfo();
 			break;
 		case "shb":
-			(iD = foodiesJSON.SHB.Id), (info = foodiesJSON.SHB.info), initMap();
+			(iD = foodiesJSON.SHB.Id), (info = foodiesJSON.SHB.info), initMap(),placeInfo();
 			break;
 		case "hhkb":
-			(iD = foodiesJSON.HHKB.Id), (info = foodiesJSON.HHKB.info), initMap();
+			(iD = foodiesJSON.HHKB.Id), (info = foodiesJSON.HHKB.info), initMap(),placeInfo();
 			break;
 		case "ma":
-			(iD = foodiesJSON.MA.Id), (info = foodiesJSON.MA.info), initMap();
+			(iD = foodiesJSON.MA.Id), (info = foodiesJSON.MA.info), initMap(),placeInfo();
 			break;
 		case "tsc":
-			(iD = foodiesJSON.TSC.Id), (info = foodiesJSON.TSC.info), initMap();
+			(iD = foodiesJSON.TSC.Id), (info = foodiesJSON.TSC.info), initMap(),placeInfo();
 			break;
 		case "std":
-			(iD = foodiesJSON.STD.Id), (info = foodiesJSON.STD.info), initMap();
+			(iD = foodiesJSON.STD.Id), (info = foodiesJSON.STD.info), initMap(),placeInfo();
 			break;
 		case "cwc":
-			(iD = foodiesJSON.CWC.Id), (info = foodiesJSON.CWC.info), initMap();
+			(iD = foodiesJSON.CWC.Id), (info = foodiesJSON.CWC.info), initMap(),placeInfo();
 			break;
 		case "cpvr":
-			(iD = foodiesJSON.CPVR.Id), (info = foodiesJSON.CPVR.info), initMap();
+			(iD = foodiesJSON.CPVR.Id), (info = foodiesJSON.CPVR.info), initMap(),placeInfo();
 			break;
 		case "mvr":
-			(iD = foodiesJSON.MVR.Id), (info = foodiesJSON.MVR.info), initMap();
+			(iD = foodiesJSON.MVR.Id), (info = foodiesJSON.MVR.info), initMap(),placeInfo();
 			break;
 		case "tlh":
-			(iD = foodiesJSON.TLH.Id), (info = foodiesJSON.TLH.info), initMap();
+			(iD = foodiesJSON.TLH.Id), (info = foodiesJSON.TLH.info), initMap(),placeInfo();
 			break;
 	}
+}
+function placeInfo() {
+	document.getElementById("placeInfo").innerHTML = `${info}`;
 }
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
@@ -335,10 +338,7 @@ function initMap() {
 				"</p>" +
 				"</h2>" +
 				"</div>" +
-				'<div class="infowindoBody">' +
-				'<p class="infobody">' +
-				`${info}` +
-				"</p>" +
+
 				'<div class="scocial">' +
 				`<p class="rating">` +
 				`${phone}` +
@@ -353,7 +353,6 @@ function initMap() {
 										src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
 										alt="Directions"</>` +
 				`</div>` +
-				"</div>" +
 				"</div>" +
 				"</div>" +
 				"</div>";
