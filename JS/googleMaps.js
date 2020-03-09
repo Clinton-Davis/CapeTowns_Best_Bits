@@ -4,30 +4,41 @@
 let sightsJSON = {
 	TM: {
 		Id: "ChIJdeCOYqJnzB0Rm5YhSFRUI2w",
-		info: `The Table Mountain Aerial Cableway Company has been providing visitors with a world-class experience since October 4, 1929. The company operates in a National Park and World Heritage Site.`
+		info: `Mountain with a distinctive flat plateau, popular for hiking, climbing, biking & wildlife viewing.
+			 There is the Table Mountain Aerial Cableway Company has been providing visitors with a world-class experience since October 4, 1929. 
+			 The company operates in a National Park and World Heritage Site.`
 	},
 	//Cape Point
 	CP: {
 		Id: "ChIJAf2PqQkjzB0RTEFJZ9rJSSM",
 		info: `Cape Point is like no other. 
-		At Cape Point Nature Reserve, the mountain and ocean meet in a thunderous clash of water 
-		against rock, producing a dramatic landscape inhabited by an incredible diversity of life. 
+				At Cape Point Nature Reserve, the mountain and ocean meet in a thunderous clash of water 
+				against rock, producing a dramatic landscape inhabited by an incredible diversity of life. 
 		`
 	},
 	//Boo-Kaap
 	BK: {
 		Id: "ChIJLSz2VWhnzB0Rpm9vazg9yw4",
-		info: `A popular daytime destination, hillside Bo-Kaap is known for its narrow cobbled streets lined with colorful houses. Local Cape Malay culture is represented at sites like the 1790s-built Auwal Mosque and the Bo-Kaap Museum, with exhibits about the achievements of Muslim immigrants. Nearby, simple restaurants serve curries, roti and other Cape Malay dishes. The Noon Gun cannon is fired daily at midday from Signal Hill.`
+		info: `A popular daytime destination, hillside Bo-Kaap is known for its narrow cobbled streets lined with colorful houses. 
+				Local Cape Malay culture is represented at sites like the 1790s-built Auwal Mosque and the Bo-Kaap Museum, with exhibits about the 
+				achievements of Muslim immigrants. Nearby, simple restaurants serve curries, roti and other Cape Malay dishes. 
+				The Noon Gun cannon is fired daily at midday from Signal Hill.`
 	},
 	// Constainta
 	CON: {
 		Id: "ChIJ29Ra-NNpzB0R03JXGGkr6Bo",
-		info: `Constantia is a wine-producing suburb of Cape Town, South Africa. The Constantia Wine Route links the many wineries dotting the Constantia Valley. Housed in a 17th-century wine estate, Groot Constantia Homestead and Wine Museum includes a manor house with 18th- and 19th-century furnishings, plus collections of drinking vessels and carriages. The Constantia Greenbelt network includes the tree-lined Alphen Trail.`
+		info: `Constantia is a wine-producing suburb of Cape Town, South Africa. 
+				The Constantia Wine Route links the many wineries dotting the Constantia Valley. 
+				Housed in a 17th-century wine estate, Groot Constantia Homestead and Wine Museum includes a manor house with 
+				18th- and 19th-century furnishings, plus collections of drinking vessels and carriages. 
+				The Constantia Greenbelt network includes the tree-lined Alphen Trail.`
 	},
 	// Kalk Bay
 	KB: {
 		Id: "ChIJu2x0EhZAzB0RCyIwnb_NXFY",
-		info: `Kalk Bay is a fishing village on the coast of False Bay, It lies between the ocean and sharply rising mountainous heights that are buttressed by crags of grey Table Mountain Sandstone. Dutch/Afrikaans name "Kalkbaai" is "Lime Bay".`
+		info: `Kalk Bay is a fishing village on the coast of False Bay, South Africa and is now a suburb of greater Cape Town. 
+				It lies between the ocean and sharply rising mountainous heights that are buttressed by crags of grey Table Mountain Sandstone. 
+				A literal translation from the Dutch/Afrikaans name "Kalkbaai" is "Lime Bay".`
 	},
 	// Boulders Beach/Penguins
 	BL: {
@@ -37,7 +48,9 @@ let sightsJSON = {
 	// Chapmens Peak Drive
 	CHP: {
 		Id: "ChIJVagz7BNpzB0Rv9p0tMDvZsg",
-		info: `Chapman's Peak is the name of a mountain on the western side of the Cape Peninsula, between Hout Bay and Noordhoek. The mountain falls sharply for hundreds of metres into the Atlantic Ocean. A spectacular road, known as Chapman's Peak Drive, hugs the near-vertical face of the mountain.`
+		info: `Chapman's Peak is the name of a mountain on the western side of the Cape Peninsula, between Hout Bay and Noordhoek. 
+				The mountain falls sharply for hundreds of metres into the Atlantic Ocean. 
+				A spectacular road, known as Chapman's Peak Drive, hugs the near-vertical face of the mountain.`
 	},
 	// Distrct Six Mus
 	DSM: {
@@ -50,15 +63,20 @@ let sightsJSON = {
 		info: `Boasting panoramic views of the city, this landmark mountain offers hiking trails & historic graves.`
 	},
 
-	// Robin Island
-	RI: {
-		Id: "ChIJy3XfS2WKzB0RYZDeLkVkb30",
-		info: `Historical landmark known for housing political prisoners such as Nelson Mandela, now with a museum.`
+	//Kirstenbosch National Botanical Garden
+	KBG: {
+		Id: "ChIJecz6YqhCzB0RZqXqcdmKfBs",
+		info: `Kirstenbosch is an important botanical garden nestled at the eastern foot of Table Mountain in Cape Town. 
+			   The garden is one of ten National Botanical Gardens covering five of South Africa's six different biomes and administered by the South African.
+			   There is also sunset concert, They are a picnic style concert, so bring a blanket and a picnic basket.
+			   Children under 6 years do not require a concert ticket for the Kirstenbosch Summer Sunset Concerts.
+			   Check the website for more details.`
 	},
+	//Two Oceans aquarium
 	TOAI: {
 		Id: "ChIJfeaqwlpnzB0Rl2i0iRvp6SI",
-		info:
-			"Modern indoor aquarium & conservation center offering close encounters with sharks & penguins."
+		info: `Modern indoor aquarium & conservation center offering close encounters with sharks & penguins. 
+			We reconmend That you have a look at the Website for more detail of events and feeding times.`
 	}
 };
 //-=-=-=-=-=--=-=-=-ADVENTURE JSON=-=-=--=-=-=--=-=
@@ -66,17 +84,21 @@ let adventureJSON = {
 	//Kayak Cape Town
 	KAY: {
 		Id: "ChIJG31DwhJnzB0RC9C77ufuck0",
-		info: `Kayaking is vastly becoming one of the top Adventure Activities that Cape Town has to offer. With our guided Kayak Tour in Hout Bay and state of the art equipment - let Kayak Adventures take you on a scenic excursion that you won't forget!`
+		info: `Kayaking is vastly becoming one of the top Adventure Activities that Cape Town has to offer. 
+				With our guided Kayak Tour in Hout Bay and state of the art equipment - let Kayak Adventures take you on a scenic excursion that you won't forget!`
 	},
 	// Big Five Game Reserve https://inverdoorn.com/
 	SAFA: {
 		Id: "ChIJm-ZKiSFnzB0R4NBaoM1UpgM",
-		info: `Inverdoorn game reserve is filled with various natural life, within the Klein Karoo. The reserve has made a significant contribution to sustaining the biodiversity of the region. Inverdoorn’s 10 000 hectares are also home to the successful cheetah conservation centre.`
+		info: `Inverdoorn game reserve is filled with various natural life, within the Klein Karoo. 
+				The reserve has made a significant contribution to sustaining the biodiversity of the region. 
+				Inverdoorn’s 10 000 hectares are also home to the successful cheetah conservation centre.`
 	},
 	//Abseil Table Mountain abseilafrica.co.za
 	ABT: {
 		Id: "ChIJ846ZPb5nzB0RCXS_Tom7p9w",
-		info: `Explore Cape Town and surrounds with us Abseil Africa is OPEN 7 days a week between 08:30 – 16:00. Bad weather may affect our operation status. Book your trips with us – we want to take you on an adventure of a lifetime!`
+		info: `Explore Cape Town and surrounds with us Abseil Africa is OPEN 7 days a week between 08:30 – 16:00. 
+				Bad weather may affect our operation status. Book your trips with us – we want to take you on an adventure of a lifetime!`
 	},
 	//Wineland Ballooning Cape Town kapinfo.com
 	BAL: {
@@ -103,8 +125,9 @@ let adventureJSON = {
 	//Lions Head - Hike Addicts hikeaddicts.com
 	HH: {
 		Id: "ChIJ1_u4UbNnzB0RH1tMJWyQWrI",
-		info: `Cape Town is an adventure hotspot featuring an endless variety of exciting activities. At Hike Addicts we are pleased to offer a diverse selection of Cape Town’s most exhilarating tours on one platform.
-			Table Mountain shows off its exceptional beauty all year round and for the more adventurous souls, hiking Table Mountain is possibly the most rewarding and amazing experience you will have in Cape Town.`
+		info: `Cape Town is an adventure hotspot featuring an endless variety of exciting activities. 
+				At Hike Addicts we are pleased to offer a diverse selection of Cape Town’s most exhilarating tours on one platform.
+				Table Mountain shows off its exceptional beauty all year round and for the more adventurous souls, hiking Table Mountain is possibly the most rewarding and amazing experience you will have in Cape Town.`
 	},
 	//Cape Toewn Helicotpers helicopterscapetown.co.za
 	HT: {
@@ -112,10 +135,11 @@ let adventureJSON = {
 		info: `The helicopter you fly in has a huge impact on the quality of your air-tour experience. Compare Cape Town
 		Helicopters’ state-of-the-art helicopters with some other tour helicopters used in Cape Town.`
 	},
+	// Water Bikes
 	WB: {
 		Id: "ChIJ5_CYMno_zB0Rb3CrFJuM0vI",
-		info:
-			"Cape Town Water Bikes is a new way to experience the Simon’s Town coast. Hop on one of the world’s most advanced water bikes and get pedalling for a different perspective."
+		info: `Cape Town Water Bikes is a new way to experience the Simon’s Town coast. 
+			Hop on one of the world’s most advanced water bikes and get pedalling for a different perspective.`
 	}
 };
 //-=-=-=-=-=--=-=-=-FOODIES JSON=-=-=--=-=-=--=-=
@@ -132,27 +156,41 @@ let foodiesJSON = {
 	//Snoekies
 	SHB: {
 		Id: "ChIJgcBEXzhpzB0R2_0Gu9eDcIA",
-		info: `Hans’s purchased an old bus, which he converted into a takeaway cafe and positioned it at the end of Harbour Road, Hout Bay. They named the take-away cafe, Snoekies from where they served fish & chips to the local fishermen. Hans’s wife ran the Snoekies take-away cafe whilst he experimented with smoking fish and they found that his smoked snoek sold well at the café. Before long they found it difficult to keep up with the demand from their garage at home and in 1956 he built a factory in the Hout Bay Harbour.`
+		info: `Hans’s purchased an old bus, which he converted into a takeaway cafe and positioned it at the end of Harbour Road, Hout Bay. 
+				They named the take-away cafe, Snoekies from where they served fish & chips to the local fishermen. 
+				Hans’s wife ran the Snoekies take-away cafe whilst he experimented with smoking fish and they found that his smoked snoek sold well at the café. Before long they found it difficult to keep up with the demand from their garage at home and in 1956 he built a factory in the Hout Bay Harbour.`
 	},
 	//Harbour House Kalk Bay
 	HHKB: {
 		Id: "ChIJHWikDhRAzB0RyOvryzibbV8",
-		info: `Sitting on the harbour wall it's self is an elegant yet relaxed seafood restaurant with a deck overlooking fishing boats, ocean and mountains.`
+		info: `Sitting on the harbour wall it's self is an elegant yet relaxed seafood restaurant with a deck overlooking fishing boats, 
+				ocean and mountains.`
 	},
 	//Mamma Afirca
 	MA: {
 		Id: "ChIJ-f-De2VnzB0RwYNmkT4nR1A",
-		info: `Mama Africa Cape Town enjoys the distinction as a Long Street institution. It is the most unique experience you will have during your visit in Africa. Nowhere else exists where you can be Africa. You can view awesome African sunsets from the top of Table Mountain. But, if you want to immerse yourself in African history and culture, you must visit Mama Africa restaurant and be Africa.`
+		info: `Mama Africa Cape Town enjoys the distinction as a Long Street institution. 
+				It is the most unique experience you will have during your visit in Africa. 
+				Nowhere else exists where you can be Africa. You can view awesome African sunsets from the top of Table Mountain. 
+				But, if you want to immerse yourself in African history and culture, you must visit Mama Africa restaurant and be Africa.`
 	},
 	//The Shortmarket Club
 	TSC: {
 		Id: "ChIJ6cobfmZnzB0Rj3KoGeEf7d8",
-		info: `Open for lunch and dinner and, in keeping with its luxe old-world feel, many of the dishes are modern interpretations of classics as only chef Randles can do. Where most chefs use ‘seasonal’ and ‘sustainable’ as meaningless selling points, Randles fully embraces it. The restaurant works closely with local suppliers for all of their ingredients, which in turn inspire the menus. As a result, Randles’ food is instantly identifiable. Inventive, playful and refreshed, the dishes he puts on the Shortmarket menus are ever-changing.`
+		info: `Open for lunch and dinner and, in keeping with its luxe old-world feel, 
+				many of the dishes are modern interpretations of classics as only chef Randles can do. 
+				Where most chefs use ‘seasonal’ and ‘sustainable’ as meaningless selling points, Randles fully embraces it. 
+				The restaurant works closely with local suppliers for all of their ingredients, which in turn inspire the menus. 
+				As a result, Randles’ food is instantly identifiable. Inventive, playful and refreshed, the dishes he puts on the Shortmarket menus are ever-changing.`
 	},
 	//Stardust Theatrical Dining
 	STD: {
 		Id: "ChIJc6IAMYRdzB0R9yLw41HjQtM",
-		info: `This is no ordinary restaurant. This is the home of the singing waiter! Tonight, not only will you enjoy the wholesome, sumptuous taste of our designer tagine menu and the buzz of our wine bar’s best and brightest, but you’ll also be served and entertained by the shining stars of Cape Town’s immense pool of talented young performers. Make sure you get your waiter’s`
+		info: `This is no ordinary restaurant. 
+				This is the home of the singing waiter! Tonight, not only will you enjoy the wholesome, 
+				sumptuous taste of our designer tagine menu and the buzz of our wine bar’s best and brightest,
+				 but you’ll also be served and entertained by the shining stars of Cape Town’s immense pool of talented young performers.
+				  Make sure you get your waiter’s`
 	},
 	//Chefs Warehouse & Canteen
 	CWC: {
@@ -164,7 +202,8 @@ let foodiesJSON = {
 	//Cape Point Vineyards Restaurant
 	CPVR: {
 		Id: "ChIJ4RIv5klqzB0RK47qApYWst8",
-		info: `Cape Point Vineyards, a unique farm in Noordhoek where vines are lazily nestled between mountains and ocean. Cool breezes from the sea make for a slow growing season, with a late harvest that results in a truly unique Sauvignon Blanc that is recognised across the globe for it’s rich minerality, structure and tone.`
+		info: `Cape Point Vineyards, a unique farm in Noordhoek where vines are lazily nestled between mountains and ocean. 
+		Cool breezes from the sea make for a slow growing season, with a late harvest that results in a truly unique Sauvignon Blanc that is recognised across the globe for it’s rich minerality, structure and tone.`
 	},
 	//Monkey Valley Resort
 	MVR: {
@@ -181,7 +220,7 @@ let foodiesJSON = {
 // locationFinder is the onClick function that calles InitMap function on "clicked" Location.
 var marker, iD;
 function locationFinder(locationFinder_id) {
-	console.log(locationFinder_id);
+	//console.log(locationFinder_id);
 	iD = sightsJSON[locationFinder_id].Id;
 	info = sightsJSON[locationFinder_id].info;
 	initMap(), placeInfo();
