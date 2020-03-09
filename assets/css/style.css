@@ -11,7 +11,7 @@ html {
 .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
-  animation-play-state: paused !important;
+	animation-play-state: paused !important;
 }
 body {
 	background-image: url("../images/capeTownCityBoll1000px.jpg");
@@ -24,7 +24,7 @@ body {
 	flex-direction: column;
 }
 .gray-fliter {
-	background-color: rba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.3);
 	min-height: 80vh;
 }
 .wrapper {
@@ -160,7 +160,8 @@ nav {
 	font-size: 4rem;
 	margin-top: 10%;
 	margin-bottom: 0;
-	/*4.6remSmallscreans320x568*/background-size: 150%;
+	/*4.6remSmallscreans320x568*/
+	background-size: 150%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	background-image: url(../images/sunnyBackgroundCrop.jpg);
@@ -191,7 +192,6 @@ nav {
 	grid-row: 2/3;
 	grid-column: 2/3;
 	font-size: 3.5rem;
-	
 }
 @keyframes bg-animationTB {
 	0% {
@@ -215,7 +215,6 @@ nav {
 	grid-row: 3/4;
 	grid-column: 2/3;
 	font-size: 3rem;
-	
 }
 #lead {
 	color: whitesmoke;
@@ -449,15 +448,14 @@ p {
 	text-align: center;
 	max-width: 95%;
 	border-radius: 10px;
-	margin: .5em auto .5em auto;
+	margin: 0.5em auto 0.5em auto;
 	line-height: 1.4;
-    padding: .3em;
+	padding: 0.3em;
 	background-color: rgba(242, 246, 248, 0.8);
 	font-family: var(--secFont);
-	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-	
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 }
 #map {
 	min-height: 75vh;
@@ -472,7 +470,7 @@ p {
 .mapBtn {
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: .25em;
+	margin-top: 0.25em;
 }
 /*-=-=-=-=-=-=-=LOADING SPINNER AND GOOGLE iCON-=-=-=*/
 #loadingText {
@@ -480,7 +478,7 @@ p {
 	font-weight: 900;
 	display: none;
 	z-index: 0;
-	animation-name: flash ;
+	animation-name: flash;
 	animation-duration: 1s;
 	animation-direction: alternate-reverse;
 	animation-iteration-count: infinite;
@@ -656,10 +654,10 @@ p {
 }
 .infobody {
 	color: black;
-    text-align: center;
-    
-    font-size: 1rem;
-    font-weight: 600;
+	text-align: center;
+
+	font-size: 1rem;
+	font-weight: 600;
 }
 
 /*-------MAIN PAGE BTNS SIGHTS ADVENTURE FOODIE --------*/
@@ -684,9 +682,9 @@ p {
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
-	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 
 	background: -moz-linear-gradient(
 		-45deg,
