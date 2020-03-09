@@ -231,13 +231,13 @@ nav {
 	-o-border-radius: 15px;
 }
 #howto {
-	color: whitesmoke;
+	color: black;
 	grid-row: 5/6;
 	grid-column: 2/3;
 	max-width: 80%;
-	margin: 3em auto 0 auto;
+
 	font-weight: 700;
-	background-color: rgba(0, 0, 0, 0.5);
+
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -446,10 +446,11 @@ p {
 #placeInfo {
 	display: flex;
 	text-align: center;
+	justify-content: center;
 	max-width: 95%;
 	border-radius: 10px;
 	margin: 0.5em auto 0.5em auto;
-	line-height: 1.4;
+	line-height: 1.1;
 	padding: 0.3em;
 	background-color: rgba(242, 246, 248, 0.8);
 	font-family: var(--secFont);
@@ -521,6 +522,7 @@ p {
 	animation-duration: 0.5s;
 	animation-iteration-count: infinite;
 }
+/*Dot animation*/
 @keyframes dot {
 	from {
 		opacity: 1;
@@ -1070,6 +1072,9 @@ form {
 	}
 	#map {
 		max-width: 90%;
+	}
+	.mapContainer {
+		display: flex;
 	}
 }
 @media (min-width: 800px) {

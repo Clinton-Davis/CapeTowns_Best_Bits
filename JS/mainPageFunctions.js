@@ -175,6 +175,7 @@ $(function() {
 	});
 
 	//Back to Main Page Btn in Map section to bring back to main page
+
 	$("#mainPageBack").click(function() {
 		$(".main-Heading").fadeIn(200, function() {
 			$(".main-Heading").removeClass("hide");
@@ -192,6 +193,7 @@ $(function() {
 			$("#about").removeClass("hide");
 			$("#contact").removeClass("hide");
 			$(".mapContainer").css("display", "block");
+			location.reload();
 		});
 	});
 	// MODAL SECTION
@@ -212,12 +214,7 @@ $(function() {
 		$("#mainform").css("display", "none");
 		$(".conLead").addClass("hide");
 	});
-
-	$("#mainPageBack").click(function() {
-		$("#map").addClass("hide");
-		$("#directionsPanel").css("display", "none");
-		location.reload();
-	});
+	//Making the Nav Icon (Table Mountain) click back to main
 	$("#tableIcon").click(function() {
 		location.reload();
 	});

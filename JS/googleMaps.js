@@ -1,7 +1,7 @@
 /*-=-=-=-=-=-=Here are the places Ids for google and the lost of the clients*/
 
-/*=-=-=-=-=-=-SIGHT SEEING JSON-=-=-*/
-let sightsJSON = {
+let selectionJSON = {
+	/*=-=-=-=-=-=-SIGHT SEEING-=-=-*/
 	TM: {
 		Id: "ChIJdeCOYqJnzB0Rm5YhSFRUI2w",
 		info: `Mountain with a distinctive flat plateau, popular for hiking, climbing, biking & wildlife viewing.
@@ -77,10 +77,10 @@ let sightsJSON = {
 		Id: "ChIJfeaqwlpnzB0Rl2i0iRvp6SI",
 		info: `Modern indoor aquarium & conservation center offering close encounters with sharks & penguins. 
 			We reconmend That you have a look at the Website for more detail of events and feeding times.`
-	}
-};
-//-=-=-=-=-=--=-=-=-ADVENTURE JSON=-=-=--=-=-=--=-=
-let adventureJSON = {
+	},
+
+	//-=-=-=-=-=--=-=-=-ADVENTURE =-=-=--=-=-=--=-=
+
 	//Kayak Cape Town
 	KAY: {
 		Id: "ChIJG31DwhJnzB0RC9C77ufuck0",
@@ -140,10 +140,10 @@ let adventureJSON = {
 		Id: "ChIJ5_CYMno_zB0Rb3CrFJuM0vI",
 		info: `Cape Town Water Bikes is a new way to experience the Simon’s Town coast. 
 			Hop on one of the world’s most advanced water bikes and get pedalling for a different perspective.`
-	}
-};
-//-=-=-=-=-=--=-=-=-FOODIES JSON=-=-=--=-=-=--=-=
-let foodiesJSON = {
+	},
+
+	//-=-=-=-=-=--=-=-=-FOODIES =-=-=--=-=-=--=-=
+
 	//Jonkershuis Restaurant
 	JH: {
 		Id: "ChIJe6PtQ9FpzB0R4YORfViLQ5s",
@@ -220,9 +220,9 @@ let foodiesJSON = {
 // locationFinder is the onClick function that calles InitMap function on "clicked" Location.
 var marker, iD;
 function locationFinder(locationFinder_id) {
-	//console.log(locationFinder_id);
-	iD = sightsJSON[locationFinder_id].Id;
-	info = sightsJSON[locationFinder_id].info;
+	console.log(locationFinder_id);
+	iD = selectionJSON[locationFinder_id].Id;
+	info = selectionJSON[locationFinder_id].info;
 	initMap(), placeInfo();
 }
 function placeInfo() {
