@@ -2,16 +2,13 @@
 function addSpinner() {
 	$("#googleIcon").css("display", "block");
 	$("#loadingText").css("display", "block");
-	
 }
-	
-
 /* This is a MutationObdrtver to see then the directions have been loaded by
 	the google-api */
 const directionsList = document.querySelector("#directionsPanel");
 const observer = new MutationObserver(mutations => {
 	mutations.forEach(record => {
-		console.log(record)
+		console.log(record);
 		if (record.type === "attributes") {
 			changepic();
 		} else {
@@ -43,4 +40,4 @@ function checkWidth() {
 			$(".mapContainer").css("display", "flex");
 		}
 	});
-} 
+}

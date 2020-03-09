@@ -1,5 +1,4 @@
 $(function() {
-	
 	// Removing main heading and adding Sights col
 	$("#sights").click(function() {
 		$(".main-Heading").fadeOut(200, function() {
@@ -213,13 +212,13 @@ $(function() {
 		$("#mainform").css("display", "none");
 		$(".conLead").addClass("hide");
 	});
-	
-	
 
-	$("#mainPageBack"). click(function(){
+	$("#mainPageBack").click(function() {
 		$("#map").addClass("hide");
 		$("#directionsPanel").css("display", "none");
 		location.reload();
-	})
-	
+	});
+	$("#tableIcon").click(function() {
+		location.reload();
+	});
 });

@@ -7,7 +7,8 @@
 		<link rel="shortcut icon" type="image/png" href="./assets/images/icons/pageIcons/faviconFlag.png">
 		
 		<link rel="stylesheet" href="./assets/css/style.css" />
-		<!--This code pauses the animations untill the  the DOM is ready(https://css-tricks.com/making-animations-wait/)-->
+		<!--This code pauses the animations untill the  the DOM is ready. It helps the page Load quicker
+			(https://css-tricks.com/making-animations-wait/)-->
 		<script>
 		document.documentElement.className += " js-loading";
 		window.addEventListener("load", showPage, false);
@@ -21,8 +22,10 @@
 			<nav>
 				<div class="navWeather">
 					<ul class="tbicon">
-						<img src="./assets/images/icons/pageIcons/tableMountainIconsmalltranparnt.png" id="tableIcon" alt="table Mountain Icons">
-						<li id="temp-api" class="links"></li><a href="top" id="topPage"></a>
+						<img src="./assets/images/icons/pageIcons/tableMountainIconsmalltranparnt.png" 
+							 id="tableIcon" alt="table Mountain Icons" class="pointer">
+							
+						<li id="temp-api" class="links"></li>
 						<li id="wind-api" class="links"></li>
 						<li><span><a><i>i</i></a></span></li>
 					</ul>
