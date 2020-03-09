@@ -10,6 +10,11 @@ xhr.onreadystatechange = function() {
 		var city = obj.name;
 		var tempsMax = Math.ceil(obj.main.temp_max);
 		var tempMin = Math.floor(obj.main.temp_min);
+		var feels_like = Math.floor(obj.main.feels_like);
+		var humidity = Math.floor(obj.main.humidity);
+		var cloud = obj.weather[0].main;
+		var cloudDiscrition = obj.weather[0].description;
+		var pressure = Math.floor(obj.main.pressure);
 		var wind = obj.wind.speed;
 		console.log(tempsMax, obj, tempMin);
 
@@ -50,9 +55,9 @@ xhr.onreadystatechange = function() {
 		} else {
 			var dir = "N";
 		}
-		writeToPage();
+		writeToPage(), detailWeather();
 	}
-	
+
 	//This function sets the Temps and wind to nav in index page
 	function writeToPage() {
 		document.getElementById(
@@ -61,6 +66,16 @@ xhr.onreadystatechange = function() {
 		document.getElementById("wind-api").innerHTML = `<img id="windsock" 
 			src="./assets/images/icons/pageIcons/icons8-wind-indicator-arrows-20.png" 
 			alt="windIcon"> ${wind}<p class="kph">Kph</p>  ${dir}`;
+	}
+	function detailWeather() {
+		document.getElementById(
+			"info"
+		).innerHTML = `<ul id="weatherDetails" class="hide">
+			<li>Feels Like: ${feels_like} ˚C</li>
+			<li>${cloud}  : ${cloudDiscrition}</li>
+			<li>Humidity  : ${humidity}%</li>
+			<li>Air Pressure  : ${pressure}pha</li>
+		</ul>`;
 	}
 };
 xhr.open("GET", url + my_id + unit);

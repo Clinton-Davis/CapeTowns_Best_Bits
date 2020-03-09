@@ -218,4 +218,13 @@ $(function() {
 	$("#tableIcon").click(function() {
 		location.reload();
 	});
+
+	$("#temp-api").click(function() {
+		$("#weatherDetails").toggle("hide");
+		$("#info").toggle("hide");
+	});
+	$("#wind-api").click(function() {
+		$("#weatherDetails").toggle("hide");
+		$("#info").toggle("hide");
+	});
 });

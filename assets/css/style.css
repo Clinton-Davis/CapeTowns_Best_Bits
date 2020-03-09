@@ -3,7 +3,7 @@
 :root {
 	--headFont: "Bangers", sans-serif;
 	--secFont: "Montserrat", sans-serif;
-	--white: whitesmoke;
+	--white: rgb(219, 217, 217);
 }
 html {
 	height: 100%;
@@ -145,6 +145,9 @@ nav {
 #about:focus {
 	color: black;
 }
+#weatherDetails {
+	text-transform: capitalize;
+}
 /* ------------------------------MAIN CONTAINER---- */
 
 .mainheading {
@@ -217,7 +220,7 @@ nav {
 	font-size: 3rem;
 }
 #lead {
-	color: whitesmoke;
+	color: rgb(219, 217, 217);
 	grid-row: 4/5;
 	grid-column: 2/3;
 	max-width: 80%; /*small screens */
@@ -256,6 +259,25 @@ section {
 	display: flex;
 	flex-direction: column;
 }
+#info {
+	background-color: rgba(0, 0, 0, 0.5);
+
+	color: var(--white);
+	max-width: 312px;
+	color: var(--white);
+	margin: 1rem auto;
+	border: 1px rgb(219, 217, 217) solid;
+	padding: 0.5em;
+	width: fit-content;
+	border-radius: 10px;
+	z-index: 5;
+	text-align: center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
 .mainheading,
 h1,
 h2,
@@ -293,7 +315,7 @@ p {
 .btn {
 	text-decoration: none;
 	background-image: linear-gradient(
-		90deg,
+		45deg,
 		rgb(20, 192, 4),
 		rgb(245, 8, 8),
 		rgb(10, 22, 248)
@@ -303,8 +325,8 @@ p {
 	background-size: 400%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	animation: foot-animation 6s ease-in-out infinite alternate;
-	-webkit-animation: foot-animation 6s ease-in-out infinite alternate;
+	animation: btn-animation 12s ease-in-out infinite alternate;
+	-webkit-animation: btn-animation 12s ease-in-out infinite alternate;
 }
 @keyframes btn-animation {
 	0% {
