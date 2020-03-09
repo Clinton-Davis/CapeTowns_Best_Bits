@@ -218,7 +218,7 @@ $(function() {
 	$("#tableIcon").click(function() {
 		location.reload();
 	});
-
+	// Toggels the deatail waether Div
 	$("#temp-api").click(function() {
 		$("#weatherDetails").toggle("hide");
 		$("#info").toggle("hide");

@@ -226,7 +226,7 @@ nav {
 	max-width: 80%; /*small screens */
 	margin: 1.125em auto 0 auto;
 	font-weight: 700;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
@@ -322,11 +322,11 @@ p {
 	);
 	color: transparent;
 	font-weight: 800;
-	background-size: 400%;
+	background-size: 800%;
 	background-clip: text;
 	-webkit-background-clip: text;
-	animation: btn-animation 12s ease-in-out infinite alternate;
-	-webkit-animation: btn-animation 12s ease-in-out infinite alternate;
+	animation: btn-animation 20s ease-in-out infinite alternate;
+	-webkit-animation: btn-animation 20s ease-in-out infinite alternate;
 }
 @keyframes btn-animation {
 	0% {
