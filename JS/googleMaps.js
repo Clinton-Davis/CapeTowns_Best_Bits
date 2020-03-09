@@ -182,102 +182,9 @@ let foodiesJSON = {
 var marker, iD;
 function locationFinder(locationFinder_id) {
 	console.log(locationFinder_id);
-	switch (locationFinder_id) {
-		case "tm": // Sights starts
-			(iD = sightsJSON.TM.Id), (info = sightsJSON.TM.info), initMap(),placeInfo();
-			break;
-		case "cp":
-			(iD = sightsJSON.CP.Id), (info = sightsJSON.CP.info), initMap(),placeInfo();
-			break;
-		case "toai":
-			(iD = sightsJSON.TOAI.Id), (info = sightsJSON.TOAI.info), initMap(),placeInfo();
-			break;
-		case "bk":
-			(iD = sightsJSON.BK.Id), (info = sightsJSON.BK.info), initMap(),placeInfo();
-			break;
-		case "con":
-			(iD = sightsJSON.CON.Id), (info = sightsJSON.CON.info), initMap(),placeInfo();
-			break;
-		case "kb":
-			(iD = sightsJSON.KB.Id), (info = sightsJSON.KB.info), initMap(),placeInfo();
-			break;
-		case "bl":
-			(iD = sightsJSON.BL.Id), (info = sightsJSON.BL.info), initMap(),placeInfo();
-			break;
-		case "chp":
-			(iD = sightsJSON.CHP.Id), (info = sightsJSON.CHP.info), initMap(),placeInfo();
-			break;
-		case "dsm":
-			(iD = sightsJSON.DSM.Id), (info = sightsJSON.DSM.info), initMap(),placeInfo();
-			break;
-		case "lh":
-			(iD = sightsJSON.LH.Id), (info = sightsJSON.LH.info), initMap(),placeInfo();
-			break;
-		case "ri":
-			(iD = sightsJSON.RI.Id), (info = sightsJSON.RI.info), initMap(),placeInfo();
-			break; //addventure starts
-		case "kay":
-			(iD = adventureJSON.KAY.Id), (info = adventureJSON.KAY.info), initMap(),placeInfo();
-			break;
-		case "safa":
-			(iD = adventureJSON.SAFA.Id), (info = adventureJSON.SAFA.info), initMap(),placeInfo();
-			break;
-		case "abt":
-			(iD = adventureJSON.ABT.Id), (info = adventureJSON.ABT.info), initMap(),placeInfo();
-			break;
-		case "bal":
-			(iD = adventureJSON.BAL.Id), (info = adventureJSON.BAL.info), initMap(),placeInfo();
-			break;
-		case "sd":
-			(iD = adventureJSON.SD.Id), (info = adventureJSON.SD.info), initMap(),placeInfo();
-			break;
-		case "zp":
-			(iD = adventureJSON.ZP.Id), (info = adventureJSON.ZP.info), initMap(),placeInfo();
-			break;
-		case "sc":
-			(iD = adventureJSON.SC.Id), (info = adventureJSON.SC.info), initMap(),placeInfo();
-			break;
-		case "hh":
-			(iD = adventureJSON.HH.Id), (info = adventureJSON.HH.info), initMap(),placeInfo();
-			break;
-		case "ht":
-			(iD = adventureJSON.HT.Id), (info = adventureJSON.HT.info), initMap(),placeInfo();
-			break;
-		case "wb":
-			(iD = adventureJSON.WB.Id), (info = adventureJSON.WB.info), initMap(),placeInfo();
-			break;
-		// Foodies Strars
-		case "jh":
-			(iD = foodiesJSON.JH.Id), (info = foodiesJSON.JH.info), initMap(),placeInfo();
-			break;
-		case "shb":
-			(iD = foodiesJSON.SHB.Id), (info = foodiesJSON.SHB.info), initMap(),placeInfo();
-			break;
-		case "hhkb":
-			(iD = foodiesJSON.HHKB.Id), (info = foodiesJSON.HHKB.info), initMap(),placeInfo();
-			break;
-		case "ma":
-			(iD = foodiesJSON.MA.Id), (info = foodiesJSON.MA.info), initMap(),placeInfo();
-			break;
-		case "tsc":
-			(iD = foodiesJSON.TSC.Id), (info = foodiesJSON.TSC.info), initMap(),placeInfo();
-			break;
-		case "std":
-			(iD = foodiesJSON.STD.Id), (info = foodiesJSON.STD.info), initMap(),placeInfo();
-			break;
-		case "cwc":
-			(iD = foodiesJSON.CWC.Id), (info = foodiesJSON.CWC.info), initMap(),placeInfo();
-			break;
-		case "cpvr":
-			(iD = foodiesJSON.CPVR.Id), (info = foodiesJSON.CPVR.info), initMap(),placeInfo();
-			break;
-		case "mvr":
-			(iD = foodiesJSON.MVR.Id), (info = foodiesJSON.MVR.info), initMap(),placeInfo();
-			break;
-		case "tlh":
-			(iD = foodiesJSON.TLH.Id), (info = foodiesJSON.TLH.info), initMap(),placeInfo();
-			break;
-	}
+	iD = sightsJSON[locationFinder_id].Id;
+	info = sightsJSON[locationFinder_id].info;
+	initMap(), placeInfo();
 }
 function placeInfo() {
 	document.getElementById("placeInfo").innerHTML = `<p> ${info}</p>`;
@@ -307,7 +214,7 @@ function initMap() {
 			var rating = place.rating;
 			var website = place.website;
 			var phone = place.formatted_phone_number;
-			
+
 			console.log(name, rating, website, phone, latlng);
 			if (rating == undefined) {
 				var rating = " ";
@@ -328,20 +235,22 @@ function initMap() {
 			}
 
 			var markerData =
-			'<div class="infowindowContiner">' +
-
-				 '<div class="infowidHeading">' +
-				   '<h2 class="infoHeading">'+`${name}`+"<br>" +
-				   
-				  "</h2>" +
-				  "</div>" +
-				
-				`<div class="infobody">` + 
-				'<p class="infobody">' +`${rating}`+ "</p>" +
-				`<p class="infobody">` + `${phone}` + `</p>` +
+				'<div class="infowindowContiner">' +
+				'<div class="infowidHeading">' +
+				'<h2 class="infoHeading">' +
+				`${name}` +
+				"<br>" +
+				"</h2>" +
+				"</div>" +
+				`<div class="infobody">` +
+				'<p class="infobody">' +
+				`${rating}` +
+				"</p>" +
+				`<p class="infobody">` +
+				`${phone}` +
+				`</p>` +
 				`<a href="${website}" class="infobodyWeb" target="_blank">${website}</a>` +
 				"</div>" +
-
 				`<div class="imgRap">` +
 				`<img id="directionsImg" 
 					class="dirImg" 
@@ -349,7 +258,7 @@ function initMap() {
 					src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
 					alt="Directions"</>` +
 				`</div>` +
-			"</div>";
+				"</div>";
 			var infowindow = new google.maps.InfoWindow({
 				content: markerData
 			});
