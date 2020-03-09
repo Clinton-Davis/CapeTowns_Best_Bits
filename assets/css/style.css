@@ -102,6 +102,9 @@ nav {
 	align-items: center;
 	font-size: 1.325rem;
 }
+.link-hov:hover {
+	color: black;
+}
 #windsock {
 	padding-bottom: 10px;
 }
