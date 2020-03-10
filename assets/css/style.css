@@ -69,6 +69,9 @@ header {
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 	background-color: transparent;
 }
+.navWeather {
+	display: flex;
+}
 nav {
 	min-height: 10vh;
 	margin: auto;
