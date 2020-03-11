@@ -8,6 +8,8 @@
 html {
 	height: 100%;
 }
+/*This code is part of the JavaScritp in the Index HTML page to 
+   Delay the animation until the pictures have fully loaded*/
 .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
@@ -294,6 +296,7 @@ p {
 }
 .list-selectionContainer {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 .selectorGrid {
@@ -333,15 +336,21 @@ p {
 
 #sightsCol {
 	position: relative;
-	min-width: 312px;
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 #adventureCol {
 	position: relative;
-	min-width: 312px;
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 #foodieCol {
 	position: relative;
-	min-width: 312px;
+	max-width: 90%;
+	margin-right: auto;
+	margin-left: auto;
 }
 #tmi {
 	/* Table Mountain */
@@ -1216,6 +1225,7 @@ form {
 	}
 	#lead {
 		font-size: 2.4rem;
+		padding-top: 3em;
 	}
 	#howto {
 		font-size: 2.3rem;
@@ -1229,6 +1239,10 @@ form {
 	}
 	#foodieCol {
 		margin: 12em auto 0 auto;
+	}
+	.mainOptions {
+		
+		margin-top: 8em;
 	}
 	.feet {
 		font-size: 1.8rem;
