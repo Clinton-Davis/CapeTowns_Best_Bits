@@ -1140,6 +1140,10 @@ form {
 	.mapContainer {
 		display: flex;
 	}
+	.back-to-top {
+		max-width: 50%;
+		margin-left: 50%;
+	}
 }
 @media (min-width: 800px) {
 	#capeTown {
