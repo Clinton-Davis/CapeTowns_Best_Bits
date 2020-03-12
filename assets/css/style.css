@@ -155,6 +155,8 @@ nav {
 }
 #weatherDetails {
 	text-transform: capitalize;
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 /* ------------------------------MAIN CONTAINER---- */
 
@@ -267,9 +269,8 @@ section {
 	display: flex;
 	flex-direction: column;
 }
-#info {
+#detailedWeather {
 	background-color: rgba(0, 0, 0, 0.5);
-
 	color: var(--white);
 	max-width: 312px;
 	color: var(--white);
@@ -279,6 +280,7 @@ section {
 	width: fit-content;
 	border-radius: 10px;
 	z-index: 5;
+
 	text-align: center;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -493,19 +495,24 @@ p {
 	display: block;
 }
 #placeInfo {
+	margin-left: auto;
+	margin-right: auto;
+}
+.infoBackGround {
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	max-width: 95%;
+	background-color: rgba(242, 246, 248, 0.8);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 	border-radius: 10px;
 	margin: 0.5em auto 0.5em auto;
 	line-height: 1.1;
 	padding: 0.3em;
-	background-color: rgba(242, 246, 248, 0.8);
+
 	font-family: var(--secFont);
-	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 }
 #map {
 	min-height: 75vh;

@@ -43,7 +43,10 @@ let selectionJSON = {
 	// Boulders Beach/Penguins
 	BL: {
 		Id: "ChIJvxVitEk-zB0RVJetXFk0qww",
-		info: `Sheltered public bay with a sandy beach & boardwalk, plus free-roaming colony of African penguins.`
+		info: `This picturesque area, with enormous boulders dividing small, sandy coves, is home to a colony of some 3000 delightful African penguins. 
+				A boardwalk runs from the Boulders Visitor Centre at the Foxy Beach end of the protected area to Boulders Beach, 
+				where you can get down on the sand and mingle with the waddling penguins. 
+				Don’t, however, be tempted to pet them: they have sharp beaks that can cause serious injuries.`
 	},
 	// Chapmens Peak Drive
 	CHP: {
@@ -226,7 +229,9 @@ function locationFinder(locationFinder_id) {
 	initMap(), placeInfo();
 }
 function placeInfo() {
-	document.getElementById("placeInfo").innerHTML = `<p> ${info}</p>`;
+	document.getElementById(
+		"placeInfo"
+	).innerHTML = `<p class="infoBackGround"> ${info}</p>`;
 }
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
