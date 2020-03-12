@@ -62,10 +62,10 @@ xhr.onreadystatechange = function() {
 	function writeToPage() {
 		document.getElementById(
 			"temp-api"
-		).innerHTML = `${tempsMax} / ${tempMin} ˚C`;
+		).innerHTML = `<a href="#" class="links" title="'Click' for Details">${tempsMax} / ${tempMin} ˚C`;
 		document.getElementById("wind-api").innerHTML = `<img id="windsock" 
 			src="./assets/images/icons/pageIcons/icons8-wind-indicator-arrows-20.png" 
-			alt="windIcon"> ${wind}<p class="kph">Kph</p>  ${dir}`;
+			alt="windIcon"><a href="#" class="links" title="'Click' for Details"> ${wind}<p class="kph">Kph</p>  ${dir}`;
 	}
 	function detailWeather() {
 		document.getElementById(

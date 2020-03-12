@@ -106,6 +106,8 @@ nav {
 	display: flex;
 	align-items: center;
 	font-size: 1.325rem;
+	color: var(--white);
+	text-decoration: none;
 }
 .link-hov:hover {
 	color: black;
