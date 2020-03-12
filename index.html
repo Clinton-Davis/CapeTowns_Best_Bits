@@ -4,16 +4,24 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" type="image/png" href="./assets/images/icons/pageIcons/faviconFlag.png">
-		
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="./assets/images/icons/pageIcons/faviconFlag.png"
+		/>
+
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<!--This code pauses the animations untill the  the DOM is ready. It helps the page Load quicker
 			(https://css-tricks.com/making-animations-wait/)-->
 		<script>
-		document.documentElement.className += " js-loading";
-		window.addEventListener("load", showPage, false);
-		function showPage() {
-  		document.documentElement.className = document.documentElement.className.replace("js-loading","");}
+			document.documentElement.className += " js-loading";
+			window.addEventListener("load", showPage, false);
+			function showPage() {
+				document.documentElement.className = document.documentElement.className.replace(
+					"js-loading",
+					""
+				);
+			}
 		</script>
 		<title>Cape Towns Best Bits</title>
 	</head>
@@ -21,48 +29,60 @@
 		<header>
 			<nav>
 				<div class="navWeather">
-					<img src="./assets/images/icons/pageIcons/tableMountainIconsmalltranparnt.png" 
-							 id="tableIcon" alt="table Mountain Icons" class="pointer">
+					<img
+						src="./assets/images/icons/pageIcons/tableMountainIconsmalltranparnt.png"
+						id="tableIcon"
+						alt="table Mountain Icons"
+						class="pointer"
+					/>
 					<ul class="tbicon">
 						<li id="temp-api" class="links pointer link-hov"></li>
 						<li id="wind-api" class="links pointer link-hov"></li>
 						<li><span></span></li>
 					</ul>
 				</div>
-			
+
 				<div class="navInfo">
 					<ul class="nav">
 						<li class="pointer" id="about">About Us</li>
-						<li class="pointer links" >
+						<li class="pointer links">
 							<a href="./form.html" id="contact" class="banger">Get In Touch</a>
 						</li>
-						
 					</ul>
 				</div>
-				
 			</nav>
 		</header>
-<!-- The Modal -->
-<div id="aboutModal" class="modal hide">
+		<!-- The Modal -->
+		<div id="aboutModal" class="modal hide">
+			<!-- Modal content -->
+			<div class="modal-content" id="modalContent">
+				<span class="close" id="modal-close">&times;</span>
+				<h1 class="banger" id="modal-heading">Cape Town</h1>
+				<br />
+				<p class="modal-p">
+					This Website has lists of some of the Best Bits to see, do and eat in
+					Cape Town.<br />
+					Chosen by locals and past explores, it's known for its natural beauty
+					and fantastic foods.<br />
+					Because of the way the land lies, It gives plenty of opportunities for
+					some heart-stopping activities and breathtaking views.<br />
+					This Website is made for People that like to adventure on their own,
+					in their time and personal way.<br />
+					Sure, Tours are great, but DIYers have the most fun.<br /><br />
+					At the bottom of the page where are three buttons.<br />Sights,
+					Adventure and Foodies.<br />
+					Click on them to get a list of the best bits in the different
+					category.<br />
+					Click on the Map Icon to get directions from your localion to the
+					selected one.<br /><br />
 
-  <!-- Modal content -->
-  <div class="modal-content" id="modalContent">
-	  
-    <span class="close" id="modal-close">&times;</span>
-	<h1 class="banger" id="modal-heading">Cape Town</h1><br> 
-	<p class="modal-p">	This Website has lists of some of the Best Bits to see, do and eat in Cape Town.<br> 
-		Chosen by locals and past explores,	it's known for its natural beauty and fantastic foods.<br>
-		Because of the way the land lies, It gives plenty of opportunities for some heart-stopping activities and breathtaking views.<br>
-		This Website is made for People that like to adventure on their own, in their time and personal way.<br>
-		Sure, Tours are great, but DIYers have the most fun.<br><br>
-		At the bottom of the page where are three buttons.<br>Sights, Adventure and Foodies.<br>
-		Click on them to get a list of the best bits in the different category.<br> Click on the Map Icon to get directions from your localion to the selected one.<br><br>
-
-		Sight: is a list of some stunning views and places of intrest.<br>
-		Adventure: is for the more adventurous travels how like some heart-stopping fun.<br>
-		Foodies: Let you moths fall in love with the local cuisine.</p>	
-  </div>
-</div>
+					Sight: is a list of some stunning views and places of intrest.<br />
+					Adventure: is for the more adventurous travels how like some
+					heart-stopping fun.<br />
+					Foodies: Let you moths fall in love with the local cuisine.
+				</p>
+			</div>
+		</div>
 		<section>
 			<!--Hero -->
 			<div class="gray-fliter">
@@ -72,355 +92,530 @@
 						<h1 id="capeTown" class="banger main-Heading">CAPE TOWNS</h1>
 						<h2 id="bestBits" class="banger main-Heading">Best Bits</h2>
 						<h3 id="diy" class="banger main-Heading">Do It Your Self</h3>
-						<p id="lead" class="main-Heading">Cape Town is a land of so many wonders.</p>
-					
-					</div>	
-				<div class="list-selectionContainer" id="selectionSection">
-					<!--Sight Seeing Container-->
-					<div  class="backGround hide" id="sightsCol">
-						<button class=" backBnt pointer banger" id="sback"><strong>X</strong></button>
-						<div class="selectorGrid">		
-						
-							<div
-								class="selectors pointer grid item sights"
-								id="TM"
-								onclick="locationFinder(this.id)">Table Mountain Cable Car</div>
-								<img src="./assets/images/icons/sights/TM50x50.jpg"
-								class="grid-img-col pointer" 
-								alt="Cable Car" 
-								id="tmi">
-							<div
-								class="selectors pointer grid item sights"
-								id="TOAI"
-								onclick="locationFinder(this.id)">Two Oceans Aquarium</div>
-								<img src="./assets/images/icons/sights/twoOceans50x50.jpg" 
-								class="grid-img-col pointer" 
-								id="toai" 
-								alt="Two Oceand Aquarium">
-							<div
-								class="selectors pointer grid item sights"
-								id="BK"
-								onclick="locationFinder(this.id)">Bo-Koop</div>
-								<img src="./assets/images/icons/sights/bo-kaap50x50.jpg" 
-								class="grid-img-col pointer" 
-								id="bki" 
-								alt="Bi-Koop">
-							<div
-								class="selectors pointer grid item sights"
-								id="CON"
-								onclick="locationFinder(this.id)">Constantia Wine Region</div>
-								<img src="./assets/images/icons/sights/constaina50x50.jpg" 
-								id="coni" 
-								class="grid-img-col pointer" 
-								alt="Constainta">
-							<div
-								class="selectors pointer grid item sights"
-								id="KB"
-								onclick="locationFinder(this.id)">Kalk Bay</div>
-								<img src="./assets/images/icons/sights/kalkBay50x50.jpg" 
-								id="kbi"
-								 class="grid-img-col pointer" 
-								 alt="Kalk Bay">
-						
-							<div
-								class="selectors pointer grid item sights"
-								id="BL"
-								onclick="locationFinder(this.id)">Penguin Colony at Boulders</div>
-								<img src="./assets/images/icons/sights/boulders-bay50x50.jpg" 
-								id="bi" 
-								class="grid-img-col pointer" 
-								alt="">
-							<div
-								class="selectors pointer grid item sights"
-								id="CHP"
-								onclick="locationFinder(this.id)">Chapmens Peak</div>
-								<img src="./assets/images/icons/sights/chapmans-peak-drive50x50.jpg"
-								class="grid-img-col pointer" 
-								id="chpi" 
-								alt="Chapmens Peak">
-							
-							<div
-								class="selectors pointer grid item sights"
-								id="DSM"
-								onclick="locationFinder(this.id)">District Six Meusiem</div>
-								<img src="./assets/images/icons/sights/district-six-museum50x50.jpg" 
-								id="dsmi" 
-								class="grid-img-col pointer" 
-								alt="District-six-museum">
-							<div
-								class="selectors pointer grid item sights"
-								id="CP"
-								onclick="locationFinder(this.id)">Cape Point National Park
-								</div>
-							<img src="./assets/images/icons/sights/cape_point-50x50.jpg" 
-								id="cpi" 
-								class="grid-img-col pointer"
-								alt="Cape Point">
-							
-							<div class="selectors pointer grid item sights"
-								id="KBG"
-								onclick="locationFinder(this.id)">Kirstenbosch Botanical Garden</div>		
-								<img src="./assets/images/icons/sights/Kirstenbosch-Botanical-Garden50x50light.jpg" 
-								id="kbgi" 
-								class="grid-img-col pointer" 
-								alt="Kirstenbosch">
-							</div>
+						<p id="lead" class="main-Heading">
+							Cape Town is a land of so many wonders.
+						</p>
 					</div>
-					<!--Adventure Container-->
-					<div  class="backGround hide" id="adventureCol">
-						<button class=" backBnt pointer banger" id="aback"><strong>X</strong></button>
-						<div class="selectorGrid">	
-							<div
-								class="selectors pointer grid item adventure"
-								id="KAY"
-								onclick="locationFinder(this.id)">Kayak Cape Town</div>
-								<img src="./assets/images/icons/adventure/KayakCapeTown50x50.jpeg" 
-								id="kcti" 
-								class="grid-img-col pointer" 
-								alt="Kayak Cape Town">
-							<div
-								class="selectors pointer grid item adventure"
-								id="HT"
-								onclick="locationFinder(this.id)">Cape Town Helicopters</div>
-								<img src="./assets/images/icons/adventure/CapeTownHelicopters50x50.jpeg" 
-								id="cthi" 
-								class="grid-img-col pointer" 
-								alt=" Helicopters">
-							<div
-								class="selectors pointer grid item adventure"
-								id="SAFA"
-								onclick="locationFinder(this.id)">Big Five Game Reserve</div>
-								<img src="./assets/images/icons/adventure/inverdoornlion50x50.jpg" 
-								id="safai" 
-								class="grid-img-col pointer" 
-								alt="safari">
-							<div
-								class="selectors pointer grid item adventure"
-								id="ABT"
-								onclick="locationFinder(this.id)">Abseil Table Mountain</div>
-								<img src="./assets/images/icons/adventure/AbseilTableMountain50x50.jpeg" 
-								id="abti" 
-								class="grid-img-col pointer" 
-								alt="Abseil Table Mountain">
-							<div
-								class="selectors pointer grid item adventure"
-								id="BAL"
-								onclick="locationFinder(this.id)">Wineland Ballooning Cape Town</div>
-								<img src="./assets/images/icons/adventure/WinelandBallooningCapeTown50x50.jpeg" 
-								id="wbcti" 
-								class="grid-img-col pointer" 
-								alt="Wineland Ballooning">
-							<div
-								class="selectors pointer grid item adventure"
-								id="SD"
-								onclick="locationFinder(this.id)">Shark Diving</div>
-								<img src="./assets/images/icons/adventure/SharkBookings50x50.jpeg" 
-								id="sbi"
-								class="grid-img-col pointer" 
-								alt="Shark Bookings">
-							<div
-								class="selectors pointer grid item adventure"
-								id="ZP"
-								onclick="locationFinder(this.id)">Zipline - Cape Canopy Tour</div>
-								<img src="./assets/images/icons/adventure/Zipline-CapeCanopyTour50x50.jpeg" 
-								id="zli" 
-								class="grid-img-col pointer" 
-								alt="Cape Canopy Tour">
-							<div
-								class="selectors pointer grid item adventure"
-								id="SC"
-								onclick="locationFinder(this.id)">Scootours Cape Town</div>
-								<img src="./assets/images/icons/adventure/ScootoursCapeTown50x50.jpeg" 
-								id="scti" 
-								class="grid-img-col pointer" 
-								alt="Scootours Cape Town">
-							<div
-								class="selectors pointer grid item adventure"
-								id="HH"
-								onclick="locationFinder(this.id)">Lions Head - Hike Addicts</div>
-								<img src="./assets/images/icons/adventure/LionsHead-HikeAddicts50x50.jpeg" 
-								id="hhi" 
-								class="grid-img-col pointer" 
-								alt="Hike Addicts">
-							<div
-								class="selectors pointer grid item adventure"
-								id="WB"
-								onclick="locationFinder(this.id)">Cape Town Water Bikes </div>
-								<img src="./assets/images/icons/adventure/waterBykes50x50.jpg" 
-								id="wbi" 
-								class="grid-img-col pointer" 
-								alt="Water Bikes">
-					</div>
-					</div>
-					<!--Foodies Container-->
-					<div  class="backGround hide" id="foodieCol">
-						<button class=" backBnt pointer banger" id="fback"><strong>X</strong></button>
-						<div class="selectorGrid" id="adventure_ul">
-							<div
-								class="selectors pointer grid item foodie"
-								id="JH"
-								onclick="locationFinder(this.id)">Jonkershuis Restaurant</div>
-								<img src="./assets/images/icons/foodies/Jonkershuis_Restaurant50x50.jpeg" 
-								id="jhi" 
-								class="grid-img-col pointer" 
-								alt="Jonkershuis Restaurant">	
-							<div
-								class="selectors pointer grid item foodie"
-								id="SHB"
-								onclick="locationFinder(this.id)">Snoekies Hout Bay</div>
-								<img src="./assets/images/icons/foodies/Snoekies_Hout_Bay50x50.jpeg" 
-								id="shbi" 
-								class="grid-img-col pointer" 
-								alt="Snoekies">
-							<div
-								class="selectors pointer grid item foodie"
-								id="HHKB"
-								onclick="locationFinder(this.id)">Harbour House Kalk Bay</div>
-								<img src="./assets/images/icons/foodies/Harbour_House_Kalk_Bay50x50.jpeg" 
-								id="hhkbi" 
-								class="grid-img-col pointer" 
-								alt="Harbour House">
-
-							<div
-								class="selectors pointer grid item foodie"
-								id="MA"
-								onclick="locationFinder(this.id)">Mamma Afirca</div>
-								<img src="./assets/images/icons/foodies/Mamma_Afirca50x50.jpeg" 
-								id="mai" 
-								class="grid-img-col pointer" 
-								alt="Mamma Afirca">
-							<div
-								class="selectors pointer grid item foodie"
-								id="TSC"
-								onclick="locationFinder(this.id)">The Shortmarket Club</div>
-								<img src="./assets/images/icons/foodies/shortMarketClub50x50.jpg" 
-								id="smi" 
-								class="grid-img-col pointer" 
-								alt="Shortmarket Club">
-							<div
-								class="selectors pointer grid item foodie"
-								id="STD"
-								onclick="locationFinder(this.id)">Stardust Theatrical Dining</div>
-								<img src="./assets/images/icons/foodies/Stardust_Theatrical_Dining50x50.jpeg" 
-								id="stdi" 
-								class="grid-img-col pointer" 
-								alt="Stardust Dining">
-							<div
-								class="selectors pointer grid item foodie"
-								id="CWC"
-								onclick="locationFinder(this.id)">Chefs Warehouse & Canteen</div>
-								<img src="./assets/images/icons/foodies/Chefs_Warehouse&Canteen50x50.jpeg" 
-								id="cwci" 
-								class="grid-img-col pointer" 
-								alt="Chefs Warehouse">
-							<div
-								class="selectors pointer grid item foodie"
-								id="CPVR"
-								onclick="locationFinder(this.id)">Cape Point Vineyards Restaurant</div>
-								<img src="./assets/images/icons/foodies/Cape_Point_Vineyards_Restaurant50x50.jpeg" 
-								id="cpvri" 
-								class="grid-img-col pointer" 
-								alt="Cape Point Vineyards">
-							<div
-								class="selectors pointer grid item foodie"
-								id="MVR"
-								onclick="locationFinder(this.id)">Monkey Valley Resort</div>
-								<img src="./assets/images/icons/foodies/Monkey_Valley_Resort50x50.jpeg" 
-								id="mvri" 
-								class="grid-img-col pointer" 
-								alt="Monkey Valley">
+					<div class="list-selectionContainer" id="selectionSection">
+						<!--Sight Seeing selections and Container-->
+						<div class="backGround hide" id="sightsCol">
+							<button class=" backBnt pointer banger" id="sback">
+								<strong>X</strong>
+							</button>
+							<div class="selectorGrid">
 								<div
-								class="selectors pointer grid item foodie"
-								id="TLH"
-								onclick="locationFinder(this.id)">The Lighthouse Cafe</div>
-								<img src="./assets/images/icons/foodies/lighthouseCafe50x50.jpg" 
-								id="tlhi" 
-								class="grid-img-col pointer" 
-								alt="Lighthouse Cafe">
-						
+									class="selectors pointer grid item sights"
+									id="TM"
+									onclick="locationFinder(this.id)"
+								>
+									Table Mountain Cable Car
+								</div>
+								<img
+									src="./assets/images/icons/sights/TM50x50.jpg"
+									class="grid-img-col pointer"
+									alt="Cable Car"
+									id="tmi"
+								/>
+								<div
+									class="selectors pointer grid item sights"
+									id="TOAI"
+									onclick="locationFinder(this.id)"
+								>
+									Two Oceans Aquarium
+								</div>
+								<img
+									src="./assets/images/icons/sights/twoOceans50x50.jpg"
+									class="grid-img-col pointer"
+									id="toai"
+									alt="Two Oceand Aquarium"
+								/>
+								<div
+									class="selectors pointer grid item sights"
+									id="BK"
+									onclick="locationFinder(this.id)"
+								>
+									Bo-Koop
+								</div>
+								<img
+									src="./assets/images/icons/sights/bo-kaap50x50.jpg"
+									class="grid-img-col pointer"
+									id="bki"
+									alt="Bi-Koop"
+								/>
+								<div
+									class="selectors pointer grid item sights"
+									id="CON"
+									onclick="locationFinder(this.id)"
+								>
+									Constantia Wine Region
+								</div>
+								<img
+									src="./assets/images/icons/sights/constaina50x50.jpg"
+									id="coni"
+									class="grid-img-col pointer"
+									alt="Constainta"
+								/>
+								<div
+									class="selectors pointer grid item sights"
+									id="KB"
+									onclick="locationFinder(this.id)"
+								>
+									Kalk Bay
+								</div>
+								<img
+									src="./assets/images/icons/sights/kalkBay50x50.jpg"
+									id="kbi"
+									class="grid-img-col pointer"
+									alt="Kalk Bay"
+								/>
+
+								<div
+									class="selectors pointer grid item sights"
+									id="BL"
+									onclick="locationFinder(this.id)"
+								>
+									Penguin Colony at Boulders
+								</div>
+								<img
+									src="./assets/images/icons/sights/boulders-bay50x50.jpg"
+									id="bi"
+									class="grid-img-col pointer"
+									alt=""
+								/>
+								<div
+									class="selectors pointer grid item sights"
+									id="CHP"
+									onclick="locationFinder(this.id)"
+								>
+									Chapmens Peak
+								</div>
+								<img
+									src="./assets/images/icons/sights/chapmans-peak-drive50x50.jpg"
+									class="grid-img-col pointer"
+									id="chpi"
+									alt="Chapmens Peak"
+								/>
+
+								<div
+									class="selectors pointer grid item sights"
+									id="DSM"
+									onclick="locationFinder(this.id)"
+								>
+									District Six Meusiem
+								</div>
+								<img
+									src="./assets/images/icons/sights/district-six-museum50x50.jpg"
+									id="dsmi"
+									class="grid-img-col pointer"
+									alt="District-six-museum"
+								/>
+								<div
+									class="selectors pointer grid item sights"
+									id="CP"
+									onclick="locationFinder(this.id)"
+								>
+									Cape Point National Park
+								</div>
+								<img
+									src="./assets/images/icons/sights/cape_point-50x50.jpg"
+									id="cpi"
+									class="grid-img-col pointer"
+									alt="Cape Point"
+								/>
+
+								<div
+									class="selectors pointer grid item sights"
+									id="KBG"
+									onclick="locationFinder(this.id)"
+								>
+									Kirstenbosch Botanical Garden
+								</div>
+								<img
+									src="./assets/images/icons/sights/Kirstenbosch-Botanical-Garden50x50light.jpg"
+									id="kbgi"
+									class="grid-img-col pointer"
+									alt="Kirstenbosch"
+								/>
+							</div>
+						</div>
+						<!--Adventure selections and Container-->
+						<div class="backGround hide" id="adventureCol">
+							<button class=" backBnt pointer banger" id="aback">
+								<strong>X</strong>
+							</button>
+							<div class="selectorGrid">
+								<div
+									class="selectors pointer grid item adventure"
+									id="KAY"
+									onclick="locationFinder(this.id)"
+								>
+									Kayak Cape Town
+								</div>
+								<img
+									src="./assets/images/icons/adventure/KayakCapeTown50x50.jpeg"
+									id="kcti"
+									class="grid-img-col pointer"
+									alt="Kayak Cape Town"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="HT"
+									onclick="locationFinder(this.id)"
+								>
+									Cape Town Helicopters
+								</div>
+								<img
+									src="./assets/images/icons/adventure/CapeTownHelicopters50x50.jpeg"
+									id="cthi"
+									class="grid-img-col pointer"
+									alt=" Helicopters"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="SAFA"
+									onclick="locationFinder(this.id)"
+								>
+									Big Five Game Reserve
+								</div>
+								<img
+									src="./assets/images/icons/adventure/inverdoornlion50x50.jpg"
+									id="safai"
+									class="grid-img-col pointer"
+									alt="safari"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="ABT"
+									onclick="locationFinder(this.id)"
+								>
+									Abseil Table Mountain
+								</div>
+								<img
+									src="./assets/images/icons/adventure/AbseilTableMountain50x50.jpeg"
+									id="abti"
+									class="grid-img-col pointer"
+									alt="Abseil Table Mountain"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="BAL"
+									onclick="locationFinder(this.id)"
+								>
+									Wineland Ballooning Cape Town
+								</div>
+								<img
+									src="./assets/images/icons/adventure/WinelandBallooningCapeTown50x50.jpeg"
+									id="wbcti"
+									class="grid-img-col pointer"
+									alt="Wineland Ballooning"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="SD"
+									onclick="locationFinder(this.id)"
+								>
+									Shark Diving
+								</div>
+								<img
+									src="./assets/images/icons/adventure/SharkBookings50x50.jpeg"
+									id="sbi"
+									class="grid-img-col pointer"
+									alt="Shark Bookings"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="ZP"
+									onclick="locationFinder(this.id)"
+								>
+									Zipline - Cape Canopy Tour
+								</div>
+								<img
+									src="./assets/images/icons/adventure/Zipline-CapeCanopyTour50x50.jpeg"
+									id="zli"
+									class="grid-img-col pointer"
+									alt="Cape Canopy Tour"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="SC"
+									onclick="locationFinder(this.id)"
+								>
+									Scootours Cape Town
+								</div>
+								<img
+									src="./assets/images/icons/adventure/ScootoursCapeTown50x50.jpeg"
+									id="scti"
+									class="grid-img-col pointer"
+									alt="Scootours Cape Town"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="HH"
+									onclick="locationFinder(this.id)"
+								>
+									Lions Head - Hike Addicts
+								</div>
+								<img
+									src="./assets/images/icons/adventure/LionsHead-HikeAddicts50x50.jpeg"
+									id="hhi"
+									class="grid-img-col pointer"
+									alt="Hike Addicts"
+								/>
+								<div
+									class="selectors pointer grid item adventure"
+									id="WB"
+									onclick="locationFinder(this.id)"
+								>
+									Cape Town Water Bikes
+								</div>
+								<img
+									src="./assets/images/icons/adventure/waterBykes50x50.jpg"
+									id="wbi"
+									class="grid-img-col pointer"
+									alt="Water Bikes"
+								/>
+							</div>
+						</div>
+						<!--Foodies selections and Container-->
+						<div class="backGround hide" id="foodieCol">
+							<button class=" backBnt pointer banger" id="fback">
+								<strong>X</strong>
+							</button>
+							<div class="selectorGrid" id="adventure_ul">
+								<div
+									class="selectors pointer grid item foodie"
+									id="JH"
+									onclick="locationFinder(this.id)"
+								>
+									Jonkershuis Restaurant
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Jonkershuis_Restaurant50x50.jpeg"
+									id="jhi"
+									class="grid-img-col pointer"
+									alt="Jonkershuis Restaurant"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="SHB"
+									onclick="locationFinder(this.id)"
+								>
+									Snoekies Hout Bay
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Snoekies_Hout_Bay50x50.jpeg"
+									id="shbi"
+									class="grid-img-col pointer"
+									alt="Snoekies"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="HHKB"
+									onclick="locationFinder(this.id)"
+								>
+									Harbour House Kalk Bay
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Harbour_House_Kalk_Bay50x50.jpeg"
+									id="hhkbi"
+									class="grid-img-col pointer"
+									alt="Harbour House"
+								/>
+
+								<div
+									class="selectors pointer grid item foodie"
+									id="MA"
+									onclick="locationFinder(this.id)"
+								>
+									Mamma Afirca
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Mamma_Afirca50x50.jpeg"
+									id="mai"
+									class="grid-img-col pointer"
+									alt="Mamma Afirca"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="TSC"
+									onclick="locationFinder(this.id)"
+								>
+									The Shortmarket Club
+								</div>
+								<img
+									src="./assets/images/icons/foodies/shortMarketClub50x50.jpg"
+									id="smi"
+									class="grid-img-col pointer"
+									alt="Shortmarket Club"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="STD"
+									onclick="locationFinder(this.id)"
+								>
+									Stardust Theatrical Dining
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Stardust_Theatrical_Dining50x50.jpeg"
+									id="stdi"
+									class="grid-img-col pointer"
+									alt="Stardust Dining"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="CWC"
+									onclick="locationFinder(this.id)"
+								>
+									Chefs Warehouse & Canteen
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Chefs_Warehouse&Canteen50x50.jpeg"
+									id="cwci"
+									class="grid-img-col pointer"
+									alt="Chefs Warehouse"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="CPVR"
+									onclick="locationFinder(this.id)"
+								>
+									Cape Point Vineyards Restaurant
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Cape_Point_Vineyards_Restaurant50x50.jpeg"
+									id="cpvri"
+									class="grid-img-col pointer"
+									alt="Cape Point Vineyards"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="MVR"
+									onclick="locationFinder(this.id)"
+								>
+									Monkey Valley Resort
+								</div>
+								<img
+									src="./assets/images/icons/foodies/Monkey_Valley_Resort50x50.jpeg"
+									id="mvri"
+									class="grid-img-col pointer"
+									alt="Monkey Valley"
+								/>
+								<div
+									class="selectors pointer grid item foodie"
+									id="TLH"
+									onclick="locationFinder(this.id)"
+								>
+									The Lighthouse Cafe
+								</div>
+								<img
+									src="./assets/images/icons/foodies/lighthouseCafe50x50.jpg"
+									id="tlhi"
+									class="grid-img-col pointer"
+									alt="Lighthouse Cafe"
+								/>
+							</div>
+						</div>
+						<!--Google Maps Back and Direction Btns-->
+						<div class="mapBtn">
+							<button
+								class="opt-btn banger hide"
+								id="mainPageBack"
+								onclick="goBack()"
+							>
+								Back To Main Page
+							</button>
+							<button
+								class="opt-btn banger hide"
+								id="getDirectionsBtn"
+								onclick="getDirectionsAndLocations(), addSpinner()"
+							>
+								Get Directions
+							</button>
+						</div>
+						<!--Spinner Loading Section-->
+						<div class="spinnerDiv">
+							<img
+								src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
+								onclick="addSpinner()"
+								id="googleIcon"
+								class=""
+								alt="mapIcon"
+							/>
+							<h3 id="loadingText">
+								Loading
+								<span class="dit-1">.</span>
+								<span class="dit-2">.</span>
+								<span class="dit-3">.</span>
+							</h3>
+						</div>
+
+						<!-- Google Maps and Information Section-->
+						<div id="placeInfo"></div>
+						<div class="mapContainer" id="mapCon">
+							<div class="mapBackBtn"></div>
+							<div id="map" class="hide">map</div>
+							<div id="directionsPanel"></div>
+						</div>
 					</div>
-				</div>
-				<!--Google Maps Back and Direction Btns-->
-				<div class="mapBtn">
-					<button class="opt-btn banger hide" id="mainPageBack" onclick="goBack()" >Back To Main Page</button>					
-					<button class="opt-btn banger hide" id="getDirectionsBtn" onclick="getDirectionsAndLocations(), addSpinner()">Get Directions</button>			
-				</div>
-				<!--Spinner Loading Section-->
-				<div class="spinnerDiv">
-					<img src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png" 
-					onclick="addSpinner()" id="googleIcon" class="" alt="mapIcon">
-					<h3 id="loadingText">Loading
-						<span class="dit-1">.</span>
-						<span class="dit-2">.</span>
-						<span class="dit-3">.</span>
-					</h3>
-				</div>
-				
-				
-				<!-- Google Maps and Information Section-->
-				<div id="placeInfo">
-					
-				</div>
-				<div class="mapContainer" id="mapCon">
-					<div class="mapBackBtn"></div>
-					<div id="map" class="hide">map</div>
-					<div id="directionsPanel"></div>
-					
-				</div>
-				<!--Main Option Btns-->
-				</div>
-				
-				<div  class="mainOptions">
-					<div class="option">
-						<button class="btn opt-btn pointer banger" id="sights">See Sights</button>
-							<a href="#" class=" pointer banger"></a>
-						
+
+					<!--Main Option Btns-->
+					<div class="mainOptions">
+						<div class="option">
+							<a class="btn opt-btn pointer banger" href="#" id="sights"
+								>See Sights</a
+							>
+						</div>
+						<div class="option">
+							<a class="btn opt-btn pointer banger" href="#" id="adventure"
+								>Adventure</a
+							>
+						</div>
+						<div class="option">
+							<a class="btn opt-btn pointer banger" href="#" id="foodie">
+								Foodies</a
+							>
+						</div>
 					</div>
-					<div class="option">
-						<button class="btn opt-btn pointer banger" id="adventure">Adventure</button>	
-							<a href="#" class="btn pointer banger"></a>
-						
-					</div>
-					<div class="option">
-						<button class="btn opt-btn pointer banger" id="foodie">Foodies</button>
-						<a href="#" class="btn pointer banger"></a>
-						
-					</div>
-				</div>
 				</div>
 			</div>
 		</section>
 		<footer class="shoes">
 			<div class="feet">CopyRight© 2020</div>
-			<div class="feet feet-tech">Technologys:
+			<div class="feet feet-tech">
+				Technologys:
 				<ul class=" feet feet-list">
 					<li class="feet-items">Weather_API</li>
 					<li class="feet-items">GoogleMaps_API</li>
 				</ul>
 			</div>
-			<div class="feet"><a href="./form.html" class="footerLink">Get In Touch</a></div>
+			<div class="feet">
+				<a href="./form.html" class="footerLink">Get In Touch</a>
+			</div>
 			<div class="feet">
 				<div class="feet">Web Design:</div>
 				<div class="feet feet-bg">
-					<a href="https://github.com/Clinton-Davis" class="feet-bg" target="_blank">Clinton Davis</a>
+					<a
+						href="https://github.com/Clinton-Davis"
+						class="feet-bg"
+						target="_blank"
+						>Clinton Davis</a
+					>
 				</div>
 			</div>
-					
 		</footer>
 		<script
-  			src="https://code.jquery.com/jquery-3.4.1.min.js"
-  			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous">
-		</script>
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
 		<script
 			async
 			defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaqAp28P-jkpfTyo9EZ6pP6VcGKEunTTk&libraries=places&"	
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaqAp28P-jkpfTyo9EZ6pP6VcGKEunTTk&libraries=places&"
 		></script>
 		<script src="./JS/googleMaps.js"></script>
 		<script src="./JS/listener.js"></script>
 		<script src="./JS/mainPageFunctions.js"></script>
 		<script src="./JS/weather_API.js"></script>
-		
 	</body>
 </html>
