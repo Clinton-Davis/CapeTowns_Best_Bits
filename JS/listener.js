@@ -2,6 +2,7 @@
 function addSpinner() {
 	$("#googleIcon").css("display", "block");
 	$("#loadingText").css("display", "block");
+	$(".back-to-top").css("display", "block");
 }
 /* This is a MutationObdrtver to see then the directions have been loaded by
 	the google-api */
@@ -20,10 +21,9 @@ observer.observe(directionsList, {
 	attributes: true
 });
 /*This function removes the loader Div and spinner image when Google Api 
-  has finished */
+  has finished also add's the back to top btn*/
 function changepic() {
 	$("#googleIcon").css("display", "none");
 	$("#loadingText").css("display", "none");
 	$("#getDirectionsBtn").addClass("hide");
-	$(".back-to-top").css("display", "block");
 }
