@@ -25,4 +25,5 @@ function changepic() {
 	$("#googleIcon").css("display", "none");
 	$("#loadingText").css("display", "none");
 	$("#getDirectionsBtn").addClass("hide");
+	$(".back-to-top").css("display", "block");
 }

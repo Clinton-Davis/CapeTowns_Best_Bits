@@ -155,8 +155,6 @@ nav {
 }
 #weatherDetails {
 	text-transform: capitalize;
-	display: grid;
-	grid-template-columns: 50% 50%;
 }
 /* ------------------------------MAIN CONTAINER---- */
 
@@ -269,7 +267,7 @@ section {
 	display: flex;
 	flex-direction: column;
 }
-#detailedWeather {
+#info {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: var(--white);
 	max-width: 312px;
@@ -509,9 +507,8 @@ p {
 	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 	border-radius: 10px;
 	margin: 0.5em auto 0.5em auto;
-	line-height: 1.1;
+	line-height: 1.3;
 	padding: 0.3em;
-
 	font-family: var(--secFont);
 }
 #map {
@@ -531,23 +528,12 @@ p {
 }
 /*-=-=-=-=-=-=-=LOADING SPINNER AND GOOGLE iCON-=-=-=*/
 #loadingText {
-	color: var(--white);
+	color: white;
 	font-weight: 900;
 	display: none;
 	z-index: 0;
-	animation-name: flash;
-	animation-duration: 1s;
-	animation-direction: alternate-reverse;
-	animation-iteration-count: infinite;
 }
-@keyframes flash {
-	from {
-		opacity: 1;
-	}
-	to {
-		opacity: 0.7;
-	}
-}
+
 .dit-1 {
 	color: rgb(255, 0, 0);
 	font-size: 1.5em;
@@ -786,6 +772,9 @@ p {
 	color: rgb(103, 148, 13);
 	cursor: pointer;
 	background: rgba(252, 234, 187, 1);
+	box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
 	background: -moz-linear-gradient(
 		-45deg,
 		rgba(252, 234, 187, 1) 0%,
@@ -831,7 +820,13 @@ p {
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
 }
-
+.back-to-top {
+	font-family: var(--headFont);
+	border: 1px black solid;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
 /*-----------------Footer----------*/
 .shoes {
 	display: flex;
@@ -1023,23 +1018,35 @@ form {
 	grid-column: 2/3;
 	grid-row: 1/2;
 	text-align: center;
+	border-radius: 20px;
+	margin-top: 5px;
 }
 #emailaddress {
 	color: black;
 	grid-column: 3/4;
 	grid-row: 2/3;
 	text-align: center;
+	border-radius: 20px;
+	margin-top: 5px;
 }
 #message {
 	color: black;
 	grid-column: 4/5;
 	grid-row: 3/4;
 	text-align: center;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	margin-top: 5px;
 }
 #contact-send {
 	color: black;
 	grid-column: 5/6;
 	grid-row: 4/5;
+	border-radius: 20px;
+	margin-top: 5px;
 }
 
 #contact-Heading {

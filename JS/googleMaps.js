@@ -58,12 +58,11 @@ let selectionJSON = {
 	// Distrct Six Mus
 	DSM: {
 		Id: "ChIJXdpUhHtnzB0RI8TYhHL5028",
-		info: `Museum tracing the 1970s forced clearance of 60,000 residents & demolition of homes under apartheid.`
-	},
-	// Lions Head
-	LH: {
-		Id: "ChIJ7Tf0rQVnzB0REQJgaykzKEg",
-		info: `Boasting panoramic views of the city, this landmark mountain offers hiking trails & historic graves.`
+		info: `It's impossible not to be emotionally moved by this museum, which celebrates the once lively multiracial area that was destroyed during apartheid in the 1960s and 1970s, 
+				its 60,000 inhabitants forcibly removed. 
+				Inside the former Methodist Mission Church, home interiors have been recreated, 
+				alongside photographs, recordings and testimonials, 
+				all of which build an evocative picture of a shattered but not entirely broken community.`
 	},
 
 	//Kirstenbosch National Botanical Garden
@@ -78,8 +77,11 @@ let selectionJSON = {
 	//Two Oceans aquarium
 	TOAI: {
 		Id: "ChIJfeaqwlpnzB0Rl2i0iRvp6SI",
-		info: `Modern indoor aquarium & conservation center offering close encounters with sharks & penguins. 
-			We reconmend That you have a look at the Website for more detail of events and feeding times.`
+		info: `This excellent aquarium & conservation center features denizens of the deep from the cold and the warm oceans that border the Cape Peninsula. 
+				It's a chance to see penguins, turtles,  offering close encounters with sharks.
+				An astounding kelp forest open to the sky, and pools in which kids can touch sea creatures. 
+				Qualified divers can get into the water for a closer look.  
+				We reconmend That you have a look at the Website for more detail of events and feeding times.`
 	},
 
 	//-=-=-=-=-=--=-=-=-ADVENTURE =-=-=--=-=-=--=-=

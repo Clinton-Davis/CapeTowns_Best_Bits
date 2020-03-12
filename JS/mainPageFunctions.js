@@ -227,4 +227,9 @@ $(function() {
 		$("#weatherDetails").toggle("hide");
 		$("#info").toggle("hide");
 	});
+
+	//Back To Top Btn
+	$(".back-to-top").click(function() {
+		$("html").animate({ scrollTop: 0 }, 1000);
+	});
 });
