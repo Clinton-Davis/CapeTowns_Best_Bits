@@ -16,8 +16,6 @@ xhr.onreadystatechange = function() {
 		var cloudDiscrition = obj.weather[0].description;
 		var pressure = Math.floor(obj.main.pressure);
 		var wind = obj.wind.speed;
-		console.log(tempsMax, obj, tempMin);
-
 		var direction = obj.wind.deg;
 		//If statment to turn Wind degrees into String Direction
 		if (direction > 349 || direction <= 12) {
@@ -55,6 +53,23 @@ xhr.onreadystatechange = function() {
 		} else {
 			var dir = "N";
 		}
+		/*This code is from https://stackoverflow.com/convert-a-unix-timestamp-to-time-in-javascript 
+		made to work with my code base*/
+		let unix_timestampSunrise = obj.sys.sunrise;
+		var rdate = new Date(unix_timestampSunrise * 1000);
+		var rh = rdate.getHours();
+		var rhours = rh + 2;
+		var rminutes = "0" + rdate.getMinutes();
+		var sunRise = rhours + ':' + rminutes.substr(-2);
+
+		let unix_timestampSunset = obj.sys.sunset;
+		var sdate = new Date(unix_timestampSunset * 1000);
+		var sh = sdate.getHours();
+		var shours = sh + 2;
+		var sminutes = "0" + sdate.getMinutes();
+		var sunSet = shours + ':' + sminutes.substr(-2);
+
+		console.log(sunRise,sunSet);
 		writeToPage(), detailWeather();
 	}
 
@@ -71,9 +86,12 @@ xhr.onreadystatechange = function() {
 		document.getElementById(
 			"info"
 		).innerHTML = `<ul id="weatherDetails" class="hide">
+			<h2> ${city}</h2>
 			<li>Max Temp: ${tempsMax}˚C</li>
 			<li>Min Temp: ${tempMin}˚C</li>
 			<li>${cloud}  : ${cloudDiscrition}</li>
+			<li>Sun Rise: ${sunRise}</li>
+			<li>Sun Set: ${sunSet}</li>
 			<li>Humidity  : ${humidity}%</li>
 			<li>Air Pressure  : ${pressure}pha</li>
 		</ul>`;
