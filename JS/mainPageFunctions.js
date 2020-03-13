@@ -177,6 +177,8 @@ $(function() {
 	//Back to Main Page Btn in Map section to bring back to main page
 
 	$("#mainPageBack").click(function() {
+		location.reload();
+		$(".back-to-top").css("display", "block");
 		$(".main-Heading").fadeIn(200, function() {
 			$(".main-Heading").removeClass("hide");
 			$("#sights").removeClass("hide");
@@ -193,7 +195,7 @@ $(function() {
 			$("#about").removeClass("hide");
 			$("#contact").removeClass("hide");
 			$(".mapContainer").css("display", "block");
-			location.reload();
+			
 		});
 	});
 	// MODAL SECTION

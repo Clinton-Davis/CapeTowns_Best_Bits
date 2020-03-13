@@ -289,7 +289,7 @@ function initMap() {
 				"</h2>" +
 				"</div>" +
 				`<div class="infobody">` +
-				'<p class="infobody">' +
+				'<p class="infobody" id="phone">' +
 				`${rating}` +
 				"</p>" +
 				`<p class="infobody">` +

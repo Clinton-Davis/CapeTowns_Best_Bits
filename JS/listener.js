@@ -2,7 +2,7 @@
 function addSpinner() {
 	$("#googleIcon").css("display", "block");
 	$("#loadingText").css("display", "block");
-	$(".back-to-top").css("display", "block");
+	
 }
 /* This is a MutationObdrtver to see then the directions have been loaded by
 	the google-api */
@@ -26,4 +26,5 @@ function changepic() {
 	$("#googleIcon").css("display", "none");
 	$("#loadingText").css("display", "none");
 	$("#getDirectionsBtn").addClass("hide");
+	$(".back-to-top").css("display", "block");
 }

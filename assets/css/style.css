@@ -706,6 +706,9 @@ p {
 	font-size: 1rem;
 	font-weight: 600;
 }
+#phone::before {
+	content: url(../images/icons/pageIcons/call20x20.png)
+}
 
 /*-------MAIN PAGE BTNS SIGHTS ADVENTURE FOODIE --------*/
 .mainOptions {
