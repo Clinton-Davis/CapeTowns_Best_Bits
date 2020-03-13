@@ -827,7 +827,7 @@ p {
 	font-family: var(--headFont);
 	border: 1px black solid;
 	margin-left: auto;
-	margin-right: auto;
+	max-width: 50%;
 	text-align: center;
 }
 /*-----------------Footer----------*/
@@ -1139,10 +1139,6 @@ form {
 	}
 }
 
-
-
-
-
 @media (min-width: 600px) {
 	#capeTown {
 		font-size: 7.5rem;
@@ -1173,7 +1169,7 @@ form {
 	}
 }
 
-@media (min-width: 700px) and (min-height: 1024px) {
+@media (min-width: 700px)/*and (min-height: 1024px)*/ {
 	#capeTown {
 		font-size: 10rem;
 		margin-top: 2%;
@@ -1194,8 +1190,28 @@ form {
 	.mapContainer {
 		display: flex;
 	}
-	
-
+	@media (min-width: 700px)  {
+		#capeTown {
+			font-size: 10rem;
+			margin-top: 2%;
+		}
+		#bestBits {
+			font-size: 7rem;
+		}
+		#diy {
+			font-size: 5rem;
+		
+		}
+		#placeInfo {
+			max-width: 60%;
+		}
+		#map {
+			max-width: 90%;
+		}
+		.mapContainer {
+			display: flex;
+		}
+		
 @media (min-width: 700px) and (orientation: landscape) {
 	#capeTown {
 		font-size: 9rem;
