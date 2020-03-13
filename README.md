@@ -70,6 +70,7 @@ It the user wnat to go to get directions, Google maps finds the users location a
 - [Google Maps_Api](https://www.google.com/maps)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [W3Schools](https://www.w3schools.com/)
+- [Validator](https://validator.w3.org/nu/)
 - [YouTube](https://www.youtube.com/)
 - [GitHub](https://github.com/)
 - [Slack](https://slack.com/intl/en-ie/)
@@ -81,37 +82,31 @@ It the user wnat to go to get directions, Google maps finds the users location a
 
 ## Features
 
-Up to date local Weather, Inculing clouds, Sunrise and Sunset times, Humidity and Air Pressure.
-Finds users location
-Interactive maps
-Step by Step directions
-Comment and contact form  
+Up to date local Weather, and handy information, ie If the are clouds, what time the Sunrise and Sunset are at times, Humidity and Air Pressure.
+Give a list of intresting places where for travelers to see do or eat at
+Gives a location on the map, and if they would like to go to a place They just have to click on the 'Get direction botton' and the app with find there current location and dive them spet by step instruction on how to get there
+There is a contaact page where people can email us a message or comment and they will recieve a email in replay accnolanging tht we have recieved the email we will be in contact.
 about modal with deatails on how to use the page
-automated email responce
 
 ### Features Left to Implement
 
 Step by stepdirections to be emailed to user.
 I would love to have another list Selection at come out after sunset that has a list of all the night clubs and events happering in cape town.
 I would like to have the back Picture change with night and Day times. ie: when its night time the background image turns to a night time shot and headings change accordingly.
-
+Would like to implement a users local time to be displayed, through HTML Geolocaion. 
 ---
 
 ## Testing
 
-Reading the user stories, gave me a good insight as to where and what the site needed to be and what to show,
+The testing was done on a step by step basis. As I implemented a new part of the site I tested if on the live server.
+I tested all the HTML with w3 Validator
+and did the same with Css w3 Validator
 
-- In the Teachers section, you will be able to find information on the teachers and their qualifications and also a brief description of the history of the school.
-- On the Attire page is a description of the clothes (uniforms) that are needed and links to outlets/shops on a Google maps page. Here they can get directions to the physical address and webpages.
-- In the Locations page there are addresses and Google Maps links to the studios. On the Schedule page there is a detailed table with Location Grade and Times, with a downloadable PDF
-
-I used Visual Studio to make the site which has an extention called live server, this enabled me open an instance of Chrome to see live updates on what changes I have made. When I make a change to a design element, I then a look in the Developer tool that is provided to see how it works on different screen sizes and resolutions.
-
-I used GitHub web hosting service called Gitpages to host an instance of the page, I then went through all the pages and links in the Nav Bar and footer to make sure they work, and make sure my: _target="\_blank"_ - is working as planned.
-
-I do this for every page, and I use the different browsers, *Chrome, FireFox, Windows Edge, Safari.\*\* In each browser, I try to break the layout. In *Chrome and FireFox\*, I make use of the preset they have for mobile/tablets. On the other browsers, I resize the window manually to see their response.
-
-I also viewed it on different mobile phone types to see how it worked.
+after all the JavaScript was compleated, I would go through the code and make sure if was working as smothey as possable.
+Once I have put all the element in there places and working I went through all the Items and made sure they where all working correctly.
+I test the speed to see how fast if loaded from uncashed browers and cached browers, with the speed availble on Chrome develpers Tools. I was able to turn down the speed to: Slow 3G / Fast 3G / Online.
+Wish each speed I test performance on Img loading, HTML and CSS time, and  JavaScript and JQary CDN. Cached and uncached memory.
+Then I started the the Media Quary Test and all the Presets in Chrome and FireFox Develpment tools. Once I fixed all the Bugs I send It to the SLack Comunity for Feedback.  
 
 <details>
 <summary>List of Moblie devices I've tested on</summary> 
@@ -143,9 +138,13 @@ robben island is not working
 Click on Jonkers Hiuse and the map apeared at the bottum of the page and not as the main part.
 same on Snookies to wil have to look at the mainPageFunction.js
 Loading... and image are not going away when page is loaded
+getting The back to Top div so not show up.
+Taing to long to load and how I fixed it.
+Making the loading div and how I fixed it
+
 
 ## Deployment
-
+https://www.netlify.com/
 <details>
 <summary>To deploy on GitHub pages:</summary>
 <br>
