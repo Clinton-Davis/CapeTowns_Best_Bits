@@ -209,11 +209,7 @@ $(function() {
 		$("#about").removeClass("hide");
 		$("#contact").removeClass("hide");
 	});
-	//Closing Form
-	$("#contact-send").click(function() {
-		$("#mainform").css("display", "none");
-		$(".conLead").addClass("hide");
-	});
+
 	//Making the Nav Icon (Table Mountain) click back to main
 	$("#tableIcon").click(function() {
 		location.reload();
