@@ -81,7 +81,7 @@ It the user wnat to go to get directions, Google maps finds the users location a
 
 ## Features
 
-Up to date local Weather
+Up to date local Weather, Inculing clouds, Sunrise and Sunset times, Humidity and Air Pressure.
 Finds users location
 Interactive maps
 Step by Step directions
@@ -92,6 +92,8 @@ automated email responce
 ### Features Left to Implement
 
 Step by stepdirections to be emailed to user.
+I would love to have another list Selection at come out after sunset that has a list of all the night clubs and events happering in cape town.
+I would like to have the back Picture change with night and Day times. ie: when its night time the background image turns to a night time shot and headings change accordingly.
 
 ---
 
