@@ -1072,7 +1072,7 @@ form {
 /* -=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-   MEDIA QUARYS	*/
 /*-=-=-Media quarys for main headings-=-=-*/
 
-@media (min-width: 370px) and (min-height: 700px) {
+@media (min-width: 375px) and (min-height: 700px) {
 	#capeTown {
 		font-size: 4.6rem;
 
@@ -1088,17 +1088,17 @@ form {
 		height: 1.5rem;
 	}
 	#lead {
-		margin-top: 19%;
+		margin-top: 10%;
 		font-size: 1.3rem;
 	}
 }
 @media (min-width: 370px) and (orientation: landscape) {
 	#capeTown {
-		font-size: 4.4rem;
+		font-size: 3.4rem;
 		margin-top: 0;
 	}
 	#bestBits {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 	}
 	#diy {
 		background-position: center;
@@ -1110,9 +1110,9 @@ form {
     
 
 }
-@media (min-width: 500px) {
+@media (min-width: 400px) {
 	#capeTown {
-		font-size: 6rem;
+		font-size: 5rem;
 	}
 	#bestBits {
 		font-size: 4rem;
@@ -1131,10 +1131,10 @@ form {
 		font-size: 6rem;
 	}
 	#bestBits {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	#diy {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 		
 	}
 	#placeInfo {
@@ -1159,13 +1159,13 @@ form {
 }
 @media (min-width: 600px) and (orientation: landscape) {
 	#capeTown {
-		font-size: 7.5rem;
+		font-size: 6.5rem;
 	}
 	#bestBits {
-		font-size: 4.5rem;
+		font-size: 5.5rem;
 	}
 	#diy {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 	#placeInfo {
 		max-width: 70%;
@@ -1217,10 +1217,11 @@ form {
 		.list-selectionContainer  {
 			margin-top: 7em;
 		}
-		
-@media (min-width: 700px) and (orientation: landscape) {
+	}
+	}		
+@media (max-width: 700px) and (orientation: landscape) {
 	#capeTown {
-		font-size: 9rem;
+		font-size: 8rem;
 		margin-top: 2%;
 	}
 	#bestBits {
@@ -1243,6 +1244,7 @@ form {
 		margin-top: 0;
 	}
 }
+/*Ipad*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (min-height: 1024px) {
 	.opt-btn {
 		font-size: 2rem;
@@ -1251,6 +1253,8 @@ form {
 		margin-top: 5%;
 		font-size: 2rem;
 	}
+	.links {
+		font-size: 1.7rem;
 }
 @media (min-width: 800px) and (orientation: landscape) {
 	#capeTown {
@@ -1286,6 +1290,9 @@ form {
 	#lead {
 		font-size: .75rem;
 	}
+	.opt-btn {
+		font-size: 2rem;
+	}
 	#about {
 		font-size: 2rem;
 	}
@@ -1313,6 +1320,7 @@ form {
 		margin: 0 auto;
 	}
 }
+}
 /*-=-=-=--=-=-Ipad Media Quarys (I got this information on https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (min-height: 1024px) {
 	.links {
@@ -1324,10 +1332,9 @@ form {
 	#contact {
 		font-size: 3rem;
 	}
-	.opt-btn {
-		font-size: 3rem;
 	
-	}
+	
+	
 	#capeTown {
 		font-size: 12rem;
 	}
@@ -1338,7 +1345,8 @@ form {
 		font-size: 5.5rem;
 	}
 	#lead {
-		font-size: 3rem;
+		font-size: 2.5rem;
+		margin-top: 5%;
 		
 	}
 	#howto {
@@ -1357,6 +1365,9 @@ form {
 	.mainOptions {
 		margin-top: 1.5em;
 		margin-bottom: 1em;
+	}
+	.opt-btn {
+		font-size: 3rem;
 	}
 	.feet {
 		font-size: 1.8rem;
@@ -1378,5 +1389,11 @@ form {
 		font-size: 2.3rem;
 	}
 }
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (min-height: 768px) {
+	.opt-btn {
+		font-size: 2rem;
 	}
+
 }
+	
+	
