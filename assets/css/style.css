@@ -33,6 +33,10 @@ body {
 	height: auto;
 	min-height: 70vh;
 }
+.wrapper-contact {
+	height: auto;
+	min-height: 80vh;
+}
 
 * {
 	margin: 0;
@@ -1071,8 +1075,8 @@ form {
 	padding: 1em;
 }
 /* -=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-   MEDIA QUARYS	*/
-/* Form grid to flex */
-@media (max-width: 550px) and (min-height: 200px){
+
+@media (max-width: 550px) and (min-height: 200px){ /* Form grid to flex */
 	form {
     	display: flex;
     	flex-direction: column;
@@ -1116,7 +1120,7 @@ form {
 	}
 	
 }
-@media (min-width: 800px){
+@media (min-width: 800px){/* Changes the display for block to Flex*/
 	.mapContainer {
 		display: flex;
 	}
@@ -1426,279 +1430,3 @@ form {
 
 
 
-
-/*-=-=-Media quarys for main headings-=-=-
-
-@media (min-width: 320px) and (max-with: 400px){
-	#capeTown {
-		font-size: 4.6rem;
-
-	}
-	#bestBits {
-		font-size: 3.5rem;
-		margin-top: 4%;
-	}
-	#diy {
-		background-position: center;
-	}
-	.backBnt {
-		height: 1.5rem;
-	}
-	#lead {
-		margin-top: 10%;
-		font-size: 1.3rem;
-	}
-}
-@media (max-width: 370px) and (orientation: landscape) {
-	#capeTown {
-		font-size: 3.4rem;
-		margin-top: 0;
-	}
-	#bestBits {
-		font-size: 2.5rem;
-	}
-	#diy {
-		background-position: center;
-		margin-top: 0%;
-	}
-	#lead {
-		margin: 0 auto;
-	}
-    
-
-}
-@media (min-width: 400px) {
-	#capeTown {
-		font-size: 5rem;
-	}
-	#bestBits {
-		font-size: 4rem;
-	}
-	#diy {
-		font-size: 3.5rem;
-		
-	}
-	#placeInfo {
-		max-width: 80%;
-	}
-}
-
-
-@media (min-width: 500px) and (max-width: 600px) {
-	#capeTown {
-		font-size: 6rem;
-	}
-	#bestBits {
-		font-size: 3rem;
-	}
-	#diy {
-		font-size: 2.5rem;
-		
-	}
-	#placeInfo {
-		max-width: 80%;
-	}
-}
-@media (max-width: 550px) {
-	form {
-		display: flex;
-		flex-direction: column;
-		margin: 0 auto;
-	}
-}
-
-@media (min-width: 600px) and (max-width: 700px) and (orientation: landscape) {
-	#capeTown {
-		font-size: 7.5rem;
-		margin-top: 2%;
-	}
-	#bestBits {
-		font-size: 4.5rem;
-	}
-	#diy {
-		font-size: 4rem;
-		margin-top: 2%;
-	}
-	#placeInfo {
-		max-width: 70%;
-	}
-}
-
-
-@media (min-width: 700px) and (min-height: 1026px){
-	
-		#capeTown {
-			font-size: 10rem;
-			margin-top: 2%;
-		}
-		#bestBits {
-			font-size: 7rem;
-		}
-		#diy {
-			font-size: 5rem;
-		
-		}
-		#placeInfo {
-			max-width: 60%;
-		}
-		#map {
-			max-width: 90%;
-		}
-		.mapContainer {
-			display: flex;
-		}
-		.list-selectionContainer  {
-			margin-top: 7em;
-		}
-	}
-		
-
-/*Ipad
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px)  and (min-height: 1024px) {
-	.opt-btn {
-		font-size: 2rem;
-	}
-	#lead {
-		margin-top: 5%;
-		font-size: 2rem;
-	}
-	.links {
-		font-size: 1.7rem;
-}
-@media (min-width: 800px) and (orientation: landscape) {
-	#capeTown {
-		font-size: 9rem;
-		
-	}
-	#bestBits {
-		font-size: 5rem;
-	}
-	#diy {
-		font-size: 4rem;
-		
-	}
-	#placeInfo {
-		max-width: 50%;
-	}
-	#map {
-		max-width: 80%;
-	}
-}
-@media (min-width: 1000px) and (orientation: landscape) {
-	#capeTown {
-		font-size: 10rem;
-		margin-top: 2%;
-	}
-	#bestBits {
-		font-size: 6rem;
-	}
-	#diy {
-		font-size: 3.5rem;
-		margin-top: 0;
-	}
-	#lead {
-		font-size: .75rem;
-	}
-	.opt-btn {
-		font-size: 2rem;
-	}
-	#about {
-		font-size: 2rem;
-	}
-	#contact {
-		font-size: 2rem;
-	}
-	.links {
-		font-size: 1.25rem;
-	}
-	.selectors {
-		font-size: 1.5rem;
-	}
-	#map {
-		max-width: 70%;
-	}
-	.backBnt {
-		height: 2rem;
-	}
-}
-*/
-/*Contact-Form-Page Medai quary to stop form side scolling on small screens*/
-/*
-}
-/*-=-=-=--=-=-Ipad Media Quarys (I got this information on https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
-/*@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-height: 1024px) {
-	.links {
-		font-size: 2.1rem;
-	}
-	#about {
-		font-size: 3rem;
-	}
-	#contact {
-		font-size: 3rem;
-	}
-	
-	
-	
-	#capeTown {
-		font-size: 11rem;
-	}
-	#bestBits {
-		font-size: 8rem;
-	}
-	#diy {
-		font-size: 5.5rem;
-	}
-	#lead {
-		font-size: 2.5rem;
-		margin-top: 5%;
-		
-	}
-	#howto {
-		font-size: 2.3rem;
-		margin: 5em auto 0 auto;
-	}
-	#adventureCol {
-		margin: 5em auto 0 auto;
-	}
-	#sightsCol {
-		margin: 5em auto 0 auto;
-	}
-	#foodieCol {
-		margin: 5em auto 0 auto;
-	}
-	.mainOptions {
-		margin-top: 1.5em;
-		margin-bottom: 1em;
-	}
-	.opt-btn {
-		font-size: 3rem;
-	}
-	.feet {
-		font-size: 1.8rem;
-	}
-	.modal-content {
-		font-size: 2rem;
-	}
-	#modal-heading {
-		font-size: 8rem;
-	}
-	#contact-Heading {
-		font-size: 6rem;
-	}
-	.contact-Lead {
-		font-size: 2em;
-		padding: 2em;
-	}
-	.selectors {
-		font-size: 2.3rem;
-	}
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (min-height: 768px) {
-	.opt-btn {
-		font-size: 2rem;
-	}
-
-}
-	
-	
-*/

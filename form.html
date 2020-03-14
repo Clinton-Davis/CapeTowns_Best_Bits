@@ -29,14 +29,34 @@
 				emailjs.init("user_r18UcxPyb432tWWdRscA7");
 			})();
 		</script>
+		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>Cape Towns Best Bits</title>
 	</head>
+	<header>
+		<nav>
+			<div class="navWeather">
+				<img
+					src="./assets/images/icons/pageIcons/tableMountainIconsmalltranparntRounded.png"
+					id="tableIcon"
+					alt="table Mountain Icons"
+					class="pointer"
+				/>
+				<ul class="tbicon">
+					<li id="temp-api" class="links pointer link-hov"></li>
+					<li id="wind-api" class="links pointer link-hov"></li>
+					
+				</ul>
+			</div>
 
-	<body id="contactBody">
+			
+		</nav>
+	</header>
+
+	<body>
+		<div class="wrapper-contact">
+	<div id="contactBody">
 		<div class="contact-gray-fliter">
-			<button class=" backBnt pointer banger" id="conback">
-				<a href="./index.html"> <strong>X</strong></a>
-			</button>
+			<a class=" backBnt pointer banger" id="conback" href="./index.html"></a>
 			<h3 class="banger" id="contact-Heading">
 				We would Love to here from you
 			</h3>
@@ -92,6 +112,32 @@
 				<h2 class="hide">We have recieved you email and will be intouch.</h2>
 			</div>
 		</div>
+	</div>
+</div>
+	<footer class="shoes">
+		<div class="feet">CopyRight© 2020</div>
+		<div class="feet feet-tech">
+			Technologys:
+			<ul class=" feet feet-list">
+				<li class="feet-items">Weather_API</li>
+				<li class="feet-items">GoogleMaps_API</li>
+			</ul>
+		</div>
+		<div class="feet">
+			<a href="./form.html" class="footerLink">Get In Touch</a>
+		</div>
+		<div class="feet">
+			<div class="feet">Web Design:</div>
+			<div class="feet feet-bg">
+				<a
+					href="https://github.com/Clinton-Davis"
+					class="feet-bg"
+					target="_blank"
+					>Clinton Davis</a
+				>
+			</div>
+		</div>
+	</footer>
 		<script src="./JS/email.js"></script>
 		<script src="./JS/mainPageFunctions.js"></script>
 	</body>
