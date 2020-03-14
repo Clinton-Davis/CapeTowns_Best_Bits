@@ -35,7 +35,7 @@ body {
 }
 .wrapper-contact {
 	height: auto;
-	min-height: 80vh;
+	min-height: 90vh;
 }
 
 * {
@@ -1000,7 +1000,7 @@ p {
 	font-family: var(--secFont);
 	color: var(--white);
 	display: grid;
-	grid-template-rows: 5% 10% 10% auto 20%;
+	margin-top: 5%;
 	grid-template-columns: 5% auto 5%;
 }
 #emailEnd {
