@@ -141,6 +141,7 @@ Loading... and image are not going away when page is loaded
 getting The back to Top div so not show up.
 Taing to long to load and how I fixed it.
 Making the loading div and how I fixed it
+Main Heading has stopped working
 
 
 ## Deployment

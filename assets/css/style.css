@@ -52,7 +52,7 @@ ul {
 /* -=-=Flag Close Btn-=-=*/
 .backBnt {
 	width: 2rem;
-    height: 1rem;
+    height: 1.5rem;
 	float: right;
 	background-image: url("../images/icons/pageIcons/flagX.jpg");
 	background-size: cover;
@@ -503,7 +503,7 @@ p {
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	max-width: 95%;
+	max-width: 600px;
 	background-color: rgba(242, 246, 248, 0.8);
 	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.75);
@@ -1071,11 +1071,17 @@ form {
 	padding: 1em;
 }
 /* -=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-   MEDIA QUARYS	*/
-
-@media (min-width: 375px) and (min-height: 200px) {
+/* Form grid to flex */
+@media (max-width: 550px) and (min-height: 200px){
+	form {
+    	display: flex;
+    	flex-direction: column;
+	}
+}
+@media (min-width: 320px) and (min-height: 200px) {
 	#capeTown {
-		font-size: 5rem;
-		margin-top: 0;
+		font-size: 4rem;
+		margin-top: 2%;
 	}
 	#diy {
 		margin-top: 1%;
@@ -1086,11 +1092,33 @@ form {
 	.mainOptions {
 		margin-bottom: 1em;
 	}
+	
+}
+@media (min-width: 320px) and (min-height: 500px) {
+	#capeTown {
+		font-size: 4rem;
+		margin-top: 10%;
+	}
+	#diy {
+		margin-top: 1%;
+	}
+	#lead {
+		margin: 0.125em auto 0 auto;
+	}
+	.mainOptions {
+		margin-bottom: 1em;
+	}
+	
 }
 @media (min-width: 600px) and (min-height: 200px) {
 	#capeTown {
 		font-size: 6rem;
-		
+	}
+	
+}
+@media (min-width: 800px){
+	.mapContainer {
+		display: flex;
 	}
 }
 @media (min-width: 375px) and (min-height: 500px) {
@@ -1116,6 +1144,15 @@ form {
 	}
 	#lead {
 		margin: 1.25em auto 0 auto;
+	}
+	#sightsCol {
+		margin-top: 7%;
+	}
+	#adventureCol {
+		margin-top: 7%;
+	}
+	#foodieCol {
+		margin-top: 7%;
 	}
 }
 @media (min-width: 1100px) and (min-height: 600px) {
@@ -1193,6 +1230,14 @@ form {
 	.feet {
 		font-size: 1.25rem;
 	}
+	.sights, .adventure, .foodie {
+		font-size: 1.75em;
+	}
+	.backBnt {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	
 }
 @media (min-width: 1000px) and (min-height: 700px) {
 	#capeTown {
@@ -1253,6 +1298,15 @@ form {
 	}
 	.feet {
 		font-size: 1.5rem;
+	}
+	.sights, .adventure, .foodie {
+		font-size: 2.25em;
+	}
+	.infoBackGround {
+		font-size: 1.25em;
+	}
+	#loadingText {
+		font-size: 2em;
 	}
 }
 @media (min-width: 1300px) and (min-height: 1024px) {
