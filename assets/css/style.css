@@ -1117,7 +1117,7 @@ form {
 		margin-top: 12;
 	}
 	#bestBits {
-		margin: 6% 0;
+		margin: 4% 0;
 	}
 	#diy {
 		margin-top: 5%;
@@ -1126,7 +1126,6 @@ form {
 		margin: 1.5em auto 0 auto;
 	}
 }
-
 @media (min-width: 375px) and (min-height: 800px) {
 	#capeTown {
 		margin-top: 20%;
@@ -1177,6 +1176,38 @@ form {
 		font-size: 1.25rem;
 	}
 }
+@media (min-width: 1000px) and (min-height: 700px) {
+	#capeTown {
+		font-size: 11rem;
+		margin-top: 4%;
+}
+	#bestBits {
+		font-size: 6rem;
+		margin: 1% 0;
+	}
+	#diy {
+		font-size: 4rem;
+		margin-top: 0%;
+	}
+	#lead {
+		font-size: 1.5rem;
+	}
+	.links {
+		font-size: 1.75rem;
+	}
+	#about {
+		font-size: 2rem;
+	}
+	#contact {
+		font-size: 2rem;
+	}
+	.opt-btn {
+		font-size: 1.75rem;
+	}
+	.feet {
+		font-size: 1.25rem;
+	}
+}	
 @media (min-width: 1024px) and (min-height: 1300px)  {
 	#capeTown {
 		font-size: 12rem;
@@ -1228,6 +1259,33 @@ form {
 	.opt-btn {
 		font-size: 2.5rem;
 	}
+}
+@media (min-width: 2200px) and (min-height: 1300px) {
+	#capeTown {
+		font-size: 16rem;
+		margin-top: 6%;
+	}
+	#bestBits {
+		font-size: 8rem;
+		margin: 1% 0;
+	}
+	#diy {
+		font-size: 7rem;
+		margin-top: 1%;
+	}
+	.links {
+		font-size: 2.7rem;
+	}
+	#about {
+		font-size: 4rem;
+	}
+	#contact {
+		font-size: 4rem;
+	}
+	.feet {
+		font-size: 2rem;
+	}
+}
 }
 
 
