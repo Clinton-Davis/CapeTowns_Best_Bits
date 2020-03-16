@@ -12,7 +12,7 @@ b) Dont like doing the tours and want to meet the locals and do everything in th
 This was highlighted in the User stories.
 
 My clients brief was that thwy wanted an **_Young and Viderant_** website, with lists of the top 10 Places to see, thing to do and Best local quazine, with interative maps to get where they want to do.
-The overall goal is to get more people to go to the places that have been mentioned so the client can charge to have a stop on the list.
+The overall goal is to get more people to go to the places that have been mentioned so the client may charge to be on the list.
 
 ---
 
@@ -61,7 +61,8 @@ It the user wnat to go to get directions, Google maps finds the users location a
 ---
 
 ## Technologies
-
+- [Weather_Api](weather_api)
+- [Google Maps Api](Google maps)
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [CSSMatric](https://cssmatic.com/)
@@ -94,7 +95,7 @@ Step by stepdirections to be emailed to user.
 I would love to have another list Selection at come out after sunset that has a list of all the night clubs and events happering in cape town.
 I would like to have the back Picture change with night and Day times. ie: when its night time the background image turns to a night time shot and headings change accordingly.
 Would like to implement a users local time to be displayed, through HTML Geolocaion. 
----
+I would like to have all the details of the place that on the list to be on a servr to the website can get the ifo via JSON get and not have the list on the website memory.
 
 ## Testing
 
@@ -108,6 +109,7 @@ I test the speed to see how fast if loaded from uncashed browers and cached brow
 Wish each speed I test performance on Img loading, HTML and CSS time, and  JavaScript and JQary CDN. Cached and uncached memory.
 Then I started the the Media Quary Test and all the Presets in Chrome and FireFox Develpment tools. Once I fixed all the Bugs I send It to the SLack Comunity for Feedback.  
 
+
 <details>
 <summary>List of Moblie devices I've tested on</summary> 
 <ul>
@@ -118,33 +120,41 @@ Then I started the the Media Quary Test and all the Presets in Chrome and FireFo
 <li>iPad</li>
 </details>
 <br>
-The next stage of testing was external testing. I sent the code and the webpage into peer-to-peer code testing in Code Institute section on Slack.
+
 
 ### Bugs
 
-Bugs:
-toggle is not working probaly with showing and hiding the hidden tabs
-Had a issue with footer jumping up and down when my divs where shoing and hiding: Fix-added Display Flex to Body and added margin-Top: auto / to footer.
+I was having a problem with how to keep the Local list of places of a separate page and Still have the google maps_Api   connect with the data, 
+I solved this by having the data stored in a JSON like file on the same page as the Google_api code and have data Id' ed can be called with an onClick function.
+I had a problem with the JQ toggle con the "hide" Class, 
+To solve this I used the (.css ("display" "none");)
+The footer was running up and down the page when I was fading in and fading out the Selection element, 
+I solved this but placing a "wrapper" div with and height auto and min-height of 80vh.
+Had an issue with footer jumping up to the lowest part of the page. 
+To solve this, I added Display Flex to Body and added margin-top: auto / to footer.
+I had an issue with having three columns and only having one up at a time, it what if you selected any of the other columns the 2 would be open at one time. 
+To solve this, I gave them each their IDs and made the other selection option unavailable to use if one was open. You have to close one to open another.
+When you clicked on the Wind Icon, the MapsContainer Div from the Map Section would open up. I had used the tag <li> as the 'click' element on the selection, without realizing that every <li> would be clickable. 
+I solved this by giving the li element in question there own class and made the class clickable.
 
-Google Maps Help: https://developers.google.com/maps/documentation/javascript/geolocation
-Talk about how to got the back to btn to foodie or sights or adv
-The side scroll on burger deployment needs to be sorted out.
-when you click on the wind icon the map opens up.
-Links to be fixed on google:
-robben island is not working
--chef wherehouse
--water bykes
--jaonker hiuse
-Click on Jonkers Hiuse and the map apeared at the bottum of the page and not as the main part.
-same on Snookies to wil have to look at the mainPageFunction.js
-Loading... and image are not going away when page is loaded
-getting The back to Top div so not show up.
-Taing to long to load and how I fixed it.
-Making the loading div and how I fixed it
-Main Heading has stopped working
+I had an issue linking the HTML Geolocation Lng / Lats to the google maps directions service. 
+To solve this I had to put the navigator.geolocation.getCurrentPosition inside the getDirectionsAndLocations function.
+The issue I had with the Loading... trying to get it to disappear when the Loading had finished. 
+I first used the if status === 'Ok' statement in the google-API, but that would happen first and make it disappear before the maps Directions had fully loaded. I.e., The status would "Ok" long before the page had loaded on a slower network. 
+How I solved this was to add a JavaScript MutationObserver on the directions panel div to look for a change of attributes, If there is a change, it triggers the JQuary 'Display' 'None' on the Loading... div.
+The next bug I had was that if I paged back after using the Map and wanted to use the Google Maps_Api again, the MutationObserver would not reset and look for the attribute again. 
+I Solved this but using the 'Back-To-Main' Bnt and refreshes the page every time you use the Maps_Api.
+Because I have to refresh the page every time, I was having issues with the time it was taking to reload, with all the high res images and the amount of them. I solved this but using [TinyPNG] and making the image size a lot smaller and keeping the quality at the same time.
+I had a bug with the BackGround on the Main Heading Slowing down the refresh rate of the page. Solved this with a piece of code I found at [CSS-Tricks] With a Script tag in the Head 
+<script>document.documentElement.className += " js-loading";
+		window.addEventListener("load", showPage, false);
+	    function showPage() {
+		document.documentElement.className = document.documentElement.className.replace("js-loading","");</script>
+
 
 
 ## Deployment
+
 https://www.netlify.com/
 <details>
 <summary>To deploy on GitHub pages:</summary>
@@ -187,7 +197,7 @@ The conept and design is by Clinton Davis (myself)
 For the use of code and knowledge.
 
 - [YouTube - Kevin Powell](https://www.youtube.com/user/KepowOb) for code snippets and [Sticky footer](https://bit.ly/2NAFAgW) advice / [Kevin Powell - Responsice Desing (Scrimba)](https://scrimba.com/) /
-
+Google Maps Help: https://developers.google.com/maps/documentation/javascript/geolocation
 - [CSS-Tricks](https://css-tricks.com/) website for help with [BackGround Image, Making-animations-wait, Ipad Resposive work arounds](https://css-tricks.com/perfect-full-page-background-image/) / (https://css-tricks.com/making-animations-wait/) 
 - [W3Schools](https://www.w3schools.com/) for code snippets and documentation with [Creating Modal,](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) / General research on HTML CSS and JavaScript.
 - [CSSMatric](https://cssmatic.com/) for [Box Shadow Generator ](https://cssmatic.com/box-shadow)
