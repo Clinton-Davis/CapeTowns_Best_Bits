@@ -147,7 +147,10 @@ $(function() {
 			console.log("We have a Problem with eventFunction .item");
 		}
 	});
-
+	$("#getDirectionsBtn").click(function () { 
+		$(".mainOptions").css("display", "none")
+		
+	});
 	//PageBack Btns
 	//PageBack to Sights
 	$("#pageBackSights").click(function() {
@@ -217,7 +220,7 @@ $(function() {
 		location.reload();
 	});
 
-	// Toggels the deatail waether Div
+	// Toggels the Weather Deatils Div
 	$("#temp-api").click(function() {
 		$("#weatherDetails").toggle("hide");
 		$("#info").toggle("hide");
