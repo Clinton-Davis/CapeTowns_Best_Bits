@@ -703,6 +703,14 @@ p {
 	align-items: center;
 	color: black;
 }
+.infobodyWeb {
+	text-decoration: none;
+	color: rgb(52, 92, 223);
+}
+.infobodyWeb:hover {
+	text-decoration: none;
+	color: rgb(110, 161, 8);
+}
 .infobody {
 	color: black;
 	text-align: center;
@@ -729,7 +737,7 @@ p {
 
 .opt-btn {
 	letter-spacing: 0.03em;
-	color: rgba(0, 0, 0, 1);
+	color: rgb(52, 92, 223);
 	font-size: 1.2rem;
 	text-decoration: none;
 	padding: 0.5em;
@@ -780,7 +788,7 @@ p {
 	);
 }
 .opt-btn:hover {
-	color: rgb(103, 148, 13);
+	color: rgb(110, 161, 8);
 	cursor: pointer;
 	background: rgba(252, 234, 187, 1);
 	box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.75);

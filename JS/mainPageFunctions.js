@@ -136,17 +136,7 @@ $(function() {
 		});
 	});
 
-	$(".item").click(function(event) {
-		if (event.target.classList[4] === "sights") {
-			$("#pageBackSights").removeClass("hide");
-		} else if (event.target.classList[4] === "adventure") {
-			$("#pageBackAdventure").removeClass("hide");
-		} else if (event.target.classList[4] === "foodie") {
-			$("#pageBackFoodie").removeClass("hide");
-		} else {
-			console.log("We have a Problem with eventFunction .item");
-		}
-	});
+
 	$("#getDirectionsBtn").click(function () { 
 		$(".mainOptions").css("display", "none")
 		
