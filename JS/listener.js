@@ -10,7 +10,6 @@ function addSpinner() {
 const directionsList = document.querySelector("#directionsPanel");
 const observer = new MutationObserver(mutations => {
 	mutations.forEach(record => {
-		console.log(record);
 		if (record.type === "attributes") {
 			changepic();
 		} else {

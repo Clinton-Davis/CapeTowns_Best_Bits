@@ -225,7 +225,6 @@ let selectionJSON = {
 // locationFinder is the onClick function that calles InitMap function on "clicked" Location.
 var marker, iD;
 function locationFinder(locationFinder_id) {
-	console.log(locationFinder_id);
 	iD = selectionJSON[locationFinder_id].Id;
 	info = selectionJSON[locationFinder_id].info;
 	initMap(), placeInfo();
@@ -260,8 +259,6 @@ function initMap() {
 			var rating = place.rating;
 			var website = place.website;
 			var phone = place.formatted_phone_number;
-
-			console.log(name, rating, website, phone, latlng);
 			if (rating == undefined) {
 				var rating = " ";
 			} else {
@@ -357,7 +354,6 @@ function getDirectionsAndLocations() {
 					travelMode: "DRIVING"
 				};
 				directionsService.route(request, function(result, status) {
-					console.log(result);
 					if (status == "OK") {
 						directionsRenderer.setDirections(result);
 					}

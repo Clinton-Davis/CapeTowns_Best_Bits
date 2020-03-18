@@ -69,7 +69,6 @@ xhr.onreadystatechange = function() {
 		var sminutes = "0" + sdate.getMinutes();
 		var sunSet = shours + ':' + sminutes.substr(-2);
 
-		console.log(sunRise,sunSet);
 		writeToPage(), detailWeather();
 	}
 

@@ -23,7 +23,6 @@ function sendMail(contactForm) {
 		})
 		.then(
 			function(responce) {
-				console.log("SUCCESS", responce);
 				if (responce.status == 200) {
 					location.href = "index.html";
 				}
