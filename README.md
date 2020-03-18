@@ -116,7 +116,7 @@ The Westen province rugby team inspires the choice of colour for the three main 
 - [Slack](https://slack.com/intl/en-ie/)
 - [Weather_Api](https://openweathermap.org/api)
 - [Google Maps Api](https://cloud.google.com/maps-platform)
-- [Website Responsive Testing] (Toolresponsivetesttool.com)
+- [Website Responsive Testing](Toolresponsivetesttool.com)
 - [Validator](https://validator.w3.org/nu/)
 - [Emailjs_Api](https://www.emailjs.com/)
 - [Gmail](https://www.gmail.com/)
