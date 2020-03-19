@@ -310,7 +310,7 @@ I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alon
 <summary>To deploy on Netlify:</summary>
 <br>
 <ol>
-<li>Open [Netlify](https://www.netlify.com/)</li>
+<li>Open Netlify</li>
 <li>Sign Up using email or GitHub(Perfered method, auto update with Git-Push)</li>
 <li>'Click' Create a new site</li>
 <li>It will ask you "Continuous deployment" Click GitHub</li>
@@ -319,7 +319,7 @@ I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alon
 <li>'Click' Deploy</li>
 <li>The Overview page for your website will display with the status of your deplayment.</li>
 <li>Wait for the status to display: Published.</li>
-<li>A unique web adress will display.(You can customise your address. see [Docs](https://docs.netlify.com/domains-https/custom-domains/#definitions))</li>
+<li>A unique web adress will display.(You can customise your address.)</li>
 </ol>
 </details>
 <br>
@@ -343,9 +343,7 @@ I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alon
 <a name="Credits"></a>
 ## Credits
 
-
 ##### Design:
-
 The concept and design by Clinton Davis
 
 ##### Content:
