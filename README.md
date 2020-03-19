@@ -1,21 +1,22 @@
 # Cape Towns Best Bits
 
-
-
 ## Interactive Frontend Development - _Code institute_
 
 ---
 
 > **_Cape Towns Best bits_** _is a Do It Your Self_ webpage that streamlines the process of finding listed despnations and things to do in Cape Town without having to go through a tour company. 
 
-
----
-
+---  
 ## Demo
 
 A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 
 ---
+
+![mulityscreenImg](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/smartmockups_CTBB.png)
+
+---
+
 <a name="toc"></a>
 ## Table of Content
 1. [**UX**](#ux)
@@ -55,14 +56,16 @@ All destinations have integrated Google Maps functionality for users to find the
 
 <a name="scope"></a>
 ## Scope
+
 Biggest problems, when people go away, is that there is much to do and so much information about so many things that they get overwhelmed, This website streamlines it down to the top 30 best things to do, divided into three categories. Cape Towns Best Bits makes its easy for people to deside. The next thing the user needs is a map or directions on how to get there. This is where integrated navigation comes in. This lets the user spent more time being on holiday and less time trying to find a destination and directions.
 The Target demographic is quite large as where the list of things to do and see are very bard, all ages and fitness profiles have a lot to choose.
 The platform is easy to use and informative with little delay in getting the information they need.
+
 <a name="structure"></a>
 ## Structure.
 
-
 #### **_Main Page_**
+
  - **-Navigation Bar-**
    - Table Mountain Icon on the left that is clickable and sends the user to the main page.<br>
    - Up to date Weather for Cape Town, With "_feels like_" Temps and current wind speed in KPH and direction.<br>
@@ -74,13 +77,12 @@ The platform is easy to use and informative with little delay in getting the inf
    -  Sights / Adventure / Foodie.
   -  Click the button, and the main page heading fades away to reveal lists of destinations. On the right is an image for each place. 
 
- 
-
    
 ####**_Contact Page_**  
-  - **-Email Form-**
-    - The form that asks the user to leave a comment and email address to we can get back to them as soon a possible. This sends them an automated response.
 
+  - **-Email Form-**
+
+    - The form that asks the user to leave a comment and email address to we can get back to them as soon a possible. This sends them an automated response.
 
 <a name="wireframes"></a>
 
@@ -91,6 +93,7 @@ The page looks the same on all devices. With the wider screens, the background I
 <a name="surface"></a>
 
 ## Surface
+
 The Navigation Bar at the top is transparent with a bottom box-shadow to highlight that it is a Nav section. 
 The Background image of Cape Town we used is has a lovely warmth to it. It shows all the significant parts that makeup Cape Town, The City, the mountains and the sea. This image is also the background for the contact page.
 I went for a big font from [Google Fonts](https://fonts.google.com/), called *"Banger"* as the primary font. I chose this font because it looks friendly fun without being overbearing. The secondary font is *"Montserrat"*<br>
@@ -98,10 +101,6 @@ It is clean and clear, and they complement each other.
 
 The moving backgrounds in the main page heads to make it more eye checking, The Main Heading has the blue sky, the Best Bits has one of Cape Town spectacular sunsets, the DIY  heading has the two oceans.
 The Westen province rugby team inspires the choice of colour for the three main option buttons; witch colours are Blue and white.
-
-
-
-
 
 ---
 <a name="technologies"></a>
@@ -138,7 +137,6 @@ The Westen province rugby team inspires the choice of colour for the three main 
 - Contact page with email comments or questions.
 - AutoReplay email.
 
-
 ### Features Left to Implement
 
 - Step by step directions to be emailed to the user.
@@ -146,7 +144,6 @@ I would like to implement another *Night Club* list that appears after sunset. A
 - I would like to implement a change in the Background Picture with night and Day. i.e., when its night, change the image to a nighttime image and headings change accordingly.
 - Would like to implement users local time to be displayed, through HTML Geolocation. 
 - I would like to have the data for all the listing to be on an external server and reach them with a JSON call and not have them internally.
-
 
 <a name="testing"></a>
 ## Testing
