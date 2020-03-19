@@ -197,30 +197,21 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 <summary>Moblies</summary> 
 <ul>
 <li>iPhone 8/8Plus/X/XR/XS/XSMax</li>
-<li>iPhone 6s Plus/7 Plus</li>
-<li>Apple iPhone 6/6s/7</li>
-<li>Apple iPhone 5/5s</li>
-<li>Apple iPhone 3/4/4s</li>
+<li>Apple iPhone 3/4/4s/5/5s/6/6s/6 plus/7/7 Plus</li>
 <li>Nexus 6P/5X</li>
-<li>Google Pixe</li>
 <li>Google Pixel 2/XL</li>
-<li>Samsung Galaxy Note 5</li>
 <li>Samsung Galaxy S S2/S3/S4/S5/S6/S7/S8/S8+/S9/S9+</li>
 <li>Samsung Galaxy Nexus/Note 2/3/4/8</li>
 <li>LG G3/G4/G5</li>
 <li>LG Optimus G</li>
-<li>LG Nexus 5</li>
-<li>LG Nexus 4</li>
+<li>LG Nexus 4/5</li>
 <li>Pantech Vega n6</li>
 <li>Lenovo K900</li></li>
 <li>Motorola Nexus 6</li>
 <li>One Plus 3</li>
-<li>Nexus 7 (2013)</li>
-<li>Nexus 9</li>
+<li>Nexus 7(2013)/9</li>
 <li>ZTE Grand S</li>
-<li>HTC One</li>
-<li>HTC 8X</li>
-<li>HTC Evo 3D</li>
+<li>HTC One/8X/Evo 3D</li>
 <li>Sony Xperia P/S/Z/Z3</li>
 <li>Xiaomi Redmi Note 5</li>
 <li>Xiaomi Mi 3/4</li>
@@ -239,7 +230,6 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 <li>LG G Pad 8.3</li>
 <li>Amazon Kindle Fire/HD7/HD8.9</li>
 <li>Microsoft Surface Pro 2/3</li>
-<li>Microsoft Surface</li>
 <li>Blackberry Playbook</li>
 </details>
   <details>
