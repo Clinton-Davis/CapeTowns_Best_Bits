@@ -184,14 +184,14 @@ I want to have the data for all the listing to be on an external server and reac
 - After all the JavaScript was completed, I ran through the code to make sure it was working and smoothly as possible.
 - Once all the elements were in place and working, I went through all the destinations one by one made sure all the  ID's and Google Maps API were all working correctly.
 -  I tested the contact us page to ensure the form linked to the emailjs API and email response is working correctly.
-- I tested the form for form validation, making sure it displayed the error if the input fields weren't left blank.
-- I tested the validation of the email input, to make anything other an email would be accepted.
+- I tested the form for form validation, making sure it displayed an error if a input fields was left blank.
+- I tested the validation of the email input, to make sure a email address was entered.
 - I tested the refresh speed to see how fast the page loaded from cached and uncached browsers. 
 - I used the speed variables available on Chrome developers Tools, Slow 3G / Fast 3G / Online. 
 With each speed, I test performance on Image loading time, HTML and CSS  loading time, JavaScript and JQaury CDN. Cached and uncached memory.<br>
 - I used [GTmetrix](https://gtmetrix.com) to test how fast the site loaded [Report](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/GTmetrix-report-.pdf)<br>
 
--  I send It to the SLack Comunity for Feedback. 
+-  I sent it to the Slack Comunity for Feedback. 
 -  Then I started the Media Query Test and all the Presets in Chrome and Firefox Development tools. 
 -  Below is a list of devices I tested on with [Website Responsive Testing] (Toolresponsivetesttool.com).
 
@@ -257,7 +257,7 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 <a name="bugs"></a>
 ## Bugs
 
--  I was having a problem with how to keep the destination lists separate data page and Still have the [Google Maps Api](https://cloud.google.com/maps-platform) connect with it.
+-  I was having a problem with how to keep the destination lists separate data page and still have the [Google Maps Api](https://cloud.google.com/maps-platform) connect with it.
 >   -  I solved this by having the data stored in a JSON like file in the same file as the [Google Maps Api](https://cloud.google.com/maps-platform) code and have data called with the.<br>
   `Javascript`<br>
 `function locationFinder(locationFinder_id)`
@@ -270,27 +270,52 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 * I had an issue with the jQuery toggle the "hide" Class, 
 >   -  To solve this, I used the `.css ("display" "none");`
 * The footer was running up and down the page when I was fading in and out the Selection element. 
-*
->   -  I solved this but placing `body {Display: Flex};` to the body of the page in CSS. Then a "wrapper" div with its <br>
+
+>   -  I solved this buy placing `body {Display: Flex};` to the body of the page in CSS. Then a "wrapper" div with its <br>
  `wrapper {height: auto;
                 min-height: 80vh;}`<br>
-                After witch I  added `footer: {margin-top: auto;}` To  keeped the footer in place.
+                After which I  added `footer: {margin-top: auto;}` to  keep the footer in place.
 
-* I had an issue with the selection lists columns. Only having one up at a time, If you selected any of the other columns, the 2 would be open at one time. 
+* I had an issue with the selection lists columns. Only having one up at a time, If you selected any of the other columns, the 2 would be open at one time.  
+
 >   -  To solve this, I gave them each their IDs and made the other selection option unavailable to use if one was open. You have to close one to open another.
+ 
+
 * When you clicked on the Wind Icon, the MapsContainer Div from the Map Section would open up. I had used the tag `<li>` as the 'Onclick' element on the selection, without realising that every `<li>` would be clickable. 
+
+
 >   -  I solved this by giving the li element in question there own class and made the class clickable.
+ 
+
 * I had an issue linking the HTML Geolocation concordance to the google maps directions service. 
+
+
 >   -  To solve this, I had to put the navigator.geolocation.getCurrentPosition inside the getDirectionsAndLocations function.
-* The issue I had with the "Loading... " icon was trying to getting it to disappear when the google maps API had fully loaded. <br>
->   -  I first used the `if (status == "OK")`statement in the google-API, but that made it disappear before the maps Directions had fully loaded. The status "Ok" happened long before the page had fully loaded, especially on slower networks. 
->   -  I solved this by using a JavaScript MutationObserver. I added it to the directions panel div to look for a change of attributes. If there is a change, it triggers the jQuery Function to close the "Loading..." and google icon divs.
-* The next bug I had was that if I used the "Back to Selection" button after using the Maps already and tried to use the Google Maps_Api again, the MutationObserver would not reset and look for the change in attribute again. 
->   -  I Solved this but using the 'Back-To-Main' Botton to refresh the page every time you use the Maps_Api. 
-* Because it refreshes the page every time, I was having an issue with loading times. I had a lot of high-resolution images.<br>
+ 
+
+* The issue I had with the "Loading... " icon was trying to getting it to disappear when the Google Maps API had fully loaded. 
+
+
+>   -  I first used the `if (status == "OK")`statement in the Google-API, but that made it disappear before the maps Directions had fully loaded. The status "Ok" happened long before the page had fully loaded, especially on slower networks. 
+>   -  I solved this by using a JavaScript MutationObserver. I added it to the directions panel div to look for a change of attributes. If there is a change, it triggers the jQuery Function to close the "Loading..." and Google icon divs.
+ 
+
+* The next bug I had was that if I used the "Back to Selection" button after using the Maps and tried to use the Google Maps_Api again, the MutationObserver would not reset and look for the change in attribute again. 
+
+
+>   -  I Solved this but using the 'Back-To-Main' Button to refresh the page every time you use the Maps_Api. 
+ 
+
+* Because it refreshes the page every time, I was having an issue with loading times. I had a lot of high-resolution images.
+
+
 >  *  I solved this but using [TinyPNG](https://tinypng.com/) and making the image size a lot smaller and keeping the quality at the same time.
-* I had a bug with the BackGround animation on the Main Heading. It was Slowing down the refresh and causing the animation to happen before the image had fully loaded. 
->   * I did some research and fond a piece of code on [CSS-Tricks](https://css-tricks.com/making-animations-wait/). It was explaining the same issue I was having, and the solution was to write 
+ 
+
+* I had a bug with the Background animation on the Main Heading. It was slowing down the refresh and causing the animation to happen before the image had fully loaded. 
+
+
+>   * I did some research and found a piece of code on [CSS-Tricks](https://css-tricks.com/making-animations-wait/). It was explaining the same issue I was having, and the solution was to write 
 `<script>document.documentElement.className += " js-loading";`
         `window.addEventListener("load", showPage, false);`
         `function showPage() {`
@@ -305,7 +330,7 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 ---
 <a name="deployment"></a>
 ## Deployment
-I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alone static webpage deployment website that links to your GitHub repository. It is deployed directly from the master branch or any other branches of your choosing. The beautiful thing about using Netlify is that it updates the feed as you git push changes to brach you are using to deploy.
+I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alone static webpage deployment website that links to your GitHub repository. It is deployed directly from the master branch or any other branches of your choosing. The beautiful thing about using Netlify is that it updates the feed as you git push changes to the branch you are using to deploy.
 
 
 <details>
@@ -368,7 +393,7 @@ Weather API code inspired by Code Ins Star wars API from code Star Wars project.
 - Intense sunset with silver lining and cloud on the orange sky By [C_Atta](https://www.shutterstock.com/image-photo/gorgeous-panorama-scenic-strong-sunrise-silver-1018650376)
 - Blue ocean waves By [Photo Junction](https://www.shutterstock.com/image-photo/blue-ocean-waves-1166741512)
 
-All destination images have been supplied by Google Maps or there own webpages.
+All destination images have been supplied by Google Maps or their own webpages.
 
 
 <a name="acknowledgements"></a>
