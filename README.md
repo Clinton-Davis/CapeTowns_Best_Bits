@@ -13,7 +13,7 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 
 ---
 
-![mulityscreenImg](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/smartmockups_CTBB80%.png)
+![mulityscreenImg](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/smartmockups_CTBB80%(1).png)
 
 ---
 
