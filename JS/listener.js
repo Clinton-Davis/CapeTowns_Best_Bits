@@ -6,7 +6,8 @@ function addSpinner() {
 	
 }
 /* This is a MutationObdrtver to see then the directions have been loaded by
-	the google-api */
+	the google-api. I was helped with this piece of code from dcode, 
+	and made it work how I needed it to  */
 const directionsList = document.querySelector("#directionsPanel");
 const observer = new MutationObserver(mutations => {
 	mutations.forEach(record => {

@@ -223,6 +223,7 @@ let selectionJSON = {
 	}
 };
 // locationFinder is the onClick function that calles InitMap function on "clicked" Location.
+/**Was Helped with locationFinder by my Mentor */
 var marker, iD;
 function locationFinder(locationFinder_id) {
 	iD = selectionJSON[locationFinder_id].Id;
@@ -234,6 +235,7 @@ function placeInfo() {
 		"placeInfo"
 	).innerHTML = `<p class="infoBackGround"> ${info}</p>`;
 }
+/**** A lot of this code is taken from the Google Maps Api Docs */
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -33.9142686, lng: 18.0955572 },
@@ -276,31 +278,24 @@ function initMap() {
 			} else {
 				var website = `${place.website}`;
 			}
-
 			var markerData =
 				'<div class="infowindowContiner">' +
-				'<div class="infowidHeading">' +
-				'<h2 class="infoHeading">' +
-				`${name}` +
-				"<br>" +
-				"</h2>" +
-				"</div>" +
-				`<div class="infobody">` +
-				'<p class="infobody" >' +
-				`${rating}` +
-				"</p>" +
-				`<p class="infobody" id="phone">` +
-				`${phone}` +
-				`</p>` +
-				`<a href="${website}" class="infobodyWeb" target="_blank">${website}</a>` +
-				"</div>" +
-				`<div class="imgRap">` +
-				`<img id="directionsImg" 
-					class="dirImg" 
-					onclick="getDirectionsAndLocations(), addSpinner()" 
-					src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
-					alt="Directions"</>` +
-				`</div>` +
+					'<div class="infowidHeading">' +
+						'<h2 class="infoHeading">' + `${name}` + "<br>" +
+						"</h2>" +
+					"</div>" +
+					`<div class="infobody">` +
+						'<p class="infobody" >' + `${rating}` + "</p>" +
+						`<p class="infobody" id="phone">` + `${phone}` + `</p>` +
+						`<a href="${website}" class="infobodyWeb" target="_blank">${website}</a>` +
+					"</div>" +
+					`<div class="imgRap">` +
+						`<img id="directionsImg" 
+							class="dirImg" 
+							onclick="getDirectionsAndLocations(), addSpinner()" 
+							src="./assets/images/icons/pageIcons/t-google-maps-icon-transp30x.png"
+							alt="Directions"</>` +
+					`</div>` +
 				"</div>";
 			var infowindow = new google.maps.InfoWindow({
 				content: markerData
@@ -323,7 +318,7 @@ function getDirectionsAndLocations() {
 	});
 	infoWindow = new google.maps.InfoWindow();
 	userMarker = new google.maps.Marker();
-	// geolocation form HTML.
+	// Getting lat and lng from HTML Geolocation
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
 			function(position) {

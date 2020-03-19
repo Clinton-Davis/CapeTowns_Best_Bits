@@ -1,9 +1,8 @@
+/* Validation Function */
 function validation() {
 	var inpObj = document.getElementById("message");
   if (!inpObj.checkValidity()) {
-    
   } else {
-	
 	document.getElementById("contact-Heading").innerHTML = 
 		`<h3 class="banger" id="con-Heading">Thank You, We'll be in Touch.</h3>`;
 		var subHeading = document.getElementById("subHeading");
@@ -12,9 +11,7 @@ function validation() {
 		form.classList.add("hide");
   } 
 } 
-	
-
-
+/* Sending Emails Function */
 function sendMail(contactForm) {
 	emailjs
 		.send("gmail", "cape_towns_best_bits", {

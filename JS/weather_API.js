@@ -17,7 +17,7 @@ xhr.onreadystatechange = function() {
 		var pressure = Math.floor(obj.main.pressure);
 		var wind = obj.wind.speed;
 		var direction = obj.wind.deg;
-		//If statment to turn Wind degrees into String Direction
+		//This If statment to turn Wind degrees into a Direction String
 		if (direction > 349 || direction <= 12) {
 			var dir = "N";
 		} else if (direction > 12 && direction <= 34) {
@@ -55,6 +55,7 @@ xhr.onreadystatechange = function() {
 		}
 		/*This code is from https://stackoverflow.com/convert-a-unix-timestamp-to-time-in-javascript 
 		made to work with my code base*/
+		/**This code gives the sunrise time stanp and converts it into a time sting */
 		let unix_timestampSunrise = obj.sys.sunrise;
 		var rdate = new Date(unix_timestampSunrise * 1000);
 		var rh = rdate.getHours();
@@ -72,19 +73,18 @@ xhr.onreadystatechange = function() {
 		writeToPage(), detailWeather();
 	}
 
-	//This function sets the Temps and wind to nav in index page
-	function writeToPage() {
-		document.getElementById(
-			"temp-api"
-		).innerHTML = `<a href="#" class="links link-hov" title="Feels Like ${feels_like}˚C. 'Click' for Details">${feels_like}˚C`;
-		document.getElementById("wind-api").innerHTML = `<img id="windsock" 
-			src="./assets/images/icons/pageIcons/icons8-wind-indicator-arrows-20.png" 
+	//This function sets the Temps and wind speed and direction to nav.
+	function writeToPage() {document.getElementById("temp-api").innerHTML = 
+		`<a href="#" class="links link-hov" title="Feels Like ${feels_like}˚C. 'Click' for Details">${feels_like}˚C`;
+		
+		document.getElementById("wind-api").innerHTML = 
+		`<img id="windsock" src="./assets/images/icons/pageIcons/icons8-wind-indicator-arrows-20.png" 
 			alt="windIcon"><a href="#" class="links link-hov" title="'Click' for Weather Details"> ${wind}<p class="kph">Kph</p>  ${dir}`;
 	}
+	/**This function sets the deatiled weather data into the weatherdeatils div */
 	function detailWeather() {
-		document.getElementById(
-			"info"
-		).innerHTML = `<ul id="weatherDetails" class="hide">
+		document.getElementById("info").innerHTML = 
+		`<ul id="weatherDetails" class="hide">
 			<h2> ${city}</h2>
 			<li>Feels Like: ${feels_like}˚C</li>
 			<li>Max Temp: ${tempsMax}˚C</li>
