@@ -180,7 +180,7 @@ I want to have the data for all the listing to be on an external server and reac
     `--secFont: "Montserrat", sans-serif;`<br>
     `--white: rgb(219, 217, 217);`<br>
 
-    These errors are an ongoing issue with w3, They are valid, but not recognised by W3. <br>[CSS variables ("custom properties"), a     widely supported and crucial feature. ](https://github.com/w3c/css-    validator/issues/111)<br>The reason I used them is: If I want to change the font s or colours in the future, I would have to change the Variables in question for the whole site. <br>
+    These errors are an ongoing issue with w3, They are valid, but not recognised by W3. <br>[CSS variables ("custom properties"), a widely supported and crucial feature.](https://github.com/w3c/css-validator/issues/111)<br>The reason I used them is: If I want to change the font s or colours in the future, I would have to change the Variables in question for the whole site. <br>
 
 - After all the JavaScript was compleated, I ran through the code to make sure it was working and smoothly as possible.
 - Once all the elements in their places and working, I went through all the destinations one by one made sure all the  ID's and Google Maps API were all working correctly.
