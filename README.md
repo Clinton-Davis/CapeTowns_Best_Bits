@@ -21,6 +21,8 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 ---
 
 ![mulityscreenImg](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/smartmockups_CTBB.png)
+
+---
 <a name="toc"></a>
 ## Table of Content
 1. [**UX**](#ux)
@@ -36,6 +38,7 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 11. [**Credits**](#credits)
 12. [**Acknowledgements**](#acknowledgements)
 
+---
 <a name="ux"></a>
 ## UX
 
@@ -58,11 +61,15 @@ All destinations have integrated Google Maps functionality for users to find the
 > 1. As a user, when I go on holiday I really love doing things in our own time and not have to be on other peoples schedules, The problem is I'm never sure whats the best things to do, It would be nice just to open a webpage and have a list of the best things.
 > 2. As a user, I want to be able to have one place where I can find a place, get directions and contact them if needed.
 
+---
+
 <a name="scope"></a>
 ## Scope
 Biggest problems, when people go away, is that there is much to do and so much information about so many things that they get overwhelmed, This website streamlines it down to the top 30 best things to do, divided into three categories. Cape Towns Best Bits makes it easy for people to decide. The next thing the user needs is a map or directions on how to get there. This is where integrated navigation comes in. It lets the user spent more time being on holiday and less time trying to find a destination and directions.
 The Target demographic is quite significant as the list of things to do and see are very bard, all ages and fitness profiles have many choices.
 The platform is easy to use and informative with little delay in getting the information they need.
+
+---
 <a name="structure"></a>
 ## Structure.
 
@@ -94,6 +101,7 @@ The platform is easy to use and informative with little delay in getting the inf
 The page looks the same on all devices. On wider screens, the background Image fits the full screen, and the web content centred.
 <a name="surface"></a>
 
+---
 ## Surface
 The Navigation Bar at the top is transparent with a bottom box-shadow to highlight that it is a Navigation section. 
 The Background image of Cape Town we used is has a lovely warmth to it. It shows all the significant parts that make up Cape Town, The City, the mountains and sea. This image is also the background for the contact page.
@@ -121,7 +129,7 @@ The Westen province rugby team inspires the choice of colour for the three main 
 - [Weather_Api](https://openweathermap.org/api)
 - [Google Maps Api](https://cloud.google.com/maps-platform)
 - [Website Responsive Testing](Toolresponsivetesttool.com)
-- [Validator](https://validator.w3.org/nu/)
+- [W3 Validator](https://validator.w3.org/nu/)
 - [Emailjs_Api](https://www.emailjs.com/)
 - [Gmail](https://www.gmail.com/)
 - [TinyPNG](https://tinypng.com/)
@@ -159,7 +167,7 @@ Would like to implement users local time to be displayed, through HTML Geolocati
 -  **Data Server**<br>
 I want to have the data for all the listing to be on an external server and reach them with a JSON call and not have them internally.
 
-
+---
 
 <a name="testing"></a>
 ## Testing
@@ -253,7 +261,7 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 </details>
 
 
-
+---
 
 <a name="bugs"></a>
 ## Bugs
@@ -303,6 +311,7 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 ` {animation-play-state: paused !important;}`
 
 
+---
 <a name="deployment"></a>
 ## Deployment
 I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alone static webpage deployment website that links to your GitHub repository. It is deployed directly from the master branch or any other branches of your choosing. The beautiful thing about using Netlify is that it updates the feed as you git push changes to brach you are using to deploy.
@@ -385,5 +394,7 @@ For the use of code and knowledge.
 - [GitHub](https://github.com/) for documentation on how to [How to Clone Repository](https://bit.ly/32Emdbc).
 - [Google Fonts](https://fonts.google.com/) for fonts.
 - [Slack](https://slack.com/intl/en-ie/) community for Testing / Encouragement / Code Snippets and pointers.<br> 
+
+---
 
 [Back to top ](#toc)
