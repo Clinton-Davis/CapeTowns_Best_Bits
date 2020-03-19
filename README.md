@@ -2,11 +2,11 @@
 
 
 
-## Interactive Frontend Development - _Code institute_
+## Interactive Frontend Development - Code institute
 
 ---
 
-> **_Cape Towns Best bits_** _is a Do It Your Self_ webpage that streamlines the process of finding listed destinations and things to do in Cape Town without having to go through a tour company. 
+> **_Cape Towns Best Bits_** is a _Do It Your Self_ webpage that streamlines the process of finding listed destinations and things to do in Cape Town without having to go through a tour company. 
 
 
 
@@ -24,7 +24,7 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 
 ---
 <a name="toc"></a>
-## Table of Content
+## Table of Contents
 1. [**UX**](#ux)
 2. [**Scope**](#scope)
 3. [**Structure**](#structure)
@@ -42,7 +42,7 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 <a name="ux"></a>
 ## UX
 
-My clients wanted an "_Eyechacking, Young and Viderant_", website with a _family friendly feel_. 
+My clients wanted an "_Eye catching, Young and Vibrant_", website with a _family friendly feel_. 
 Moblie friendly, and easy to use with functional navigation. <br>
 Their Goals are:<br>
 *  To get more users traffic through the site.<br>
@@ -50,23 +50,23 @@ Their Goals are:<br>
 *  To get more sponsored destinations
 
 
-We broke up the list into three categories. Sights, adventure, Foodies. <br>
-**Sights:**  or Sightseeing is a list of sponsored or most Rated Sightsee destination. For all ages.<br>
-**Adventure:** Is for the more active user, some of the things on the list or very adventurous, and gets the hard beating, not for everyone, more amid at adults and teenagers.<br>
+We broke up the list into three categories. Sights, Adventure, Foodies. <br>
+**Sights:**  or Sightseeing is a list of sponsored or most Rated Sightseeing destination. For all ages.<br>
+**Adventure:** Is for the more active user, some of the things on the list are very adventurous, and gets the hard beating. Not for everyone, more aimed at adults and teenagers.<br>
 **Foodies:** Is a list of the top-rated and sponsored restaurants, from local to Michelin star. For all ages.<br>
-All destinations have integrated Google Maps functionality for users to find there way to there destinations with ease. We use the current user position and google Maps API to send a step by step list of directions.
+All destinations have integrated Google Maps functionality for users to find their way to their destinations with ease. We use the current user position and Google Maps API to send a step by step list of directions.
 
 ### User Stories
 
 > 1. As a user, when I go on holiday I really love doing things in our own time and not have to be on other peoples schedules, The problem is I'm never sure whats the best things to do, It would be nice just to open a webpage and have a list of the best things.
-> 2. As a user, I want to be able to have one place where I can find a place, get directions and contact them if needed.
+> 2. As a user, I want to be able to have one location where I can find a place, get directions and contact them if needed.
 
 ---
 
 <a name="scope"></a>
 ## Scope
-Biggest problems, when people go away, is that there is much to do and so much information about so many things that they get overwhelmed, This website streamlines it down to the top 30 best things to do, divided into three categories. Cape Towns Best Bits makes it easy for people to decide. The next thing the user needs is a map or directions on how to get there. This is where integrated navigation comes in. It lets the user spent more time being on holiday and less time trying to find a destination and directions.
-The Target demographic is quite significant as the list of things to do and see are very bard, all ages and fitness profiles have many choices.
+The biggest problems, when people go to Cape Town, is that there is so much to see and do, and so much information things can get overwhelming. This website streamlines it down to the top 30 best things to do, divided into three categories. Cape Towns Best Bits makes it easy for people to decide. The next thing the user needs is a map or directions on how to get there. This is where integrated navigation comes in. It lets the user spend more time being on holiday and less time trying to find a destination and directions.
+The Target demographic is quite large as the list of things to see and to are very broad, all ages and fitness profiles have many choices.
 The platform is easy to use and informative with little delay in getting the information they need.
 
 ---
@@ -81,35 +81,34 @@ The platform is easy to use and informative with little delay in getting the inf
    - About link - opens up a Modal with information for the user<br>
    - Contact link - Open the Contact page with the email form. 
  -  **-Main Heading-**
-   -  The main Heading Front and centre.
+   -  The main heading front and centre.
  -  **-Three Category Selection Buttons-**
    -  Sights / Adventure / Foodie.
-  -  Click the button, and the main page heading fades away to reveal lists of destinations. On the right is an image for each place. 
+  -  Click the button, and the main page heading fades away to reveal lists of destinations. On the right is an image for each destination. 
 
  
 
    
 ####**_Contact Page_**  
   - **-Email Form-**
-    - The form that asks the user to leave a comment via email and sends an automated response.
+    - The form asks the user to leave a comment via email and sends an automated response.
 
 <a name="wireframes"></a>
 
 #### Wireframe Mockups
 
 - [Main Page](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/CapeTownBestBitsWireFrames.png)<br>
-The page looks the same on all devices. On wider screens, the background Image fits the full screen, and the web content centred.
+The page looks the same on all devices. On wider screens, the background Image fits the full screen, and the web content is centred.
 <a name="surface"></a>
 
 ---
 ## Surface
 The Navigation Bar at the top is transparent with a bottom box-shadow to highlight that it is a Navigation section. 
-The Background image of Cape Town we used is has a lovely warmth to it. It shows all the significant parts that make up Cape Town, The City, the mountains and sea. This image is also the background for the contact page.
-I went for a big font from [Google Fonts](https://fonts.google.com/), called *"Banger"* as the primary font. I chose this font because it has a rustic feel and can get away with being very large without being overbearing. The secondary font is *"Montserrat"*<br>
-It is clean and clear, and they complement each other.
+The background image of Cape Town I used has a lovely warmth to it. It shows all the significant parts that make up Cape Town, The city, The mountains and sea. This image is also the background for the contact page.
+I went for a big font from [Google Fonts](https://fonts.google.com/), called *"Banger"* as the primary font. I chose this font because it has a rustic feel and can get away with being very large without being overbearing. The secondary font is *"Montserrat"*. It is clean and clear, and they complement each other.
 
-The moving backgrounds in the main page headings to make it more eye checking, The Main Heading has the blue sky, the Best Bits has one of Cape Town spectacular sunsets, the DIY  heading has the two oceans.
-The Westen province rugby team inspires the choice of colour for the three main option buttons; witch colours are Blue and white.
+The moving backgrounds on the main page headings make it more eye catching, The main heading has the blue sky, the Best Bits has one of Cape Towns spectacular sunsets, the DIY  heading has the two oceans.
+The Westen province rugby team inspires the choice of colour for the main option buttons; which are Blue and white.
 
 
 
@@ -143,13 +142,13 @@ The Westen province rugby team inspires the choice of colour for the three main 
 ## Features
 
 - **Current local weather** <br>
-Current local weather using [Weather_Api](https://openweathermap.org/api) , including wind speed and directions. Cape Town is known to be the Cape of Storms and can have fierce wind and Weather, so having this helps the user decide to be indoor or outs. More details are available when clicking on the Wind Icon or Temperature. i.e., Sunrise and Sunset times / Humidity /Air Pressure if Clouds or rain is forecast.<br>
+Current local weather using [Weather_Api](https://openweathermap.org/api) , including wind speed and directions. Cape Town is known to be the Cape of Storms and can have fierce wind and weather, so having this helps the user decide to be indoor or outs. More details are available when clicking on the Wind Icon or Temperature. i.e., Sunrise and Sunset times / Humidity /Air Pressure / cloud cover / rain.<br>
 - **Destination Information** <br>
-Each destination is linked to the [Google Maps Api](https://cloud.google.com/maps-platform) using the google place id so that the user can get the location of the destination its local phone number (if any) and website (If any).
+Each destination is linked to the [Google Maps Api](https://cloud.google.com/maps-platform) using the Google place id so that the user can get the location of the destination its local phone number (if any) and website (if any).
 - **Users Current Location**<br>
-[HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API let the webpage get the current position of the user using a browser. On first use, the browers will ask the user for permission to use user location.
+[HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API lets the webpage get the current position of the user using the browser. On first use, the browers will ask the user for permission to use their location.
 - **Step by step instructions**<br>
-When the user 'clicks' on the 'Get Directions' button after selecting the desired destination. The [Google Maps Api](https://cloud.google.com/maps-platform) triggers the [HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API, which triggers the custom loading.. animation. When the data is returned to the user, it populates the Map Information section.
+When the user clicks on the 'Get Directions' button after selecting the desired destination, the [Google Maps Api](https://cloud.google.com/maps-platform) triggers the [HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API, which triggers the custom "loading.." animation. When the data is returned to the user, it populates the Map Information section.
 - **AutoReplay email.**<br>
 On the contact us page, there is a form for email comments or questions.
 
@@ -163,7 +162,7 @@ I want to implement a change in the Background Picture with night and Day. i.e.,
 -  **Additional List**<br>
 I want to implement a *Night Club* list that appears after sunset. A list of all the night clubs in Cape Town.
 -  **Local Time**<br>
-Would like to implement users local time to be displayed, through HTML Geolocation. 
+I would like to implement users local time to be displayed, through HTML Geolocation. 
 -  **Data Server**<br>
 I want to have the data for all the listing to be on an external server and reach them with a JSON call and not have them internally.
 
@@ -174,20 +173,23 @@ I want to have the data for all the listing to be on an external server and reac
 - The first phase of testing is a step by step basis. As I implemented a new code I tested it on [Chrome Developer](https://developers.google.com/web/tools/chrome-devtools) I used the extension called [Live Server](https://github.com/ritwickdey/vscode-live-server)
  on [Visual Studio Code](https://code.visualstudio.com/). 
 -  I tested HTML with w3 Validator. Passed
--  I tested CSS with w3 Validator. I got a few warming and errors with CSS Varables<br>
+-  I tested CSS with w3 Validator. I got a few warning and errors with CSS Variables<br>
 
     `--headFont: "Bangers", sans-serif;`<br>
     `--secFont: "Montserrat", sans-serif;`<br>
     `--white: rgb(219, 217, 217);`<br>
 
-    These errors are an ongoing issue with w3, They are valid, but not recognised by W3. <br>[CSS variables ("custom properties"), a widely supported and crucial feature.](https://github.com/w3c/css-validator/issues/111)<br>The reason I used them is: If I want to change the font s or colours in the future, I would have to change the Variables in question for the whole site. <br>
+    These errors are an ongoing issue with w3, They are valid, but not recognised by W3. <br>[CSS variables ("custom properties"), a widely supported and crucial feature.](https://github.com/w3c/css-validator/issues/111)<br>The reason I used them is: If I want to change the font s or colours in the future, I would have to change the variables in question for the entire site. <br>
 
-- After all the JavaScript was compleated, I ran through the code to make sure it was working and smoothly as possible.
-- Once all the elements in their places and working, I went through all the destinations one by one made sure all the  ID's and Google Maps API were all working correctly.
-- I test the refresh speed to see how fast it loaded from cached and uncached browsers. 
+- After all the JavaScript was completed, I ran through the code to make sure it was working and smoothly as possible.
+- Once all the elements were in place and working, I went through all the destinations one by one made sure all the  ID's and Google Maps API were all working correctly.
+-  I tested the contact us page to ensure the form linked to the emailjs API and email response is working correctly.
+- I tested the form for form validation, making sure it displayed the error if the input fields weren't left blank.
+- I tested the validation of the email input, to make anything other an email would be accepted.
+- I tested the refresh speed to see how fast the page loaded from cached and uncached browsers. 
 - I used the speed variables available on Chrome developers Tools, Slow 3G / Fast 3G / Online. 
 With each speed, I test performance on Image loading time, HTML and CSS  loading time, JavaScript and JQaury CDN. Cached and uncached memory.<br>
-- I used [GTmetrix](gtmetrix.com) to test how fast the site loaded [Report](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/GTmetrix-report-.pdf)<br>
+- I used [GTmetrix](https://gtmetrix.com) to test how fast the site loaded [Report](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/GTmetrix-report-.pdf)<br>
 
 -  I send It to the SLack Comunity for Feedback. 
 -  Then I started the Media Query Test and all the Presets in Chrome and Firefox Development tools. 
