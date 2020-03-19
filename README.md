@@ -171,7 +171,7 @@ I want to have the data for all the listing to be on an external server and reac
 
 <a name="testing"></a>
 ## Testing
-- The first phase of testing is a step by step basis. As I implemented a new code I tested it on [Chrome Developer] (https://developers.google.com/web/tools/chrome-devtools) I used the extension called [Live Server](https://github.com/ritwickdey/vscode-live-server)
+- The first phase of testing is a step by step basis. As I implemented a new code I tested it on [Chrome Developer](https://developers.google.com/web/tools/chrome-devtools) I used the extension called [Live Server](https://github.com/ritwickdey/vscode-live-server)
  on [Visual Studio Code](https://code.visualstudio.com/). 
 -  I tested HTML with w3 Validator. Passed
 -  I tested CSS with w3 Validator. I got a few warming and errors with CSS Varables<br>
