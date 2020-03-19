@@ -196,8 +196,7 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
  <details>
 <summary>Moblies</summary> 
 <ul>
-<li>iPhone 8/8Plus/X/XR/XS/XSMax</li>
-<li>Apple iPhone 3/4/4s/5/5s/6/6s/6 plus/7/7 Plus</li>
+<li>Apple iPhone 3/4/4s/5/5s/6/6s/6plus/7/7Plus/8/8Plus/X/XR/XS/XSMax</li>
 <li>Nexus 6P/5X</li>
 <li>Google Pixel 2/XL</li>
 <li>Samsung Galaxy S S2/S3/S4/S5/S6/S7/S8/S8+/S9/S9+</li>
