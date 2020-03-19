@@ -343,10 +343,14 @@ I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alon
 <a name="Credits"></a>
 ## Credits
 
+
 ##### Design:
+
+
 The concept and design by Clinton Davis
 
 ##### Content:
+
 The destinations websites supply the information on the destinations, with some additional information by Google Maps and Lonely Planet guide books.<br>
 90% of the code for the Google Maps API supplied by Google Maps Documentation.<br>
 Weather API code inspired by Code Ins Star wars API from code Star Wars project.
