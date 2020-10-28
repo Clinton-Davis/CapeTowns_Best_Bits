@@ -1,19 +1,13 @@
 # Cape Towns Best Bits
 
-
-
 ## Interactive Frontend Development - Code institute
 
 ---
 
-> **_Cape Towns Best Bits_** is a _Do It Your Self_ webpage that streamlines the process of finding listed destinations and things to do in Cape Town without having to go through a tour company. 
-
-
-
-
-
+> **_Cape Towns Best Bits_** is a _Do It Your Self_ webpage that streamlines the process of finding listed destinations and things to do in Cape Town without having to go through a tour company.
 
 ---
+
 ## Demo
 
 A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
@@ -23,8 +17,11 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 ![mulityscreenImg](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/smartmockups_CTBB80.png)
 
 ---
+
 <a name="toc"></a>
+
 ## Table of Contents
+
 1. [**UX**](#ux)
 2. [**Scope**](#scope)
 3. [**Structure**](#structure)
@@ -39,19 +36,21 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 12. [**Acknowledgements**](#acknowledgements)
 
 ---
+
 <a name="ux"></a>
+
 ## UX
 
-My clients wanted an "_Eye catching, Young and Vibrant_", website with a _family friendly feel_. 
+My clients wanted an "_Eye catching, Young and Vibrant_", website with a _family friendly feel_.
 Moblie friendly, and easy to use with functional navigation. <br>
 Their Goals are:<br>
-*  To get more users traffic through the site.<br>
-*  To get more users to the listed destination. <br>
-*  To get more sponsored destinations
 
+- To get more users traffic through the site.<br>
+- To get more users to the listed destination. <br>
+- To get more sponsored destinations
 
 We broke up the list into three categories. Sights, Adventure, Foodies. <br>
-**Sights:**  or Sightseeing is a list of sponsored or most Rated Sightseeing destination. For all ages.<br>
+**Sights:** or Sightseeing is a list of sponsored or most Rated Sightseeing destination. For all ages.<br>
 **Adventure:** Is for the more active user, some of the things on the list are very adventurous, and gets the hard beating. Not for everyone, more aimed at adults and teenagers.<br>
 **Foodies:** Is a list of the top-rated and sponsored restaurants, from local to Michelin star. For all ages.<br>
 All destinations have integrated Google Maps functionality for users to find their way to their destinations with ease. We use the current user position and Google Maps API to send a step by step list of directions.
@@ -64,58 +63,62 @@ All destinations have integrated Google Maps functionality for users to find the
 ---
 
 <a name="scope"></a>
+
 ## Scope
+
 The biggest problems, when people go to Cape Town, is that there is so much to see and do, and so much information things can get overwhelming. This website streamlines it down to the top 30 best things to do, divided into three categories. Cape Towns Best Bits makes it easy for people to decide. The next thing the user needs is a map or directions on how to get there. This is where integrated navigation comes in. It lets the user spend more time being on holiday and less time trying to find a destination and directions.
 The Target demographic is quite large as the list of things to see and to are very broad, all ages and fitness profiles have many choices.
 The platform is easy to use and informative with little delay in getting the information they need.
 
 ---
-<a name="structure"></a>
-## Structure.
 
+<a name="structure"></a>
+
+## Structure
 
 #### **_Main Page_**
- - **-Navigation Bar-**
-   - Table Mountain Icon on the left that is clickable and sends the user to the main page.<br>
-   - Up to date Weather for Cape Town, With "_feels like_" Temps and current wind speed in KPH and direction.<br>
-   - About link - opens up a Modal with information for the user<br>
-   - Contact link - Open the Contact page with the email form. 
- -  **-Main Heading-**
-   -  The main heading front and centre.
- -  **-Three Category Selection Buttons-**
-   -  Sights / Adventure / Foodie.
-  -  Click the button, and the main page heading fades away to reveal lists of destinations. On the right is an image for each destination. 
 
- 
+- **-Navigation Bar-**
+  - Table Mountain Icon on the left that is clickable and sends the user to the main page.<br>
+  - Up to date Weather for Cape Town, With "_feels like_" Temps and current wind speed in KPH and direction.<br>
+  - About link - opens up a Modal with information for the user<br>
+  - Contact link - Open the Contact page with the email form.
+- **-Main Heading-**
+- The main heading front and centre.
+- **-Three Category Selection Buttons-**
+- Sights / Adventure / Foodie.
+- Click the button, and the main page heading fades away to reveal lists of destinations. On the right is an image for each destination.
 
-   
-####**_Contact Page_**  
-  - **-Email Form-**
-    - The form asks the user to leave a comment via email and sends an automated response.
+#### **_Contact Page_**
+
+- **-Email Form-**
+  - The form asks the user to leave a comment via email and sends an automated response.
 
 <a name="wireframes"></a>
 
 #### Wireframe Mockups
 
-- [Main Page](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/CapeTownBestBitsWireFrames.png)<br>
-The page looks the same on all devices. On wider screens, the background Image fits the full screen, and the web content is centred.
-<a name="surface"></a>
+- [Main Page](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/CapeTownBestBitsWireFrames.png)
+  <br>
+
+  The page looks the same on all devices. On wider screens, the background Image fits the full screen, and the web content is centred.
+  <a name="surface"></a>
 
 ---
-## Surface
-The Navigation Bar at the top is transparent with a bottom box-shadow to highlight that it is a Navigation section. 
-The background image of Cape Town I used has a lovely warmth to it. It shows all the significant parts that make up Cape Town, The city, The mountains and sea. This image is also the background for the contact page.
-I went for a big font from [Google Fonts](https://fonts.google.com/), called *"Banger"* as the primary font. I chose this font because it has a rustic feel and can get away with being very large without being overbearing. The secondary font is *"Montserrat"*. It is clean and clear, and they complement each other.
 
-The moving backgrounds on the main page headings make it more eye catching, The main heading has the blue sky, the Best Bits has one of Cape Towns spectacular sunsets, the DIY  heading has the two oceans.
+## Surface
+
+The Navigation Bar at the top is transparent with a bottom box-shadow to highlight that it is a Navigation section.
+The background image of Cape Town I used has a lovely warmth to it. It shows all the significant parts that make up Cape Town, The city, The mountains and sea. This image is also the background for the contact page.
+I went for a big font from [Google Fonts](https://fonts.google.com/), called _"Banger"_ as the primary font. I chose this font because it has a rustic feel and can get away with being very large without being overbearing. The secondary font is _"Montserrat"_. It is clean and clear, and they complement each other.
+
+The moving backgrounds on the main page headings make it more eye catching, The main heading has the blue sky, the Best Bits has one of Cape Towns spectacular sunsets, the DIY heading has the two oceans.
 The Westen province rugby team inspires the choice of colour for the main option buttons; which are Blue and white.
 
-
-
-
-
 ---
+
 <a name="technologies"></a>
+
 ## Technologies
 
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -132,68 +135,71 @@ The Westen province rugby team inspires the choice of colour for the main option
 - [Emailjs_Api](https://www.emailjs.com/)
 - [Gmail](https://www.gmail.com/)
 - [TinyPNG](https://tinypng.com/)
-- [GTmetrix](gtmetrix.com)
+- [GTmetrix](https://gtmetrix.com/)
 - [Netlify](https://www.netlify.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [CSSMatric](https://cssmatic.com/)
 
 ---
+
 <a name="features"></a>
+
 ## Features
 
 - **Current local weather** <br>
-Current local weather using [Weather_Api](https://openweathermap.org/api) , including wind speed and directions. Cape Town is known to be the Cape of Storms and can have fierce wind and weather, so having this helps the user decide to be indoor or outs. More details are available when clicking on the Wind Icon or Temperature. i.e., Sunrise and Sunset times / Humidity /Air Pressure / cloud cover / rain.<br>
+  Current local weather using [Weather_Api](https://openweathermap.org/api) , including wind speed and directions. Cape Town is known to be the Cape of Storms and can have fierce wind and weather, so having this helps the user decide to be indoor or outs. More details are available when clicking on the Wind Icon or Temperature. i.e., Sunrise and Sunset times / Humidity /Air Pressure / cloud cover / rain.<br>
 - **Destination Information** <br>
-Each destination is linked to the [Google Maps Api](https://cloud.google.com/maps-platform) using the Google place id so that the user can get the location of the destination its local phone number (if any) and website (if any).
+  Each destination is linked to the [Google Maps Api](https://cloud.google.com/maps-platform) using the Google place id so that the user can get the location of the destination its local phone number (if any) and website (if any).
 - **Users Current Location**<br>
-[HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API lets the webpage get the current position of the user using the browser. On first use, the browers will ask the user for permission to use their location.
+  [HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API lets the webpage get the current position of the user using the browser. On first use, the browers will ask the user for permission to use their location.
 - **Step by step instructions**<br>
-When the user clicks on the 'Get Directions' button after selecting the desired destination, the [Google Maps Api](https://cloud.google.com/maps-platform) triggers the [HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API, which triggers the custom "loading.." animation. When the data is returned to the user, it populates the Map Information section.
+  When the user clicks on the 'Get Directions' button after selecting the desired destination, the [Google Maps Api](https://cloud.google.com/maps-platform) triggers the [HTML5](https://en.wikipedia.org/wiki/HTML) Geolocation API, which triggers the custom "loading.." animation. When the data is returned to the user, it populates the Map Information section.
 - **AutoReplay email.**<br>
-On the contact us page, there is a form for email comments or questions.
-
-
+  On the contact us page, there is a form for email comments or questions.
 
 ### Features Left to Implement
--  **Directions to be emailed**<br>
-Step by step directions to be emailed to the user.<br>
--  **Changing Themes**<br>
-I want to implement a change in the Background Picture with night and Day. i.e., when its night, change the image to a nighttime image and headings change accordingly.<br>
--  **Additional List**<br>
-I want to implement a *Night Club* list that appears after sunset. A list of all the night clubs in Cape Town.
--  **Local Time**<br>
-I would like to implement users local time to be displayed, through HTML Geolocation. 
--  **Data Server**<br>
-I want to have the data for all the listing to be on an external server and reach them with a JSON call and not have them internally.
+
+- **Directions to be emailed**<br>
+  Step by step directions to be emailed to the user.<br>
+- **Changing Themes**<br>
+  I want to implement a change in the Background Picture with night and Day. i.e., when its night, change the image to a nighttime image and headings change accordingly.<br>
+- **Additional List**<br>
+  I want to implement a _Night Club_ list that appears after sunset. A list of all the night clubs in Cape Town.
+- **Local Time**<br>
+  I would like to implement users local time to be displayed, through HTML Geolocation.
+- **Data Server**<br>
+  I want to have the data for all the listing to be on an external server and reach them with a JSON call and not have them internally.
 
 ---
 
 <a name="testing"></a>
+
 ## Testing
+
 - The first phase of testing is a step by step basis. As I implemented a new code I tested it on [Chrome Developer](https://developers.google.com/web/tools/chrome-devtools) I used the extension called [Live Server](https://github.com/ritwickdey/vscode-live-server)
- on [Visual Studio Code](https://code.visualstudio.com/). 
--  I tested HTML with w3 Validator. Passed
--  I tested CSS with w3 Validator. I got a few warning and errors with CSS Variables<br>
+  on [Visual Studio Code](https://code.visualstudio.com/).
+- I tested HTML with w3 Validator. Passed
+- I tested CSS with w3 Validator. I got a few warning and errors with CSS Variables<br>
 
-    `--headFont: "Bangers", sans-serif;`<br>
-    `--secFont: "Montserrat", sans-serif;`<br>
-    `--white: rgb(219, 217, 217);`<br>
+  `--headFont: "Bangers", sans-serif;`<br>
+  `--secFont: "Montserrat", sans-serif;`<br>
+  `--white: rgb(219, 217, 217);`<br>
 
-    These errors are an ongoing issue with w3, They are valid, but not recognised by W3. <br>[CSS variables ("custom properties"), a widely supported and crucial feature.](https://github.com/w3c/css-validator/issues/111)<br>The reason I used them is: If I want to change the font s or colours in the future, I would have to change the variables in question for the entire site. <br>
+  These errors are an ongoing issue with w3, They are valid, but not recognised by W3. <br>[CSS variables ("custom properties"), a widely supported and crucial feature.](https://github.com/w3c/css-validator/issues/111)<br>The reason I used them is: If I want to change the font s or colours in the future, I would have to change the variables in question for the entire site. <br>
 
 - After all the JavaScript was completed, I ran through the code to make sure it was working and smoothly as possible.
-- Once all the elements were in place and working, I went through all the destinations one by one made sure all the  ID's and Google Maps API were all working correctly.
--  I tested the contact us page to ensure the form linked to the emailjs API and email response is working correctly.
+- Once all the elements were in place and working, I went through all the destinations one by one made sure all the ID's and Google Maps API were all working correctly.
+- I tested the contact us page to ensure the form linked to the emailjs API and email response is working correctly.
 - I tested the form for form validation, making sure it displayed an error if a input fields was left blank.
 - I tested the validation of the email input, to make sure a email address was entered.
-- I tested the refresh speed to see how fast the page loaded from cached and uncached browsers. 
-- I used the speed variables available on Chrome developers Tools, Slow 3G / Fast 3G / Online. 
-With each speed, I test performance on Image loading time, HTML and CSS  loading time, JavaScript and JQaury CDN. Cached and uncached memory.<br>
+- I tested the refresh speed to see how fast the page loaded from cached and uncached browsers.
+- I used the speed variables available on Chrome developers Tools, Slow 3G / Fast 3G / Online.
+  With each speed, I test performance on Image loading time, HTML and CSS loading time, JavaScript and JQaury CDN. Cached and uncached memory.<br>
 - I used [GTmetrix](https://gtmetrix.com) to test how fast the site loaded [Report](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/GTmetrix-report-.pdf)<br>
 
--  I sent it to the Slack Comunity for Feedback. 
--  Then I started the Media Query Test and all the Presets in Chrome and Firefox Development tools. 
--  Below is a list of devices I tested on with [Website Responsive Testing] (Toolresponsivetesttool.com).
+- I sent it to the Slack Comunity for Feedback.
+- Then I started the Media Query Test and all the Presets in Chrome and Firefox Development tools.
+- Below is a list of devices I tested on with [Website Responsive Testing] (Toolresponsivetesttool.com).
 
  <details>
 <summary>Moblies</summary> 
@@ -251,87 +257,74 @@ With each speed, I test performance on Image loading time, HTML and CSS  loading
 <li>5120 x 2880</li>
 </details>
 
-
 ---
 
 <a name="bugs"></a>
+
 ## Bugs
 
--  I was having a problem with how to keep the destination lists separate data page and still have the [Google Maps Api](https://cloud.google.com/maps-platform) connect with it.
->   -  I solved this by having the data stored in a JSON like file in the same file as the [Google Maps Api](https://cloud.google.com/maps-platform) code and have data called with the.<br>
-  `Javascript`<br>
-`function locationFinder(locationFinder_id)`
-`{iD = selectionJSON[locationFinder_id].Id;`
-      ` info = selectionJSON[locationFinder_id].info};
-`
+- I was having a problem with how to keep the destination lists separate data page and still have the [Google Maps Api](https://cloud.google.com/maps-platform) connect with it.
+  > - I solved this by having the data stored in a JSON like file in the same file as the [Google Maps Api](https://cloud.google.com/maps-platform) code and have data called with the.<br> > `Javascript`<br> > `function locationFinder(locationFinder_id)` > `{iD = selectionJSON[locationFinder_id].Id;`
+        ` info = selectionJSON[locationFinder_id].info};
+  `
 
+* I had an issue with the jQuery toggle the "hide" Class,
+  > - To solve this, I used the `.css ("display" "none");`
+* The footer was running up and down the page when I was fading in and out the Selection element.
 
-     
-* I had an issue with the jQuery toggle the "hide" Class, 
->   -  To solve this, I used the `.css ("display" "none");`
-* The footer was running up and down the page when I was fading in and out the Selection element. 
+> - I solved this buy placing `body {Display: Flex};` to the body of the page in CSS. Then a "wrapper" div with its <br>
+>   `wrapper {height: auto;
 
->   -  I solved this buy placing `body {Display: Flex};` to the body of the page in CSS. Then a "wrapper" div with its <br>
- `wrapper {height: auto;
                 min-height: 80vh;}`<br>
                 After which I  added `footer: {margin-top: auto;}` to  keep the footer in place.
 
-* I had an issue with the selection lists columns. Only having one up at a time, If you selected any of the other columns, the 2 would be open at one time.  
+- I had an issue with the selection lists columns. Only having one up at a time, If you selected any of the other columns, the 2 would be open at one time.
 
->   -  To solve this, I gave them each their IDs and made the other selection option unavailable to use if one was open. You have to close one to open another.
- 
+> - To solve this, I gave them each their IDs and made the other selection option unavailable to use if one was open. You have to close one to open another.
 
-* When you clicked on the Wind Icon, the MapsContainer Div from the Map Section would open up. I had used the tag `<li>` as the 'Onclick' element on the selection, without realising that every `<li>` would be clickable. 
+- When you clicked on the Wind Icon, the MapsContainer Div from the Map Section would open up. I had used the tag `<li>` as the 'Onclick' element on the selection, without realising that every `<li>` would be clickable.
 
+> - I solved this by giving the li element in question there own class and made the class clickable.
 
->   -  I solved this by giving the li element in question there own class and made the class clickable.
- 
+- I had an issue linking the HTML Geolocation concordance to the google maps directions service.
 
-* I had an issue linking the HTML Geolocation concordance to the google maps directions service. 
+> - To solve this, I had to put the navigator.geolocation.getCurrentPosition inside the getDirectionsAndLocations function.
 
+- The issue I had with the "Loading... " icon was trying to getting it to disappear when the Google Maps API had fully loaded.
 
->   -  To solve this, I had to put the navigator.geolocation.getCurrentPosition inside the getDirectionsAndLocations function.
- 
+> - I first used the `if (status == "OK")`statement in the Google-API, but that made it disappear before the maps Directions had fully loaded. The status "Ok" happened long before the page had fully loaded, especially on slower networks.
+> - I solved this by using a JavaScript MutationObserver. I added it to the directions panel div to look for a change of attributes. If there is a change, it triggers the jQuery Function to close the "Loading..." and Google icon divs.
 
-* The issue I had with the "Loading... " icon was trying to getting it to disappear when the Google Maps API had fully loaded. 
+- The next bug I had was that if I used the "Back to Selection" button after using the Maps and tried to use the Google Maps_Api again, the MutationObserver would not reset and look for the change in attribute again.
 
+> - I Solved this but using the 'Back-To-Main' Button to refresh the page every time you use the Maps_Api.
 
->   -  I first used the `if (status == "OK")`statement in the Google-API, but that made it disappear before the maps Directions had fully loaded. The status "Ok" happened long before the page had fully loaded, especially on slower networks. 
->   -  I solved this by using a JavaScript MutationObserver. I added it to the directions panel div to look for a change of attributes. If there is a change, it triggers the jQuery Function to close the "Loading..." and Google icon divs.
- 
+- Because it refreshes the page every time, I was having an issue with loading times. I had a lot of high-resolution images.
 
-* The next bug I had was that if I used the "Back to Selection" button after using the Maps and tried to use the Google Maps_Api again, the MutationObserver would not reset and look for the change in attribute again. 
+> - I solved this but using [TinyPNG](https://tinypng.com/) and making the image size a lot smaller and keeping the quality at the same time.
 
+- I had a bug with the Background animation on the Main Heading. It was slowing down the refresh and causing the animation to happen before the image had fully loaded.
 
->   -  I Solved this but using the 'Back-To-Main' Button to refresh the page every time you use the Maps_Api. 
- 
+> - I did some research and found a piece of code on [CSS-Tricks](https://css-tricks.com/making-animations-wait/). It was explaining the same issue I was having, and the solution was to write
+>   `<script>document.documentElement.className += " js-loading";`
 
-* Because it refreshes the page every time, I was having an issue with loading times. I had a lot of high-resolution images.
-
-
->  *  I solved this but using [TinyPNG](https://tinypng.com/) and making the image size a lot smaller and keeping the quality at the same time.
- 
-
-* I had a bug with the Background animation on the Main Heading. It was slowing down the refresh and causing the animation to happen before the image had fully loaded. 
-
-
->   * I did some research and found a piece of code on [CSS-Tricks](https://css-tricks.com/making-animations-wait/). It was explaining the same issue I was having, and the solution was to write 
-`<script>document.documentElement.className += " js-loading";`
         `window.addEventListener("load", showPage, false);`
         `function showPage() {`
         `document.documentElement.className = ``document.documentElement.className.replace("js-loading","");</script>`
         and in the Css:<br>
         `.js-loading *,`<br>
+
 `.js-loading *:before,`<br>
 `.js-loading *:after`<br>
 ` {animation-play-state: paused !important;}`
 
-
 ---
-<a name="deployment"></a>
-## Deployment
-I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alone static webpage deployment website that links to your GitHub repository. It is deployed directly from the master branch or any other branches of your choosing. The beautiful thing about using Netlify is that it updates the feed as you git push changes to the branch you are using to deploy.
 
+<a name="deployment"></a>
+
+## Deployment
+
+I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alone static webpage deployment website that links to your GitHub repository. It is deployed directly from the master branch or any other branches of your choosing. The beautiful thing about using Netlify is that it updates the feed as you git push changes to the branch you are using to deploy.
 
 <details>
 <summary>To deploy on Netlify:</summary>
@@ -365,14 +358,13 @@ I hosted this site using [Netlify](https://www.netlify.com/). It is a stand-alon
 </ol>
 </details>
 
-
 ---
+
 <a name="Credits"></a>
+
 ## Credits
 
-
 ##### Design:
-
 
 The concept and design by Clinton Davis
 
@@ -382,10 +374,9 @@ The destinations websites supply the information on the destinations, with some 
 90% of the code for the Google Maps API supplied by Google Maps Documentation.<br>
 Weather API code inspired by Code Ins Star wars API from code Star Wars project.
 
-
 ##### Media:
 
-#####[Shutterstock](https://www.shutterstock.com/home) 
+#####[Shutterstock](https://www.shutterstock.com/home)
 [CC licences](https://en.wikipedia.org/wiki/Creative_Commons_license) or paid Standard licences.
 
 - Aerial view of Cape peninsula, Cape Town, South Africa [wolffpower](https://www.shutterstock.com/image-photo/aerial-view-cape-peninsula-town-south-635476499)<br>
@@ -395,23 +386,24 @@ Weather API code inspired by Code Ins Star wars API from code Star Wars project.
 
 All destination images have been supplied by Google Maps or their own webpages.
 
-
 <a name="acknowledgements"></a>
+
 ### Acknowledgements
+
 I would like to Thank Anthony Ngene, my mentor, for help with my coding and inspiring me. <br>
 For the use of code and knowledge.
 
 - [YouTube - Kevin Powell](https://www.youtube.com/user/KepowOb) for code snippets and know how.<br>
 - [YouTube - Dev Ed](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q) for code snippets and know how
 - [dcode](https://www.youtube.com/channel/UCjX0FtIZBBVD3YoCcxnDC4g) for help with MutationObserver in JavaScript.
--  [Scrimba - The Responsive Web Design Bootcamp](https://scrimba.com/)
--  [Google Maps Platform Documentation](https://developers.google.com/maps/documentation/javascript/tutorial) for a lot of help with getting it to work.
+- [Scrimba - The Responsive Web Design Bootcamp](https://scrimba.com/)
+- [Google Maps Platform Documentation](https://developers.google.com/maps/documentation/javascript/tutorial) for a lot of help with getting it to work.
 - [CSS-Tricks](https://css-tricks.com/) website for good ideas and work arounds.<br>
 - [W3Schools](https://www.w3schools.com/) for code snippets and documentation with [Creating Modal,](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) and general research on HTML CSS and JavaScript.
 - [CSSMatric](https://cssmatic.com/) for Box Shadow Generator and Gradient Generator <br>
 - [GitHub](https://github.com/) for documentation on how to [How to Clone Repository](https://bit.ly/32Emdbc).
 - [Google Fonts](https://fonts.google.com/) for fonts.
-- [Slack](https://slack.com/intl/en-ie/) community for Testing / Encouragement / Code Snippets and pointers.<br> 
+- [Slack](https://slack.com/intl/en-ie/) community for Testing / Encouragement / Code Snippets and pointers.<br>
 
 ---
 
