@@ -181,8 +181,8 @@ The Westen province rugby team inspires the choice of colour for the main option
 - I tested HTML with w3 Validator. Passed
 - I tested CSS with w3 Validator. I got a few warning and errors with CSS Variables<br>
 
-  `--headFont: "Bangers", sans-serif;`<br>
-  `--secFont: "Montserrat", sans-serif;`<br>
+  ` --Bangers: "Bangers", sans-serif;`<br>
+  `--Montserrat: "Montserrat", sans-serif;`<br>
   `--white: rgb(219, 217, 217);`<br>
 
   These errors are an ongoing issue with w3, They are valid, but not recognised by W3. <br>[CSS variables ("custom properties"), a widely supported and crucial feature.](https://github.com/w3c/css-validator/issues/111)<br>The reason I used them is: If I want to change the font s or colours in the future, I would have to change the variables in question for the entire site. <br>
